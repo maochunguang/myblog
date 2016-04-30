@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[Blog]]></title>
+
+    <link href="/atom.xml" rel="self"/>
+    <link href="http://geekwalker.cn/"/>
+    <updated>2016-04-30T14:32:50.058Z</updated>
+    <id>http://geekwalker.cn/</id>
+
+    <author>
+        <name><![CDATA[Tommy]]></name>
+
+    </author>
+
+    <generator uri="http://hexo.io/">Hexo</generator>
+
+    <entry>
+        <title><![CDATA[Ubuntu16开发环境配置]]></title>
+        <link href="http://geekwalker.cn/2016/04/26/ubuntu-dev-config/"/>
+        <id>http://geekwalker.cn/2016/04/26/ubuntu-dev-config/</id>
+        <published>2016-04-26T10:48:11.000Z</published>
+        <updated>2016-04-30T14:32:50.058Z</updated>
+        <content type="html"><![CDATA[<p><strong> ubuntu开发环境配置：</strong> <Excerpt in index | 首页摘要><br>    ubuntu16下node,java开发环境配置</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h3 id="u5B89_u88C5_u7CFB_u7EDF_u8F6F_u4EF6"><a href="#u5B89_u88C5_u7CFB_u7EDF_u8F6F_u4EF6" class="headerlink" title="安装系统软件"></a>安装系统软件</h3><ol>
+<li>谷歌浏览器，火狐浏览器，atom编辑器，sublime编辑器，</li>
+</ol>
+<h3 id="u5B89_u88C5jdk"><a href="#u5B89_u88C5jdk" class="headerlink" title="安装jdk"></a>安装jdk</h3><h3 id="u5B89_u88C5nodejs"><a href="#u5B89_u88C5nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><h3 id="u73AF_u5883_u53D8_u91CF_u914D_u7F6E"><a href="#u73AF_u5883_u53D8_u91CF_u914D_u7F6E" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><h3 id="u5B89_u88C5_u5F00_u53D1_u5DE5_u5177"><a href="#u5B89_u88C5_u5F00_u53D1_u5DE5_u5177" class="headerlink" title="安装开发工具"></a>安装开发工具</h3><p>###</p>
+<p>###</p>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> ubuntu开发环境配置：</strong> <Excerpt in index | 首页摘要><br>    ubuntu16下node,java开发环境配置</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
+
+        <category term="开发工具" scheme="http://geekwalker.cn/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[Sublime详细配置]]></title>
+        <link href="http://geekwalker.cn/2016/04/26/sublime-config/"/>
+        <id>http://geekwalker.cn/2016/04/26/sublime-config/</id>
+        <published>2016-04-26T10:47:46.000Z</published>
+        <updated>2016-04-30T11:16:53.102Z</updated>
+        <content type="html"><![CDATA[<p><strong> sublime详细配置：</strong> <Excerpt in index | 首页摘要><br>    subime的常用配置应有尽有，快快来看吧</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h3 id="1-_u5B89_u88C5sublime"><a href="#1-_u5B89_u88C5sublime" class="headerlink" title="1.安装sublime"></a>1.安装sublime</h3><h3 id="2-_u5B89_u88C5package_u7BA1_u7406_u5DE5_u5177"><a href="#2-_u5B89_u88C5package_u7BA1_u7406_u5DE5_u5177" class="headerlink" title="2.安装package管理工具"></a>2.安装package管理工具</h3><h3 id="3-_u5B89_u88C5_u5E38_u7528_u63D2_u4EF6"><a href="#3-_u5B89_u88C5_u5E38_u7528_u63D2_u4EF6" class="headerlink" title="3.安装常用插件"></a>3.安装常用插件</h3><h3 id="4-_u4E3B_u9898_u548C_u914D_u8272_u8BBE_u7F6E"><a href="#4-_u4E3B_u9898_u548C_u914D_u8272_u8BBE_u7F6E" class="headerlink" title="4.主题和配色设置"></a>4.主题和配色设置</h3><h3 id="5-_u4FA7_u8FB9_u680F_u9AD8_u7EA7_u8BBE_u7F6E"><a href="#5-_u4FA7_u8FB9_u680F_u9AD8_u7EA7_u8BBE_u7F6E" class="headerlink" title="5.侧边栏高级设置"></a>5.侧边栏高级设置</h3><h3 id="6-_u5F00_u53D1_u73AF_u5883_u914D_u7F6E"><a href="#6-_u5F00_u53D1_u73AF_u5883_u914D_u7F6E" class="headerlink" title="6.开发环境配置"></a>6.开发环境配置</h3><h3 id="7-_u5FEB_u6377_u952E_u8BBE_u7F6E"><a href="#7-_u5FEB_u6377_u952E_u8BBE_u7F6E" class="headerlink" title="7.快捷键设置"></a>7.快捷键设置</h3><h3 id="8-over"><a href="#8-over" class="headerlink" title="8.over"></a>8.over</h3>]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> sublime详细配置：</strong> <Excerpt in index | 首页摘要><br>    subime的常用配置应有尽有，快快来看吧</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
+
+        <category term="开发工具" scheme="http://geekwalker.cn/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[我的梦想]]></title>
+        <link href="http://geekwalker.cn/2016/04/24/dream/"/>
+        <id>http://geekwalker.cn/2016/04/24/dream/</id>
+        <published>2016-04-24T14:07:27.000Z</published>
+        <updated>2016-04-24T14:37:00.266Z</updated>
+        <content type="html"><![CDATA[<p><strong> 我的梦想：</strong> <Excerpt in index | 首页摘要><br>    一个人如果活着没有梦想,那和咸鱼有什么区别?</p>
+<ul>
+<li><a id="more"></a>请问你的梦想是什么?<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h3 id="u6211_u7684_u68A6_u60F3_u662F_u4EC0_u4E48_3F"><a href="#u6211_u7684_u68A6_u60F3_u662F_u4EC0_u4E48_3F" class="headerlink" title="我的梦想是什么?"></a>我的梦想是什么?</h3><ul>
+<li><p>刚开始接触编程的时候,感觉代码是个神器的世界,在这里你可以为所欲为,然后看到很多大神的框架,软件,在使用别人好的框架,好的软件,那一刻我感觉 <strong>“我的梦想就是用代码改变世界!”</strong></p>
+</li>
+<li><p>感觉自己迷失了好久,找不到方向,曾经的激情不知道去了哪里?</p>
+</li>
+</ul>
+<h3 id="u5F00_u59CB_u8FFD_u68A6"><a href="#u5F00_u59CB_u8FFD_u68A6" class="headerlink" title="开始追梦"></a>开始追梦</h3><ul>
+<li>有了梦想,我开始了疯狂的奋斗,每天休息4,5个小时,全身心去学习编程,努力还是很快得到了回报,我用了3个月就入门学好了java,然后找了java程序员的工作,就这样开始了我程序员的追梦之旅!</li>
+</ul>
+<h3 id="u521D_u7EA7_u7A0B_u5E8F_u5458"><a href="#u521D_u7EA7_u7A0B_u5E8F_u5458" class="headerlink" title="初级程序员"></a>初级程序员</h3><ul>
+<li>虽然入门了,但是刚开始的工作并不是一帆风顺的.我还记得第一份任务,老大让我写一个稍微复杂的接口,客户专用的接口,使用springmvc,还要提交到git上,对我而言,这一切都是新东西,经过我几天的努力,还是搞砸了,就这样第一个任务以失败告终!</li>
+<li>虽然第一个任务失败了,但是工作还在继续,我还是继续努力的工作,我必须承认我不是编程的天才,可能别人一个小时完成的任务,我需要一个半小时,但是我必须做好,因为我有梦想!</li>
+</ul>
+<h3 id="u4E2D_u7EA7_u7A0B_u5E8F_u5458"><a href="#u4E2D_u7EA7_u7A0B_u5E8F_u5458" class="headerlink" title="中级程序员"></a>中级程序员</h3><ul>
+<li><p>在工作的时候就感觉时间飞逝,一天天很快过去.晚上睡觉的时候,我就会问自己,我今天到底做了什么功能?我收获了哪些技能?曾经有段时间每天都是该页面,我几乎烦的崩溃,感觉每天都在做无用的东西,后来发现,无论是前段后端,其实都是必不可少的技能,我的心态应该调整,让自己去喜欢前段,同时保持后端的热情.</p>
+</li>
+<li><p>一个成熟的程序员和菜鸟最大的区别应该是心态!</p>
+</li>
+</ul>
+<h3 id="u9AD8_u7EA7_u7A0B_u5E8F_u5458"><a href="#u9AD8_u7EA7_u7A0B_u5E8F_u5458" class="headerlink" title="高级程序员"></a>高级程序员</h3><ul>
+<li>未完待续</li>
+</ul>
+<h3 id="u67B6_u6784_u5E08"><a href="#u67B6_u6784_u5E08" class="headerlink" title="架构师"></a>架构师</h3><ul>
+<li>未完待续</li>
+</ul>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> 我的梦想：</strong> <Excerpt in index | 首页摘要><br>    一个人如果活着没有梦想,那和咸鱼有什么区别?</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
+
+        <category term="个人随笔" scheme="http://geekwalker.cn/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[Js秘密花园]]></title>
+        <link href="http://geekwalker.cn/2016/04/23/js-study/"/>
+        <id>http://geekwalker.cn/2016/04/23/js-study/</id>
+        <published>2016-04-23T02:24:09.000Z</published>
+        <updated>2016-04-23T03:54:53.715Z</updated>
+        <content type="html"><![CDATA[<p><strong> Js秘密花园：</strong> <Excerpt in index | 首页摘要><br>    js学习中遇到的问题,非常实用!</p>
+<ul>
+<li><a id="more"></a>部分来自js秘密花园,其他都是自己的总结<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h2 id="u51FD_u6570_u4E0E_u533F_u540D_u51FD_u6570_u7684_u5199_u6CD5"><a href="#u51FD_u6570_u4E0E_u533F_u540D_u51FD_u6570_u7684_u5199_u6CD5" class="headerlink" title="函数与匿名函数的写法"></a>函数与匿名函数的写法</h2><ul>
+<li><p>函数声明</p>
+<ol>
+<li><p>第一种方式</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">()</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第二种方式</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第三种方式</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    bar(); <span class="comment">// 正常运行</span></span><br><span class="line">&#125;</span><br><span class="line">bar(); <span class="comment">// 出错：ReferenceError</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>匿名函数</p>
+<ol>
+<li><p>第一种方式</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">function</span><span class="list">()</span><span class="collection">&#123;</span><br><span class="line">        test<span class="list">()</span><span class="comment">;</span></span><br><span class="line">    &#125;</span>)</span><span class="list">()</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第二种方式</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">function</span><span class="list">()</span><span class="collection">&#123;</span><br><span class="line">        test<span class="list">()</span><span class="comment">;</span></span><br><span class="line">    &#125;</span><span class="list">()</span>)</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="js_u4E2Dfor_u5FAA_u73AF"><a href="#js_u4E2Dfor_u5FAA_u73AF" class="headerlink" title="js中for循环"></a>js中for循环</h2><ul>
+<li><p>为了达到遍历数组的最佳性能，推荐使用经典的 for 循环</p>
+<ol>
+<li><p>经典for循环</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var arr = <span class="matrix">[<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>]</span>;</span><br><span class="line"><span class="keyword">for</span>(var <span class="built_in">i</span>=<span class="number">0</span>;<span class="built_in">i</span>&lt;arr.<span class="built_in">length</span>;<span class="built_in">i</span>++)<span class="cell">&#123;</span><br><span class="line">    console.log(arr[i]);</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>for in循环(可以循环对象的属性),for in 循环同样在查找对象属性时遍历原型链上的所有属性</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> arr)<span class="comment">&#123;</span><br><span class="line">    console.log(arr[i]);</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>forEach循环</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>];</span><br><span class="line">arr.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">ele</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(ele);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="this_u7684_u7528_u6CD5"><a href="#this_u7684_u7528_u6CD5" class="headerlink" title="this的用法"></a>this的用法</h2><ul>
+<li><p>js中最复杂的莫过于的this的指向,此处大致介绍五种this的指向</p>
+<ol>
+<li>全局范围内,this指向全局,浏览器中是window对象</li>
+<li><p>函数调用,也是指向全局</p>
+<figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">foo()<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>对象方法调用,指向调用者</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">test</span><span class="class">.foo</span>();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>构造函数,指向新创建的对象</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> foo();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>显示改变的this的指向</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">foo</span><span class="params">(a, b, c)</span> </span>&#123;&#125;</span><br><span class="line">var bar = &#123;&#125;;</span><br><span class="line">foo.apply(bar, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// 数组将会被扩展，如下所示</span></span><br><span class="line">foo.call(bar, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// 传递到foo的参数是：a = 1, b = 2, c = 3</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="call_u548Capply_u7684_u89E3_u60D1"><a href="#call_u548Capply_u7684_u89E3_u60D1" class="headerlink" title="call和apply的解惑"></a>call和apply的解惑</h2><ul>
+<li><p>这两个方法的用途都是在特定的作用域中调用函数,实际上等于设置函数体内 this 对象的值。首先, apply() 方法接收两个参数:一个是在其中运行函数的作用域,另一个是参数数组。其中,第二个参数可以是 Array 的实例,也可以是arguments 对象。例如:</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1, num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span>(<span class="params">num1, num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum2</span>(<span class="params">num1, num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>, [num1, num2]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(callSum1(<span class="number">10</span>,<span class="number">10</span>));</span><br><span class="line"><span class="built_in">console</span>.log(callSum2(<span class="number">10</span>,<span class="number">10</span>));</span><br><span class="line"><span class="comment">// 传入 arguments 对象</span></span><br><span class="line"><span class="comment">// 传入数组</span></span><br><span class="line"><span class="comment">//20</span></span><br><span class="line"><span class="comment">//20</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>call() 方法与 apply() 方法的作用相同,它们的区别仅在于接收参数的方式不同。对于 call()<br>方法而言,第一个参数是 this 值没有变化,变化的是其余参数都直接传递给函数。换句话说,在使用<br>call() 方法时,传递给函数的参数必须逐个列举出来,如下面的例子所示:</p>
+  <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">(num1, num2)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum</span><span class="params">(num1, num2)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sum.call(<span class="keyword">this</span>, num1, num2);</span><br><span class="line">&#125;</span><br><span class="line">cosole.log(callSum(<span class="number">10</span>,<span class="number">10</span>)); <span class="comment">//20</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>事实上，传递参数并非 apply()和 call()真正的用武之地；它们真正强大的地方是能够扩充函数<br>赖以运行的作用域。下面来看一个例子。</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.color = <span class="string">"red"</span>;</span><br><span class="line"><span class="keyword">var</span> o = &#123; color: <span class="string">"blue"</span> &#125;;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayColor</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>.color);</span><br><span class="line">&#125;</span><br><span class="line">sayColor(); <span class="comment">//red</span></span><br><span class="line">sayColor.call(<span class="keyword">this</span>); <span class="comment">//red</span></span><br><span class="line">sayColor.call(<span class="built_in">window</span>); <span class="comment">//red</span></span><br><span class="line">sayColor.call(o); <span class="comment">//blue</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="js_u9762_u5411_u5BF9_u8C61"><a href="#js_u9762_u5411_u5BF9_u8C61" class="headerlink" title="js面向对象"></a>js面向对象</h2><ul>
+<li>未完待续</li>
+</ul>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> Js秘密花园：</strong> <Excerpt in index | 首页摘要><br>    js学习中遇到的问题,非常实用!</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="javacript" scheme="http://geekwalker.cn/tags/javacript/"/>
+
+        <category term="学习笔记" scheme="http://geekwalker.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[Hexo和coding打造静态博客]]></title>
+        <link href="http://geekwalker.cn/2016/04/19/hexo-coding-blog/"/>
+        <id>http://geekwalker.cn/2016/04/19/hexo-coding-blog/</id>
+        <published>2016-04-19T03:32:59.000Z</published>
+        <updated>2016-04-24T14:23:58.934Z</updated>
+        <content type="html"><![CDATA[<p><strong> hexo和coding打造静态博客 ：</strong> <Excerpt in index | 首页摘要><br>    使用hexo和coding打造属于自己的静态博客，展示自己的作品，思想……</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h3 id="u4EC0_u4E48_u662Fhexo_3F"><a href="#u4EC0_u4E48_u662Fhexo_3F" class="headerlink" title="什么是hexo?"></a>什么是hexo?</h3><ul>
+<li>hexo是台湾的一个大学生用nodejs做的一个静态博客框架，使用hexo可以速度搭建自己的静态博客，<br>结合第三方的代码托管平台即可实现个人的博客网站。</li>
+</ul>
+<h3 id="u4EC0_u4E48_u662Fcoding_3F"><a href="#u4EC0_u4E48_u662Fcoding_3F" class="headerlink" title="什么是coding?"></a>什么是coding?</h3><ul>
+<li>coding是和github类似的代码托管平台，但又不仅仅是托管平台，还有在线ide，码市等旗下产品，gitcafe也是被coding收购了，之前用gitcafe搭建的博客可以重新搭建了。</li>
+</ul>
+<h3 id="u4EC0_u4E48_u662F_u9759_u6001_u535A_u5BA2_3F"><a href="#u4EC0_u4E48_u662F_u9759_u6001_u535A_u5BA2_3F" class="headerlink" title="什么是静态博客?"></a>什么是静态博客?</h3><ul>
+<li>静态博客就是只是有静态页面和js，css构成的博客，普通的网站都是有web服务构成的，而静态博客只是页面的集合，利用js做一些展示和特效。</li>
+</ul>
+<h3 id="u5B89_u88C5hexo"><a href="#u5B89_u88C5hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
+<li><p>首先确保自己安装nodejs，在命令行输入，尽量安装v0.12以上的版本</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">node</span><span class="identifier"> </span><span class="title">-v</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装hexo，命令行输入</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-cli -<span class="keyword">g</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地调试hexo，参考我的另一篇文章<br><a href="http://geekwalker.cn/2015/12/20/hexo-githup-blog/">hexo和github打造个人博客</a></p>
+</li>
+</ul>
+<h3 id="u6CE8_u518C_u914D_u7F6Ecoding"><a href="#u6CE8_u518C_u914D_u7F6Ecoding" class="headerlink" title="注册配置coding"></a>注册配置coding</h3><ul>
+<li>coding的pages功能有两种，一个是项目主页，一个是个人主页，本博客采用个人主页。</li>
+<li>个人主页就是项目中有一个coding-pages的分支，把项目发布到这个分支即可</li>
+<li>coding的代码也是通过git这个工具，所以在coding个人设置里配置好自己的ssh公钥和github操作一样的</li>
+<li>在coding建立一个项目，名字和你的个性后缀一样，也就是Global Key，在个人设置里可以看到</li>
+</ul>
+<h3 id="u90E8_u7F72_u535A_u5BA2_u5230coding"><a href="#u90E8_u7F72_u535A_u5BA2_u5230coding" class="headerlink" title="部署博客到coding"></a>部署博客到coding</h3><ul>
+<li>在项目根目录下，修改_config.yml文件，把maocg替换为你的Global Key<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">- <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>:git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:maocg/maocg.git,coding-pages</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> hexo和coding打造静态博客 ：</strong> <Excerpt in index | 首页摘要><br>    使用hexo和coding打造属于自己的静态博客，展示自己的作品，思想……</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="node" scheme="http://geekwalker.cn/tags/node/"/>
+
+        <category term="编程语言" scheme="http://geekwalker.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[程序员入门指南]]></title>
+        <link href="http://geekwalker.cn/2016/04/17/coder-study/"/>
+        <id>http://geekwalker.cn/2016/04/17/coder-study/</id>
+        <published>2016-04-17T04:37:19.000Z</published>
+        <updated>2016-04-21T16:25:34.074Z</updated>
+        <content type="html"><![CDATA[<p><strong> 程序员入门指南 ：</strong> <Excerpt in index | 首页摘要><br>        程序员入门必须了解的一些知识，个人经验，不喜勿喷！</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h2 id="u7A0B_u5E8F_u5458_u7684_u5165_u95E8_u89C4_u5212"><a href="#u7A0B_u5E8F_u5458_u7684_u5165_u95E8_u89C4_u5212" class="headerlink" title="程序员的入门规划"></a>程序员的入门规划</h2><h3 id="1-_u6211_u8BE5_u5B66_u4E60_u4EC0_u4E48_u8BED_u8A00_uFF1F"><a href="#1-_u6211_u8BE5_u5B66_u4E60_u4EC0_u4E48_u8BED_u8A00_uFF1F" class="headerlink" title="1.我该学习什么语言？"></a>1.我该学习什么语言？</h3><ul>
+<li><p>这个问题困扰了几乎所有的程序员，比如java应用广好就业，比如php入门简单，ios待遇高，  python是万能语言，HTML和js前端缺人才等等</p>
+</li>
+<li><p>个人见解：先学习难度小，大众化的编程语言，比如java，php，python，javascript,c/c++,这几个学哪一种其实差不多，入门以后看自己兴趣在进行其它语言的学习。</p>
+</li>
+</ul>
+<h3 id="2-_u6211_u8BE5_u600E_u4E48_u5B66_u4E60_u7F16_u7A0B_uFF1F"><a href="#2-_u6211_u8BE5_u600E_u4E48_u5B66_u4E60_u7F16_u7A0B_uFF1F" class="headerlink" title="2.我该怎么学习编程？"></a>2.我该怎么学习编程？</h3><p>这个问题是所有的程序员都有的，我也经常会疑问，到底该怎么学习呢？</p>
+<p>个人见解：</p>
+<ol>
+<li>先了解语言的特性，适用的范围场景，比如是适合web开发，还是适合客户端程序，有的适合并发多线程，有的适合异步，还有的比较稳定，适合构建大型项目，有的开发效率高，等等。</li>
+<li>了解语言的语法和常用api的使用，比如变量的声明，循环的使用，io的读取，http服务的创建，把这些基本的语法搞清楚，在进行下一步的学习。</li>
+<li>学习web开发之前的准备，数据库的学习，http协议的学习，html，css和javacript的常用知识了解</li>
+<li>学习常用框架，比如java学习常用的ssh三大框架，node的学习express，一定要做2个项目练习，把自己的之前学习的知识都巩固一下，</li>
+<li>总结一下自己学习的过程，明白编程的思想在哪里，思路在哪里，学习编程，首先应该培养的是编程的思维和思想，有个正确的思维后面都简单多了。</li>
+<li>养成写博客或者学习笔记的习惯，推荐写博客，</li>
+<li>熟悉项目管理工具，svn，git之类的必须要会，工作中这些都是必须的</li>
+<li>准备面试，通过面试题进一步巩固自己的知识，夯实基础。</li>
+</ol>
+<h3 id="3-_u6211_u5E94_u8BE5_u53BB_u54EA_u91CC_u5B66_u4E60_u7F16_u7A0B_uFF1F"><a href="#3-_u6211_u5E94_u8BE5_u53BB_u54EA_u91CC_u5B66_u4E60_u7F16_u7A0B_uFF1F" class="headerlink" title="3.我应该去哪里学习编程？"></a>3.我应该去哪里学习编程？</h3><p>其实这个看个人，如果自学能力强，自控能力强，自学挺好的，下面我列举几个程序员常用的网站  </p>
+<ol>
+<li><a href="http://study.163.com/">网易云课堂</a>，很多免费的视频课程，适合入门学习</li>
+<li><a href="http://www.imooc.com/">慕课网</a>，很多it入门教学视频，资源也不错</li>
+<li><a href="http://www.jikexueyuan.com/">极客学院</a>，和前两个网站差不多，</li>
+<li><a href="http://www.ibeifeng.com/">北风网</a>，类似的教学网站，其它的就不说了</li>
+</ol>
+<h3 id="4-_u7F16_u7A0B_u9047_u5230_u95EE_u9898_u600E_u4E48_u529E_uFF1F"><a href="#4-_u7F16_u7A0B_u9047_u5230_u95EE_u9898_u600E_u4E48_u529E_uFF1F" class="headerlink" title="4.编程遇到问题怎么办？"></a>4.编程遇到问题怎么办？</h3><ul>
+<li>百度或者谷歌看看网上有没有类似的问题，一回生，二回熟，很快就明白了</li>
+<li>去官网查看api文档查找原因</li>
+<li>自己要学会debug代码，查找原因</li>
+<li>去各大论坛逛逛，说不定早有人提问此类问题了</li>
+</ul>
+<h3 id="5-_u6211_u60F3_u770B_u7F16_u7A0B_u7684_u4E66_u7C4D_u53BB_u54EA_u627E_u5462_uFF1F"><a href="#5-_u6211_u60F3_u770B_u7F16_u7A0B_u7684_u4E66_u7C4D_u53BB_u54EA_u627E_u5462_uFF1F" class="headerlink" title="5.我想看编程的书籍去哪找呢？"></a>5.我想看编程的书籍去哪找呢？</h3><p>经典书籍还是买纸质的，买正版的，支持正版！</p>
+<ol>
+<li><a href="http://vdisk.weibo.com/">新浪微盘</a>，非常多的it书籍  </li>
+<li><a href="http://www.jb51.net/">脚本之家</a>，非常多的pdf书籍，可惜大多数不是文字版pdf  </li>
+<li><a href="http://www.salttiger.com/">英文原版书籍</a>，都是高清文字版pdf，强烈推荐，都是英文原版的  </li>
+<li><a href="http://bestcbooks.com/">计算机书控</a>，都是免费的pdf文档，大多数不是文字版pdf</li>
+</ol>
+<h3 id="6-_u5B66_u4E60_u5FC3_u6001"><a href="#6-_u5B66_u4E60_u5FC3_u6001" class="headerlink" title="6.学习心态"></a>6.学习心态</h3><ol>
+<li>不要老是折腾工具，ide工具和文本编辑器一样一个就够了</li>
+<li>不要自满，编程的东西学一辈子也学不会，要谦虚好学</li>
+<li>不要急躁，既然知识学不完，我们应该掌握学习方法，指定计划去学习</li>
+<li>要持之以恒，学习是一辈子的事，如果你没有这个打算，还是不要做程序员的好</li>
+<li>切忌眼高手低，必须要敲代码才能达到效果</li>
+</ol>
+<h3 id="7-_u7F16_u7A0B_u8FDB_u9636_u4E4B_u8DEF"><a href="#7-_u7F16_u7A0B_u8FDB_u9636_u4E4B_u8DEF" class="headerlink" title="7.编程进阶之路"></a>7.编程进阶之路</h3><pre><code>当有了一定的编程基础之后,最大的问题是确定自己的方向,这个时候最容易迷茫和困惑,学习什么技术?  
+怎么去学,这些真的很难
+</code></pre><ul>
+<li>个人建议如下:<br>1.技术型方向:提高自己的编程能力和语言造诣,最有效的是”造轮子”,量变引起质变</li>
+<li>写插件,写框架,写爬虫,写数据库,自制编程语言,等等.<br>2.业务型方向:提高自己的业务能力,和客户的沟通能力,分析需求,解决客户的难题</li>
+<li>多出去见客户,去现场,了解需求,分析需求,</li>
+</ul>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> 程序员入门指南 ：</strong> <Excerpt in index | 首页摘要><br>        程序员入门必须了解的一些知识，个人经验，不喜勿喷！</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
+
+        <category term="编程语言" scheme="http://geekwalker.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[Hexo和github打造个人博客]]></title>
+        <link href="http://geekwalker.cn/2015/12/20/hexo-githup-blog/"/>
+        <id>http://geekwalker.cn/2015/12/20/hexo-githup-blog/</id>
+        <published>2015-12-20T14:35:04.000Z</published>
+        <updated>2016-04-21T16:26:35.777Z</updated>
+        <content type="html"><![CDATA[<p><strong> hexo和github打造个人博客 ：</strong> <Excerpt in index | 首页摘要><br>    使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<p>##说明<br>    自己在使用hexo搭建静态博客的时候踩了许多坑,最终去官网看教程搞定了,<br>    建议用hexo搭建个人博客的时候,最好看清教程的日期和使用的版本,这样就<br>    不会因为版本的不同导致的问题了.建议先去hexo官网了解一下<br>   <a href="https://hexo.io/zh-cn/"><strong>hexo官网</strong></a></p>
+<h2 id="1-_u51C6_u5907_u5DE5_u4F5C"><a href="#1-_u51C6_u5907_u5DE5_u4F5C" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><ol>
+<li>安装nodejs<ul>
+<li>去官网下载nodejs安装(推荐安装0.12.x),安装之后在命令行 node -v,如果成功说明node环境ok,不成功就去环境变量配置一下.</li>
+</ul>
+</li>
+<li>安装hexo<ul>
+<li>使用命令 npm install hexo -g,执行hexo -v 查看版本,本教程适合<strong>3.1.1</strong>版本</li>
+</ul>
+</li>
+<li>安装git<ul>
+<li>去官网下载git安装,不会自行百度</li>
+</ul>
+</li>
+<li>配置git<ul>
+<li>配置ssh私钥,上传到github上</li>
+</ul>
+</li>
+</ol>
+<h2 id="2-github-pages_u548Cgitcafe-page_u7684_u8BF4_u660E"><a href="#2-github-pages_u548Cgitcafe-page_u7684_u8BF4_u660E" class="headerlink" title="2.github-pages和gitcafe-page的说明"></a>2.github-pages和gitcafe-page的说明</h2><ol>
+<li>github有两种主页,一种是github-page(个人主页),一种是项目主页,本教程针对个人主页</li>
+<li>gitcafe-page的个人主页只是在项目下有一个gitcafe-pages的分支,部署成功后访问主页即可</li>
+<li>github-page需要将hexo博客发布到repository的master(主干)即可</li>
+<li>gitcafe需要将hexo博客发布到repository的gitcafe-pages的分支</li>
+<li>github的个人主页要求repository的名称和username一致，加入username是tom，则repository的名称为tom.github.io<h2 id="3-_u4F7F_u7528hexo_u5199_u535A_u5BA2"><a href="#3-_u4F7F_u7528hexo_u5199_u535A_u5BA2" class="headerlink" title="3.使用hexo写博客"></a>3.使用hexo写博客</h2><ul>
+<li>新建一个文件夹myblog,</li>
+<li>右键git bash here使用git的shell</li>
+<li>在shell中输入hexo init,回车执行</li>
+<li>在shell中输入hexo g ,回车</li>
+<li>在shell中hexo s,回车</li>
+<li>去浏览器访问<a href="http://localhost:4000,访问到主页,然后在shell中ctrl">http://localhost:4000,访问到主页,然后在shell中ctrl</a> c停止</li>
+<li>在shell中hexo new “first-blog”,回车</li>
+<li>在shell中hexo g ,回车</li>
+<li>在shell中hexo s ,回车,在访问</li>
+<li>ok,在本地测试就没问题了</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-_u53D1_u5E03_u5230github_u548Cgitcafe"><a href="#4-_u53D1_u5E03_u5230github_u548Cgitcafe" class="headerlink" title="4.发布到github和gitcafe"></a>4.发布到github和gitcafe</h2><pre><code>- 打开项目根部录下的.config.yml,找到deploy,修改如下:
+</code></pre><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line"> - <span class="attribute">type</span>: git</span><br><span class="line">   <span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:yourname/yourname.github.io.git,master</span><br><span class="line"> - <span class="attribute">type</span>: git</span><br><span class="line">   <span class="attribute">repo</span>: git<span class="variable">@gitcafe</span>.<span class="attribute">com</span>:yourname/yourname.git,gitcafe-pages</span><br></pre></td></tr></table></figure>
+<pre><code>- 如果只发布到github或者gitcafe上,修改如下:git的branch是master,gitcafe的是gitcafe-pages
+</code></pre><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="keyword">type</span>: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br><span class="line">  branch: [branch]</span><br><span class="line">  <span class="keyword">message</span>: [<span class="keyword">message</span>]</span><br></pre></td></tr></table></figure>
+<pre><code>访问地址就是 http://tom.github.io/
+</code></pre><h2 id="5-_u5E38_u89C1_u95EE_u9898"><a href="#5-_u5E38_u89C1_u95EE_u9898" class="headerlink" title="5.常见问题"></a>5.常见问题</h2><ol>
+<li>部署时出现git not found<ul>
+<li>npm install hexo-deployer-git –save  安装依赖包</li>
+</ul>
+</li>
+</ol>
+<h2 id="6-_u8BE6_u7EC6_u8BBE_u7F6E"><a href="#6-_u8BE6_u7EC6_u8BBE_u7F6E" class="headerlink" title="6.详细设置"></a>6.详细设置</h2><pre><code>每个人对自己的博客都有不一样的要求，比如主题，分类，标签，评论插件的选择，  
+这些对程序员的你来说，都是小菜一碟，下面是官网教程：
+</code></pre><p>   <a href="https://hexo.io/docs/">hexo官方文档</a></p>
+<p>博客效果可以看我的个人博客     <a href="http://maocg.gitcafe.io/archives/">我的个人博客</a></p>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> hexo和github打造个人博客 ：</strong> <Excerpt in index | 首页摘要><br>    使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="node" scheme="http://geekwalker.cn/tags/node/"/>
+
+        <category term="编程语言" scheme="http://geekwalker.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[Mongodb从入门到精通]]></title>
+        <link href="http://geekwalker.cn/2015/12/19/mongodb-study/"/>
+        <id>http://geekwalker.cn/2015/12/19/mongodb-study/</id>
+        <published>2015-12-19T15:21:23.000Z</published>
+        <updated>2016-04-21T16:26:46.214Z</updated>
+        <content type="html"><![CDATA[<p><strong> mongodb从入门到精通</strong> <Excerpt in index | 首页摘要><br>    mongodb日常使用的一些知识，增删改查，索引，分片。</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h3 id="mongodb_u5B66_u4E60"><a href="#mongodb_u5B66_u4E60" class="headerlink" title="mongodb学习"></a>mongodb学习</h3><h2 id="1-mongodb_u7279_u6027"><a href="#1-mongodb_u7279_u6027" class="headerlink" title="1.mongodb特性"></a>1.mongodb特性</h2><pre><code>1）mongo是一个面向文档的数据库，它集合了nosql和sql数据库两方面的特性。
+2）所有实体都是在首次使用时创建。
+3）没有严格的事务特性，但是它保证任何一次数据变更都是原子性的。
+4）也没有固定的数据模型
+5）mongo以javascript作为命令行执行引擎，所以利用shell进行复杂的计算和查询时会相当的慢。
+6）mongo本身支持集群和数据分片
+7）mongo是c++实现的，支持windows mac linux等主流操作系统
+8）性能优越，速度快
+</code></pre><h2 id="2-mongo_u5E38_u7528_u64CD_u4F5C"><a href="#2-mongo_u5E38_u7528_u64CD_u4F5C" class="headerlink" title="2.mongo常用操作"></a>2.mongo常用操作</h2><pre><code>1.增删操作
+   db.user.insert({name:&apos;aaaa&apos;,age:30});
+   db.user.save({name:&apos;aaaa&apos;,age:30});
+   db.collection.insertOne({});(3.2新特性)
+   db.collection.deleteOne(&lt;filter&gt;,{});(3.2新特性)
+   db.collection.remove({name:&apos;aaa&apos;});
+   db.collection.remove();(删除全部)
+
+2.更新操作
+  db.users.update ({   &quot; name&quot;   :   &quot;joe&quot;   },   joe );
+  db.users.update ({   &quot; name&quot;   :   &quot;joe&quot;   },   joe,  true );------upsert模式
+  db.users.update ({   &quot; name&quot;   :   &quot;joe&quot;   },   joe,  true ，true);------MULTI模式
+</code></pre><blockquote>
+<p>update是对文档替换，而不是局部修改默认情况update更新匹配的第一条文档，multi模式更新所有匹配的  </p>
+</blockquote>
+<pre><code>3.查询操作
+  -- 普通查询
+  db.user.find();
+  db.user.find({name:&apos;aaa&apos;});
+  db.user.findOne({name:&apos;aaa&apos;});
+
+  -- 模糊查询
+  db.UserInfo.find({userName :/A/}) （名称%A%）
+  db.UserInfo.find({userName :/^A/}) (名称A%)
+
+4.操作符
+    1.$lt, $lte,$gt, $gte(&lt;, &lt;=, &gt;, &gt;= )     
+    2.$all    数组中的元素是否完全匹配  db.things.find( { a: { $all: [ 2, 3 ] } } );
+    3.$exists  可选：true，false  db.things.find( { a : { $exists : true } } );
+    4.$mod  取模：a % 10 == 1  db.things.find( { a : { $mod : [ 10 , 1 ] } } );
+    5.$ne 取反：即not equals  db.things.find( { x : { $ne : 3 } } );
+    6.$in 类似于SQL的IN操作  db.things.find({j:{$in: [2,4,6]}});
+    7.$nin $in的反操作，即SQL的  NOT IN  db.things.find({j:{$nin: [2,4,6]}});
+    8.$nor $or的反操作，即不匹配(a或b)  db.things.find( { name : &quot;bob&quot;, $nor : [ { a : 1 },{ b : 2 }]})
+    9.$or Or子句，注意$or不能嵌套使用  db.things.find( { name : &quot;bob&quot; , $or : [ { a : 1 },{ b : 2 }]})
+    10.$size  匹配数组长度  db.things.find( { a : { $size: 1 } } );
+    11.$type  匹配子键的数据类型，详情请看  db.things.find( { a : { $type : 2 } } );
+
+5.数组查询
+    $size 用来匹配数组长度（即最大下标）  
+    // 返回comments包含5个元素的文档   
+    db.posts.find({}, {comments:{‘$size’: 5}});  
+    // 使用冗余字段来实现  
+    db.posts.find({}, {‘commentCount’: { ‘$gt’: 5 }});   
+    $slice 操作符类似于子键筛选，只不过它筛选的是数组中的项  
+    // 仅返回数组中的前5项  
+    db.posts.find({}, {comments:{‘$slice’: 5}});  
+    // 仅返回数组中的最后5项  
+    db.posts.find({}, {comments:{‘$slice’: -5}});  
+    // 跳过数组中的前20项，返回接下来的10项  
+    db.posts.find({}, {comments:{‘$slice’: [20, 10]}});  
+    // 跳过数组中的最后20项，返回接下来的10项  
+    db.posts.find({}, {comments:{‘$slice’: [-20, 10]}});  
+    MongoDB 允许在查询中指定数组的下标，以实现更加精确的匹配  
+    // 返回comments中第1项的by子键为Abe的所有文档  
+    db.posts.find( { &quot;comments.0.by&quot; : &quot;Abe&quot; } );   
+</code></pre><h2 id="3-_u7D22_u5F15_u7684_u4F7F_u7528"><a href="#3-_u7D22_u5F15_u7684_u4F7F_u7528" class="headerlink" title="3.索引的使用"></a>3.索引的使用</h2><pre><code>1.创建索引
+    db.things.ensureIndex ({&apos;j&apos;: 1});
+    创建子文档 索引
+    db.things.ensureIndex ({&apos;user.Name&apos; : - 1});
+    创建 复合 索引
+    db.things.ensureIndex ({
+    &apos;j&apos; : 1 ,   //  升序
+    &apos;x&apos; : - 1   //  降序
+    });
+    如果 您的 find 操作只用到了一个键，那么索引方向是无关紧要的  
+    当创建复合索引的时候，一定要谨慎斟酌每个键的排序方向
+
+2.修改索引
+    修改索引，只需要重新 运行索引 命令即可  
+    如果索引已经存在则会 重建， 不存在的索引会被 添加  
+    db . things . ensureIndex ({
+        --- 原来的索引会 重建
+        &apos;user.Name &apos; :   - 1 ,
+        --- 新增一个升序 索引
+        &apos;user.Name &apos; :   1 ,
+        ---  为 Age 新建降序 索引
+        &apos;user.Age &apos; :   - 1
+    },
+    打开后台执行
+    {    ‘background&apos; :   true}
+    );
+    重建索引
+    db. things .reIndex();
+3.删除索引
+    删除集合中的所有 索引
+    db . things . dropIndexes ();  
+    删除指定键的索引  
+    db.things.dropIndex ({
+        x :   1 ,
+        y :   - 1
+    });  
+    使用 command 删除指定键的 索引
+    db.runCommand ({
+        dropIndexes : &apos;foo &apos; ,
+        index  :   {   y :   1   }
+    });  
+    使用 command 删除所有 索引
+    db . runCommand ({dropIndexes : &apos;foo &apos; ,index  :   &apos;*‘})
+    如果是删除集合中所有的文档（remove）则不会影响索引，当有新文档插入时，索引就会重建。
+4.唯一索引
+    创建唯一索引，同时这也是一个符合唯一索引  
+    db.things.ensureIndex (
+    {
+        &apos;firstName &apos; :   1 ,
+        &apos;lastName &apos; :   1
+    },   {
+    指定为唯一索引
+    &apos;unique &apos; :   true ,
+    删除重复 记录
+    &apos;dropDups &apos; :   true
+    });
+
+5、强制使用索引
+  强制使用索引 a 和 b
+    db.collection.find ({
+        &apos;a &apos; :   4 ,
+        &apos;b &apos; :   5 ,
+        &apos;c &apos; :   6
+    }). hint ({
+        &apos;a &apos; :   1 ,
+        &apos;b &apos; :   1
+    });
+    强制不使用任何 索引
+    db.collection.find ().hint ({
+        &apos;$ natural&apos; :   1
+    });
+</code></pre><hr>
+<p>索引总结:<br>        索引可以加速查询；<br>        单个索引无需在意其索引方向；<br>        多键索引需要慎重考虑每个索引的方向；<br>        做海量数据更新时应当先卸载所有索引，待数据更新完成后再重建索引；<br>        不要试图为每个键都创建索引，应考虑实际需要，并不是索引越多越好；<br>        唯一索引可以用来消除重复记录；<br>        地理空间索引是没有单位的，其内部实现是基本的勾股定理算法</p>
+<h2 id="4-mongo_u6570_u636E_u5E93_u7BA1_u7406"><a href="#4-mongo_u6570_u636E_u5E93_u7BA1_u7406" class="headerlink" title="4.mongo数据库管理"></a>4.mongo数据库管理</h2><pre><code>- 安全与认证
+1、 默认为无认证，启动用登录 shell ；
+2、 添加账号；
+3、 关闭 shell 、关闭 MongoDB ；
+4、 为 MongoDB 增加 — auth 参数；
+5、 重 启 MongoDB ；
+6、 登录 shell ，此时就需要认证了
+
+- 冷备份
+1、关闭MongoDB引擎
+2、拷贝数据库文件夹及文件
+3、恢复时反向操作即可        
+    -- 优点：可以完全保证数据完整性；
+    -- 缺点：需要数据库引擎离线     
+- 热备份
+1、 保持MongoDB为运行状态
+2、使用mongodump备份数据
+3、使用mongorestore恢复数据
+    --    优点：数据库引擎无须离线
+    --缺点：不能保证数据完整性，操作时会降低MongoDB性能
+
+- 主从复制备份
+1、创建主从复制机制
+2、配置完成后数据会自动同步
+3、恢复途径很多
+    -- 优点：可以保持MongoDB处于联机状态，不影响性能
+    -- 缺点：在数据写入密集的情况下可能无法保证数据完整性
+
+- 修复
+db.repairDatabase();
+  修复数据库还可以起到压缩数据的作用；
+  修复数据库的操作相当耗时，万不得已请不要使用；
+  建议经常做数据备份；
+</code></pre><h2 id="5-mongo_u590D_u5236_28_u96C6_u7FA4_29"><a href="#5-mongo_u590D_u5236_28_u96C6_u7FA4_29" class="headerlink" title="5.mongo复制(集群)"></a>5.mongo复制(集群)</h2><pre><code>1、主从复制
+    选项      说明
+    --only  作用是限定仅复制指定的某个数据库
+    --slavedelay  为复制设置操作延迟，单位为秒
+    --fastsync  以主节点的数据快照为基础启动从节点。
+    --autoresync  当主从节点数据不一致时，是否自动重新同步
+    --oplogSize  设定主节点中的oplog的容量，单位是MB
+
+2、副本集
+    与普通主从复制集群相比，具有自动检测机制
+    需要使用—replSet 选项指定副本同伴
+    任何时候，副本集当中最多只允许有1个活跃节点
+
+3、读写分离
+    将密集的读取操作分流到从节点上，降低主节点的负载
+    默认情况下，从节点是不允许处理
+    客户端请求的，需要使用—slaveOkay打开
+    不适用于实时性要求非常高的应用
+
+4、工作原理—— OPLOG
+    oplog保存在local数据库中，oplog就在其中的
+    oplog.$main集合内保存。该集合的每个文档都记录了主节点上执行的一个操作，其键定义如下：
+     ts：操作时间戳，占用4字节
+     op：操作类型，占用1字节
+     ns：操作对象的命名空间（或理解为集合全名）
+     o：进一步指定所执行的操作，例如插入
+
+5、工作原理—— 同步
+     从节点首次启动时，做完整同步
+     主节点数据发生变化时，做增量同步
+     从节点与主节点数据严重不一致时，做完整同步
+
+6、复制管理—— 诊断
+    db.printReplicationInfo()
+    在主节点上使用
+     返回信息是oplog的大小以及各种操作的耗时、空间占用等数据
+    在从节点上使用
+    db.printSlaveReplicationInfo()
+     返回信息是从节点的数据源列表、同步延迟时间等
+
+7、复制管理—— 变更OPLOG 容量
+    在主节点上使用
+      设定—oplogSize参数
+      重启MongoDB
+
+8、复制管理—— 复制认证
+    主从节点皆须配置
+     存储在local.system.users
+     优先尝试repl用户
+     主从节点的用户配置必须保持一致
+</code></pre><h2 id="6-MONGODB_u5206_u7247"><a href="#6-MONGODB_u5206_u7247" class="headerlink" title="6.MONGODB分片"></a>6.MONGODB分片</h2><pre><code>- 1、分片与自动分片
+      分片是指将数据拆分，分散到不同的实例上进行负载分流的做法。我们常说的“分表”、“分
+        库”、“分区”等概念都属于分片的实际体现。
+      传统分片做法是手工分表、分库。自动分片技术是根据指定的“片键”自动拆分数据并维护数据
+    请求路由的过程。
+
+    递增片键--连续 不均匀 写入集中 分流较差
+    随机片键--不连续 均匀 写入分散 分流较好
+    三个组成部分
+    --片
+      保存子集数据的容器
+    --mongos
+      MongoDB的路由器进程
+    --配置服务器
+      分片集群的配置信息
+- 2、创建分片
+    --启动配置服务器
+      可以创建一个或多个
+    --添加片
+      每个片都应该是副本集
+    --物理服务器
+      性能、安全和稳定性
+- 3、管理分片
+    --查询分片
+      db.shards.find();
+    --数据库
+      db.databases.find();
+    --块
+      db.chunks.find();
+    --分片状态
+      db.printShardingStatus();
+    --删除片
+      db.runCommand({ “removeshard” : “ip:port” });
+</code></pre><hr>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> mongodb从入门到精通</strong> <Excerpt in index | 首页摘要><br>    mongodb日常使用的一些知识，增删改查，索引，分片。</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="dbs" scheme="http://geekwalker.cn/tags/dbs/"/>
+
+        <category term="学习笔记" scheme="http://geekwalker.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[Node学习]]></title>
+        <link href="http://geekwalker.cn/2015/12/19/node-study/"/>
+        <id>http://geekwalker.cn/2015/12/19/node-study/</id>
+        <published>2015-12-19T10:58:56.000Z</published>
+        <updated>2016-04-21T16:27:07.795Z</updated>
+        <content type="html"><![CDATA[<p><strong> node学习： </strong> <Excerpt in index | 首页摘要><br>    nodejs学习的方法，进阶路线</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h3 id="u4E00__u5B66_u4E60_u5185_u5BB9"><a href="#u4E00__u5B66_u4E60_u5185_u5BB9" class="headerlink" title="一 学习内容"></a>一 学习内容</h3><ol>
+<li>node的常用模块,buffer,fs,http,net等.</li>
+<li>node常用框架express,mongoose,koa,mocha,should</li>
+<li>部署上线,pm2,grunt,</li>
+</ol>
+<h3 id="u4E8C__u5B66_u4E60_u8981_u70B9"><a href="#u4E8C__u5B66_u4E60_u8981_u70B9" class="headerlink" title="二 学习要点"></a>二 学习要点</h3><ol>
+<li>了解node的特性和语法</li>
+<li>编写扩展node模块</li>
+<li>用异步的思想编程</li>
+</ol>
+<h3 id="u4E09__u5165_u95E8_u5B9E_u6218"><a href="#u4E09__u5165_u95E8_u5B9E_u6218" class="headerlink" title="三 入门实战"></a>三 入门实战</h3><ol>
+<li>参照nodejs实战上的微博系统,使用express4.x+ mongoose实现</li>
+<li>使用socket.io实现一个简单的即时聊天的系统</li>
+<li>使用mongoose+express+angular+node开发一个论坛系统</li>
+</ol>
+<h3 id="u56DB__u5B66_u4E60_u65B9_u6CD5"><a href="#u56DB__u5B66_u4E60_u65B9_u6CD5" class="headerlink" title="四 学习方法"></a>四 学习方法</h3><ul>
+<li>建议有基础的直接开始入门实战,在练习中熟悉node的api,昨晚一个项目再去看书</li>
+<li>不要一直看书,没什么效果的,实战永远是最有效的</li>
+</ul>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> node学习： </strong> <Excerpt in index | 首页摘要><br>    nodejs学习的方法，进阶路线</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="node" scheme="http://geekwalker.cn/tags/node/"/>
+
+        <category term="编程语言" scheme="http://geekwalker.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+
+    </entry>
+
+    <entry>
+        <title><![CDATA[Hello World]]></title>
+        <link href="http://geekwalker.cn/2015/12/17/hello-world/"/>
+        <id>http://geekwalker.cn/2015/12/17/hello-world/</id>
+        <published>2015-12-17T04:37:19.000Z</published>
+        <updated>2016-04-30T14:31:22.769Z</updated>
+        <content type="html"><![CDATA[<p><strong> Hello World：</strong> <Excerpt in index | 首页摘要><br>    hexo的Hello World教程</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html">Deployment</a></p>
+]]></content>
+        <summary type="html">
+            <![CDATA[<p><strong> Hello World：</strong> <Excerpt in index | 首页摘要><br>    hexo的Hello World教程</p>
+<ul>
+<li>]]>
+
+        </summary>
+
+        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
+
+    </entry>
+
+</feed>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="L6Lm9d5Crl"/>
+
+    <title>Hexo和github打造个人博客 | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="hexo和github打造个人博客 ：     使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Hexo和github打造个人博客">
+    <meta property="og:url" content="http://geekwalker.cn/2015/12/20/hexo-githup-blog/index.html">
+    <meta property="og:site_name" content="Blog">
+    <meta property="og:description" content="hexo和github打造个人博客 ：     使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……">
+    <meta property="og:updated_time" content="2016-04-21T16:26:35.777Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hexo和github打造个人博客">
+    <meta name="twitter:description" content="hexo和github打造个人博客 ：     使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……">
+
+    <link rel="alternative" href="/atom.xml" title="Blog" type="application/atom+xml">
+
+
+    <link rel="icon" href="/img/favicon.png">
+
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+    <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet"/>
+    <script>
+        var yiliaConfig = {
+            fancybox: true,
+            animate: false,
+            isHome: false,
+            isPost: true,
+            isArchive: false,
+            isTag: false,
+            isCategory: false,
+            open_in_new: false
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+<div class="left-col">
+    <div class="overlay"></div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+
+                <img src="/img/avatar.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+
+            </a>
+
+            <hgroup>
+                <h1 class="header-author"><a href="/">Tommy</a></h1>
+            </hgroup>
+
+
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+
+
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+
+                        <li>友情链接</li>
+
+
+                        <li>关于我</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div id="switch-area" class="switch-area">
+                <div class="switch-wrap">
+                    <section class="switch-part switch-part1">
+                        <nav class="header-menu">
+                            <ul>
+
+                                <li><a href="/">主页</a></li>
+
+                                <li><a href="/archives/">所有文章</a></li>
+
+                                <li><a href="/tags/">标签云</a></li>
+
+                                <li><a href="/about/">关于我</a></li>
+
+                            </ul>
+                        </nav>
+                        <nav class="header-nav">
+                            <ul class="social">
+
+                                <a class="fl github" target="_blank" href="https://github.com/maochunguang"
+                                   title="github">github</a>
+
+                                <a class="fl google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+
+                                <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+
+                            </ul>
+                        </nav>
+                    </section>
+
+
+                    <section class="switch-part switch-part2">
+                        <div class="widget tagcloud" id="js-tagcloud">
+                            <a href="/tags/dbs/" style="font-size: 10px;">dbs</a> <a href="/tags/javacript/"
+                                                                                     style="font-size: 10px;">javacript</a>
+                            <a href="/tags/node/" style="font-size: 15px;">node</a> <a href="/tags/others/"
+                                                                                       style="font-size: 20px;">others</a>
+                        </div>
+                    </section>
+
+
+                    <section class="switch-part switch-part3">
+                        <div id="js-friends">
+
+                            <a target="_blank" class="main-nav-link switch-friends-link"
+                               href="http://MOxFIVE.github.io/">MOxFIVE</a>
+
+                            <a target="_blank" class="main-nav-link switch-friends-link"
+                               href="http://blog.waydrow.com/">waydrow</a>
+
+                        </div>
+                    </section>
+
+
+                    <section class="switch-part switch-part4">
+
+                        <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
+                    </section>
+
+                </div>
+            </div>
+        </header>
+    </div>
+</div>
+<div class="mid-col">
+<nav id="mobile-nav">
+    <div class="overlay">
+        <div class="slider-trigger"></div>
+        <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Tommy</a></h1>
+    </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+
+                <img src="/img/avatar.png" class="js-avatar" style="width: 100%; height: 100%; opacity: 1;">
+
+            </a>
+            <hgroup>
+                <h1 class="header-author"><a href="/" title="回到主页">Tommy</a></h1>
+            </hgroup>
+
+            <nav class="header-menu">
+                <ul>
+
+                    <li><a href="/">主页</a></li>
+
+                    <li><a href="/archives/">所有文章</a></li>
+
+                    <li><a href="/tags/">标签云</a></li>
+
+                    <li><a href="/about/">关于我</a></li>
+
+                    <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+
+                    <a class="github" target="_blank" href="https://github.com/maochunguang" title="github">github</a>
+
+                    <a class="google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+
+                    <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+
+                </div>
+            </nav>
+        </header>
+    </div>
+</nav>
+<div class="body-wrap">
+<article id="post-hexo-githup-blog" class="article article-type-post" itemscope itemprop="blogPost">
+
+    <div class="article-meta">
+        <a href="/2015/12/20/hexo-githup-blog/" class="article-date">
+            <time datetime="2015-12-20T14:35:04.000Z" itemprop="datePublished">2015-12-20</time>
+        </a>
+    </div>
+
+    <div class="article-inner">
+
+        <input type="hidden" class="isFancy"/>
+
+
+        <header class="article-header">
+
+
+            <h1 class="article-title" itemprop="name">
+                Hexo和github打造个人博客
+            </h1>
+
+
+        </header>
+
+        <div class="article-info article-info-post">
+
+            <div class="article-category tagcloud">
+                <a class="article-category-link" href="/categories/编程语言/">编程语言</a>
+            </div>
+
+
+            <div class="article-tag tagcloud">
+                <ul class="article-tag-list">
+                    <li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+
+        <div class="article-entry" itemprop="articleBody">
+
+
+            <p><strong> hexo和github打造个人博客 ：</strong>
+                <Excerpt in index
+                | 首页摘要><br> 使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……
+            </p>
+            <ul>
+                <li><a id="more"></a>
+                    <The rest of contents
+                    | 余下全文>
+
+                </li>
+            </ul>
+            <p>##说明<br> 自己在使用hexo搭建静态博客的时候踩了许多坑,最终去官网看教程搞定了,<br> 建议用hexo搭建个人博客的时候,最好看清教程的日期和使用的版本,这样就<br>
+                不会因为版本的不同导致的问题了.建议先去hexo官网了解一下<br> <a href="https://hexo.io/zh-cn/"><strong>hexo官网</strong></a></p>
+
+            <h2 id="1-_u51C6_u5907_u5DE5_u4F5C"><a href="#1-_u51C6_u5907_u5DE5_u4F5C" class="headerlink"
+                                                   title="1.准备工作"></a>1.准备工作</h2>
+            <ol>
+                <li>安装nodejs
+                    <ul>
+                        <li>去官网下载nodejs安装(推荐安装0.12.x),安装之后在命令行 node -v,如果成功说明node环境ok,不成功就去环境变量配置一下.</li>
+                    </ul>
+                </li>
+                <li>安装hexo
+                    <ul>
+                        <li>使用命令 npm install hexo -g,执行hexo -v 查看版本,本教程适合<strong>3.1.1</strong>版本</li>
+                    </ul>
+                </li>
+                <li>安装git
+                    <ul>
+                        <li>去官网下载git安装,不会自行百度</li>
+                    </ul>
+                </li>
+                <li>配置git
+                    <ul>
+                        <li>配置ssh私钥,上传到github上</li>
+                    </ul>
+                </li>
+            </ol>
+            <h2 id="2-github-pages_u548Cgitcafe-page_u7684_u8BF4_u660E"><a
+                    href="#2-github-pages_u548Cgitcafe-page_u7684_u8BF4_u660E" class="headerlink"
+                    title="2.github-pages和gitcafe-page的说明"></a>2.github-pages和gitcafe-page的说明</h2>
+            <ol>
+                <li>github有两种主页,一种是github-page(个人主页),一种是项目主页,本教程针对个人主页</li>
+                <li>gitcafe-page的个人主页只是在项目下有一个gitcafe-pages的分支,部署成功后访问主页即可</li>
+                <li>github-page需要将hexo博客发布到repository的master(主干)即可</li>
+                <li>gitcafe需要将hexo博客发布到repository的gitcafe-pages的分支</li>
+                <li>github的个人主页要求repository的名称和username一致，加入username是tom，则repository的名称为tom.github.io<h2
+                        id="3-_u4F7F_u7528hexo_u5199_u535A_u5BA2"><a href="#3-_u4F7F_u7528hexo_u5199_u535A_u5BA2"
+                                                                     class="headerlink" title="3.使用hexo写博客"></a>3.使用hexo写博客
+                </h2>
+                    <ul>
+                        <li>新建一个文件夹myblog,</li>
+                        <li>右键git bash here使用git的shell</li>
+                        <li>在shell中输入hexo init,回车执行</li>
+                        <li>在shell中输入hexo g ,回车</li>
+                        <li>在shell中hexo s,回车</li>
+                        <li>去浏览器访问<a href="http://localhost:4000,访问到主页,然后在shell中ctrl">http://localhost:4000,访问到主页,然后在shell中ctrl</a>
+                            c停止
+                        </li>
+                        <li>在shell中hexo new “first-blog”,回车</li>
+                        <li>在shell中hexo g ,回车</li>
+                        <li>在shell中hexo s ,回车,在访问</li>
+                        <li>ok,在本地测试就没问题了</li>
+                    </ul>
+                </li>
+            </ol>
+            <h2 id="4-_u53D1_u5E03_u5230github_u548Cgitcafe"><a href="#4-_u53D1_u5E03_u5230github_u548Cgitcafe"
+                                                                class="headerlink" title="4.发布到github和gitcafe"></a>4.发布到github和gitcafe
+            </h2><pre><code>- 打开项目根部录下的.config.yml,找到deploy,修改如下:
+        </code></pre>
+            <figure class="highlight less">
+                <table>
+                    <tr>
+                        <td class="gutter">
+                            <pre><span class="line">1</span><br><span class="line">2</span><br><span
+                                    class="line">3</span><br><span class="line">4</span><br><span
+                                    class="line">5</span><br></pre>
+                        </td>
+                        <td class="code">
+                            <pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line"> - <span
+                                    class="attribute">type</span>: git</span><br><span class="line">   <span
+                                    class="attribute">repo</span>: git<span class="variable">@github</span>.<span
+                                    class="attribute">com</span>:yourname/yourname.github.io.git,master</span><br><span
+                                    class="line"> - <span class="attribute">type</span>: git</span><br><span
+                                    class="line">   <span class="attribute">repo</span>: git<span class="variable">@gitcafe</span>.<span
+                                    class="attribute">com</span>:yourname/yourname.git,gitcafe-pages</span><br></pre>
+                        </td>
+                    </tr>
+                </table>
+            </figure>
+<pre><code>- 如果只发布到github或者gitcafe上,修改如下:git的branch是master,gitcafe的是gitcafe-pages
+</code></pre>
+            <figure class="highlight delphi">
+                <table>
+                    <tr>
+                        <td class="gutter">
+                            <pre><span class="line">1</span><br><span class="line">2</span><br><span
+                                    class="line">3</span><br><span class="line">4</span><br><span
+                                    class="line">5</span><br></pre>
+                        </td>
+                        <td class="code">
+                            <pre><span class="line">deploy:</span><br><span class="line">  <span
+                                    class="keyword">type</span>: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br><span
+                                    class="line">  branch: [branch]</span><br><span class="line">  <span
+                                    class="keyword">message</span>: [<span
+                                    class="keyword">message</span>]</span><br></pre>
+                        </td>
+                    </tr>
+                </table>
+            </figure>
+<pre><code>访问地址就是 http://tom.github.io/
+</code></pre>
+            <h2 id="5-_u5E38_u89C1_u95EE_u9898"><a href="#5-_u5E38_u89C1_u95EE_u9898" class="headerlink"
+                                                   title="5.常见问题"></a>5.常见问题</h2>
+            <ol>
+                <li>部署时出现git not found
+                    <ul>
+                        <li>npm install hexo-deployer-git –save 安装依赖包</li>
+                    </ul>
+                </li>
+            </ol>
+            <h2 id="6-_u8BE6_u7EC6_u8BBE_u7F6E"><a href="#6-_u8BE6_u7EC6_u8BBE_u7F6E" class="headerlink"
+                                                   title="6.详细设置"></a>6.详细设置</h2><pre><code>每个人对自己的博客都有不一样的要求，比如主题，分类，标签，评论插件的选择，
+            这些对程序员的你来说，都是小菜一碟，下面是官网教程：
+        </code></pre>
+            <p><a href="https://hexo.io/docs/">hexo官方文档</a></p>
+
+            <p>博客效果可以看我的个人博客 <a href="http://maocg.gitcafe.io/archives/">我的个人博客</a></p>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2015/12/20/hexo-githup-blog/">Hexo和github打造个人博客</a></p>
+
+        <p><span>文章作者:</span><a href="/" title="访问 Tommy 的个人博客">Tommy</a></p>
+
+        <p><span>发布时间:</span>2015年12月20日 - 22时35分</p>
+
+        <p><span>最后更新:</span>2016年04月22日 - 00时26分</p>
+
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2015/12/20/hexo-githup-blog/" title="Hexo和github打造个人博客">http://geekwalker.cn/2015/12/20/hexo-githup-blog/</a>
+            <span class="copy-path"
+                  data-clipboard-text="原文: http://geekwalker.cn/2015/12/20/hexo-githup-blog/　　作者: Tommy"
+                  title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license"
+                                                                        href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/"
+                                                                        title="中国大陆 (CC BY-NC-SA 3.0 CN)"
+                                                                        target="_blank">"署名-非商用-相同方式共享 3.0"</a>
+            转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+    <nav id="article-nav">
+
+        <a href="/2016/04/17/coder-study/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption"><</strong>
+
+            <div class="article-nav-title">
+
+                程序员入门指南
+
+            </div>
+        </a>
+
+
+        <a href="/2015/12/19/mongodb-study/" id="article-nav-older" class="article-nav-link-wrap">
+            <div class="article-nav-title">Mongodb从入门到精通</div>
+            <strong class="article-nav-caption">></strong>
+        </a>
+
+    </nav>
+
+
+</article>
+
+<div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc">
+        <li class="toc-item toc-level-2"><a class="toc-link" href="#1-_u51C6_u5907_u5DE5_u4F5C"><span
+                class="toc-number">1.</span> <span class="toc-text">1.准备工作</span></a></li>
+        <li class="toc-item toc-level-2"><a class="toc-link" href="#2-github-pages_u548Cgitcafe-page_u7684_u8BF4_u660E"><span
+                class="toc-number">2.</span> <span class="toc-text">2.github-pages和gitcafe-page的说明</span></a></li>
+        <li class="toc-item toc-level-2"><a class="toc-link" href="#3-_u4F7F_u7528hexo_u5199_u535A_u5BA2"><span
+                class="toc-number">3.</span> <span class="toc-text">3.使用hexo写博客</span></a></li>
+        <li class="toc-item toc-level-2"><a class="toc-link" href="#4-_u53D1_u5E03_u5230github_u548Cgitcafe"><span
+                class="toc-number">4.</span> <span class="toc-text">4.发布到github和gitcafe</span></a></li>
+        <li class="toc-item toc-level-2"><a class="toc-link" href="#5-_u5E38_u89C1_u95EE_u9898"><span
+                class="toc-number">5.</span> <span class="toc-text">5.常见问题</span></a></li>
+        <li class="toc-item toc-level-2"><a class="toc-link" href="#6-_u8BE6_u7EC6_u8BBE_u7F6E"><span
+                class="toc-number">6.</span> <span class="toc-text">6.详细设置</span></a></li>
+    </ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function () {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+<div class="bdsharebuttonbox">
+    <a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+    <a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config = {"common": {"bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "2", "bdSize": "24"}, "share": {}};
+with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+
+<section id="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'maochunguang'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+</section>
+
+
+<div class="scroll" id="post-nav-button">
+
+    <a href="/2016/04/17/coder-study/" title="上一篇: 程序员入门指南">
+        <i class="fa fa-angle-left"></i>
+    </a>
+
+    <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+    <a href="/2015/12/19/mongodb-study/" title="下一篇: Mongodb从入门到精通">
+        <i class="fa fa-angle-right"></i>
+    </a>
+
+</div>
+<ul class="post-list">
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/26/ubuntu-dev-config/">Ubuntu16开发环境配置</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/26/sublime-config/">Sublime详细配置</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/24/dream/">我的梦想</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/23/js-study/">Js秘密花园</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/19/hexo-coding-blog/">Hexo和coding打造静态博客</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/17/coder-study/">程序员入门指南</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2015/12/20/hexo-githup-blog/">Hexo和github打造个人博客</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2015/12/19/mongodb-study/">Mongodb从入门到精通</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2015/12/19/node-study/">Node学习</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2015/12/17/hello-world/">Hello World</a></li>
+</ul>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    $(".post-list").addClass("toc-article");
+    // $(".post-list-item a").attr("target","_blank");
+    $("#post-nav-button > a:nth-child(2)").click(function () {
+        $(".fa-bars, .fa-times").toggle();
+        $(".post-list").toggle(300);
+        if ($(".toc").length > 0) {
+            $("#toc, #tocButton").toggle(200, function () {
+                if ($(".switch-area").is(":visible")) {
+                    $("#toc, .switch-btn, .switch-area").toggle();
+                    $("#tocButton").attr("value", valueHide);
+                }
+            })
+        }
+        else {
+            $(".switch-btn, .switch-area").fadeToggle(300);
+        }
+    })
+</script>
+
+
+<script>
+
+</script>
+</div>
+<footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Tommy
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a
+                    href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+
+        <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit">网站到访数:
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+
+
+            <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+
+        </div>
+
+    </div>
+</footer>
+
+</div>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function () {
+        var backgroundnum = 24;
+        var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+        $("#mobile-nav").css({"background-image": backgroundimg, "background-size": "cover", "background-position": "center"});
+        $(".left-col").css({"background-image": backgroundimg, "background-size": "cover", "background-position": "center"});
+    })
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function () {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        }
+        ;
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script language="javascript">
+    $(function () {
+        $("a[title]").each(function () {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+                    function () {
+                        var offset = a.offset();
+                        $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                            top: offset.top - a.outerHeight() - 15,
+                            left: offset.left + a.outerWidth() / 2 + 1
+                        }).fadeIn(function () {
+                            var pop = $(this);
+                            setTimeout(function () {
+                                pop.remove();
+                            }, pop.text().length * 800);
+                        });
+                    }, function () {
+                        $("#anchortitlecontainer").remove();
+                    });
+        });
+    });
+</script>
+
+
+</div>
+</body>
+</html>

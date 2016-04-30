@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="L6Lm9d5Crl"/>
+
+    <title>Mongodb从入门到精通 | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="mongodb从入门到精通     mongodb日常使用的一些知识，增删改查，索引，分片。">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Mongodb从入门到精通">
+    <meta property="og:url" content="http://geekwalker.cn/2015/12/19/mongodb-study/index.html">
+    <meta property="og:site_name" content="Blog">
+    <meta property="og:description" content="mongodb从入门到精通     mongodb日常使用的一些知识，增删改查，索引，分片。">
+    <meta property="og:updated_time" content="2016-04-21T16:26:46.214Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mongodb从入门到精通">
+    <meta name="twitter:description" content="mongodb从入门到精通     mongodb日常使用的一些知识，增删改查，索引，分片。">
+
+    <link rel="alternative" href="/atom.xml" title="Blog" type="application/atom+xml">
+
+
+    <link rel="icon" href="/img/favicon.png">
+
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+    <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet"/>
+    <script>
+        var yiliaConfig = {
+            fancybox: true,
+            animate: false,
+            isHome: false,
+            isPost: true,
+            isArchive: false,
+            isTag: false,
+            isCategory: false,
+            open_in_new: false
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+<div class="left-col">
+    <div class="overlay"></div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+
+                <img src="/img/avatar.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+
+            </a>
+
+            <hgroup>
+                <h1 class="header-author"><a href="/">Tommy</a></h1>
+            </hgroup>
+
+
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+
+
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+
+                        <li>友情链接</li>
+
+
+                        <li>关于我</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div id="switch-area" class="switch-area">
+                <div class="switch-wrap">
+                    <section class="switch-part switch-part1">
+                        <nav class="header-menu">
+                            <ul>
+
+                                <li><a href="/">主页</a></li>
+
+                                <li><a href="/archives/">所有文章</a></li>
+
+                                <li><a href="/tags/">标签云</a></li>
+
+                                <li><a href="/about/">关于我</a></li>
+
+                            </ul>
+                        </nav>
+                        <nav class="header-nav">
+                            <ul class="social">
+
+                                <a class="fl github" target="_blank" href="https://github.com/maochunguang"
+                                   title="github">github</a>
+
+                                <a class="fl google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+
+                                <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+
+                            </ul>
+                        </nav>
+                    </section>
+
+
+                    <section class="switch-part switch-part2">
+                        <div class="widget tagcloud" id="js-tagcloud">
+                            <a href="/tags/dbs/" style="font-size: 10px;">dbs</a> <a href="/tags/javacript/"
+                                                                                     style="font-size: 10px;">javacript</a>
+                            <a href="/tags/node/" style="font-size: 15px;">node</a> <a href="/tags/others/"
+                                                                                       style="font-size: 20px;">others</a>
+                        </div>
+                    </section>
+
+
+                    <section class="switch-part switch-part3">
+                        <div id="js-friends">
+
+                            <a target="_blank" class="main-nav-link switch-friends-link"
+                               href="http://MOxFIVE.github.io/">MOxFIVE</a>
+
+                            <a target="_blank" class="main-nav-link switch-friends-link"
+                               href="http://blog.waydrow.com/">waydrow</a>
+
+                        </div>
+                    </section>
+
+
+                    <section class="switch-part switch-part4">
+
+                        <div id="js-aboutme">爱动漫,爱游戏,爱编程,爱运动,爱的太多了!</div>
+                    </section>
+
+                </div>
+            </div>
+        </header>
+    </div>
+</div>
+<div class="mid-col">
+<nav id="mobile-nav">
+    <div class="overlay">
+        <div class="slider-trigger"></div>
+        <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Tommy</a></h1>
+    </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+
+                <img src="/img/avatar.png" class="js-avatar" style="width: 100%; height: 100%; opacity: 1;">
+
+            </a>
+            <hgroup>
+                <h1 class="header-author"><a href="/" title="回到主页">Tommy</a></h1>
+            </hgroup>
+
+            <nav class="header-menu">
+                <ul>
+
+                    <li><a href="/">主页</a></li>
+
+                    <li><a href="/archives/">所有文章</a></li>
+
+                    <li><a href="/tags/">标签云</a></li>
+
+                    <li><a href="/about/">关于我</a></li>
+
+                    <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+
+                    <a class="github" target="_blank" href="https://github.com/maochunguang" title="github">github</a>
+
+                    <a class="google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+
+                    <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+
+                </div>
+            </nav>
+        </header>
+    </div>
+</nav>
+<div class="body-wrap">
+<article id="post-mongodb-study" class="article article-type-post" itemscope itemprop="blogPost">
+
+<div class="article-meta">
+    <a href="/2015/12/19/mongodb-study/" class="article-date">
+        <time datetime="2015-12-19T15:21:23.000Z" itemprop="datePublished">2015-12-19</time>
+    </a>
+</div>
+
+<div class="article-inner">
+
+<input type="hidden" class="isFancy"/>
+
+
+<header class="article-header">
+
+
+    <h1 class="article-title" itemprop="name">
+        Mongodb从入门到精通
+    </h1>
+
+
+</header>
+
+<div class="article-info article-info-post">
+
+    <div class="article-category tagcloud">
+        <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
+    </div>
+
+
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list">
+            <li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dbs/">dbs</a></li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+
+<div class="article-entry" itemprop="articleBody">
+
+
+<p><strong> mongodb从入门到精通</strong>
+    <Excerpt in index
+    | 首页摘要><br> mongodb日常使用的一些知识，增删改查，索引，分片。
+</p>
+<ul>
+    <li><a id="more"></a>
+        <The rest of contents
+        | 余下全文>
+
+    </li>
+</ul>
+<h3 id="mongodb_u5B66_u4E60"><a href="#mongodb_u5B66_u4E60" class="headerlink" title="mongodb学习"></a>mongodb学习</h3>
+
+<h2 id="1-mongodb_u7279_u6027"><a href="#1-mongodb_u7279_u6027" class="headerlink" title="1.mongodb特性"></a>1.mongodb特性
+</h2><pre><code>1）mongo是一个面向文档的数据库，它集合了nosql和sql数据库两方面的特性。
+    2）所有实体都是在首次使用时创建。
+    3）没有严格的事务特性，但是它保证任何一次数据变更都是原子性的。
+    4）也没有固定的数据模型
+    5）mongo以javascript作为命令行执行引擎，所以利用shell进行复杂的计算和查询时会相当的慢。
+    6）mongo本身支持集群和数据分片
+    7）mongo是c++实现的，支持windows mac linux等主流操作系统
+    8）性能优越，速度快
+</code></pre>
+<h2 id="2-mongo_u5E38_u7528_u64CD_u4F5C"><a href="#2-mongo_u5E38_u7528_u64CD_u4F5C" class="headerlink"
+                                            title="2.mongo常用操作"></a>2.mongo常用操作</h2><pre><code>1.增删操作
+    db.user.insert({name:&apos;aaaa&apos;,age:30});
+    db.user.save({name:&apos;aaaa&apos;,age:30});
+    db.collection.insertOne({});(3.2新特性)
+    db.collection.deleteOne(&lt;filter&gt;,{});(3.2新特性)
+    db.collection.remove({name:&apos;aaa&apos;});
+    db.collection.remove();(删除全部)
+
+    2.更新操作
+    db.users.update ({ &quot; name&quot; : &quot;joe&quot; }, joe );
+    db.users.update ({ &quot; name&quot; : &quot;joe&quot; }, joe, true );------upsert模式
+    db.users.update ({ &quot; name&quot; : &quot;joe&quot; }, joe, true ，true);------MULTI模式
+</code></pre>
+<blockquote>
+    <p>update是对文档替换，而不是局部修改默认情况update更新匹配的第一条文档，multi模式更新所有匹配的 </p>
+</blockquote>
+<pre><code>3.查询操作
+    -- 普通查询
+    db.user.find();
+    db.user.find({name:&apos;aaa&apos;});
+    db.user.findOne({name:&apos;aaa&apos;});
+
+    -- 模糊查询
+    db.UserInfo.find({userName :/A/}) （名称%A%）
+    db.UserInfo.find({userName :/^A/}) (名称A%)
+
+    4.操作符
+    1.$lt, $lte,$gt, $gte(&lt;, &lt;=, &gt;, &gt;= )
+    2.$all 数组中的元素是否完全匹配 db.things.find( { a: { $all: [ 2, 3 ] } } );
+    3.$exists 可选：true，false db.things.find( { a : { $exists : true } } );
+    4.$mod 取模：a % 10 == 1 db.things.find( { a : { $mod : [ 10 , 1 ] } } );
+    5.$ne 取反：即not equals db.things.find( { x : { $ne : 3 } } );
+    6.$in 类似于SQL的IN操作 db.things.find({j:{$in: [2,4,6]}});
+    7.$nin $in的反操作，即SQL的 NOT IN db.things.find({j:{$nin: [2,4,6]}});
+    8.$nor $or的反操作，即不匹配(a或b) db.things.find( { name : &quot;bob&quot;, $nor : [ { a : 1 },{ b : 2 }]})
+    9.$or Or子句，注意$or不能嵌套使用 db.things.find( { name : &quot;bob&quot; , $or : [ { a : 1 },{ b : 2 }]})
+    10.$size 匹配数组长度 db.things.find( { a : { $size: 1 } } );
+    11.$type 匹配子键的数据类型，详情请看 db.things.find( { a : { $type : 2 } } );
+
+    5.数组查询
+    $size 用来匹配数组长度（即最大下标）
+    // 返回comments包含5个元素的文档
+    db.posts.find({}, {comments:{‘$size’: 5}});
+    // 使用冗余字段来实现
+    db.posts.find({}, {‘commentCount’: { ‘$gt’: 5 }});
+    $slice 操作符类似于子键筛选，只不过它筛选的是数组中的项
+    // 仅返回数组中的前5项
+    db.posts.find({}, {comments:{‘$slice’: 5}});
+    // 仅返回数组中的最后5项
+    db.posts.find({}, {comments:{‘$slice’: -5}});
+    // 跳过数组中的前20项，返回接下来的10项
+    db.posts.find({}, {comments:{‘$slice’: [20, 10]}});
+    // 跳过数组中的最后20项，返回接下来的10项
+    db.posts.find({}, {comments:{‘$slice’: [-20, 10]}});
+    MongoDB 允许在查询中指定数组的下标，以实现更加精确的匹配
+    // 返回comments中第1项的by子键为Abe的所有文档
+    db.posts.find( { &quot;comments.0.by&quot; : &quot;Abe&quot; } );
+</code></pre>
+<h2 id="3-_u7D22_u5F15_u7684_u4F7F_u7528"><a href="#3-_u7D22_u5F15_u7684_u4F7F_u7528" class="headerlink"
+                                             title="3.索引的使用"></a>3.索引的使用</h2><pre><code>1.创建索引
+    db.things.ensureIndex ({&apos;j&apos;: 1});
+    创建子文档 索引
+    db.things.ensureIndex ({&apos;user.Name&apos; : - 1});
+    创建 复合 索引
+    db.things.ensureIndex ({
+    &apos;j&apos; : 1 , // 升序
+    &apos;x&apos; : - 1 // 降序
+    });
+    如果 您的 find 操作只用到了一个键，那么索引方向是无关紧要的
+    当创建复合索引的时候，一定要谨慎斟酌每个键的排序方向
+
+    2.修改索引
+    修改索引，只需要重新 运行索引 命令即可
+    如果索引已经存在则会 重建， 不存在的索引会被 添加
+    db . things . ensureIndex ({
+    --- 原来的索引会 重建
+    &apos;user.Name &apos; : - 1 ,
+    --- 新增一个升序 索引
+    &apos;user.Name &apos; : 1 ,
+    --- 为 Age 新建降序 索引
+    &apos;user.Age &apos; : - 1
+    },
+    打开后台执行
+    { ‘background&apos; : true}
+    );
+    重建索引
+    db. things .reIndex();
+    3.删除索引
+    删除集合中的所有 索引
+    db . things . dropIndexes ();
+    删除指定键的索引
+    db.things.dropIndex ({
+    x : 1 ,
+    y : - 1
+    });
+    使用 command 删除指定键的 索引
+    db.runCommand ({
+    dropIndexes : &apos;foo &apos; ,
+    index : { y : 1 }
+    });
+    使用 command 删除所有 索引
+    db . runCommand ({dropIndexes : &apos;foo &apos; ,index : &apos;*‘})
+    如果是删除集合中所有的文档（remove）则不会影响索引，当有新文档插入时，索引就会重建。
+    4.唯一索引
+    创建唯一索引，同时这也是一个符合唯一索引
+    db.things.ensureIndex (
+    {
+    &apos;firstName &apos; : 1 ,
+    &apos;lastName &apos; : 1
+    }, {
+    指定为唯一索引
+    &apos;unique &apos; : true ,
+    删除重复 记录
+    &apos;dropDups &apos; : true
+    });
+
+    5、强制使用索引
+    强制使用索引 a 和 b
+    db.collection.find ({
+    &apos;a &apos; : 4 ,
+    &apos;b &apos; : 5 ,
+    &apos;c &apos; : 6
+    }). hint ({
+    &apos;a &apos; : 1 ,
+    &apos;b &apos; : 1
+    });
+    强制不使用任何 索引
+    db.collection.find ().hint ({
+    &apos;$ natural&apos; : 1
+    });
+</code></pre>
+<hr>
+<p>索引总结:<br> 索引可以加速查询；<br> 单个索引无需在意其索引方向；<br> 多键索引需要慎重考虑每个索引的方向；<br> 做海量数据更新时应当先卸载所有索引，待数据更新完成后再重建索引；<br>
+    不要试图为每个键都创建索引，应考虑实际需要，并不是索引越多越好；<br> 唯一索引可以用来消除重复记录；<br> 地理空间索引是没有单位的，其内部实现是基本的勾股定理算法</p>
+
+<h2 id="4-mongo_u6570_u636E_u5E93_u7BA1_u7406"><a href="#4-mongo_u6570_u636E_u5E93_u7BA1_u7406" class="headerlink"
+                                                  title="4.mongo数据库管理"></a>4.mongo数据库管理</h2><pre><code>- 安全与认证
+    1、 默认为无认证，启动用登录 shell ；
+    2、 添加账号；
+    3、 关闭 shell 、关闭 MongoDB ；
+    4、 为 MongoDB 增加 — auth 参数；
+    5、 重 启 MongoDB ；
+    6、 登录 shell ，此时就需要认证了
+
+    - 冷备份
+    1、关闭MongoDB引擎
+    2、拷贝数据库文件夹及文件
+    3、恢复时反向操作即可
+    -- 优点：可以完全保证数据完整性；
+    -- 缺点：需要数据库引擎离线
+    - 热备份
+    1、 保持MongoDB为运行状态
+    2、使用mongodump备份数据
+    3、使用mongorestore恢复数据
+    -- 优点：数据库引擎无须离线
+    --缺点：不能保证数据完整性，操作时会降低MongoDB性能
+
+    - 主从复制备份
+    1、创建主从复制机制
+    2、配置完成后数据会自动同步
+    3、恢复途径很多
+    -- 优点：可以保持MongoDB处于联机状态，不影响性能
+    -- 缺点：在数据写入密集的情况下可能无法保证数据完整性
+
+    - 修复
+    db.repairDatabase();
+    修复数据库还可以起到压缩数据的作用；
+    修复数据库的操作相当耗时，万不得已请不要使用；
+    建议经常做数据备份；
+</code></pre>
+<h2 id="5-mongo_u590D_u5236_28_u96C6_u7FA4_29"><a href="#5-mongo_u590D_u5236_28_u96C6_u7FA4_29" class="headerlink"
+                                                  title="5.mongo复制(集群)"></a>5.mongo复制(集群)</h2><pre><code>1、主从复制
+    选项 说明
+    --only 作用是限定仅复制指定的某个数据库
+    --slavedelay 为复制设置操作延迟，单位为秒
+    --fastsync 以主节点的数据快照为基础启动从节点。
+    --autoresync 当主从节点数据不一致时，是否自动重新同步
+    --oplogSize 设定主节点中的oplog的容量，单位是MB
+
+    2、副本集
+    与普通主从复制集群相比，具有自动检测机制
+    需要使用—replSet 选项指定副本同伴
+    任何时候，副本集当中最多只允许有1个活跃节点
+
+    3、读写分离
+    将密集的读取操作分流到从节点上，降低主节点的负载
+    默认情况下，从节点是不允许处理
+    客户端请求的，需要使用—slaveOkay打开
+    不适用于实时性要求非常高的应用
+
+    4、工作原理—— OPLOG
+    oplog保存在local数据库中，oplog就在其中的
+    oplog.$main集合内保存。该集合的每个文档都记录了主节点上执行的一个操作，其键定义如下：
+    ts：操作时间戳，占用4字节
+    op：操作类型，占用1字节
+    ns：操作对象的命名空间（或理解为集合全名）
+    o：进一步指定所执行的操作，例如插入
+
+    5、工作原理—— 同步
+    从节点首次启动时，做完整同步
+    主节点数据发生变化时，做增量同步
+    从节点与主节点数据严重不一致时，做完整同步
+
+    6、复制管理—— 诊断
+    db.printReplicationInfo()
+    在主节点上使用
+    返回信息是oplog的大小以及各种操作的耗时、空间占用等数据
+    在从节点上使用
+    db.printSlaveReplicationInfo()
+    返回信息是从节点的数据源列表、同步延迟时间等
+
+    7、复制管理—— 变更OPLOG 容量
+    在主节点上使用
+    设定—oplogSize参数
+    重启MongoDB
+
+    8、复制管理—— 复制认证
+    主从节点皆须配置
+    存储在local.system.users
+    优先尝试repl用户
+    主从节点的用户配置必须保持一致
+</code></pre>
+<h2 id="6-MONGODB_u5206_u7247"><a href="#6-MONGODB_u5206_u7247" class="headerlink" title="6.MONGODB分片"></a>6.MONGODB分片
+</h2><pre><code>- 1、分片与自动分片
+    分片是指将数据拆分，分散到不同的实例上进行负载分流的做法。我们常说的“分表”、“分
+    库”、“分区”等概念都属于分片的实际体现。
+    传统分片做法是手工分表、分库。自动分片技术是根据指定的“片键”自动拆分数据并维护数据
+    请求路由的过程。
+
+    递增片键--连续 不均匀 写入集中 分流较差
+    随机片键--不连续 均匀 写入分散 分流较好
+    三个组成部分
+    --片
+    保存子集数据的容器
+    --mongos
+    MongoDB的路由器进程
+    --配置服务器
+    分片集群的配置信息
+    - 2、创建分片
+    --启动配置服务器
+    可以创建一个或多个
+    --添加片
+    每个片都应该是副本集
+    --物理服务器
+    性能、安全和稳定性
+    - 3、管理分片
+    --查询分片
+    db.shards.find();
+    --数据库
+    db.databases.find();
+    --块
+    db.chunks.find();
+    --分片状态
+    db.printShardingStatus();
+    --删除片
+    db.runCommand({ “removeshard” : “ip:port” });
+</code></pre>
+<hr>
+
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+    <p><span>本文标题:</span><a href="/2015/12/19/mongodb-study/">Mongodb从入门到精通</a></p>
+
+    <p><span>文章作者:</span><a href="/" title="访问 Tommy 的个人博客">Tommy</a></p>
+
+    <p><span>发布时间:</span>2015年12月19日 - 23时21分</p>
+
+    <p><span>最后更新:</span>2016年04月22日 - 00时26分</p>
+
+    <p>
+        <span>原始链接:</span><a class="post-url" href="/2015/12/19/mongodb-study/" title="Mongodb从入门到精通">http://geekwalker.cn/2015/12/19/mongodb-study/</a>
+        <span class="copy-path" data-clipboard-text="原文: http://geekwalker.cn/2015/12/19/mongodb-study/　　作者: Tommy"
+              title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+        <script src="/js/clipboard.min.js"></script>
+        <script> var clipboard = new Clipboard('.copy-path'); </script>
+    </p>
+    <p>
+        <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license"
+                                                                    href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/"
+                                                                    title="中国大陆 (CC BY-NC-SA 3.0 CN)" target="_blank">"署名-非商用-相同方式共享
+        3.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+<nav id="article-nav">
+
+    <a href="/2015/12/20/hexo-githup-blog/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"><</strong>
+
+        <div class="article-nav-title">
+
+            Hexo和github打造个人博客
+
+        </div>
+    </a>
+
+
+    <a href="/2015/12/19/node-study/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Node学习</div>
+        <strong class="article-nav-caption">></strong>
+    </a>
+
+</nav>
+
+
+</article>
+
+<div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc">
+        <li class="toc-item toc-level-3"><a class="toc-link" href="#mongodb_u5B66_u4E60"><span
+                class="toc-number">1.</span> <span class="toc-text">mongodb学习</span></a></li>
+    </ol>
+    </li>
+    <li class="toc-item toc-level-2"><a class="toc-link" href="#1-mongodb_u7279_u6027"><span class="toc-number"></span>
+        <span class="toc-text">1.mongodb特性</span></a></li>
+    <li class="toc-item toc-level-2"><a class="toc-link" href="#2-mongo_u5E38_u7528_u64CD_u4F5C"><span
+            class="toc-number"></span> <span class="toc-text">2.mongo常用操作</span></a></li>
+    <li class="toc-item toc-level-2"><a class="toc-link" href="#3-_u7D22_u5F15_u7684_u4F7F_u7528"><span
+            class="toc-number"></span> <span class="toc-text">3.索引的使用</span></a></li>
+    <li class="toc-item toc-level-2"><a class="toc-link" href="#4-mongo_u6570_u636E_u5E93_u7BA1_u7406"><span
+            class="toc-number"></span> <span class="toc-text">4.mongo数据库管理</span></a></li>
+    <li class="toc-item toc-level-2"><a class="toc-link" href="#5-mongo_u590D_u5236_28_u96C6_u7FA4_29"><span
+            class="toc-number"></span> <span class="toc-text">5.mongo复制(集群)</span></a></li>
+    <li class="toc-item toc-level-2"><a class="toc-link" href="#6-MONGODB_u5206_u7247"><span class="toc-number"></span>
+        <span class="toc-text">6.MONGODB分片</span></a>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function () {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+<div class="bdsharebuttonbox">
+    <a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+    <a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config = {"common": {"bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "2", "bdSize": "24"}, "share": {}};
+with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+
+<section id="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'maochunguang'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+</section>
+
+
+<div class="scroll" id="post-nav-button">
+
+    <a href="/2015/12/20/hexo-githup-blog/" title="上一篇: Hexo和github打造个人博客">
+        <i class="fa fa-angle-left"></i>
+    </a>
+
+    <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+    <a href="/2015/12/19/node-study/" title="下一篇: Node学习">
+        <i class="fa fa-angle-right"></i>
+    </a>
+
+</div>
+<ul class="post-list">
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/26/ubuntu-dev-config/">Ubuntu16开发环境配置</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/26/sublime-config/">Sublime详细配置</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/24/dream/">我的梦想</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/23/js-study/">Js秘密花园</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/19/hexo-coding-blog/">Hexo和coding打造静态博客</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2016/04/17/coder-study/">程序员入门指南</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2015/12/20/hexo-githup-blog/">Hexo和github打造个人博客</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2015/12/19/mongodb-study/">Mongodb从入门到精通</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2015/12/19/node-study/">Node学习</a></li>
+    <li class="post-list-item"><a class="post-list-link" href="/2015/12/17/hello-world/">Hello World</a></li>
+</ul>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    $(".post-list").addClass("toc-article");
+    // $(".post-list-item a").attr("target","_blank");
+    $("#post-nav-button > a:nth-child(2)").click(function () {
+        $(".fa-bars, .fa-times").toggle();
+        $(".post-list").toggle(300);
+        if ($(".toc").length > 0) {
+            $("#toc, #tocButton").toggle(200, function () {
+                if ($(".switch-area").is(":visible")) {
+                    $("#toc, .switch-btn, .switch-area").toggle();
+                    $("#tocButton").attr("value", valueHide);
+                }
+            })
+        }
+        else {
+            $(".switch-btn, .switch-area").fadeToggle(300);
+        }
+    })
+</script>
+
+
+<script>
+
+</script>
+</div>
+<footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Tommy
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a
+                    href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+
+        <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit">网站到访数:
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+
+
+            <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+
+        </div>
+
+    </div>
+</footer>
+
+</div>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function () {
+        var backgroundnum = 24;
+        var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+        $("#mobile-nav").css({"background-image": backgroundimg, "background-size": "cover", "background-position": "center"});
+        $(".left-col").css({"background-image": backgroundimg, "background-size": "cover", "background-position": "center"});
+    })
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function () {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        }
+        ;
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script language="javascript">
+    $(function () {
+        $("a[title]").each(function () {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+                    function () {
+                        var offset = a.offset();
+                        $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                            top: offset.top - a.outerHeight() - 15,
+                            left: offset.left + a.outerWidth() / 2 + 1
+                        }).fadeIn(function () {
+                            var pop = $(this);
+                            setTimeout(function () {
+                                pop.remove();
+                            }, pop.text().length * 800);
+                        });
+                    }, function () {
+                        $("#anchortitlecontainer").remove();
+                    });
+        });
+    });
+</script>
+
+
+</div>
+</body>
+</html>
