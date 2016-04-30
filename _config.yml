@@ -1,0 +1,100 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Blog
+subtitle:
+description: tommy's blog
+author: Tommy
+language: zh-Hans
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://geekwalker.cn
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: true # Transform title into titlecase
+external_link: false # Open external links in new tab
+filename_case: 0
+render_drafts: true
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+  - 开发工具
+  - 编程语言
+  - 学习笔记
+  - 个人随笔
+tag_map:
+  - node
+  - java
+  - linux
+  - dbs
+  - javacript
+  - others
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 8
+pagination_dir: page
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+Plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+- hexo-generator-baidu-sitemap
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+## Themes: http://hexo.io/themes/
+theme: spfk
+
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+- type: git
+  repo: git@github.com:maochunguang/maochunguang.github.io.git,master
+- type: git
+  repo: git@git.coding.net:maocg/maocg.git,coding-pages
