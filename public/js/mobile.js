@@ -1,32 +1,32 @@
-define([], function () {
+define([], function(){
     var _isShow = false;
     var $tag, $aboutme, $friends;
 
-    var ctn, radio, scaleW, idx, basicwrap;
+    var ctn,radio,scaleW,idx,basicwrap;
 
     //第一步 -- 初始化
-    var reset = function () {
+    var reset = function() {
         //设定窗口比率
-        radio = document.body.scrollHeight / document.body.scrollWidth;
+        radio = document.body.scrollHeight/document.body.scrollWidth;
         //设定一页的宽度
         scaleW = document.body.scrollWidth;
         //设定初始的索引值
         idx = 0;
     };
     //第一步 -- 组合
-    var combine = function () {
-        if ($tag) {
+    var combine = function(){
+        if($tag){
             document.getElementById("js-mobile-tagcloud").innerHTML = $tag.innerHTML;
         }
-        if ($aboutme) {
+        if($aboutme){
             document.getElementById("js-mobile-aboutme").innerHTML = $aboutme.innerHTML;
         }
-        if ($friends) {
+        if($friends){
             document.getElementById("js-mobile-friends").innerHTML = $friends.innerHTML;
         }
     }
     //第三步 -- 根据数据渲染DOM
-    var renderDOM = function () {
+    var renderDOM = function(){
         //生成节点
         var $viewer = document.createElement("div");
         $viewer.id = "viewer";
@@ -34,13 +34,13 @@ define([], function () {
         $tag = document.getElementById("js-tagcloud");
         $aboutme = document.getElementById("js-aboutme");
         $friends = document.getElementById("js-friends");
-        var tagStr = $tag ? '<span class="viewer-title">标签</span><div class="viewer-div tagcloud" id="js-mobile-tagcloud"></div>' : "";
-        var friendsStr = $friends ? '<span class="viewer-title">友情链接</span><div class="viewer-div friends" id="js-mobile-friends"></div>' : "";
-        var aboutmeStr = $aboutme ? '<span class="viewer-title">关于我</span><div class="viewer-div aboutme" id="js-mobile-aboutme"></div>' : "";
+        var tagStr = $tag?'<span class="viewer-title">标签</span><div class="viewer-div tagcloud" id="js-mobile-tagcloud"></div>':"";
+        var friendsStr = $friends?'<span class="viewer-title">友情链接</span><div class="viewer-div friends" id="js-mobile-friends"></div>':"";
+        var aboutmeStr = $aboutme?'<span class="viewer-title">关于我</span><div class="viewer-div aboutme" id="js-mobile-aboutme"></div>':"";
 
         $viewer.innerHTML = '<div id="viewer-box">\
         <div class="viewer-box-l">\
-            <div class="viewer-box-wrap">' + aboutmeStr + friendsStr + tagStr + '</div>\
+            <div class="viewer-box-wrap">'+aboutmeStr+friendsStr+tagStr+'</div>\
         </div>\
         <div class="viewer-box-r"></div>\
         </div>';
@@ -52,56 +52,56 @@ define([], function () {
         wrap.style.height = document.body.scrollHeight + 'px';
     };
 
-    var show = function (target, idx) {
+    var show = function(target, idx){
         document.getElementById("viewer").className = "";
-        setTimeout(function () {
+        setTimeout(function(){
             basicwrap.className = "anm-swipe";
-        }, 0);
+        },0);
         _isShow = true;
-        document.ontouchstart = function (e) {
-            if (e.target.tagName != "A") {
+        document.ontouchstart=function(e){
+            if(e.target.tagName != "A"){
                 return false;
             }
         }
     }
 
-    var hide = function () {
+    var hide = function(){
         document.getElementById("viewer-box").className = "";
         _isShow = false;
-        document.ontouchstart = function () {
+        document.ontouchstart=function(){
             return true;
         }
     }
 
     //第四步 -- 绑定 DOM 事件
-    var bindDOM = function () {
+    var bindDOM = function(){
         var scaleW = scaleW;
-
+        
         //滑动隐藏
-        document.getElementById("viewer-box").addEventListener("webkitTransitionEnd", function () {
+        document.getElementById("viewer-box").addEventListener("webkitTransitionEnd", function(){
 
-            if (_isShow == false) {
+            if(_isShow == false){
                 document.getElementById("viewer").className = "hide";
                 _isShow = true;
-            } else {
+            }else{
             }
-
+            
         }, false);
 
         //点击展示和隐藏
-        ctn.addEventListener("touchend", function () {
+        ctn.addEventListener("touchend", function(){
             show();
         }, false);
 
         var $right = document.getElementsByClassName("viewer-box-r")[0];
         var touchStartTime;
         var touchEndTime;
-        $right.addEventListener("touchstart", function () {
-            touchStartTime = +new Date();
+        $right.addEventListener("touchstart", function(){
+            touchStartTime = + new Date();
         }, false);
-        $right.addEventListener("touchend", function () {
-            touchEndTime = +new Date();
-            if (touchEndTime - touchStartTime < 300) {
+        $right.addEventListener("touchend", function(){
+            touchEndTime = + new Date();
+            if(touchEndTime - touchStartTime < 300){
                 hide();
             }
             touchStartTime = 0;
@@ -111,36 +111,36 @@ define([], function () {
         //滚动样式
         var $overlay = $("#mobile-nav .overlay");
         var $header = $(".js-mobile-header");
-        window.onscroll = function () {
+        window.onscroll = function(){
             var scrollTop = document.documentElement.scrollTop + document.body.scrollTop;
-            if (scrollTop >= 69) {
+            if(scrollTop >= 69){
                 $overlay.addClass("fixed");
-            } else {
+            }else{
                 $overlay.removeClass("fixed");
             }
-            if (scrollTop >= 160) {
+            if(scrollTop >= 160){
                 $header.removeClass("hide").addClass("fixed");
-            } else {
+            }else{
                 $header.addClass("hide").removeClass("fixed");
             }
         };
-        $header[0].addEventListener("touchstart", function () {
-            $('html, body').animate({scrollTop: 0}, 'slow');
+        $header[0].addEventListener("touchstart", function(){
+            $('html, body').animate({scrollTop:0}, 'slow');
         }, false);
     };
 
-    var resetTags = function () {
+    var resetTags = function(){
         var tags = $(".tagcloud a");
         tags.css({"font-size": "12px"});
-        for (var i = 0, len = tags.length; i < len; i++) {
-            var num = tags.eq(i).html().length % 5 + 1;
+        for(var i=0,len=tags.length; i<len; i++){
+            var num = tags.eq(i).html().length % 5 +1;
             tags[i].className = "";
-            tags.eq(i).addClass("color" + num);
+            tags.eq(i).addClass("color"+num);
         }
     }
 
     return{
-        init: function () {
+        init: function(){
             //构造函数需要的参数
             ctn = document.getElementsByClassName("slider-trigger")[0];
             //构造四步

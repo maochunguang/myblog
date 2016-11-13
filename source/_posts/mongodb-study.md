@@ -1,7 +1,7 @@
 title: mongodb从入门到精通
 date: 2015-12-19 23:21:23
-tags: dbs
-categories: 学习笔记
+tags: mongodb
+categories: 数据库
 ---
 ** mongodb从入门到精通** <Excerpt in index | 首页摘要>
     mongodb日常使用的一些知识，增删改查，索引，分片。

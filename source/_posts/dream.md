@@ -5,7 +5,7 @@ categories: 个人随笔
 ---
 ** 我的梦想：** <Excerpt in index | 首页摘要>
     一个人如果活着没有梦想,那和咸鱼有什么区别?
-+ <!-- more -->请问你的梦想是什么?
+<!-- more -->请问你的梦想是什么?
 <The rest of contents | 余下全文>
 
 ### 我的梦想是什么?

@@ -1,15 +1,12 @@
 @import url(http://luuman.github.io/font-awesome/css/font-awesome.min.css);
-
 /*CSS源代码*/
 body {
     background: #CFCFCF;
 }
-
-a {
+a{
     text-decoration: inherit;
 }
-
-#share, .bdsharebuttonbox {
+#share,.bdsharebuttonbox {
     max-width: 600px;
     height: 100px;
     margin: 0 auto;
@@ -17,8 +14,7 @@ a {
     filter: url("../share.html#goo");
     position: relative;
 }
-
-#share .share-button, #share .share-toggle-button {
+#share .share-button,#share .share-toggle-button {
     position: absolute;
     display: inline-block;
     left: 50%;
@@ -35,12 +31,10 @@ a {
     border: none;
     outline: none;
 }
-
-#share .share-button:hover, #share .share-toggle-button:hover {
+#share .share-button:hover,#share .share-toggle-button:hover {
     color: #fff;
     background: #666;
 }
-
 #share .share-button {
     padding: 0;
     font-size: 30px;
@@ -50,28 +44,23 @@ a {
     transform: scale(0.95, 0.95);
     color: #FFF;
 }
-
 #share .share-toggle-button {
     z-index: 9;
     font-size: 20px;
 }
-
 #share .share-items {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 #share .share-item {
     display: inline-block;
 }
-
 .fx {
     color: #FFF;
     font: normal normal normal 36px/1 FontAwesome;
 }
-
-.bdshare-button-style0-24 a: {
+.bdshare-button-style0-24 a:{
     color: #333;
     opacity: 1;
     filter: alpha(opacity=80)

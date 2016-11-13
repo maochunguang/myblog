@@ -3,10 +3,10 @@ date: 2016-04-19 11:32:59
 tags: node
 categories: 编程语言
 ---
-** hexo和coding打造静态博客 ：** <Excerpt in index | 首页摘要>
-    使用hexo和coding打造属于自己的静态博客，展示自己的作品，思想……
-+ <!-- more -->
-<The rest of contents | 余下全文>
+\*\* hexo和coding打造静态博客 ：\*\* \<Excerpt in index | 首页摘要\>
+	使用hexo和coding打造属于自己的静态博客，展示自己的作品，思想……
+<!-- more -->
+\<The rest of contents | 余下全文\>
 
 ### 什么是hexo?
 - hexo是台湾的一个大学生用nodejs做的一个静态博客框架，使用hexo可以速度搭建自己的静态博客，
@@ -21,14 +21,14 @@ categories: 编程语言
 ### 安装hexo
 - 首先确保自己安装nodejs，在命令行输入，尽量安装v0.12以上的版本
 ```
-	node -v
+    node -v
 ```
 - 安装hexo，命令行输入
 ```
-	npm install hexo-cli -g
+    npm install hexo-cli -g
 ```
 - 本地调试hexo，参考我的另一篇文章
-[hexo和github打造个人博客](http://geekwalker.cn/2015/12/20/hexo-githup-blog/)
+[hexo和github打造个人博客][1]
 
 ### 注册配置coding
 - coding的pages功能有两种，一个是项目主页，一个是个人主页，本博客采用个人主页。
@@ -37,9 +37,16 @@ categories: 编程语言
 - 在coding建立一个项目，名字和你的个性后缀一样，也就是Global Key，在个人设置里可以看到
 
 ### 部署博客到coding
-- 在项目根目录下，修改_config.yml文件，把maocg替换为你的Global Key
+- 在项目根目录下，修改\_config.yml文件，把maocg替换为你的Global Key
 ```
-	deploy:
-	- type: git
-	  repo:git@git.coding.net:maocg/maocg.git,coding-pages
+    deploy:
+    - type: git
+      repo:git@git.coding.net:maocg/maocg.git,coding-pages
 ```
+### 域名配置
+1. 在万网或者国外网站购买域名,备案并实名认证
+2. coding里的个人page可以直接配置域名,在个人项目设置,点击pages设置,绑定个人域名
+3. 在域名解析里指向coding里你个人page的ip地址,
+4. 
+
+[1]:	http://geekwalker.cn/2015/12/20/hexo-githup-blog/

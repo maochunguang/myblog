@@ -5,7 +5,7 @@ categories: 编程语言
 ---
 ** hexo和github打造个人博客 ：** <Excerpt in index | 首页摘要>
     使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……
-+ <!-- more -->
+<!-- more -->
 <The rest of contents | 余下全文>
 
 ##说明
@@ -61,11 +61,22 @@ deploy:
   message: [message]
 ```
     访问地址就是 http://tom.github.io/
-## 5.常见问题
+### 5.常用命令
+    命令的简写为：
+    ```
+    hexo n == hexo new
+    hexo g == hexo generate
+    hexo s == hexo server
+    hexo d == hexo deploy
+    hexo clean  删除public文件夹
+    ```
+
+## 6.常见问题
 1. 部署时出现git not found
   - npm install hexo-deployer-git --save  安装依赖包
 
-## 6.详细设置    
+
+## 7.详细设置    
     每个人对自己的博客都有不一样的要求，比如主题，分类，标签，评论插件的选择，  
     这些对程序员的你来说，都是小菜一碟，下面是官网教程：
    [hexo官方文档][2]
@@ -76,4 +87,4 @@ deploy:
 
   [1]: https://hexo.io/zh-cn/
   [2]: https://hexo.io/docs/
-  [3]: http://maocg.gitcafe.io/archives/
+  [3]: http://geekwalker.cn

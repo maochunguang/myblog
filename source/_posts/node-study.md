@@ -17,12 +17,15 @@ categories: 编程语言
 1. 了解node的特性和语法
 2. 编写扩展node模块
 3. 用异步的思想编程
+4. 常用框架的使用
+5. 回调的解决方案(promise)
 
 ### 三 入门实战
 1. 参照nodejs实战上的微博系统,使用express4.x+ mongoose实现
 2. 使用socket.io实现一个简单的即时聊天的系统
-3. 使用mongoose+express+angular+node开发一个论坛系统
+3. 使用mongoose+express+node开发一个论坛系统
+4. 使用koa+mongoose做一个简单的cms或者权限系统
 
 ### 四 学习方法
- * 建议有基础的直接开始入门实战,在练习中熟悉node的api,昨晚一个项目再去看书
+ * 建议有基础的直接开始入门实战,在练习中熟悉node的api,做完一个项目再去看书
  * 不要一直看书,没什么效果的,实战永远是最有效的

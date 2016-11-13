@@ -17,8 +17,8 @@
     }
 }(this, function ($) {
 
-    $.fn.lazyload = function (options) {
-        return this.each(function () {
+    $.fn.lazyload = function(options) {
+        return this.each(function() {
 
             options = options || {};
             var defualts = {};
@@ -28,8 +28,7 @@
             var dom = this;
 
             var srcSign = options.srcSign || "lazy-src";
-            var errCallBack = options.errCallBack || function () {
-            };
+            var errCallBack = options.errCallBack || function(){};
             var container = options.container || $(window);
 
             /**
@@ -43,8 +42,8 @@
              * @description src失效
              */
             var imgerr = function (e, target, fn, src) {
-                if (target[0].src && (target[0].src.indexOf("img-err.png") > 0 || target[0].src.indexOf("img-err2.png") > 0)) {
-                    return;
+                if(target[0].src && (target[0].src.indexOf("img-err.png")>0 || target[0].src.indexOf("img-err2.png")>0)){
+                    return ;
                 }
                 var w = target.width();
                 var h = target.height();
@@ -54,7 +53,7 @@
                 //todo: 上报
             };
 
-            var tempImg = function (target) {
+            var tempImg = function(target){
                 var w = target.width();
                 var h = target.height();
                 var t = target.offset().top;
@@ -66,11 +65,11 @@
             /**
              * @description src替换，loading过程中添加类lazy-loading;
              */
-            var setSrc = function (target, srcSign, errCallBack) {
+            var setSrc = function(target, srcSign, errCallBack){
 
-                if (target.attr("src"))return;
+                if(target.attr("src"))return ;
 
-                if (options.cache == true) {
+                if(options.cache == true){
                     console.log(target);
                     //存进localstorage
                     var canvas1 = document.getElementById('canvas1');
@@ -79,13 +78,13 @@
 
                     image = new Image();
                     image.src = target.attr(srcSign);
-                    image.onload = function () {
-                        ctx1.drawImage(image, 0, 0);
-                        imageData = ctx1.getImageData(0, 0, 500, 250);
+                    image.onload=function(){
+                        ctx1.drawImage(image,0,0);
+                        imageData = ctx1.getImageData(0,0,500,250);
                         console.log(imageData);
                     }
 
-                } else {
+                }else{
                     tempImg(target);
 
                     var src = target.attr(srcSign);
@@ -106,16 +105,16 @@
              */
             opts.cache = [];
 
-            if (dom.tagName == "IMG") {
+            if(dom.tagName == "IMG"){
                 var data = {
                     obj: obj,
                     tag: "img",
                     url: obj.attr(srcSign)
                 };
                 opts.cache.push(data);
-            } else {
+            }else{
                 var imgArr = obj.find("img");
-                imgArr.each(function (index) {
+                imgArr.each(function(index) {
                     var node = this.nodeName.toLowerCase(), url = $(this).attr(srcSign);
                     //重组
                     var data = {
@@ -129,7 +128,7 @@
 
 
             //动态显示数据
-            var scrollHandle = function () {
+            var scrollHandle = function() {
                 var contHeight = container.height();
                 var contop;
                 if ($(window).get(0) === window) {
@@ -137,7 +136,7 @@
                 } else {
                     contop = container.offset().top;
                 }
-                $.each(opts.cache, function (i, data) {
+                $.each(opts.cache, function(i, data) {
                     var o = data.obj, tag = data.tag, url = data.url, post, posb;
                     if (o) {
                         post = o.offset().top - contop, post + o.height();

@@ -5,7 +5,7 @@ categories: 编程语言
 ---
 ** 程序员入门指南 ：** <Excerpt in index | 首页摘要>
         程序员入门必须了解的一些知识，个人经验，不喜勿喷！
-+ <!-- more -->
+<!-- more -->
 <The rest of contents | 余下全文>
 
 ## 程序员的入门规划

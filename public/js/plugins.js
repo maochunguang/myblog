@@ -1,79 +1,79 @@
-(function () {
-    'use strict';
+(function(){
+  'use strict';
 
-    var elements = document.getElementsByClassName('plugin');
-    var $count = document.getElementById('plugin-list-count');
-    var $input = document.getElementById('plugin-search-input');
-    var elementLen = elements.length;
-    var index = lunr.Index.load(window.SEARCH_INDEX);
+  var elements = document.getElementsByClassName('plugin');
+  var $count = document.getElementById('plugin-list-count');
+  var $input = document.getElementById('plugin-search-input');
+  var elementLen = elements.length;
+  var index = lunr.Index.load(window.SEARCH_INDEX);
 
-    function updateCount(count) {
-        $count.innerHTML = count + (count === 1 ? ' item' : ' items');
+  function updateCount(count){
+    $count.innerHTML = count + (count === 1 ? ' item' : ' items');
+  }
+
+  function addClass(elem, className){
+    var classList = elem.classList;
+
+    if (!classList.contains(className)){
+      classList.add(className);
+    }
+  }
+
+  function removeClass(elem, className){
+    var classList = elem.classList;
+
+    if (classList.contains(className)){
+      classList.remove(className);
+    }
+  }
+
+  function search(value){
+    var result = index.search(value);
+    var len = result.length;
+    var selected = {};
+    var i = 0;
+
+    for (i = 0; i < len; i++){
+      selected[result[i].ref] = true;
     }
 
-    function addClass(elem, className) {
-        var classList = elem.classList;
-
-        if (!classList.contains(className)) {
-            classList.add(className);
-        }
+    for (i = 0; i < elementLen; i++){
+      if (selected[i]){
+        addClass(elements[i], 'on');
+      } else {
+        removeClass(elements[i], 'on');
+      }
     }
 
-    function removeClass(elem, className) {
-        var classList = elem.classList;
+    updateCount(len);
+  }
 
-        if (classList.contains(className)) {
-            classList.remove(className);
-        }
+  function displayAll(){
+    for (var i = 0; i < elementLen; i++){
+      addClass(elements[i], 'on');
     }
 
-    function search(value) {
-        var result = index.search(value);
-        var len = result.length;
-        var selected = {};
-        var i = 0;
+    updateCount(elements.length);
+  }
 
-        for (i = 0; i < len; i++) {
-            selected[result[i].ref] = true;
-        }
+  function hashchange(){
+    var hash = location.hash.substring(1);
+    $input.value = hash;
 
-        for (i = 0; i < elementLen; i++) {
-            if (selected[i]) {
-                addClass(elements[i], 'on');
-            } else {
-                removeClass(elements[i], 'on');
-            }
-        }
-
-        updateCount(len);
+    if (hash){
+      search(hash);
+    } else {
+      displayAll();
     }
+  }
 
-    function displayAll() {
-        for (var i = 0; i < elementLen; i++) {
-            addClass(elements[i], 'on');
-        }
+  $input.addEventListener('input', function(){
+    var value = this.value;
 
-        updateCount(elements.length);
-    }
+    if (!value) return displayAll();
+    search(value);
+  });
 
-    function hashchange() {
-        var hash = location.hash.substring(1);
-        $input.value = hash;
-
-        if (hash) {
-            search(hash);
-        } else {
-            displayAll();
-        }
-    }
-
-    $input.addEventListener('input', function () {
-        var value = this.value;
-
-        if (!value) return displayAll();
-        search(value);
-    });
-
-    window.addEventListener('hashchange', hashchange);
-    hashchange();
+  window.addEventListener('hashchange', hashchange);
+  hashchange();
 })();

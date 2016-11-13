@@ -1,802 +1,1395 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title><![CDATA[Blog]]></title>
-
-    <link href="/atom.xml" rel="self"/>
-    <link href="http://geekwalker.cn/"/>
-    <updated>2016-04-30T14:32:50.058Z</updated>
-    <id>http://geekwalker.cn/</id>
-
-    <author>
-        <name><![CDATA[Tommy]]></name>
-
-    </author>
-
-    <generator uri="http://hexo.io/">Hexo</generator>
-
-    <entry>
-        <title><![CDATA[Ubuntu16开发环境配置]]></title>
-        <link href="http://geekwalker.cn/2016/04/26/ubuntu-dev-config/"/>
-        <id>http://geekwalker.cn/2016/04/26/ubuntu-dev-config/</id>
-        <published>2016-04-26T10:48:11.000Z</published>
-        <updated>2016-04-30T14:32:50.058Z</updated>
-        <content type="html"><![CDATA[<p><strong> ubuntu开发环境配置：</strong> <Excerpt in index | 首页摘要><br>    ubuntu16下node,java开发环境配置</p>
-<ul>
-<li><a id="more"></a>
+  <title>Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://geeksblog.cc/"/>
+  <updated>2016-07-21T22:32:48.000Z</updated>
+  <id>http://geeksblog.cc/</id>
+  
+  <author>
+    <name>Tommy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Atom中最好的js代码补全</title>
+    <link href="http://geeksblog.cc/best-js-snippet.html"/>
+    <id>http://geeksblog.cc/best-js-snippet.html</id>
+    <published>2016-07-21T22:11:30.000Z</published>
+    <updated>2016-07-21T22:32:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> Atom中最好的js代码补全：</strong> <Excerpt in index | 首页摘要><br>    这或许是atom中最好的js代码补全,包含了express,nodejs,es6,目前仍在继续更新<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-</li>
-</ul>
-<h3 id="u5B89_u88C5_u7CFB_u7EDF_u8F6F_u4EF6"><a href="#u5B89_u88C5_u7CFB_u7EDF_u8F6F_u4EF6" class="headerlink" title="安装系统软件"></a>安装系统软件</h3><ol>
-<li>谷歌浏览器，火狐浏览器，atom编辑器，sublime编辑器，</li>
+<h2 id="best-js-snippets"><a href="#best-js-snippets" class="headerlink" title="best-js-snippets"></a>best-js-snippets</h2><p>这个package的名字就叫 <strong>best-js-snippets</strong> ,用atom的可以下载使用一下,提出建议,我会尽快修改<br><img src="http://o7kalf5h3.bkt.clouddn.com/snippets.png" alt="best-js-snippets"></p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ol>
+<li>express补全</li>
+<li>es6补全</li>
+<li>js补全(string,dom操作)</li>
+<li>nodejs补全(fs,event,util,module,class,assert)</li>
 </ol>
-<h3 id="u5B89_u88C5jdk"><a href="#u5B89_u88C5jdk" class="headerlink" title="安装jdk"></a>安装jdk</h3><h3 id="u5B89_u88C5nodejs"><a href="#u5B89_u88C5nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><h3 id="u73AF_u5883_u53D8_u91CF_u914D_u7F6E"><a href="#u73AF_u5883_u53D8_u91CF_u914D_u7F6E" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><h3 id="u5B89_u88C5_u5F00_u53D1_u5DE5_u5177"><a href="#u5B89_u88C5_u5F00_u53D1_u5DE5_u5177" class="headerlink" title="安装开发工具"></a>安装开发工具</h3><p>###</p>
-<p>###</p>
+<h2 id="如何安装"><a href="#如何安装" class="headerlink" title="如何安装"></a>如何安装</h2><ol>
+<li>atom编辑器中找到设置,搜索package,安装即可.</li>
+<li>重启atom,享受吧!</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
 ]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> ubuntu开发环境配置：</strong> <Excerpt in index | 首页摘要><br>    ubuntu16下node,java开发环境配置</p>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; Atom中最好的js代码补全：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    这或许是atom中最好的js代码补全,包含了express,nodejs,es6,目前仍在继续更新&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员编程资源汇总</title>
+    <link href="http://geeksblog.cc/code-resource.html"/>
+    <id>http://geeksblog.cc/code-resource.html</id>
+    <published>2016-07-19T11:06:29.000Z</published>
+    <updated>2016-07-19T13:35:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 程序员编程资源汇总：</strong> <Excerpt in index | 首页摘要><br>    自己收集的编程相关的资源，分享给大家，希望能帮助更多的人在编程的道路上越走越远！<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="为什么写这边博客？"><a href="#为什么写这边博客？" class="headerlink" title="为什么写这边博客？"></a>为什么写这边博客？</h3><p>每个程序员都会面临一个问题，如何搜索自己需要的资料，我自己也有很多的时间花费在找寻资料上，<br>希望能把最实用的书籍和资源收集起来给大家一个</p>
+<h3 id="免费的编程书籍网站"><a href="#免费的编程书籍网站" class="headerlink" title="免费的编程书籍网站"></a>免费的编程书籍网站</h3><ol>
+<li>原版英文书籍<ul>
+<li><a href="http://www.salttiger.com/">英文原版</a></li>
+</ul>
+</li>
+<li>中文开源书籍<ul>
+<li><a href="https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md">免费开源</a></li>
+<li><a href="https://www.gitbook.com">gitbook</a></li>
+</ul>
+</li>
+<li>免费下载的网站<ul>
+<li><a href="http://www.jb51.net/jiaoben/">脚本之家</a></li>
+<li><a href="http://vdisk.weibo.com/">新浪微盘</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="代码资源"><a href="#代码资源" class="headerlink" title="代码资源"></a>代码资源</h3><ol>
+<li>最好的代码仓库 <a href="https://github.com/">github</a></li>
+<li><a href="https://code.csdn.net/">csdn代码仓库</a></li>
+<li><a href="https://gist.github.com/">gist</a></li>
+<li><a href="http://www.phpxs.com/code/">代码片段之家</a></li>
+</ol>
+<h3 id="博客资源"><a href="#博客资源" class="headerlink" title="博客资源"></a>博客资源</h3><ol>
+<li>csdn</li>
+<li>博客园</li>
+<li>伯乐在线</li>
+<li>简书</li>
+</ol>
+<h2 id="问题解答"><a href="#问题解答" class="headerlink" title="问题解答"></a>问题解答</h2><ol>
+<li>stackoverflow</li>
+<li>segmentfault</li>
+<li>知乎</li>
+<li>谷歌</li>
+</ol>
+<p><strong>此文章会继续更新,把最好的资源奉献给大家!!</strong></p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 程序员编程资源汇总：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    自己收集的编程相关的资源，分享给大家，希望能帮助更多的人在编程的道路上越走越远！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="others" scheme="http://geeksblog.cc/categories/others/"/>
+    
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ajax和jsonp区别</title>
+    <link href="http://geeksblog.cc/ajax-jsonp.html"/>
+    <id>http://geeksblog.cc/ajax-jsonp.html</id>
+    <published>2016-07-06T12:54:16.000Z</published>
+    <updated>2016-07-10T02:59:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> ajax和jsonp区别 ：</strong> <Excerpt in index | 首页摘要><br>    jquery的封装影响了很多人的误解，所以有必要对ajax和jsonp的本质区别讲解，<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="jsonp是什么？"><a href="#jsonp是什么？" class="headerlink" title="jsonp是什么？"></a>jsonp是什么？</h3><p>利用在页面中创建<code>&lt;script&gt;</code>节点的方法向不同域提交HTTP请求的方法称为JSONP，这项技术可以解决跨域提交Ajax请求的问题。JSONP的工作原理如下所述：假设在<a href="http://example1.com/index.php这个页面中向http://example2.com/getinfo.php提交GET请求，我们可以将下面的JavaScript代码放在http://example1.com/index.php这个页面中来实现：">http://example1.com/index.php这个页面中向http://example2.com/getinfo.php提交GET请求，我们可以将下面的JavaScript代码放在http://example1.com/index.php这个页面中来实现：</a><br><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var eleScript= document.createElement(<span class="string">"script"</span>);</div><div class="line">eleScript.type = <span class="string">"text/javascript"</span>;</div><div class="line">eleScript.src = <span class="string">"http://example2.com/getinfo.php"</span>;</div><div class="line">document.getElementsByTagName(<span class="string">"<span class="keyword">HEAD</span>"</span>)<span class="string">[0]</span>.appendChild(eleScript);</div></pre></td></tr></table></figure></p>
+<p>当GET请求从<a href="http://example2.com/getinfo.php返回时，可以返回一段JavaScript代码，这段代码会自动执行，可以用来负责调用http://example1.com/index.php页面中的一个callback函数。">http://example2.com/getinfo.php返回时，可以返回一段JavaScript代码，这段代码会自动执行，可以用来负责调用http://example1.com/index.php页面中的一个callback函数。</a></p>
+<p>JSONP的优点是：它不像XMLHttpRequest对象实现的Ajax请求那样受到同源策略的限制；它的兼容性更好，在更加古老的浏览器中都可以运行，不需要XMLHttpRequest或ActiveX的支持；并且在请求完毕后可以通过调用callback的方式回传结果。</p>
+<p>JSONP的缺点则是：它只支持GET请求而不支持POST等其它类型的HTTP请求；它只支持跨域HTTP请求这种情况，不能解决不同域的两个页面之间如何进行JavaScript调用的问题。</p>
+<h3 id="ajax是什么？"><a href="#ajax是什么？" class="headerlink" title="ajax是什么？"></a>ajax是什么？</h3><p>Ajax的原理简单来说通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面。这其中最关键的一步就是从服务器获得请求数据。要清楚这个过程和原理，我们必须对 XMLHttpRequest有所了解。<br>　XMLHttpRequest是ajax的核心机制，它是在IE5中首先引入的，是一种支持异步请求的技术。简单的说，也就是javascript可以及时向服务器提出请求和处理响应，而不阻塞用户。达到无刷新的效果。</p>
+<h3 id="误区是怎么产生的？"><a href="#误区是怎么产生的？" class="headerlink" title="误区是怎么产生的？"></a>误区是怎么产生的？</h3><p>这个很大程度上要归功于jquery的封装，由于jquery在api上，对json和jsonp都属于ajax模块，导致很多人误以为jsonp是ajax一种。</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; ajax和jsonp区别 ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    jquery的封装影响了很多人的误解，所以有必要对ajax和jsonp的本质区别讲解，&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="http" scheme="http://geeksblog.cc/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ajax简单教程</title>
+    <link href="http://geeksblog.cc/ajax-study.html"/>
+    <id>http://geeksblog.cc/ajax-study.html</id>
+    <published>2016-07-06T12:53:11.000Z</published>
+    <updated>2016-07-10T02:58:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> ajax简单教程：</strong> <Excerpt in index | 首页摘要><br>    ajax常用的方法，一些容易出错的地方<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="ajax原理"><a href="#ajax原理" class="headerlink" title="ajax原理"></a>ajax原理</h3><p>Ajax的原理简单来说通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面。这其中最关键的一步就是从服务器获得请求数据。要清楚这个过程和原理，我们必须对 XMLHttpRequest有所了解。<br>XMLHttpRequest是ajax的核心机制，它是在IE5中首先引入的，是一种支持异步请求的技术。简单的说，也就是javascript可以及时向服务器提出请求和处理响应，而不阻塞用户。达到无刷新的效果。<br>所以我们先从XMLHttpRequest讲起，来看看它的工作原理。首先，我们先来看看XMLHttpRequest这个对象的属性。<br>它的属性有：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">onreadystatechange</th>
+<th style="text-align:left">responseText</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">每次状态改变所触发事件的事件处理程序</td>
+<td style="text-align:left">从服务器进程返回数据的字符串形式</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">responseXML</th>
+<th style="text-align:left">status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">从服务器进程返回的DOM兼容的文档数据对象</td>
+<td style="text-align:left">从服务器返回的数字代码，比如常见的404</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">status Text</th>
+<th style="text-align:left">readyState</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">伴随状态码的字符串信息</td>
+<td style="text-align:left">对象状态值</td>
+</tr>
+</tbody>
+</table>
+<p>readyState 对象状态值</p>
 <ul>
-<li>]]>
+<li>0 (未初始化) 对象已建立，但是尚未初始化（尚未调用open方法）</li>
+<li>1 (初始化) 对象已建立，尚未调用send方法</li>
+<li>2 (发送数据) send方法已调用，但是当前的状态及http头未知</li>
+<li>3 (数据传送中) 已接收部分数据，因为响应及http头不全，这时通过responseBody和responseText获取部分数据会出现错误，</li>
+<li>4 (完成) 数据接收完毕,此时可以通过通过responseXml和responseText获取完整的回应数据</li>
+</ul>
+<h3 id="ajax的使用"><a href="#ajax的使用" class="headerlink" title="ajax的使用"></a>ajax的使用</h3><ol>
+<li>原生的ajax</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">CreateXmlHttp</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">//非IE浏览器创建XmlHttpRequest对象</span></div><div class="line">    <span class="keyword">if</span> (<span class="built_in">window</span>.XmlHttpRequest) &#123;</div><div class="line">        xmlhttp = <span class="keyword">new</span> XmlHttpRequest();</div><div class="line">    &#125;</div><div class="line">    <span class="comment">//IE浏览器创建XmlHttpRequest对象</span></div><div class="line">    <span class="keyword">if</span> (<span class="built_in">window</span>.ActiveXObject) &#123;</div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            xmlhttp = <span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">catch</span> (e) &#123;</div><div class="line">            <span class="keyword">try</span> &#123;</div><div class="line">                xmlhttp = <span class="keyword">new</span> ActiveXObject(<span class="string">"msxml2.XMLHTTP"</span>);</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">catch</span> (ex) &#123; &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Ustbwuyi</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> data = <span class="built_in">document</span>.getElementById(<span class="string">"username"</span>).value;</div><div class="line">    CreateXmlHttp();</div><div class="line">    <span class="keyword">if</span> (!xmlhttp) &#123;</div><div class="line">        alert(<span class="string">"创建xmlhttp对象异常！"</span>);</div><div class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">    xmlhttp.open(<span class="string">"POST"</span>, url, <span class="literal">false</span>);</div><div class="line">    xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (xmlhttp.readyState == <span class="number">4</span>) &#123;</div><div class="line">            <span class="built_in">document</span>.getElementById(<span class="string">"user1"</span>).innerHTML = <span class="string">"数据正在加载..."</span>;</div><div class="line">            <span class="keyword">if</span> (xmlhttp.status == <span class="number">200</span>) &#123;</div><div class="line">                <span class="built_in">document</span>.write(xmlhttp.responseText);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    xmlhttp.send();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>jquery调用ajax</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">    type: <span class="string">"get"</span>,</div><div class="line">    url: <span class="string">"http://www.cnblogs.com/rss"</span>,</div><div class="line">    beforeSend: <span class="function"><span class="keyword">function</span>(<span class="params">XMLHttpRequest</span>)</span>&#123;</div><div class="line">    <span class="comment">//ShowLoading();</span></div><div class="line">    &#125;,</div><div class="line">    success: <span class="function"><span class="keyword">function</span>(<span class="params">data, textStatus</span>)</span>&#123;</div><div class="line">        $(<span class="string">".ajax.ajaxResult"</span>).html(<span class="string">""</span>);</div><div class="line">        $(<span class="string">"item"</span>,data).each(<span class="function"><span class="keyword">function</span>(<span class="params">i, domEle</span>)</span>&#123;</div><div class="line">        $(<span class="string">".ajax.ajaxResult"</span>).append(<span class="string">"&lt;li&gt;"</span>+$(domEle).children(<span class="string">"title"</span>).text()+<span class="string">"&lt;/li&gt;"</span>);</div><div class="line">        &#125;);</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    complete: <span class="function"><span class="keyword">function</span>(<span class="params">XMLHttpRequest, textStatus</span>)</span>&#123;</div><div class="line">    <span class="comment">//HideLoading();</span></div><div class="line">    &#125;,</div><div class="line">    error: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//请求出错处理</span></div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; ajax简单教程：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    ajax常用的方法，一些容易出错的地方&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="http" scheme="http://geeksblog.cc/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql优化</title>
+    <link href="http://geeksblog.cc/mysql-optimize.html"/>
+    <id>http://geeksblog.cc/mysql-optimize.html</id>
+    <published>2016-06-10T23:25:13.000Z</published>
+    <updated>2016-06-21T13:36:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> mysql优化：</strong> <Excerpt in index | 首页摘要><br>    mysql的优化措施，从sql优化做起<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
 
-        </summary>
+<h3 id="优化sql的一般步骤"><a href="#优化sql的一般步骤" class="headerlink" title="优化sql的一般步骤"></a>优化sql的一般步骤</h3><ol>
+<li>通过show status了解各种sql的执行频率</li>
+<li>定位执行效率低的sql语句</li>
+<li>通过explain分析效率低的sql</li>
+<li>通过show profile分析sql</li>
+<li>通过trace分析优化器如何选择执行计划</li>
+<li>确定问题，采取措施优化</li>
+</ol>
+<h3 id="索引优化措施"><a href="#索引优化措施" class="headerlink" title="索引优化措施"></a>索引优化措施</h3><ol>
+<li><p>mysql中使用索引的典型场景</p>
+<ol>
+<li>匹配全值，条件所有列都在索引中而且是等值匹配</li>
+<li>匹配值的范围查找，字段必须在索引中</li>
+<li>匹配最左前缀，复合索引只会根据最左列进行查找</li>
+<li>仅仅对索引进行查询，即查询的所有字段都在索引上</li>
+<li>匹配列前缀，比如like ‘ABC%’,如果是like ‘%aaa’就不可以</li>
+<li>如果列名是索引，使用column is null会使用索引</li>
+</ol>
+</li>
+<li><p>存在索引但不会使用索引的典型场景</p>
+<ol>
+<li>以%开头的like查询不能使用b树索引</li>
+<li>数据类型出现隐式转换不能使用索引</li>
+<li>复合索引，查询条件不符合最左列原则</li>
+<li>用or分割的条件，如果前面的条件有索引，而后面的条件没有索引</li>
+</ol>
+</li>
+<li><p>查看索引使用的情况</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">show</span> <span class="keyword">status</span> <span class="keyword">like</span> <span class="string">'Handler_read%'</span>;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>如果Handler_read_rnd_next的值比较高，说明索引不正确或者查询没有使用到索引</p>
+<h3 id="简单实用的优化方法"><a href="#简单实用的优化方法" class="headerlink" title="简单实用的优化方法"></a>简单实用的优化方法</h3><ol>
+<li>定期检查表和分析表<br>分析表语法：<figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">analyze <span class="keyword">table</span> 表名；</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>检查表语法：<br><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">check <span class="keyword">table</span> 表名；</div></pre></td></tr></table></figure></p>
+<ol>
+<li>定期优化表<ul>
+<li>对于字节大小不固定的字段，数据更新和删除会造成磁盘空间不释放，这时候就行优化表，可以整理磁盘碎片，提高性能<br>语法如下：<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">optimize</span> <span class="keyword">table</span> <span class="keyword">user</span>(表名)；</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; mysql优化：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    mysql的优化措施，从sql优化做起&lt;br&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="mysql" scheme="http://geeksblog.cc/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac下mysql5.6字符集设置</title>
+    <link href="http://geeksblog.cc/mac-mysql-unicode.html"/>
+    <id>http://geeksblog.cc/mac-mysql-unicode.html</id>
+    <published>2016-05-28T15:10:37.000Z</published>
+    <updated>2016-06-04T03:01:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> mac下mysql5.6字符集设置：</strong> <Excerpt in index | 首页摘要><br>    在mac下设置mysql5.6字符集时踩过的坑，百分百保证有效<br><a id="more"></a></p>
+<p><The rest of contents | 余下全文></p>
+<h3 id="为什么要设置字符集"><a href="#为什么要设置字符集" class="headerlink" title="为什么要设置字符集"></a>为什么要设置字符集</h3><ol>
+<li>设置字符集主要是解决乱码问题，由于中文和英文编码不同导致，中文出现乱码，所以一般都设置为utf8格式</li>
+<li>不同的字符集和编码占用的字节不同，选择适合的编码会提高数据库性能</li>
+</ol>
+<h3 id="mac下设置"><a href="#mac下设置" class="headerlink" title="mac下设置"></a>mac下设置</h3><ul>
+<li>在/etc/my.cnf文件进行设置，如果没有此文件可以从/usr/local/mysql/support-files/拷贝，命令如下<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">cd</span> /usr/local/mysql/support-<span class="keyword">files</span></div><div class="line">sudo <span class="keyword">cp</span> my.<span class="keyword">cnf</span> /etc/my.<span class="keyword">cnf</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>查看文件的读写权限，如果为644（rw- r– r–）则改为(664) (rw- rw- r–)<br>如果改为(666)(rw- rw- rw-)则修改以后配置文件不会生效<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod <span class="number">664</span> /etc/<span class="keyword">my</span>.cnf</div></pre></td></tr></table></figure></p>
+<ul>
+<li>my.cnf设置如下：<figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="section">[client]</span></div><div class="line"><span class="attr">default-character-set</span>=utf8</div><div class="line"><span class="section">[mysqld]</span></div><div class="line"><span class="attr">collation-server</span> = utf8_unicode_ci</div><div class="line"><span class="attr">init-connect</span>=<span class="string">'SET NAMES utf8'</span></div><div class="line"><span class="attr">character-set-server</span> = utf8</div><div class="line"><span class="section">[mysql]</span></div><div class="line"><span class="attr">default-character-set</span>=utf8</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="查看设置是否成功"><a href="#查看设置是否成功" class="headerlink" title="查看设置是否成功"></a>查看设置是否成功</h3><p>在命令行输入mysql，如果提示没有命令的话，在bash或者zsh的文件里修改，我用的是zsh，设置~/.zshrc,<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> MYSQL=<span class="string">"/usr/local/mysql/bin/"</span></div><div class="line"><span class="built_in">export</span> PATH=<span class="string">"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:<span class="variable">$MYSQL</span>"</span></div></pre></td></tr></table></figure></p>
+<p>在命令行输入mysql,进入mysql命令行后，输入<code>status;</code>或者<code>show variables like &#39;%char%&#39;;</code><br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">|<span class="string"> character_set_client     </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_connection </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_database   </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_filesystem </span>|<span class="string"> binary                                                  </span>|</div><div class="line">|<span class="string"> character_set_results    </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_server     </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_system     </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_sets_dir       </span>|<span class="string"> /usr/local/mysql-5.6.30-osx10.11-x86_64/share/charsets/</span></div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; mac下mysql5.6字符集设置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    在mac下设置mysql5.6字符集时踩过的坑，百分百保证有效&lt;br&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="mysql" scheme="http://geeksblog.cc/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql学习笔记</title>
+    <link href="http://geeksblog.cc/mysql-study.html"/>
+    <id>http://geeksblog.cc/mysql-study.html</id>
+    <published>2016-05-28T14:24:56.000Z</published>
+    <updated>2016-07-10T02:09:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> mysql学习笔记：</strong> <Excerpt in index | 首页摘要><br>    mysql学习，基础的增删改查，数据库优化，索引，分片，集群搭建等等。<br><a id="more"></a></p>
+<The rest of contents | 余下全文\>
 
-        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
+<h3 id="mysql的特点"><a href="#mysql的特点" class="headerlink" title="mysql的特点"></a>mysql的特点</h3><ol>
+<li>关系型数据库，免费使用，</li>
+<li>插入式存储引擎，</li>
+<li>性能高，</li>
+</ol>
+<h3 id="基础的增删改查"><a href="#基础的增删改查" class="headerlink" title="基础的增删改查"></a>基础的增删改查</h3><ol>
+<li><p>ddl语句，数据定义语句</p>
+ <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">database</span> test1;</div><div class="line"><span class="keyword">drop</span> <span class="keyword">database</span> test1;</div><div class="line"><span class="keyword">use</span> test1;</div><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> emp(ename <span class="built_in">varchar</span>(<span class="number">10</span>),hiredate <span class="built_in">date</span>,sal <span class="built_in">decimal</span>(<span class="number">10</span>,<span class="number">2</span>),deptno <span class="built_in">int</span>(<span class="number">2</span>));</div><div class="line"><span class="keyword">drop</span> <span class="keyword">table</span> emp;</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">modify</span> ename <span class="built_in">varchar</span>(<span class="number">20</span>);</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> <span class="keyword">column</span> age <span class="built_in">int</span>(<span class="number">3</span>);</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">drop</span> <span class="keyword">column</span> age;</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">change</span> age age1 <span class="built_in">int</span>(<span class="number">4</span>);</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> birth <span class="built_in">date</span> <span class="keyword">after</span> ename;</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">modify</span> age <span class="built_in">int</span>(<span class="number">3</span>) <span class="keyword">first</span>;</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">rename</span> emp1;</div></pre></td></tr></table></figure>
+</li>
+<li><p>dml语句，数据操纵语句</p>
+ <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> emp(ename,hiredate,sal,deptno) <span class="keyword">values</span>(<span class="string">'zzx1'</span>,<span class="string">'2000-10-11'</span>,<span class="number">2000</span>,<span class="number">1</span>);</div><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> emp <span class="keyword">values</span>(<span class="string">'lisa'</span>,<span class="string">'2004-05-09'</span>,<span class="number">3000</span>,<span class="number">2</span>);</div><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> dept <span class="keyword">values</span>(<span class="number">5</span>,<span class="string">'dept5'</span>),(<span class="number">6</span>,<span class="string">'dept6'</span>);</div><div class="line"><span class="keyword">update</span> emp <span class="keyword">set</span> sal=<span class="number">4000</span> <span class="keyword">where</span> ename=<span class="string">'lisa'</span>;</div><div class="line"><span class="keyword">update</span> emp a,dept b <span class="keyword">set</span> a.sal=a.sal*b.deptno,b.deptname=a.ename <span class="keyword">where</span> a.deptno=b.deptno;</div><div class="line"><span class="keyword">delete</span> <span class="keyword">from</span> emp <span class="keyword">where</span> ename=<span class="string">'dony'</span>;</div><div class="line"><span class="keyword">delete</span> a,b <span class="keyword">from</span> emp a,dept b <span class="keyword">where</span> a.deptno=b.deptno <span class="keyword">and</span> a.deptno=<span class="number">3</span>;</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> emp <span class="keyword">where</span> ename=<span class="string">'lisa'</span>;</div><div class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> deptno <span class="keyword">from</span> emp;</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> sal(<span class="keyword">desc</span>);</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> sal <span class="keyword">limit</span> <span class="number">5</span>;</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> sal <span class="keyword">limit</span> <span class="number">1</span>,<span class="number">5</span>;ss</div></pre></td></tr></table></figure>
+</li>
+<li><p>dcl语句，数据控制语句</p>
+</li>
+</ol>
+<h3 id="sql优化"><a href="#sql优化" class="headerlink" title="sql优化"></a>sql优化</h3><ol>
+<li>尽量使用 prepareStatement(java)，利用预处理功能。</li>
+<li>在进行多条记录的增加、修改、删除时，建议使用批处理功能，批处理的次数以整<br>个 SQL 语句不超过相应数据库的 SQL 语句大小的限制为准。</li>
+<li>建议每条 SQL 语句中 in 中的元素个数在 200 以下，如果个数超过时，应拆分为多<br>条 SQL 语句。禁止使用 xx in(‘’,’’….) or xx in(‘’,’’,’’)。 ★</li>
+<li>禁止使用 or 超过 200，如 xx =’123’ or xx=’456’。 ★</li>
+<li>尽量不使用外连接。</li>
+<li>禁止使用 not in 语句，建议用 not exist。 ★</li>
+<li>禁止使用 Union, 如果有业务需要，请拆分为两个查询。 ★</li>
+<li>禁止在一条 SQL 语句中使用 3 层以上的嵌套查询，如果有，请考虑使用临时表或<br>中间结果集。</li>
+<li>尽量避免在一条 SQL 语句中从&gt;= 4 个表中同时取数， 对于仅是作为过滤条件关联，<br>但不涉及取数的表，不参与表个数计算</li>
+<li>查询条件里任何对列的操作都将导致表扫描，所以应尽量将数据库函数、计算表达<br>式写在逻辑操作符右边。</li>
+<li>在对 char 类型比较时,建议不要使用 rtrim()函数,应该在程序中将不足的长度补<br>齐。</li>
+<li>用多表连接代替 EXISTS 子句。</li>
+<li>如果有多表连接时， 应该有主从之分， 并尽量从一个表取数， 如 select a.col1, a.col2<br>from a join b on a.col3=b.col4 where b.col5 = ‘a’。</li>
+<li>在使用 Like 时，建议 Like 的一边是字符串，表列在一边出现。</li>
+<li>不允许将 where 子句的条件放到 having 中。</li>
+<li>将更新操作放到事务的最后执行。如</li>
+<li>一个事务需更新多个对象时，需保证更新的顺序一致以避免死锁的发生。如总是先<br>更新子表再更新主表，根据存货档案批量更新现存量时，对传入的存货档案 PK 进<br>行排序，再做更新处理等。</li>
+<li>禁止随意使用临时表，在临时数据不超过 200 行的情况下禁止使用临时表。</li>
+<li>禁止随意使用 distinct，避免造成不必要的排序。</li>
+</ol>
+<h3 id="索引优化"><a href="#索引优化" class="headerlink" title="索引优化"></a>索引优化</h3><ol>
+<li><p>创建索引，删除索引</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">index</span> cityname <span class="keyword">on</span> city(city(<span class="number">10</span>));</div><div class="line"><span class="keyword">drop</span> <span class="keyword">index</span> cityname <span class="keyword">on</span> city;</div></pre></td></tr></table></figure>
+</li>
+<li><p>搜索的索引列最好在where的字句或者连接子句</p>
+</li>
+<li>使用唯一索引</li>
+<li>使用短索引，对于较长的字段，使用其前缀做索引</li>
+<li>不要过度使用索引，索引引起额外的性能开销和维护</li>
+</ol>
+<h3 id="高级优化措施"><a href="#高级优化措施" class="headerlink" title="高级优化措施"></a>高级优化措施</h3><h3 id="集群搭建"><a href="#集群搭建" class="headerlink" title="集群搭建"></a>集群搭建</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; mysql学习笔记：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    mysql学习，基础的增删改查，数据库优化，索引，分片，集群搭建等等。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="mysql" scheme="http://geeksblog.cc/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nodejs开发规范</title>
+    <link href="http://geeksblog.cc/node-develop.html"/>
+    <id>http://geeksblog.cc/node-develop.html</id>
+    <published>2016-05-23T06:18:02.000Z</published>
+    <updated>2016-05-23T15:04:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> nodejs开发规范：</strong> <Excerpt in index | 首页摘要><br>    nodejs开发中应当遵循的规范，以及最佳实践<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
 
-        <category term="开发工具" scheme="http://geekwalker.cn/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+<h3 id="node开发需要编程规范吗？"><a href="#node开发需要编程规范吗？" class="headerlink" title="node开发需要编程规范吗？"></a>node开发需要编程规范吗？</h3><ol>
+<li>js的灵活性非常大，如果开发人员每个人都按自己的习惯随意编写，js的代码会非常混乱不堪。js程序员需要更强的自律性和规范，才能写出易读性，易维护的代码。</li>
+<li>随着前端mvc的崛起，前端的js代码会更加庞大难以管理，如果没有统一的规范，后期维护会比登天还难。</li>
+</ol>
+<h3 id="编码规范"><a href="#编码规范" class="headerlink" title="编码规范"></a>编码规范</h3><ol>
+<li><p>缩进<br>采用两个空格缩进，在编辑器中设置tab为两个空格</p>
+</li>
+<li><p>变量声明</p>
+</li>
+</ol>
+<ul>
+<li>用var声明变量<br>var assert = require(‘assert’);<br>var fork = require(‘child_process’).fork;<br>var net = require(‘net’);</li>
+</ul>
+<p>错误实例：<br>var assert = require(‘assert’)<br>, fork = require(‘child_process’).fork<br>, net = require(‘net’)；</p>
+<ul>
+<li>用字面量声明方式<br>var num = 123;<br>var aaa = {};<br>var arr = [];<br>var isAdmin = true;</li>
+<li><p>避免使用：<br>var obj =new Object();<br>var arr = new Array();<br>var test  =new String(“”);<br>var size = new Number();</p>
+</li>
+<li><p>不要在for循环等循环里声明var变量<br>首先var是函数作用域，在循环声明以后只有等函数声明周期结束这些资源才会释放</p>
+</li>
+</ul>
+<ol>
+<li><p>空格<br>在操作符前后需要加上空格,= 、% 、* 、- 、+ 前后都应该加一个空格<br>比如：var foo = ‘bar’ + baz;<br>错误实例：var foo=’bar’+baz;</p>
+</li>
+<li><p>单双引号的使用<br>在node中尽量使用单引号，<br>var html = ‘<a href="http://cnodejs.org">CNode</a>‘;<br>在json中使用双引号</p>
+</li>
+<li><p>分号<br>给表达式结尾加分号，尽管js会自动在行尾加上分号，但是会产生一些误解</p>
+</li>
+</ol>
+<h3 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h3><p>在编码中，命名是重头戏。好的命名可以使代码赏心悦目，具有良好的维护性。</p>
+<ol>
+<li>变量命名<br>变量名采用小驼峰命名，单词之间没有任何符号如：<br>var adminUser = {};<br>var callNum = 2134323;</li>
+<li><p>方法命名<br>也是采用小驼峰命名，与变量不同的是采用动词或判断行词汇，如：<br>var getUser = function(){};<br>var isAdmin = function(){};<br>var findUser = function(){};</p>
+</li>
+<li><p>类命名<br>类名采用大驼峰，所有单词首字母大写，如：<br>function User{}</p>
+</li>
+<li><p>常量命名<br>作为常量，单词所有字母大写，用下划线分割，如：<br>var PINK_COLOR = “PINK”;</p>
+</li>
+<li><p>文件命名<br>命名文件时，尽量使用下划线分割单词，比如child_process.js和string_decode.js</p>
+</li>
+<li><p>包名<br>在包名中尽量不要包含js和node的字样，应当适当短并且有意义</p>
+</li>
+</ol>
+<h3 id="其它要点"><a href="#其它要点" class="headerlink" title="其它要点"></a>其它要点</h3><ol>
+<li><p>作用域<br>慎用with和eval（），容易引起作用域混乱</p>
+</li>
+<li><p>比较操作<br>尽量使用===代替==,否则会遇到下面的情况，’0’==0;//true;<br>‘’==0;//true;<br>‘0’===’’//false;</p>
+</li>
+<li><p>严格模式<br>在node后台中尽量全使用严格模式<br>‘use strict’;</p>
+</li>
+<li><p>对象和数组遍历<br>数组遍历使用普通for循环，避免使用for in对数组遍历，<br>对象的遍历使用for in</p>
+</li>
+</ol>
+<h3 id="项目中实践"><a href="#项目中实践" class="headerlink" title="项目中实践"></a>项目中实践</h3><ol>
+<li><p>sublime和webstorm都有JSLint,JSHint这样的代码质量工具，在配置文件中制定好模板规范即可</p>
+</li>
+<li><p>在版本控制工具中设置hook，在precommit的脚本中设置，如果代码不符合标准，就无法提交</p>
+</li>
+</ol>
+<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><ol>
+<li>深入浅出nodejs</li>
+<li>js秘密花园</li>
+<li>js高级编程</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; nodejs开发规范：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    nodejs开发中应当遵循的规范，以及最佳实践&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="node" scheme="http://geeksblog.cc/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis学习笔记</title>
+    <link href="http://geeksblog.cc/redis-study.html"/>
+    <id>http://geeksblog.cc/redis-study.html</id>
+    <published>2016-05-23T00:25:57.000Z</published>
+    <updated>2016-05-23T02:47:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> redis学习笔记：</strong> <Excerpt in index | 首页摘要><br>    redis数据库的基本操作，增删改查<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
 
-    </entry>
-
-    <entry>
-        <title><![CDATA[Sublime详细配置]]></title>
-        <link href="http://geekwalker.cn/2016/04/26/sublime-config/"/>
-        <id>http://geekwalker.cn/2016/04/26/sublime-config/</id>
-        <published>2016-04-26T10:47:46.000Z</published>
-        <updated>2016-04-30T11:16:53.102Z</updated>
-        <content type="html"><![CDATA[<p><strong> sublime详细配置：</strong> <Excerpt in index | 首页摘要><br>    subime的常用配置应有尽有，快快来看吧</p>
+<h3 id="keys"><a href="#keys" class="headerlink" title="keys"></a>keys</h3><p>redis本质上是一个key-value数据库</p>
+<ol>
+<li>设置：set key value</li>
+<li>获取：get key</li>
+<li>判断存在：exists key</li>
+<li>删除：del key        del  test:fan:age</li>
+<li>重命名：rename  oldkey newkey        </li>
+<li>数量：dbsize  返回数据</li>
+<li>获取所有key（通配符）：<code>Keys test:*:age</code><br><code>Keys test:?:age</code></li>
+<li>清空：flushdb    flushall</li>
+<li>设置有效时间：expire test:fan:age 30</li>
+<li>查询有效时间：ttl test:fan:age</li>
+</ol>
+<h3 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h3><ol>
+<li>设置：<br> set key value<br> setnx ky value(nx是not exist)<br> mset key1 value1 keyN valueN<br> msetnx key1 value1 keyN valueN</li>
+<li>获取：<br> get            不存在返回nil<br> getset        设置key的值，并返回key的旧值，不存在返回nil<br> mget        </li>
+<li>自增减：<br> incr key   对key的值进行++操作，返回新的值<br> decr key<br> incrby key integer        对key加上一个数值<br> decrby key integer</li>
+<li>截取：<br> substr key indexStart indexEnd             下标从0开始</li>
+<li>追加：<br> append key value</li>
+</ol>
+<h3 id="list类型"><a href="#list类型" class="headerlink" title="list类型"></a>list类型</h3><p>redis的list其实就是一个每个元素都是string 的双向链表，所以push和pop的时间复杂度都是O（1）</p>
+<ol>
+<li>添加<br> lpush key string         在头部添加<br> rpush key string        在尾部添加</li>
+<li>修改<br> lset key index value  修改指定下标的key的值</li>
+<li>删除<br> lpop key     从头部返回删除<br> rpop key  从尾部<br> lrem key count value  删除count个相同的value，count为0删除全部<br> blpop key …keyN timeout<br> brpop 从尾部删除</li>
+<li>获取<br> lrange key indexStart indexEnd</li>
+<li>数量<br> llen key        返回key对应的list长度</li>
+<li>截取<br> ltrim key start end</li>
+<li>转移<br> rpoplpush key1 key2    从key1尾部移到key2头部</li>
+</ol>
+<h3 id="set集合"><a href="#set集合" class="headerlink" title="set集合"></a>set集合</h3><p>redis的set就是String的无序集合，通过hashtable实现</p>
+<ol>
+<li>添加<br> sadd key member</li>
+<li>删除<br> srem key member        移除指定的元素<br> spop key                     删除并返回一个随机的</li>
+<li>获取<br> smembers key            返回所有<br> srandmember            随机取一个不删除</li>
+<li>判断存在<br> sismember key member</li>
+<li>数量<br> scard key                     返回元素个数</li>
+<li>转移<br> smove srckey dstkey member</li>
+<li>取交集<br> sinter key1 key2 keyN<br> sinterstore dstkey key1 keyN        将交集存在dstkey</li>
+<li>取并集<br> sunion key1 key2 keyN<br> sunionstore dstkey key1 keyN    将并集存在dstkey</li>
+<li>取差集<br> sdiff key1 key2 keyN<br> sdiffstore dstkey key1 keyN        将差集存在dstkey</li>
+</ol>
+<h3 id="有序set类型"><a href="#有序set类型" class="headerlink" title="有序set类型"></a>有序set类型</h3><p>和set一样，不同的是每个元素关联一个double类型的score，根据score排序，sorted set的实现由skip list和hashtable</p>
+<ol>
+<li>添加<br> zadd key score member</li>
+<li>删除<br> zrem key member<br> zremrangebyrank key min max<br> zremrangebyscore key min max     删除集合score在给定区间的元素</li>
+<li>获取<br> zrange key start end<br> zrevrange    key start end            按score的逆序<br> zrangebyscore key min max        </li>
+<li>判断存在<br> zrank key member        返回下标<br> zrerank key member        返回逆序的下标</li>
+<li>数量<br> zcard key                        总数<br> zcount key min max         区间的数量</li>
+<li>修改<br> zincrby key incr member    增加member的score值并排序</li>
+</ol>
+<h3 id="hash类型"><a href="#hash类型" class="headerlink" title="hash类型"></a>hash类型</h3><p>redis的hash是一个string类型的field和value的映射表，hash特别适合存储对象，</p>
+<ol>
+<li>设置：<br> hset key field value<br> hmset key field1 value1 field2 value2</li>
+<li>获取：<br> hget key field<br> hmget key field1 field2</li>
+<li>判断存在<br> hexists key field</li>
+<li>删除<br> hdel key field</li>
+<li>查找<br> hkeys key            返回所有 field<br> hvals key            返回所有的value<br> hgetall key        返回所有field和value</li>
+<li>数量<br> hlen key</li>
+<li>值加减<br> hincrby key field integer    将指定的hash field加上定值</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; redis学习笔记：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    redis数据库的基本操作，增删改查&lt;br&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="redis" scheme="http://geeksblog.cc/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git比svn的优势</title>
+    <link href="http://geeksblog.cc/git-svn.html"/>
+    <id>http://geeksblog.cc/git-svn.html</id>
+    <published>2016-05-22T03:13:00.000Z</published>
+    <updated>2016-07-03T03:05:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> git比svn的优势：</strong> <Excerpt in index | 首页摘要><br>    主要介绍svn和git在使用的时候一些区别</p>
 <ul>
 <li><a id="more"></a>
 <The rest of contents | 余下全文>
 
 </li>
 </ul>
-<h3 id="1-_u5B89_u88C5sublime"><a href="#1-_u5B89_u88C5sublime" class="headerlink" title="1.安装sublime"></a>1.安装sublime</h3><h3 id="2-_u5B89_u88C5package_u7BA1_u7406_u5DE5_u5177"><a href="#2-_u5B89_u88C5package_u7BA1_u7406_u5DE5_u5177" class="headerlink" title="2.安装package管理工具"></a>2.安装package管理工具</h3><h3 id="3-_u5B89_u88C5_u5E38_u7528_u63D2_u4EF6"><a href="#3-_u5B89_u88C5_u5E38_u7528_u63D2_u4EF6" class="headerlink" title="3.安装常用插件"></a>3.安装常用插件</h3><h3 id="4-_u4E3B_u9898_u548C_u914D_u8272_u8BBE_u7F6E"><a href="#4-_u4E3B_u9898_u548C_u914D_u8272_u8BBE_u7F6E" class="headerlink" title="4.主题和配色设置"></a>4.主题和配色设置</h3><h3 id="5-_u4FA7_u8FB9_u680F_u9AD8_u7EA7_u8BBE_u7F6E"><a href="#5-_u4FA7_u8FB9_u680F_u9AD8_u7EA7_u8BBE_u7F6E" class="headerlink" title="5.侧边栏高级设置"></a>5.侧边栏高级设置</h3><h3 id="6-_u5F00_u53D1_u73AF_u5883_u914D_u7F6E"><a href="#6-_u5F00_u53D1_u73AF_u5883_u914D_u7F6E" class="headerlink" title="6.开发环境配置"></a>6.开发环境配置</h3><h3 id="7-_u5FEB_u6377_u952E_u8BBE_u7F6E"><a href="#7-_u5FEB_u6377_u952E_u8BBE_u7F6E" class="headerlink" title="7.快捷键设置"></a>7.快捷键设置</h3><h3 id="8-over"><a href="#8-over" class="headerlink" title="8.over"></a>8.over</h3>]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> sublime详细配置：</strong> <Excerpt in index | 首页摘要><br>    subime的常用配置应有尽有，快快来看吧</p>
+<h3 id="合并操作时对提交过程的保留"><a href="#合并操作时对提交过程的保留" class="headerlink" title="合并操作时对提交过程的保留"></a>合并操作时对提交过程的保留</h3><ul>
+<li>git:合并操作保留原有的提交过程</li>
+<li>svn:多个提交合并为一个提交</li>
+<li>不用因为合并操作而导致追踪的困难</li>
+</ul>
+<h3 id="修正提交"><a href="#修正提交" class="headerlink" title="修正提交"></a>修正提交</h3><ul>
+<li>git：可以修正提交。<br>使用功能分支工作流，在自己的分支可以方便修正提交而不会影响大家。</li>
+<li>svn：一旦提交就到服务器上，实际使用中就是不能修改<br>（svn可以在服务器上修改，因为过程复杂需要权限实际上从不会这样做）</li>
+</ul>
+<h3 id="本地分支"><a href="#本地分支" class="headerlink" title="本地分支"></a>本地分支</h3><ul>
+<li>git可以方便的创建本地分支,创建时间极短,分支可以是本地的,不会存在svn中目录权限的问题</li>
+</ul>
+<h3 id="强大的合并能力"><a href="#强大的合并能力" class="headerlink" title="强大的合并能力"></a>强大的合并能力</h3><ul>
+<li><p>git：重命名（无论文件还有目录）提交 可以合并上 文件重命名前的这些文件的提交</p>
+</li>
+<li><p>svn：重命名（无论文件还有目录）提交后，你本地/或是分支上 有文件重命名前的这些文件的修改或提交，在做合并操作时,你会碰上传说中难搞的<strong><em>树冲突</em></strong>！</p>
+</li>
+<li><p>这就导致在调整目录名称和类名调整的时候比较繁琐,需要告诉大家,我修改完以后你再修改</p>
+</li>
+</ul>
+<h3 id="tag的支持"><a href="#tag的支持" class="headerlink" title="tag的支持"></a>tag的支持</h3><ul>
+<li>svn在模型上是没有分支和tag的。tag是通过目录权限限制（对开发只读）来保证不变。</li>
+<li>git模型上一等公民支持tag，保证只读。</li>
+</ul>
+<h3 id="速度优势"><a href="#速度优势" class="headerlink" title="速度优势"></a>速度优势</h3><ul>
+<li>git的提交是个本地提交,相对svn来说如闪电一般</li>
+<li>git提供了暂存区,可以方便制定提交内容,而不是全部内容</li>
+</ul>
+<h3 id="日志查看"><a href="#日志查看" class="headerlink" title="日志查看"></a>日志查看</h3><ul>
+<li>git：本地包含了完整的日志，闪电的速度（并且无需网络)</li>
+<li>svn：需要从服务拉取。</li>
+<li>一旦用了git后，等待svn日志过程简直让我发狂</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; git比svn的优势：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    主要介绍svn和git在使用的时候一些区别&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java和javascript日期详解</title>
+    <link href="http://geeksblog.cc/java-date.html"/>
+    <id>http://geeksblog.cc/java-date.html</id>
+    <published>2016-05-13T13:48:00.000Z</published>
+    <updated>2016-06-30T14:09:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> java，js日期转换：</strong> <Excerpt in index | 首页摘要><br>    java的各种日期转换</p>
 <ul>
-<li>]]>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
 
-        </summary>
+</li>
+</ul>
+<h3 id="日期表示类型"><a href="#日期表示类型" class="headerlink" title="日期表示类型"></a>日期表示类型</h3><ol>
+<li><p>获取long类型的日期格式</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">long <span class="built_in">time</span> = <span class="keyword">System</span>.currentTimeMillis();</div><div class="line"><span class="keyword">System</span>.out.printf(<span class="built_in">time</span>+<span class="string">""</span>);</div><div class="line"><span class="built_in">Date</span> <span class="built_in">date</span> =<span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="keyword">System</span>.out.println(<span class="built_in">date</span>.getTime());</div></pre></td></tr></table></figure>
+</li>
+<li><p>获取制定格式的日期</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd hh:mm:ss"</span>);</div><div class="line"><span class="built_in">Date</span> <span class="built_in">date</span> =<span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="keyword">System</span>.out.println(sdf.<span class="keyword">format</span>(<span class="built_in">date</span>) );</div></pre></td></tr></table></figure>
+</li>
+<li><p>把制定格式的日期转为date或者毫秒值</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd hh:mm:ss"</span>);</div><div class="line"><span class="built_in">Date</span> <span class="built_in">date</span> = sdf.<span class="built_in">parse</span>(<span class="string">"2016-05-22 10:15:21"</span>);</div><div class="line">long mills = <span class="built_in">date</span>.getTime();</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>说明:System.currentTimeMillis()并不能精确到1ms的级别,它取决于运行的系统,你再windows,mac,linux精确的范围都有差异,对于有高精度时间的要求,不能使用这个</li>
+</ul>
+<h3 id="日期计算"><a href="#日期计算" class="headerlink" title="日期计算"></a>日期计算</h3><ol>
+<li>最方便的方式是将时间转为毫秒值进行计算<figure class="highlight lasso"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Date</span> from =<span class="literal">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="keyword">Thread</span>.sleep(<span class="number">200</span>);<span class="comment">//线程休眠2ms</span></div><div class="line"><span class="built_in">Date</span> <span class="keyword">to</span> =<span class="literal">new</span> <span class="built_in">Date</span>();</div><div class="line">System.out.println(<span class="keyword">to</span>.getTime()<span class="attr">-from</span>.getTime());</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="高精度时间"><a href="#高精度时间" class="headerlink" title="高精度时间"></a>高精度时间</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">long</span> time1 =System.nanoTime();</div><div class="line">System.out.<span class="built_in">printf</span>(time1+<span class="string">""</span>);</div></pre></td></tr></table></figure>
+<ul>
+<li>说明:System.nanoTime()提高了ns级别的精度,1ms=1000000ns,</li>
+</ul>
+<h3 id="javascript日期"><a href="#javascript日期" class="headerlink" title="javascript日期"></a>javascript日期</h3><ol>
+<li><p>获取时间的毫秒值</p>
+</li>
+<li><p>格式化时间</p>
+</li>
+<li><p>获取月份，时间</p>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; java，js日期转换：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    java的各种日期转换&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="java" scheme="http://geeksblog.cc/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>制定学习目标和计划</title>
+    <link href="http://geeksblog.cc/study-goals.html"/>
+    <id>http://geeksblog.cc/study-goals.html</id>
+    <published>2016-05-06T02:20:45.000Z</published>
+    <updated>2016-05-12T14:56:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 制定学习目标和计划：</strong> <Excerpt in index | 首页摘要><br>    近期的学习目标和学习重点,提高自己的能力</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
 
-        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
+</li>
+</ul>
+<h3 id="找到自己的兴趣"><a href="#找到自己的兴趣" class="headerlink" title="找到自己的兴趣"></a>找到自己的兴趣</h3><ul>
+<li>自己主动学习一定要基于自己的兴趣,不要看什么框架流行,什么语言火,就去学,学的不温不火,然后放弃.</li>
+<li>一定看自己的兴趣,比如你对色彩,对布局,对特效比较痴迷,那你去css3,html5做出特酷的效果,肯定能让你肯定自己,<br>收获知识和自信.</li>
+<li>没有兴趣的时候,可以适当的多接触一些东西,在最短的时间多接触一些领域,让自己的心去做选择,</li>
+</ul>
+<h3 id="制定目标"><a href="#制定目标" class="headerlink" title="制定目标"></a>制定目标</h3><ol>
+<li>为什么要制定目标?</li>
+</ol>
+<ul>
+<li>制定目标是对自己学习能力的检验,同时也是提高学习效率的关键,而不是自己没有目的的瞎看,</li>
+</ul>
+<ol>
+<li>如何制定目标?</li>
+</ol>
+<ul>
+<li>结合自身的能力,定制比自己能力稍高的目标,这样自己通过一定程度的努力可以实现目标.这样自己的能力能一次一次提高.</li>
+</ul>
+<h3 id="及时反馈"><a href="#及时反馈" class="headerlink" title="及时反馈"></a>及时反馈</h3><ul>
+<li>古人说的好,吾日三省吾身,对待学习目标也是一样,要时不时的看自己的目标完成的如何,进度如何,是不是需要调整,不能闷着头蛮干,方向错了,再多的努力也是白搭了.</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li>我在刚开始学编程的时候,每天都给自己定制了目标,一天完成多少课时,完成多少练习,都是按量完成,在最初的几个月收到了立竿见影的效果,让我也在短短三个月的时间学会了java,所以,目标的制定对于结果的影响是非常大.</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 制定学习目标和计划：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    近期的学习目标和学习重点,提高自己的能力&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="个人随笔" scheme="http://geeksblog.cc/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Ghost搭建个人博客</title>
+    <link href="http://geeksblog.cc/ghost-blog.html"/>
+    <id>http://geeksblog.cc/ghost-blog.html</id>
+    <published>2016-05-03T23:59:22.000Z</published>
+    <updated>2016-05-22T15:06:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 使用ghost搭建个人博客：</strong> <Excerpt in index | 首页摘要><br>    使用ghost搭建个人博客</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
 
-        <category term="开发工具" scheme="http://geekwalker.cn/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+</li>
+</ul>
+<h3 id="ghost简介"><a href="#ghost简介" class="headerlink" title="ghost简介"></a>ghost简介</h3><ul>
+<li>ghost是轻量级的博客建站工具,使用起来简单,功能强大,适合个人搭建小型网站,个人博客,或者个人展示的网站</li>
+<li>ghost基于nodejs,对于熟悉js的前端小伙伴来说,入手起来也是简单不少.</li>
+</ul>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
+<li>安装nodejs</li>
+<li>安转git</li>
+<li>配置ssh</li>
+<li>下载ghost</li>
+<li>购买域名</li>
+</ol>
+<h3 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h3><h3 id="定制个人博客"><a href="#定制个人博客" class="headerlink" title="定制个人博客"></a>定制个人博客</h3><h3 id="享受吧"><a href="#享受吧" class="headerlink" title="享受吧"></a>享受吧</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 使用ghost搭建个人博客：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    使用ghost搭建个人博客&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序算法学习</title>
+    <link href="http://geeksblog.cc/sort-study.html"/>
+    <id>http://geeksblog.cc/sort-study.html</id>
+    <published>2016-05-03T14:39:24.000Z</published>
+    <updated>2016-05-17T15:16:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 排序算法学习：</strong> <Excerpt in index | 首页摘要><br>    各种排序算法，算法的实现和分析</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
 
-    </entry>
+</li>
+</ul>
+<h2 id="排序算法的分类"><a href="#排序算法的分类" class="headerlink" title="排序算法的分类"></a>排序算法的分类</h2><ol>
+<li>排序分内排序和外排序。</li>
+<li>内排序:指在排序期间数据对象全部存放在内存的排序。</li>
+<li>外排序:指在排序期间全部对象个数太多,不能同时存放在内存,必须根据排序过程的要求,不断在内、外存之间移动的排序。</li>
+<li>内排序的方法有许多种,按所用策略不同,可归纳为五类:插入排序、选择排序、交换排序、归并排序、分配排序和计数排序。</li>
+<li>插入排序主要包括直接插入排序，折半插入排序和希尔排序两种;</li>
+<li>选择排序主要包括直接选择排序和堆排序;</li>
+<li>交换排序主要包括冒泡排序和快速排序;</li>
+<li>归并排序主要包括二路归并(常用的归并排序)和自然归并。</li>
+<li>分配排序主要包括箱排序和基数排序</li>
+</ol>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><ul>
+<li>冒泡排序就是把小的元素往前调或者把大的元素往后调。比较是相邻的两个元素比较，交换也发生在这两个元素之间。所以，如果两个元素相等，是不用交换的；如果两个相等的元素没有相邻，那么即使通过前面的两两交换把两个相邻起来，这时候也不会交换，所以相同元素的前后顺序并没有改变，所以冒泡排序是一种稳定排序算法<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">// js代码</div><div class="line">function <span class="built_in">sort</span>(arr) &#123;</div><div class="line"><span class="keyword">if</span> (arr.<span class="built_in">length</span> == <span class="number">0</span>) &#123;</div><div class="line">    <span class="built_in">return</span> [];</div><div class="line">&#125;</div><div class="line"><span class="built_in">var</span> <span class="built_in">length</span> = arr.<span class="built_in">length</span>;</div><div class="line"><span class="keyword">for</span> (<span class="built_in">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">length</span>; i++) &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="built_in">var</span> j = <span class="number">0</span>; j &lt; <span class="built_in">length</span> - i - <span class="number">1</span>; j++) &#123;</div><div class="line">            <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</div><div class="line">                <span class="built_in">var</span> temp = arr[j];</div><div class="line">                arr[j] = arr[j + <span class="number">1</span>];</div><div class="line">                arr[j + <span class="number">1</span>] = temp;</div><div class="line">                console.<span class="built_in">log</span>(arr);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><ul>
+<li>快速排序是对冒泡排序的一种改进。它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列.</li>
+<li>时间复杂度：O（n<em>lgn）最坏：O（n^2）空间复杂度：O（n</em>lgn）</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// js递归实现</span></div><div class="line">function <span class="built_in">quickSort</span>(arr) &#123;</div><div class="line">    <span class="keyword">if</span> (arr.length == <span class="number">0</span>) &#123;</div><div class="line">        <span class="keyword">return</span> [];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> <span class="keyword">left</span> = [];</div><div class="line">    <span class="keyword">var</span> <span class="keyword">right</span> = [];</div><div class="line">    <span class="keyword">var</span> pivot = arr[<span class="number">0</span>];</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; arr.length; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (arr[i] &lt; pivot) &#123;</div><div class="line">            <span class="keyword">left</span>.push(arr[i]);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">right</span>.push(arr[i]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="built_in">quickSort</span>(<span class="keyword">left</span>).concat(pivot, <span class="built_in">quickSort</span>(<span class="keyword">right</span>));</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> a = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; ++i) &#123;</div><div class="line">    a[i] = <span class="type">Math</span>.floor((<span class="type">Math</span>.random() * <span class="number">100</span>) + <span class="number">1</span>);</div><div class="line">&#125;</div><div class="line">console.log(a);</div><div class="line">console.log(<span class="built_in">quickSort</span>(a));</div></pre></td></tr></table></figure>
+<h2 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h2><ul>
+<li>直接插入排序(straight insertion sort)的作法是：每次从无序表中取出第一个元素，把它插入到有序表的合适位置，使有序表仍然有序.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">insertionSort</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> temp, inner;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> outer = <span class="number">1</span>; outer &lt;= arr.length - <span class="number">1</span>; ++outer) &#123;</div><div class="line">        temp = arr[outer];</div><div class="line">        inner = outer;</div><div class="line">        <span class="keyword">while</span> (inner &gt; <span class="number">0</span> &amp;&amp; (arr[inner - <span class="number">1</span>] &gt;= temp)) &#123;</div><div class="line">            arr[inner] = arr[inner - <span class="number">1</span>];</div><div class="line">            --inner;</div><div class="line">        &#125;</div><div class="line">        arr[inner] = temp;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> arr;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> a = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; ++i) &#123;</div><div class="line">    a[i] = <span class="built_in">Math</span>.floor((<span class="built_in">Math</span>.random() * <span class="number">100</span>) + <span class="number">1</span>);</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(a);</div><div class="line"><span class="built_in">console</span>.log(insertionSort(a));</div></pre></td></tr></table></figure>
+<h2 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h2><ul>
+<li>折半插入排序算法的具体操作为：在将一个新元素插入已排好序的数组的过程中，寻找插入点时，将待插入区域的首元素设置为a[low],末元素设置为 a[high]，则轮比较时将待插入元素与a[m],其中m=(low+high)/2相比较,如果比参考元素小，则选择a[low]到a[m-1]为新 的插入区域(即high=m-1)，否则选择a[m+1]到a[high]为新的插入区域（即low=m+1），如此直至low&lt;=high不成 立，即将此位置之后所有元素后移一位，并将新元素插入a[high+1]</li>
+</ul>
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><ul>
+<li>先取一个小于n的整数d1作为第一个增量，把文件的全部记录分成d1个组。所有距离为dl的倍数的记录放在同一个组中。先在各组内进行直接插入 排序；然后，取第二个增量d2&lt;d1重复上述的分组和排序，直至所取的增量dt=1(dt&lt;dt-l&lt;…&lt;d2&lt;d1)， 即所有记录放在同一组中进行直接插入排序为止。</li>
+<li>该方法实质上是一种分组插入方法。插入排序（Insertion Sort）的一个重要的特点是，如果原始数据的大部分元素已经排序，那么插入排序的速度很快（因为需要移动的元素很少）。从这个事实我们可以想到，如果原 始数据只有很少元素，那么排序的速度也很快。－－希尔排序就是基于这两点对插入排序作出了改进。</li>
+</ul>
+<h2 id="直接选择排序"><a href="#直接选择排序" class="headerlink" title="直接选择排序"></a>直接选择排序</h2><ul>
+<li>直接选择排序是给每个位置选择当前元素最小的，比如给第一个位置选择最小的，在剩余元素里面给第二个元素选择第二小的，依次类推，直到第n-1个元素，第n个 元素不用选择了，因为只剩下它一个最大的元素了。那么，在一趟选择，如果当前元素比一个元素小，而该小的元素又出现在一个和当前元素相等的元素后面，那么 交换后稳定性就被破坏了。比较拗口，举个例子，序列5 8 5 2 9，我们知道第一遍选择第1个元素5会和2交换，那么原序列中2个5的相对前后顺序就被破坏了，所以选择排序不是一个稳定的排序算法。时间复杂度是O(n^2)</li>
+</ul>
+<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><ul>
+<li>我们知道堆的结构是节点i的孩子为2<em>i和2</em>i+1节点，大顶堆要求父节点大于等于其2个子节点，小顶堆要求父节点小于等于其2个子节点。在一个长为n 的序列，堆排序的过程是从第n/2开始和其子节点共3个值选择最大(大顶堆)或者最小(小顶堆),这3个元素之间的选择当然不会破坏稳定性。但当为n /2-1, n/2-2, …1这些个父节点选择元素时，就会破坏稳定性。有可能第n/2个父节点交换把后面一个元素交换过去了，而第n/2-1个父节点把后面一个相同的元素没 有交换，那么这2个相同的元素之间的稳定性就被破坏了。所以，堆排序不是稳定的排序算法。</li>
+</ul>
+<h2 id="二路归并排序"><a href="#二路归并排序" class="headerlink" title="二路归并排序"></a>二路归并排序</h2><ul>
+<li>归并排序是把序列递归地分成短序列，递归出口是短序列只有1个元素(认为直接有序)或者2个序列(1次比较和交换),然后把各个有序的段序列合并成一个有 序的长序列，不断合并直到原序列全部排好序。可以发现，在1个或2个元素时，1个元素不会交换，2个元素如果大小相等也没有人故意交换，这不会破坏稳定 性。那么，在短的有序序列合并的过程中，稳定是是否受到破坏？没有，合并过程中我们可以保证如果两个当前元素相等时，我们把处在前面的序列的元素保存在结 果序列的前面，这样就保证了稳定性。所以，归并排序也是稳定的排序算法。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 排序算法学习：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    各种排序算法，算法的实现和分析&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="算法" scheme="http://geeksblog.cc/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git学习笔记</title>
+    <link href="http://geeksblog.cc/git-config-study.html"/>
+    <id>http://geeksblog.cc/git-config-study.html</id>
+    <published>2016-05-01T00:24:45.000Z</published>
+    <updated>2016-05-29T16:28:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>** git学习笔记：** \<Excerpt in index | 首页摘要\><br>    git的常用操作，高级技巧都要哦<br><a id="more"></a><br>\<The rest of contents | 余下全文\></p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><ol>
+<li>下载安装包 ￼下载地址￼</li>
+<li>安装git</li>
+<li>进入命令行,输入git看看是否成功</li>
+</ol>
+<h3 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h3><ol>
+<li>配置全局用户名和密码<br> `git config –global user.name “John Doe”<br> git config –global user.email johndoe@example.com<br> `</li>
+<li>配置ssh公钥<br> <code>cd ~/.ssh</code> 然后<code>ls</code><br> 如果没有,直接生成,一路点击enter<br> ```<br> ssh-keygen<br> cat ~/.ssh/id_rsa.pub<br> ```<br> 把公钥配置到github的个人设置</li>
+</ol>
+<h3 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h3><ol>
+<li><p>repository操作</p>
+<ul>
+<li>检出（clone）仓库代码：<code>git clone repository-url</code> / <code>git clone repository-url local-directoryname</code><ul>
+<li>例如，clone jquery 仓库到本地： <code>git clone git://github.com/jquery/jquery.git</code></li>
+<li>clone jquery 仓库到本地，并且重命名为 my-jquery ：<code>git clone git://github.com/jquery/jquery.git my-jquery</code></li>
+</ul>
+</li>
+<li>查看远程仓库：<code>git remote -v</code></li>
+<li>添加远程仓库：<code>git remote add [name] [repository-url]</code></li>
+<li>删除远程仓库：<code>git remote rm [name]</code></li>
+<li>修改远程仓库地址：<code>git remote set-url origin new-repository-url</code></li>
+<li>拉取远程仓库： <code>git pull [remoteName] [localBranchName]</code></li>
+<li>推送远程仓库： <code>git push [remoteName] [localBranchName]</code></li>
+</ul>
+</li>
+<li><p>提交/拉取/合并/删除</p>
+<ul>
+<li>添加文件到暂存区（staged）：<code>git add filename</code> / <code>git stage filename</code></li>
+<li>将所有修改文件添加到暂存区（staged）： <code>git add --all</code> / <code>git add -A</code></li>
+<li>提交修改到暂存区（staged）：<code>git commit -m &#39;commit message&#39;</code> / <code>git commit -a -m &#39;commit message&#39;</code> 注意理解 -a 参数的意义</li>
+<li>从Git仓库中删除文件：<code>git rm filename</code></li>
+<li>从Git仓库中删除文件，但本地文件保留：<code>git rm --cached filename</code></li>
+<li><p>重命名某个文件：<code>git mv filename newfilename</code> 或者直接修改完毕文件名 ，进行<code>git add -A &amp;&amp; git commit -m &#39;commit message&#39;</code> Git会自动识别是重命名了文件</p>
+</li>
+<li><p>获取远程最新代码到本地：<code>git pull (origin branchname)</code> 可以指定分支名，也可以忽略。pull 命令自动 fetch 远程代码并且 merge，如果有冲突，会显示在状态栏，需要手动处理。更推荐使用：<code>git fetch</code> 之后 <code>git merge --no-ff origin branchname</code> 拉取最新的代码到本地仓库，并手动 merge 。</p>
+</li>
+</ul>
+</li>
+<li><p>日志查看</p>
+<ul>
+<li>查看日志：<code>git log</code></li>
+<li>查看日志，并查看每次的修改内容：<code>git log -p</code></li>
+<li>查看日志，并查看每次文件的简单修改状态：<code>git log --stat</code></li>
+<li>一行显示日志：<code>git log --pretty=oneline</code> / <code>git log --pretty=&#39;format:&quot;%h - %an, %ar : %s&#39;</code></li>
+<li>查看日志范围：<ul>
+<li>查看最近10条日志：<code>git log -10</code></li>
+<li>查看2周前：<code>git log --until=2week</code> 或者指定2周的明确日期，比如：<code>git log --until=2015-08-12</code></li>
+<li>查看最近2周内：<code>git log --since=2week</code> 或者指定2周明确日志，比如：<code>git log --since=2015-08-12</code></li>
+<li>只查看某个用户的提交：<code>git log --committer=user.name</code> / <code>git log --author=user.name</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>取消操作</p>
+<ul>
+<li>上次提交msg错误/有未提交的文件应该同上一次一起提交，需要重新提交备注：<code>git commit --amend -m &#39;new msg&#39;</code></li>
+<li>一次<code>git add -A</code>后，需要将某个文件撤回到工作区，即：某个文件不应该在本次commit中：<code>git reset HEAD filename</code></li>
+<li>撤销某些文件的修改内容：<code>git checkout -- filename</code> 注意：一旦执行，所有的改动都没有了，谨慎！谨慎！谨慎！</li>
+<li>将工作区内容回退到远端的某个版本：<code>git reset --hard &lt;sha1-of-commit&gt;</code><ul>
+<li><code>--hard</code>：reset stage and working directory ,<commitid> 以来所有的变更全部丢弃，并将 HEAD 指向<commitid></li>
+<li><code>--soft</code>：nothing changed to stage and working directory ,仅仅将HEAD指向<commitid> ，所有变更显示在”changed to be committed”中</li>
+<li><code>--mixed</code>：default,reset stage ,nothing to working directory ，这也就是第二个例子的原因</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>比较差异</p>
+<ul>
+<li>查看工作区（working directory）和暂存区（staged）之间差异：<code>git diff</code></li>
+<li>查看工作区（working directory）与当前仓库版本（repository）HEAD版本差异：<code>git diff HEAD</code></li>
+<li>查看暂存区（staged）与当前仓库版本（repository）差异：<code>git diff --cached</code> / <code>git diff --staged</code></li>
+</ul>
+</li>
+<li><p>合并操作</p>
+<ul>
+<li>解决冲突后/获取远程最新代码后合并代码：<code>git merge branchname</code></li>
+<li>保留该存在版本合并log：<code>git merge --no-ff branchname</code> 参数<code>--no-ff</code>防止 fast-forward 的提交</li>
+</ul>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;** git学习笔记：** \&lt;Excerpt in index | 首页摘要\&gt;&lt;br&gt;    git的常用操作，高级技巧都要哦&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu16开发环境配置</title>
+    <link href="http://geeksblog.cc/ubuntu-dev-config.html"/>
+    <id>http://geeksblog.cc/ubuntu-dev-config.html</id>
+    <published>2016-04-26T10:48:11.000Z</published>
+    <updated>2016-05-22T15:08:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> ubuntu开发环境配置：</strong> <Excerpt in index | 首页摘要><br>    ubuntu16下node,java开发环境配置</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
 
-    <entry>
-        <title><![CDATA[我的梦想]]></title>
-        <link href="http://geekwalker.cn/2016/04/24/dream/"/>
-        <id>http://geekwalker.cn/2016/04/24/dream/</id>
-        <published>2016-04-24T14:07:27.000Z</published>
-        <updated>2016-04-24T14:37:00.266Z</updated>
-        <content type="html"><![CDATA[<p><strong> 我的梦想：</strong> <Excerpt in index | 首页摘要><br>    一个人如果活着没有梦想,那和咸鱼有什么区别?</p>
+</li>
+</ul>
+<h3 id="安装系统软件"><a href="#安装系统软件" class="headerlink" title="安装系统软件"></a>安装系统软件</h3><ol>
+<li><p>更新系统和软件</p>
+<figure class="highlight q"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></div><div class="line">sudo apt-<span class="built_in">get</span> upgade</div></pre></td></tr></table></figure>
+</li>
+<li><p>谷歌浏览器，火狐浏览器，atom编辑器，sublime编辑器，webstome,idea,eclipse</p>
+</li>
+<li>安装搜狗输入法（官网），安装fcitx配置搜狗输入法</li>
+</ol>
+<h3 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装jdk</h3><ol>
+<li><p>下载jdk并新建一个文件夹</p>
+ <figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /usr/<span class="class"><span class="keyword">lib</span>/<span class="title">jvm</span></span></div></pre></td></tr></table></figure>
+</li>
+<li><p>解压文件</p>
+ <figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo tar zxvf jdk-<span class="number">7</span>u71-linux-x64.tar.gz -C /usr/<span class="class"><span class="keyword">lib</span>/<span class="title">jvm</span>/<span class="title">jdk1</span>.7</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>设置环境变量,设置~/.zshrc文件,或者编辑/etc/profile（全局）文件</p>
+ <figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=<span class="regexp">/usr/lib</span><span class="regexp">/jvm/jdk</span>1.<span class="number">7</span></div><div class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  </div><div class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/<span class="class"><span class="keyword">lib</span>:$&#123;<span class="title">JRE_HOME</span>&#125;/<span class="title">lib</span>  </span></div><div class="line">export PATH=$&#123;JAVA_HOME&#125;/<span class="symbol">bin:</span>$PATH</div></pre></td></tr></table></figure>
+</li>
+<li><p>检查是否安装成功<br> 打开shell,</p>
+ <figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java <span class="comment">--version</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><ol>
+<li>nodejs版本迭代较快，有时候需要检查在不同版本下的兼容性问题，用nvm来控制版本</li>
+<li><p>安装nvm,source的时候根据自己的shell版本，~/.bashrc, ~/.profile, 或者 ~/.zshrc</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash</div><div class="line"><span class="built_in">export</span> NVM_DIR=<span class="string">"<span class="variable">$HOME</span>/.nvm"</span></div><div class="line">[ <span class="_">-s</span> <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> ] &amp;&amp; . <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> <span class="comment"># This loads nvm</span></div><div class="line"><span class="built_in">source</span> ~/.profile</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装不同版本的nodejs<br>　　<figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">nvm ls-remote</div><div class="line">nvm install v0<span class="number">.12</span><span class="number">.9</span></div><div class="line">nvm install <span class="number">5.0</span></div><div class="line">nvm use <span class="number">0.12</span><span class="number">.9</span></div><div class="line">nvm alias <span class="section">default</span> <span class="number">0.12</span><span class="number">.9</span></div></pre></td></tr></table></figure></p>
+</li>
+</ol>
+<h3 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h3><ol>
+<li><p>配置公钥</p>
+ <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-key adv --keyserver <span class="string">hkp:</span><span class="comment">//keyserver.ubuntu.com:80 --recv 7F0CEB10</span></div><div class="line">echo <span class="string">"deb http://repo.mongodb.org/apt/ubuntu "</span>$(lsb_release -sc)<span class="string">"/mongodb-org/3.0 multiverse"</span> | sudo tee <span class="regexp">/etc/</span>apt<span class="regexp">/sources.list.d/</span>mongodb-org<span class="number">-3.0</span>.list</div></pre></td></tr></table></figure>
+</li>
+<li><p>更新软件列表</p>
+ <figure class="highlight q"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></div><div class="line">sudo apt-<span class="built_in">get</span> install -y mongodb-org</div></pre></td></tr></table></figure>
+</li>
+<li><p>完成上面的安装步骤配置mongodb的数据库的位置</p>
+ <figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mongod <span class="comment">--dbpath /data/db</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>启动mongod</p>
+ <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo service mongod <span class="literal">start</span></div><div class="line">sudo service mongod <span class="literal">stop</span></div><div class="line">sudo service mongod restart</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h3><ol>
+<li><p>下载软件</p>
+ <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget <span class="string">http:</span><span class="comment">//download.redis.io/releases/redis-2.8.11.tar.gz</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>解压安装</p>
+ <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">tar</span> <span class="selector-tag">xvfz</span> <span class="selector-tag">redis-2</span><span class="selector-class">.8</span><span class="selector-class">.11</span><span class="selector-class">.tar</span><span class="selector-class">.gz</span></div><div class="line"><span class="selector-tag">cd</span> <span class="selector-tag">redis-2</span><span class="selector-class">.8</span><span class="selector-class">.11</span> &amp;&amp; <span class="selector-tag">sudo</span> <span class="selector-tag">make</span> &amp;&amp; <span class="selector-tag">sudo</span> <span class="selector-tag">make</span> <span class="selector-tag">install</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>配置使用</p>
+<ol>
+<li><p>下载配置文件和init启动脚本</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">wget <span class="symbol">https:</span>/<span class="regexp">/github.com/ijonas</span><span class="regexp">/dotfiles/raw</span><span class="regexp">/master/etc</span><span class="regexp">/init.d/redis</span>-server</div><div class="line">wget <span class="symbol">https:</span>/<span class="regexp">/github.com/ijonas</span><span class="regexp">/dotfiles/raw</span><span class="regexp">/master/etc</span><span class="regexp">/redis.conf</div><div class="line">sudo mv redis-server /etc</span><span class="regexp">/init.d/redis</span>-server</div><div class="line">sudo chmod +x /etc/init.d/redis-server</div><div class="line">sudo mv redis.conf /etc/redis.conf</div></pre></td></tr></table></figure>
+</li>
+<li><p>初始化用户和日志路径</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo useradd redis</div><div class="line">sudo mkdir -p /var/<span class="class"><span class="keyword">lib</span>/<span class="title">redis</span></span></div><div class="line">sudo mkdir -p /var/log/redis</div><div class="line">sudo chown redis.redis /var/<span class="class"><span class="keyword">lib</span>/<span class="title">redis</span></span></div><div class="line">sudo chown redis.redis /var/log/redis</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置开机自动启动，关机自动关闭</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo <span class="keyword">update</span>-rc.d redis-<span class="keyword">server</span> <span class="keyword">defaults</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><ol>
+<li>认识环境变量相关的文件</li>
+</ol>
+<ul>
+<li>/etc/profile —— 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置；</li>
+<li>/etc/environment —— 在登录时操作系统使用的第二个文件,系统在读取你自己的profile前,设置环境文件的环境变量；</li>
+<li>/etc/bashrc —— 为每一个运行bash shell的用户执行此文件.当bash shell被打开时,该文件被读取；</li>
+<li>~/.profile —— 每个用户都可使用该文件输入专用于自己使用的shell信息，当用户登录时，该文件仅仅执行一次！默认情况下,它设置一些环境变量,执行用户的.bashrc文件；</li>
+<li>~/.bashrc —— 该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该文件被读取；</li>
+</ul>
+<ol>
+<li><p>配置环境变量</p>
+<ul>
+<li><p>在Ubuntu14.04的~/.bashrc中添加的环境变量,在文件添加</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export PATH=<span class="variable">$PATH</span><span class="symbol">:/home/qtcreator-</span><span class="number">2.6</span>.<span class="number">1</span>/bin</div></pre></td></tr></table></figure>
+</li>
+<li><p>修改profile文件,vim编辑/etc/profile</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo <span class="keyword">vim</span> /etc/<span class="keyword">profile</span></div><div class="line"><span class="keyword">source</span> /etc/<span class="keyword">profile</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="安装开发工具"><a href="#安装开发工具" class="headerlink" title="安装开发工具"></a>安装开发工具</h3><ol>
+<li>zsh命令行工具</li>
+<li>mysql客户端workbench，mongo客户端工具robomongo</li>
+<li>安装git,svn版本控制工具 <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get <span class="keyword">install</span> git</div><div class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> subversion</div></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; ubuntu开发环境配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    ubuntu16下node,java开发环境配置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="linux" scheme="http://geeksblog.cc/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime详细配置</title>
+    <link href="http://geeksblog.cc/sublime-config.html"/>
+    <id>http://geeksblog.cc/sublime-config.html</id>
+    <published>2016-04-26T10:47:46.000Z</published>
+    <updated>2016-05-02T15:07:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> sublime详细配置：</strong> <Excerpt in index | 首页摘要><br>    subime的常用配置应有尽有，快快来看吧</p>
+<ul>
+<li><a id="more"></a>
+<The rest of contents | 余下全文>
+
+</li>
+</ul>
+<h3 id="安装sublime-text3"><a href="#安装sublime-text3" class="headerlink" title="安装sublime text3"></a>安装sublime text3</h3><ul>
+<li>去官网或者搜索一下，然后进行自行破解，建议安装sublime3083版本</li>
+</ul>
+<h3 id="安装package管理工具"><a href="#安装package管理工具" class="headerlink" title="安装package管理工具"></a>安装package管理工具</h3><ul>
+<li><p>使用通过View-&gt;Show Console菜单打开命令行，粘贴如下代码：</p>
+  <figure class="highlight gradle"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> urllib.request,os; pf = <span class="string">'Package Control.sublime-package'</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.<span class="keyword">join</span>(ipp, pf), <span class="string">'wb'</span>).<span class="keyword">write</span>(urllib.request.urlopen( <span class="string">'http://sublime.wbond.net/'</span> + pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).<span class="keyword">read</span>())</div></pre></td></tr></table></figure>
+</li>
+<li><p>手动安装</p>
+<ol>
+<li>点击Preferences &gt; Browse Packages菜单</li>
+<li>进入打开的目录的上层目录，然后再进入Installed Packages/目录</li>
+<li>下载<a href="https://sublime.wbond.net/Package%20Control.sublime-package">package controle</a>并复制到Installed Packages/目录</li>
+<li>重启Sublime Text。</li>
+</ol>
+</li>
+</ul>
+<h3 id="安装常用插件"><a href="#安装常用插件" class="headerlink" title="安装常用插件"></a>安装常用插件</h3><ol>
+<li>点击Preferences &gt; package controle菜单输入install package,输入插件名称</li>
+<li>常用插件名称：<ol>
+<li>emmet,git,sidebar</li>
+</ol>
+</li>
+</ol>
+<h3 id="主题和配色设置"><a href="#主题和配色设置" class="headerlink" title="主题和配色设置"></a>主题和配色设置</h3><p>-　推荐seti主题，配色主题推荐one dark（和atom一样）</p>
+<h3 id="侧边栏高级设置"><a href="#侧边栏高级设置" class="headerlink" title="侧边栏高级设置"></a>侧边栏高级设置</h3><ul>
+<li>修改侧边栏字体大小 用sublime编辑主题文件，搜索sidebar_label，找到font,把相关的字体调大</li>
+</ul>
+<h3 id="开发环境配置"><a href="#开发环境配置" class="headerlink" title="开发环境配置"></a>开发环境配置</h3><h3 id="快捷键设置"><a href="#快捷键设置" class="headerlink" title="快捷键设置"></a>快捷键设置</h3><h3 id="over"><a href="#over" class="headerlink" title="over"></a>over</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; sublime详细配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    subime的常用配置应有尽有，快快来看吧&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的梦想</title>
+    <link href="http://geeksblog.cc/dream.html"/>
+    <id>http://geeksblog.cc/dream.html</id>
+    <published>2016-04-24T14:07:27.000Z</published>
+    <updated>2016-04-24T14:37:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 我的梦想：</strong> <Excerpt in index | 首页摘要><br>    一个人如果活着没有梦想,那和咸鱼有什么区别?</p>
 <ul>
 <li><a id="more"></a>请问你的梦想是什么?<The rest of contents | 余下全文>
 
 </li>
 </ul>
-<h3 id="u6211_u7684_u68A6_u60F3_u662F_u4EC0_u4E48_3F"><a href="#u6211_u7684_u68A6_u60F3_u662F_u4EC0_u4E48_3F" class="headerlink" title="我的梦想是什么?"></a>我的梦想是什么?</h3><ul>
+<h3 id="我的梦想是什么"><a href="#我的梦想是什么" class="headerlink" title="我的梦想是什么?"></a>我的梦想是什么?</h3><ul>
 <li><p>刚开始接触编程的时候,感觉代码是个神器的世界,在这里你可以为所欲为,然后看到很多大神的框架,软件,在使用别人好的框架,好的软件,那一刻我感觉 <strong>“我的梦想就是用代码改变世界!”</strong></p>
 </li>
 <li><p>感觉自己迷失了好久,找不到方向,曾经的激情不知道去了哪里?</p>
 </li>
 </ul>
-<h3 id="u5F00_u59CB_u8FFD_u68A6"><a href="#u5F00_u59CB_u8FFD_u68A6" class="headerlink" title="开始追梦"></a>开始追梦</h3><ul>
+<h3 id="开始追梦"><a href="#开始追梦" class="headerlink" title="开始追梦"></a>开始追梦</h3><ul>
 <li>有了梦想,我开始了疯狂的奋斗,每天休息4,5个小时,全身心去学习编程,努力还是很快得到了回报,我用了3个月就入门学好了java,然后找了java程序员的工作,就这样开始了我程序员的追梦之旅!</li>
 </ul>
-<h3 id="u521D_u7EA7_u7A0B_u5E8F_u5458"><a href="#u521D_u7EA7_u7A0B_u5E8F_u5458" class="headerlink" title="初级程序员"></a>初级程序员</h3><ul>
+<h3 id="初级程序员"><a href="#初级程序员" class="headerlink" title="初级程序员"></a>初级程序员</h3><ul>
 <li>虽然入门了,但是刚开始的工作并不是一帆风顺的.我还记得第一份任务,老大让我写一个稍微复杂的接口,客户专用的接口,使用springmvc,还要提交到git上,对我而言,这一切都是新东西,经过我几天的努力,还是搞砸了,就这样第一个任务以失败告终!</li>
 <li>虽然第一个任务失败了,但是工作还在继续,我还是继续努力的工作,我必须承认我不是编程的天才,可能别人一个小时完成的任务,我需要一个半小时,但是我必须做好,因为我有梦想!</li>
 </ul>
-<h3 id="u4E2D_u7EA7_u7A0B_u5E8F_u5458"><a href="#u4E2D_u7EA7_u7A0B_u5E8F_u5458" class="headerlink" title="中级程序员"></a>中级程序员</h3><ul>
+<h3 id="中级程序员"><a href="#中级程序员" class="headerlink" title="中级程序员"></a>中级程序员</h3><ul>
 <li><p>在工作的时候就感觉时间飞逝,一天天很快过去.晚上睡觉的时候,我就会问自己,我今天到底做了什么功能?我收获了哪些技能?曾经有段时间每天都是该页面,我几乎烦的崩溃,感觉每天都在做无用的东西,后来发现,无论是前段后端,其实都是必不可少的技能,我的心态应该调整,让自己去喜欢前段,同时保持后端的热情.</p>
 </li>
 <li><p>一个成熟的程序员和菜鸟最大的区别应该是心态!</p>
 </li>
 </ul>
-<h3 id="u9AD8_u7EA7_u7A0B_u5E8F_u5458"><a href="#u9AD8_u7EA7_u7A0B_u5E8F_u5458" class="headerlink" title="高级程序员"></a>高级程序员</h3><ul>
+<h3 id="高级程序员"><a href="#高级程序员" class="headerlink" title="高级程序员"></a>高级程序员</h3><ul>
 <li>未完待续</li>
 </ul>
-<h3 id="u67B6_u6784_u5E08"><a href="#u67B6_u6784_u5E08" class="headerlink" title="架构师"></a>架构师</h3><ul>
+<h3 id="架构师"><a href="#架构师" class="headerlink" title="架构师"></a>架构师</h3><ul>
 <li>未完待续</li>
 </ul>
 ]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> 我的梦想：</strong> <Excerpt in index | 首页摘要><br>    一个人如果活着没有梦想,那和咸鱼有什么区别?</p>
-<ul>
-<li>]]>
-
-        </summary>
-
-        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
-
-        <category term="个人随笔" scheme="http://geekwalker.cn/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
-
-    </entry>
-
-    <entry>
-        <title><![CDATA[Js秘密花园]]></title>
-        <link href="http://geekwalker.cn/2016/04/23/js-study/"/>
-        <id>http://geekwalker.cn/2016/04/23/js-study/</id>
-        <published>2016-04-23T02:24:09.000Z</published>
-        <updated>2016-04-23T03:54:53.715Z</updated>
-        <content type="html"><![CDATA[<p><strong> Js秘密花园：</strong> <Excerpt in index | 首页摘要><br>    js学习中遇到的问题,非常实用!</p>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 我的梦想：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    一个人如果活着没有梦想,那和咸鱼有什么区别?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="个人随笔" scheme="http://geeksblog.cc/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Js秘密花园</title>
+    <link href="http://geeksblog.cc/js-study.html"/>
+    <id>http://geeksblog.cc/js-study.html</id>
+    <published>2016-04-23T02:24:09.000Z</published>
+    <updated>2016-05-11T01:39:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> Js秘密花园：</strong> <Excerpt in index | 首页摘要><br>    js学习中遇到的问题,非常实用!</p>
 <ul>
 <li><a id="more"></a>部分来自js秘密花园,其他都是自己的总结<The rest of contents | 余下全文>
 
 </li>
 </ul>
-<h2 id="u51FD_u6570_u4E0E_u533F_u540D_u51FD_u6570_u7684_u5199_u6CD5"><a href="#u51FD_u6570_u4E0E_u533F_u540D_u51FD_u6570_u7684_u5199_u6CD5" class="headerlink" title="函数与匿名函数的写法"></a>函数与匿名函数的写法</h2><ul>
+<h2 id="函数与匿名函数的写法"><a href="#函数与匿名函数的写法" class="headerlink" title="函数与匿名函数的写法"></a>函数与匿名函数的写法</h2><ul>
 <li><p>函数声明</p>
 <ol>
 <li><p>第一种方式</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">()</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">()</span> </span>&#123;&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>第二种方式</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;&#125;;</div></pre></td></tr></table></figure>
 </li>
 <li><p>第三种方式</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    bar(); <span class="comment">// 正常运行</span></span><br><span class="line">&#125;</span><br><span class="line">bar(); <span class="comment">// 出错：ReferenceError</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">()</span> </span>&#123;</div><div class="line">    bar(); <span class="comment">// 正常运行</span></div><div class="line">&#125;</div><div class="line">bar(); <span class="comment">// 出错：ReferenceError</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 <li><p>匿名函数</p>
 <ol>
 <li><p>第一种方式</p>
-<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">function</span><span class="list">()</span><span class="collection">&#123;</span><br><span class="line">        test<span class="list">()</span><span class="comment">;</span></span><br><span class="line">    &#125;</span>)</span><span class="list">()</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">function</span>()&#123;</div><div class="line">        test()<span class="comment">;</span></div><div class="line">    &#125;)()<span class="comment">;</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>第二种方式</p>
-<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">function</span><span class="list">()</span><span class="collection">&#123;</span><br><span class="line">        test<span class="list">()</span><span class="comment">;</span></span><br><span class="line">    &#125;</span><span class="list">()</span>)</span><span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="name">function</span>()&#123;</div><div class="line">        test()<span class="comment">;</span></div><div class="line">    &#125;())<span class="comment">;</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 </ul>
-<h2 id="js_u4E2Dfor_u5FAA_u73AF"><a href="#js_u4E2Dfor_u5FAA_u73AF" class="headerlink" title="js中for循环"></a>js中for循环</h2><ul>
+<h2 id="js中for循环"><a href="#js中for循环" class="headerlink" title="js中for循环"></a>js中for循环</h2><ul>
 <li><p>为了达到遍历数组的最佳性能，推荐使用经典的 for 循环</p>
 <ol>
 <li><p>经典for循环</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var arr = <span class="matrix">[<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>]</span>;</span><br><span class="line"><span class="keyword">for</span>(var <span class="built_in">i</span>=<span class="number">0</span>;<span class="built_in">i</span>&lt;arr.<span class="built_in">length</span>;<span class="built_in">i</span>++)<span class="cell">&#123;</span><br><span class="line">    console.log(arr[i]);</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>];</div><div class="line"><span class="keyword">for</span>(var <span class="built_in">i</span>=<span class="number">0</span>;<span class="built_in">i</span>&lt;arr.<span class="built_in">length</span>;<span class="built_in">i</span>++)&#123;</div><div class="line">    console.log(arr[i]);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>for in循环(可以循环对象的属性),for in 循环同样在查找对象属性时遍历原型链上的所有属性</p>
-<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> arr)<span class="comment">&#123;</span><br><span class="line">    console.log(arr[i]);</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>];</div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> arr)&#123;</div><div class="line">    <span class="built_in">console</span>.log(arr[i]);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>forEach循环</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>];</span><br><span class="line">arr.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">ele</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(ele);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="string">'aa'</span>,<span class="string">'bb'</span>,<span class="string">'cc'</span>];</div><div class="line">arr.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">ele</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(ele);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 </ul>
-<h2 id="this_u7684_u7528_u6CD5"><a href="#this_u7684_u7528_u6CD5" class="headerlink" title="this的用法"></a>this的用法</h2><ul>
+<h2 id="this的用法"><a href="#this的用法" class="headerlink" title="this的用法"></a>this的用法</h2><ul>
 <li><p>js中最复杂的莫过于的this的指向,此处大致介绍五种this的指向</p>
 <ol>
 <li>全局范围内,this指向全局,浏览器中是window对象</li>
 <li><p>函数调用,也是指向全局</p>
-<figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">foo()<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">foo<span class="comment">()</span>;</div></pre></td></tr></table></figure>
 </li>
 <li><p>对象方法调用,指向调用者</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">test</span><span class="class">.foo</span>();</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">test<span class="selector-class">.foo</span>();</div></pre></td></tr></table></figure>
 </li>
 <li><p>构造函数,指向新创建的对象</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> foo();</span><br></pre></td></tr></table></figure>
+<figure class="highlight pony"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">new</span> <span class="title">foo</span>();</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>显示改变的this的指向</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">foo</span><span class="params">(a, b, c)</span> </span>&#123;&#125;</span><br><span class="line">var bar = &#123;&#125;;</span><br><span class="line">foo.apply(bar, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// 数组将会被扩展，如下所示</span></span><br><span class="line">foo.call(bar, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// 传递到foo的参数是：a = 1, b = 2, c = 3</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function foo(a, b, c) &#123;&#125;</div><div class="line">var bar = &#123;&#125;;</div><div class="line">foo.apply(bar, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]); <span class="comment">// 数组将会被扩展，如下所示</span></div><div class="line">foo.call(bar, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">// 传递到foo的参数是：a = 1, b = 2, c = 3</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 </ul>
-<h2 id="call_u548Capply_u7684_u89E3_u60D1"><a href="#call_u548Capply_u7684_u89E3_u60D1" class="headerlink" title="call和apply的解惑"></a>call和apply的解惑</h2><ul>
+<h2 id="call和apply的解惑"><a href="#call和apply的解惑" class="headerlink" title="call和apply的解惑"></a>call和apply的解惑</h2><ul>
 <li><p>这两个方法的用途都是在特定的作用域中调用函数,实际上等于设置函数体内 this 对象的值。首先, apply() 方法接收两个参数:一个是在其中运行函数的作用域,另一个是参数数组。其中,第二个参数可以是 Array 的实例,也可以是arguments 对象。例如:</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1, num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span>(<span class="params">num1, num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum2</span>(<span class="params">num1, num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>, [num1, num2]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(callSum1(<span class="number">10</span>,<span class="number">10</span>));</span><br><span class="line"><span class="built_in">console</span>.log(callSum2(<span class="number">10</span>,<span class="number">10</span>));</span><br><span class="line"><span class="comment">// 传入 arguments 对象</span></span><br><span class="line"><span class="comment">// 传入数组</span></span><br><span class="line"><span class="comment">//20</span></span><br><span class="line"><span class="comment">//20</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum2</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>, [num1, num2]);</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(callSum1(<span class="number">10</span>,<span class="number">10</span>));</div><div class="line"><span class="built_in">console</span>.log(callSum2(<span class="number">10</span>,<span class="number">10</span>));</div><div class="line"><span class="comment">// 传入 arguments 对象</span></div><div class="line"><span class="comment">// 传入数组</span></div><div class="line"><span class="comment">//20</span></div><div class="line"><span class="comment">//20</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>call() 方法与 apply() 方法的作用相同,它们的区别仅在于接收参数的方式不同。对于 call()<br>方法而言,第一个参数是 this 值没有变化,变化的是其余参数都直接传递给函数。换句话说,在使用<br>call() 方法时,传递给函数的参数必须逐个列举出来,如下面的例子所示:</p>
-  <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">(num1, num2)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum</span><span class="params">(num1, num2)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> sum.call(<span class="keyword">this</span>, num1, num2);</span><br><span class="line">&#125;</span><br><span class="line">cosole.log(callSum(<span class="number">10</span>,<span class="number">10</span>)); <span class="comment">//20</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">(num1, num2)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum</span><span class="params">(num1, num2)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> sum.call(<span class="keyword">this</span>, num1, num2);</div><div class="line">&#125;</div><div class="line">cosole.log(callSum(<span class="number">10</span>,<span class="number">10</span>)); <span class="comment">//20</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>事实上，传递参数并非 apply()和 call()真正的用武之地；它们真正强大的地方是能够扩充函数<br>赖以运行的作用域。下面来看一个例子。</p>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.color = <span class="string">"red"</span>;</span><br><span class="line"><span class="keyword">var</span> o = &#123; color: <span class="string">"blue"</span> &#125;;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayColor</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>.color);</span><br><span class="line">&#125;</span><br><span class="line">sayColor(); <span class="comment">//red</span></span><br><span class="line">sayColor.call(<span class="keyword">this</span>); <span class="comment">//red</span></span><br><span class="line">sayColor.call(<span class="built_in">window</span>); <span class="comment">//red</span></span><br><span class="line">sayColor.call(o); <span class="comment">//blue</span></span><br></pre></td></tr></table></figure>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.color = <span class="string">"red"</span>;</div><div class="line"><span class="keyword">var</span> o = &#123; color: <span class="string">"blue"</span> &#125;;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayColor</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    alert(<span class="keyword">this</span>.color);</div><div class="line">&#125;</div><div class="line">sayColor(); <span class="comment">//red</span></div><div class="line">sayColor.call(<span class="keyword">this</span>); <span class="comment">//red</span></div><div class="line">sayColor.call(<span class="built_in">window</span>); <span class="comment">//red</span></div><div class="line">sayColor.call(o); <span class="comment">//blue</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="js_u9762_u5411_u5BF9_u8C61"><a href="#js_u9762_u5411_u5BF9_u8C61" class="headerlink" title="js面向对象"></a>js面向对象</h2><ul>
+<h2 id="js面向对象"><a href="#js面向对象" class="headerlink" title="js面向对象"></a>js面向对象</h2><ul>
 <li>未完待续</li>
 </ul>
 ]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> Js秘密花园：</strong> <Excerpt in index | 首页摘要><br>    js学习中遇到的问题,非常实用!</p>
-<ul>
-<li>]]>
-
-        </summary>
-
-        <category term="javacript" scheme="http://geekwalker.cn/tags/javacript/"/>
-
-        <category term="学习笔记" scheme="http://geekwalker.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-
-    </entry>
-
-    <entry>
-        <title><![CDATA[Hexo和coding打造静态博客]]></title>
-        <link href="http://geekwalker.cn/2016/04/19/hexo-coding-blog/"/>
-        <id>http://geekwalker.cn/2016/04/19/hexo-coding-blog/</id>
-        <published>2016-04-19T03:32:59.000Z</published>
-        <updated>2016-04-24T14:23:58.934Z</updated>
-        <content type="html"><![CDATA[<p><strong> hexo和coding打造静态博客 ：</strong> <Excerpt in index | 首页摘要><br>    使用hexo和coding打造属于自己的静态博客，展示自己的作品，思想……</p>
-<ul>
-<li><a id="more"></a>
-<The rest of contents | 余下全文>
-
-</li>
-</ul>
-<h3 id="u4EC0_u4E48_u662Fhexo_3F"><a href="#u4EC0_u4E48_u662Fhexo_3F" class="headerlink" title="什么是hexo?"></a>什么是hexo?</h3><ul>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; Js秘密花园：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    js学习中遇到的问题,非常实用!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="javacript" scheme="http://geeksblog.cc/tags/javacript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo和coding打造静态博客</title>
+    <link href="http://geeksblog.cc/hexo-coding-blog.html"/>
+    <id>http://geeksblog.cc/hexo-coding-blog.html</id>
+    <published>2016-04-19T03:32:59.000Z</published>
+    <updated>2016-08-07T22:38:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>** hexo和coding打造静态博客 ：** \<Excerpt in index | 首页摘要\><br>    使用hexo和coding打造属于自己的静态博客，展示自己的作品，思想……<br><a id="more"></a><br>\<The rest of contents | 余下全文\></p>
+<h3 id="什么是hexo"><a href="#什么是hexo" class="headerlink" title="什么是hexo?"></a>什么是hexo?</h3><ul>
 <li>hexo是台湾的一个大学生用nodejs做的一个静态博客框架，使用hexo可以速度搭建自己的静态博客，<br>结合第三方的代码托管平台即可实现个人的博客网站。</li>
 </ul>
-<h3 id="u4EC0_u4E48_u662Fcoding_3F"><a href="#u4EC0_u4E48_u662Fcoding_3F" class="headerlink" title="什么是coding?"></a>什么是coding?</h3><ul>
+<h3 id="什么是coding"><a href="#什么是coding" class="headerlink" title="什么是coding?"></a>什么是coding?</h3><ul>
 <li>coding是和github类似的代码托管平台，但又不仅仅是托管平台，还有在线ide，码市等旗下产品，gitcafe也是被coding收购了，之前用gitcafe搭建的博客可以重新搭建了。</li>
 </ul>
-<h3 id="u4EC0_u4E48_u662F_u9759_u6001_u535A_u5BA2_3F"><a href="#u4EC0_u4E48_u662F_u9759_u6001_u535A_u5BA2_3F" class="headerlink" title="什么是静态博客?"></a>什么是静态博客?</h3><ul>
+<h3 id="什么是静态博客"><a href="#什么是静态博客" class="headerlink" title="什么是静态博客?"></a>什么是静态博客?</h3><ul>
 <li>静态博客就是只是有静态页面和js，css构成的博客，普通的网站都是有web服务构成的，而静态博客只是页面的集合，利用js做一些展示和特效。</li>
 </ul>
-<h3 id="u5B89_u88C5hexo"><a href="#u5B89_u88C5hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
 <li><p>首先确保自己安装nodejs，在命令行输入，尽量安装v0.12以上的版本</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">node</span><span class="identifier"> </span><span class="title">-v</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">node</span> <span class="title">-v</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>安装hexo，命令行输入</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-cli -<span class="keyword">g</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-<span class="keyword">cli</span> -g</div></pre></td></tr></table></figure>
 </li>
 <li><p>本地调试hexo，参考我的另一篇文章<br><a href="http://geekwalker.cn/2015/12/20/hexo-githup-blog/">hexo和github打造个人博客</a></p>
 </li>
 </ul>
-<h3 id="u6CE8_u518C_u914D_u7F6Ecoding"><a href="#u6CE8_u518C_u914D_u7F6Ecoding" class="headerlink" title="注册配置coding"></a>注册配置coding</h3><ul>
+<h3 id="注册配置coding"><a href="#注册配置coding" class="headerlink" title="注册配置coding"></a>注册配置coding</h3><ul>
 <li>coding的pages功能有两种，一个是项目主页，一个是个人主页，本博客采用个人主页。</li>
 <li>个人主页就是项目中有一个coding-pages的分支，把项目发布到这个分支即可</li>
 <li>coding的代码也是通过git这个工具，所以在coding个人设置里配置好自己的ssh公钥和github操作一样的</li>
 <li>在coding建立一个项目，名字和你的个性后缀一样，也就是Global Key，在个人设置里可以看到</li>
 </ul>
-<h3 id="u90E8_u7F72_u535A_u5BA2_u5230coding"><a href="#u90E8_u7F72_u535A_u5BA2_u5230coding" class="headerlink" title="部署博客到coding"></a>部署博客到coding</h3><ul>
-<li>在项目根目录下，修改_config.yml文件，把maocg替换为你的Global Key<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">- <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>:git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:maocg/maocg.git,coding-pages</span><br></pre></td></tr></table></figure>
+<h3 id="部署博客到coding"><a href="#部署博客到coding" class="headerlink" title="部署博客到coding"></a>部署博客到coding</h3><ul>
+<li>在项目根目录下，修改_config.yml文件，把maocg替换为你的Global Key<figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">deploy</span>:</div><div class="line">- <span class="attribute">type</span>: git</div><div class="line">  <span class="attribute">repo</span>:git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:maocg/maocg.git,coding-pages</div></pre></td></tr></table></figure>
 </li>
 </ul>
+<h3 id="域名配置"><a href="#域名配置" class="headerlink" title="域名配置"></a>域名配置</h3><ol>
+<li>在万网或者国外网站购买域名,备案并实名认证</li>
+<li>coding里的个人page可以直接配置域名,在个人项目设置,点击pages设置,绑定个人域名</li>
+<li>在域名解析里指向coding里你个人page的ip地址,</li>
+<li></li>
+</ol>
 ]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> hexo和coding打造静态博客 ：</strong> <Excerpt in index | 首页摘要><br>    使用hexo和coding打造属于自己的静态博客，展示自己的作品，思想……</p>
-<ul>
-<li>]]>
-
-        </summary>
-
-        <category term="node" scheme="http://geekwalker.cn/tags/node/"/>
-
-        <category term="编程语言" scheme="http://geekwalker.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-
-    </entry>
-
-    <entry>
-        <title><![CDATA[程序员入门指南]]></title>
-        <link href="http://geekwalker.cn/2016/04/17/coder-study/"/>
-        <id>http://geekwalker.cn/2016/04/17/coder-study/</id>
-        <published>2016-04-17T04:37:19.000Z</published>
-        <updated>2016-04-21T16:25:34.074Z</updated>
-        <content type="html"><![CDATA[<p><strong> 程序员入门指南 ：</strong> <Excerpt in index | 首页摘要><br>        程序员入门必须了解的一些知识，个人经验，不喜勿喷！</p>
-<ul>
-<li><a id="more"></a>
-<The rest of contents | 余下全文>
-
-</li>
-</ul>
-<h2 id="u7A0B_u5E8F_u5458_u7684_u5165_u95E8_u89C4_u5212"><a href="#u7A0B_u5E8F_u5458_u7684_u5165_u95E8_u89C4_u5212" class="headerlink" title="程序员的入门规划"></a>程序员的入门规划</h2><h3 id="1-_u6211_u8BE5_u5B66_u4E60_u4EC0_u4E48_u8BED_u8A00_uFF1F"><a href="#1-_u6211_u8BE5_u5B66_u4E60_u4EC0_u4E48_u8BED_u8A00_uFF1F" class="headerlink" title="1.我该学习什么语言？"></a>1.我该学习什么语言？</h3><ul>
-<li><p>这个问题困扰了几乎所有的程序员，比如java应用广好就业，比如php入门简单，ios待遇高，  python是万能语言，HTML和js前端缺人才等等</p>
-</li>
-<li><p>个人见解：先学习难度小，大众化的编程语言，比如java，php，python，javascript,c/c++,这几个学哪一种其实差不多，入门以后看自己兴趣在进行其它语言的学习。</p>
-</li>
-</ul>
-<h3 id="2-_u6211_u8BE5_u600E_u4E48_u5B66_u4E60_u7F16_u7A0B_uFF1F"><a href="#2-_u6211_u8BE5_u600E_u4E48_u5B66_u4E60_u7F16_u7A0B_uFF1F" class="headerlink" title="2.我该怎么学习编程？"></a>2.我该怎么学习编程？</h3><p>这个问题是所有的程序员都有的，我也经常会疑问，到底该怎么学习呢？</p>
-<p>个人见解：</p>
-<ol>
-<li>先了解语言的特性，适用的范围场景，比如是适合web开发，还是适合客户端程序，有的适合并发多线程，有的适合异步，还有的比较稳定，适合构建大型项目，有的开发效率高，等等。</li>
-<li>了解语言的语法和常用api的使用，比如变量的声明，循环的使用，io的读取，http服务的创建，把这些基本的语法搞清楚，在进行下一步的学习。</li>
-<li>学习web开发之前的准备，数据库的学习，http协议的学习，html，css和javacript的常用知识了解</li>
-<li>学习常用框架，比如java学习常用的ssh三大框架，node的学习express，一定要做2个项目练习，把自己的之前学习的知识都巩固一下，</li>
-<li>总结一下自己学习的过程，明白编程的思想在哪里，思路在哪里，学习编程，首先应该培养的是编程的思维和思想，有个正确的思维后面都简单多了。</li>
-<li>养成写博客或者学习笔记的习惯，推荐写博客，</li>
-<li>熟悉项目管理工具，svn，git之类的必须要会，工作中这些都是必须的</li>
-<li>准备面试，通过面试题进一步巩固自己的知识，夯实基础。</li>
-</ol>
-<h3 id="3-_u6211_u5E94_u8BE5_u53BB_u54EA_u91CC_u5B66_u4E60_u7F16_u7A0B_uFF1F"><a href="#3-_u6211_u5E94_u8BE5_u53BB_u54EA_u91CC_u5B66_u4E60_u7F16_u7A0B_uFF1F" class="headerlink" title="3.我应该去哪里学习编程？"></a>3.我应该去哪里学习编程？</h3><p>其实这个看个人，如果自学能力强，自控能力强，自学挺好的，下面我列举几个程序员常用的网站  </p>
-<ol>
-<li><a href="http://study.163.com/">网易云课堂</a>，很多免费的视频课程，适合入门学习</li>
-<li><a href="http://www.imooc.com/">慕课网</a>，很多it入门教学视频，资源也不错</li>
-<li><a href="http://www.jikexueyuan.com/">极客学院</a>，和前两个网站差不多，</li>
-<li><a href="http://www.ibeifeng.com/">北风网</a>，类似的教学网站，其它的就不说了</li>
-</ol>
-<h3 id="4-_u7F16_u7A0B_u9047_u5230_u95EE_u9898_u600E_u4E48_u529E_uFF1F"><a href="#4-_u7F16_u7A0B_u9047_u5230_u95EE_u9898_u600E_u4E48_u529E_uFF1F" class="headerlink" title="4.编程遇到问题怎么办？"></a>4.编程遇到问题怎么办？</h3><ul>
-<li>百度或者谷歌看看网上有没有类似的问题，一回生，二回熟，很快就明白了</li>
-<li>去官网查看api文档查找原因</li>
-<li>自己要学会debug代码，查找原因</li>
-<li>去各大论坛逛逛，说不定早有人提问此类问题了</li>
-</ul>
-<h3 id="5-_u6211_u60F3_u770B_u7F16_u7A0B_u7684_u4E66_u7C4D_u53BB_u54EA_u627E_u5462_uFF1F"><a href="#5-_u6211_u60F3_u770B_u7F16_u7A0B_u7684_u4E66_u7C4D_u53BB_u54EA_u627E_u5462_uFF1F" class="headerlink" title="5.我想看编程的书籍去哪找呢？"></a>5.我想看编程的书籍去哪找呢？</h3><p>经典书籍还是买纸质的，买正版的，支持正版！</p>
-<ol>
-<li><a href="http://vdisk.weibo.com/">新浪微盘</a>，非常多的it书籍  </li>
-<li><a href="http://www.jb51.net/">脚本之家</a>，非常多的pdf书籍，可惜大多数不是文字版pdf  </li>
-<li><a href="http://www.salttiger.com/">英文原版书籍</a>，都是高清文字版pdf，强烈推荐，都是英文原版的  </li>
-<li><a href="http://bestcbooks.com/">计算机书控</a>，都是免费的pdf文档，大多数不是文字版pdf</li>
-</ol>
-<h3 id="6-_u5B66_u4E60_u5FC3_u6001"><a href="#6-_u5B66_u4E60_u5FC3_u6001" class="headerlink" title="6.学习心态"></a>6.学习心态</h3><ol>
-<li>不要老是折腾工具，ide工具和文本编辑器一样一个就够了</li>
-<li>不要自满，编程的东西学一辈子也学不会，要谦虚好学</li>
-<li>不要急躁，既然知识学不完，我们应该掌握学习方法，指定计划去学习</li>
-<li>要持之以恒，学习是一辈子的事，如果你没有这个打算，还是不要做程序员的好</li>
-<li>切忌眼高手低，必须要敲代码才能达到效果</li>
-</ol>
-<h3 id="7-_u7F16_u7A0B_u8FDB_u9636_u4E4B_u8DEF"><a href="#7-_u7F16_u7A0B_u8FDB_u9636_u4E4B_u8DEF" class="headerlink" title="7.编程进阶之路"></a>7.编程进阶之路</h3><pre><code>当有了一定的编程基础之后,最大的问题是确定自己的方向,这个时候最容易迷茫和困惑,学习什么技术?  
-怎么去学,这些真的很难
-</code></pre><ul>
-<li>个人建议如下:<br>1.技术型方向:提高自己的编程能力和语言造诣,最有效的是”造轮子”,量变引起质变</li>
-<li>写插件,写框架,写爬虫,写数据库,自制编程语言,等等.<br>2.业务型方向:提高自己的业务能力,和客户的沟通能力,分析需求,解决客户的难题</li>
-<li>多出去见客户,去现场,了解需求,分析需求,</li>
-</ul>
-]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> 程序员入门指南 ：</strong> <Excerpt in index | 首页摘要><br>        程序员入门必须了解的一些知识，个人经验，不喜勿喷！</p>
-<ul>
-<li>]]>
-
-        </summary>
-
-        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
-
-        <category term="编程语言" scheme="http://geekwalker.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-
-    </entry>
-
-    <entry>
-        <title><![CDATA[Hexo和github打造个人博客]]></title>
-        <link href="http://geekwalker.cn/2015/12/20/hexo-githup-blog/"/>
-        <id>http://geekwalker.cn/2015/12/20/hexo-githup-blog/</id>
-        <published>2015-12-20T14:35:04.000Z</published>
-        <updated>2016-04-21T16:26:35.777Z</updated>
-        <content type="html"><![CDATA[<p><strong> hexo和github打造个人博客 ：</strong> <Excerpt in index | 首页摘要><br>    使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……</p>
-<ul>
-<li><a id="more"></a>
-<The rest of contents | 余下全文>
-
-</li>
-</ul>
-<p>##说明<br>    自己在使用hexo搭建静态博客的时候踩了许多坑,最终去官网看教程搞定了,<br>    建议用hexo搭建个人博客的时候,最好看清教程的日期和使用的版本,这样就<br>    不会因为版本的不同导致的问题了.建议先去hexo官网了解一下<br>   <a href="https://hexo.io/zh-cn/"><strong>hexo官网</strong></a></p>
-<h2 id="1-_u51C6_u5907_u5DE5_u4F5C"><a href="#1-_u51C6_u5907_u5DE5_u4F5C" class="headerlink" title="1.准备工作"></a>1.准备工作</h2><ol>
-<li>安装nodejs<ul>
-<li>去官网下载nodejs安装(推荐安装0.12.x),安装之后在命令行 node -v,如果成功说明node环境ok,不成功就去环境变量配置一下.</li>
-</ul>
-</li>
-<li>安装hexo<ul>
-<li>使用命令 npm install hexo -g,执行hexo -v 查看版本,本教程适合<strong>3.1.1</strong>版本</li>
-</ul>
-</li>
-<li>安装git<ul>
-<li>去官网下载git安装,不会自行百度</li>
-</ul>
-</li>
-<li>配置git<ul>
-<li>配置ssh私钥,上传到github上</li>
-</ul>
-</li>
-</ol>
-<h2 id="2-github-pages_u548Cgitcafe-page_u7684_u8BF4_u660E"><a href="#2-github-pages_u548Cgitcafe-page_u7684_u8BF4_u660E" class="headerlink" title="2.github-pages和gitcafe-page的说明"></a>2.github-pages和gitcafe-page的说明</h2><ol>
-<li>github有两种主页,一种是github-page(个人主页),一种是项目主页,本教程针对个人主页</li>
-<li>gitcafe-page的个人主页只是在项目下有一个gitcafe-pages的分支,部署成功后访问主页即可</li>
-<li>github-page需要将hexo博客发布到repository的master(主干)即可</li>
-<li>gitcafe需要将hexo博客发布到repository的gitcafe-pages的分支</li>
-<li>github的个人主页要求repository的名称和username一致，加入username是tom，则repository的名称为tom.github.io<h2 id="3-_u4F7F_u7528hexo_u5199_u535A_u5BA2"><a href="#3-_u4F7F_u7528hexo_u5199_u535A_u5BA2" class="headerlink" title="3.使用hexo写博客"></a>3.使用hexo写博客</h2><ul>
-<li>新建一个文件夹myblog,</li>
-<li>右键git bash here使用git的shell</li>
-<li>在shell中输入hexo init,回车执行</li>
-<li>在shell中输入hexo g ,回车</li>
-<li>在shell中hexo s,回车</li>
-<li>去浏览器访问<a href="http://localhost:4000,访问到主页,然后在shell中ctrl">http://localhost:4000,访问到主页,然后在shell中ctrl</a> c停止</li>
-<li>在shell中hexo new “first-blog”,回车</li>
-<li>在shell中hexo g ,回车</li>
-<li>在shell中hexo s ,回车,在访问</li>
-<li>ok,在本地测试就没问题了</li>
-</ul>
-</li>
-</ol>
-<h2 id="4-_u53D1_u5E03_u5230github_u548Cgitcafe"><a href="#4-_u53D1_u5E03_u5230github_u548Cgitcafe" class="headerlink" title="4.发布到github和gitcafe"></a>4.发布到github和gitcafe</h2><pre><code>- 打开项目根部录下的.config.yml,找到deploy,修改如下:
-</code></pre><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line"> - <span class="attribute">type</span>: git</span><br><span class="line">   <span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:yourname/yourname.github.io.git,master</span><br><span class="line"> - <span class="attribute">type</span>: git</span><br><span class="line">   <span class="attribute">repo</span>: git<span class="variable">@gitcafe</span>.<span class="attribute">com</span>:yourname/yourname.git,gitcafe-pages</span><br></pre></td></tr></table></figure>
-<pre><code>- 如果只发布到github或者gitcafe上,修改如下:git的branch是master,gitcafe的是gitcafe-pages
-</code></pre><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="keyword">type</span>: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br><span class="line">  branch: [branch]</span><br><span class="line">  <span class="keyword">message</span>: [<span class="keyword">message</span>]</span><br></pre></td></tr></table></figure>
-<pre><code>访问地址就是 http://tom.github.io/
-</code></pre><h2 id="5-_u5E38_u89C1_u95EE_u9898"><a href="#5-_u5E38_u89C1_u95EE_u9898" class="headerlink" title="5.常见问题"></a>5.常见问题</h2><ol>
-<li>部署时出现git not found<ul>
-<li>npm install hexo-deployer-git –save  安装依赖包</li>
-</ul>
-</li>
-</ol>
-<h2 id="6-_u8BE6_u7EC6_u8BBE_u7F6E"><a href="#6-_u8BE6_u7EC6_u8BBE_u7F6E" class="headerlink" title="6.详细设置"></a>6.详细设置</h2><pre><code>每个人对自己的博客都有不一样的要求，比如主题，分类，标签，评论插件的选择，  
-这些对程序员的你来说，都是小菜一碟，下面是官网教程：
-</code></pre><p>   <a href="https://hexo.io/docs/">hexo官方文档</a></p>
-<p>博客效果可以看我的个人博客     <a href="http://maocg.gitcafe.io/archives/">我的个人博客</a></p>
-]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> hexo和github打造个人博客 ：</strong> <Excerpt in index | 首页摘要><br>    使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……</p>
-<ul>
-<li>]]>
-
-        </summary>
-
-        <category term="node" scheme="http://geekwalker.cn/tags/node/"/>
-
-        <category term="编程语言" scheme="http://geekwalker.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-
-    </entry>
-
-    <entry>
-        <title><![CDATA[Mongodb从入门到精通]]></title>
-        <link href="http://geekwalker.cn/2015/12/19/mongodb-study/"/>
-        <id>http://geekwalker.cn/2015/12/19/mongodb-study/</id>
-        <published>2015-12-19T15:21:23.000Z</published>
-        <updated>2016-04-21T16:26:46.214Z</updated>
-        <content type="html"><![CDATA[<p><strong> mongodb从入门到精通</strong> <Excerpt in index | 首页摘要><br>    mongodb日常使用的一些知识，增删改查，索引，分片。</p>
-<ul>
-<li><a id="more"></a>
-<The rest of contents | 余下全文>
-
-</li>
-</ul>
-<h3 id="mongodb_u5B66_u4E60"><a href="#mongodb_u5B66_u4E60" class="headerlink" title="mongodb学习"></a>mongodb学习</h3><h2 id="1-mongodb_u7279_u6027"><a href="#1-mongodb_u7279_u6027" class="headerlink" title="1.mongodb特性"></a>1.mongodb特性</h2><pre><code>1）mongo是一个面向文档的数据库，它集合了nosql和sql数据库两方面的特性。
-2）所有实体都是在首次使用时创建。
-3）没有严格的事务特性，但是它保证任何一次数据变更都是原子性的。
-4）也没有固定的数据模型
-5）mongo以javascript作为命令行执行引擎，所以利用shell进行复杂的计算和查询时会相当的慢。
-6）mongo本身支持集群和数据分片
-7）mongo是c++实现的，支持windows mac linux等主流操作系统
-8）性能优越，速度快
-</code></pre><h2 id="2-mongo_u5E38_u7528_u64CD_u4F5C"><a href="#2-mongo_u5E38_u7528_u64CD_u4F5C" class="headerlink" title="2.mongo常用操作"></a>2.mongo常用操作</h2><pre><code>1.增删操作
-   db.user.insert({name:&apos;aaaa&apos;,age:30});
-   db.user.save({name:&apos;aaaa&apos;,age:30});
-   db.collection.insertOne({});(3.2新特性)
-   db.collection.deleteOne(&lt;filter&gt;,{});(3.2新特性)
-   db.collection.remove({name:&apos;aaa&apos;});
-   db.collection.remove();(删除全部)
-
-2.更新操作
-  db.users.update ({   &quot; name&quot;   :   &quot;joe&quot;   },   joe );
-  db.users.update ({   &quot; name&quot;   :   &quot;joe&quot;   },   joe,  true );------upsert模式
-  db.users.update ({   &quot; name&quot;   :   &quot;joe&quot;   },   joe,  true ，true);------MULTI模式
-</code></pre><blockquote>
-<p>update是对文档替换，而不是局部修改默认情况update更新匹配的第一条文档，multi模式更新所有匹配的  </p>
-</blockquote>
-<pre><code>3.查询操作
-  -- 普通查询
-  db.user.find();
-  db.user.find({name:&apos;aaa&apos;});
-  db.user.findOne({name:&apos;aaa&apos;});
-
-  -- 模糊查询
-  db.UserInfo.find({userName :/A/}) （名称%A%）
-  db.UserInfo.find({userName :/^A/}) (名称A%)
-
-4.操作符
-    1.$lt, $lte,$gt, $gte(&lt;, &lt;=, &gt;, &gt;= )     
-    2.$all    数组中的元素是否完全匹配  db.things.find( { a: { $all: [ 2, 3 ] } } );
-    3.$exists  可选：true，false  db.things.find( { a : { $exists : true } } );
-    4.$mod  取模：a % 10 == 1  db.things.find( { a : { $mod : [ 10 , 1 ] } } );
-    5.$ne 取反：即not equals  db.things.find( { x : { $ne : 3 } } );
-    6.$in 类似于SQL的IN操作  db.things.find({j:{$in: [2,4,6]}});
-    7.$nin $in的反操作，即SQL的  NOT IN  db.things.find({j:{$nin: [2,4,6]}});
-    8.$nor $or的反操作，即不匹配(a或b)  db.things.find( { name : &quot;bob&quot;, $nor : [ { a : 1 },{ b : 2 }]})
-    9.$or Or子句，注意$or不能嵌套使用  db.things.find( { name : &quot;bob&quot; , $or : [ { a : 1 },{ b : 2 }]})
-    10.$size  匹配数组长度  db.things.find( { a : { $size: 1 } } );
-    11.$type  匹配子键的数据类型，详情请看  db.things.find( { a : { $type : 2 } } );
-
-5.数组查询
-    $size 用来匹配数组长度（即最大下标）  
-    // 返回comments包含5个元素的文档   
-    db.posts.find({}, {comments:{‘$size’: 5}});  
-    // 使用冗余字段来实现  
-    db.posts.find({}, {‘commentCount’: { ‘$gt’: 5 }});   
-    $slice 操作符类似于子键筛选，只不过它筛选的是数组中的项  
-    // 仅返回数组中的前5项  
-    db.posts.find({}, {comments:{‘$slice’: 5}});  
-    // 仅返回数组中的最后5项  
-    db.posts.find({}, {comments:{‘$slice’: -5}});  
-    // 跳过数组中的前20项，返回接下来的10项  
-    db.posts.find({}, {comments:{‘$slice’: [20, 10]}});  
-    // 跳过数组中的最后20项，返回接下来的10项  
-    db.posts.find({}, {comments:{‘$slice’: [-20, 10]}});  
-    MongoDB 允许在查询中指定数组的下标，以实现更加精确的匹配  
-    // 返回comments中第1项的by子键为Abe的所有文档  
-    db.posts.find( { &quot;comments.0.by&quot; : &quot;Abe&quot; } );   
-</code></pre><h2 id="3-_u7D22_u5F15_u7684_u4F7F_u7528"><a href="#3-_u7D22_u5F15_u7684_u4F7F_u7528" class="headerlink" title="3.索引的使用"></a>3.索引的使用</h2><pre><code>1.创建索引
-    db.things.ensureIndex ({&apos;j&apos;: 1});
-    创建子文档 索引
-    db.things.ensureIndex ({&apos;user.Name&apos; : - 1});
-    创建 复合 索引
-    db.things.ensureIndex ({
-    &apos;j&apos; : 1 ,   //  升序
-    &apos;x&apos; : - 1   //  降序
-    });
-    如果 您的 find 操作只用到了一个键，那么索引方向是无关紧要的  
-    当创建复合索引的时候，一定要谨慎斟酌每个键的排序方向
-
-2.修改索引
-    修改索引，只需要重新 运行索引 命令即可  
-    如果索引已经存在则会 重建， 不存在的索引会被 添加  
-    db . things . ensureIndex ({
-        --- 原来的索引会 重建
-        &apos;user.Name &apos; :   - 1 ,
-        --- 新增一个升序 索引
-        &apos;user.Name &apos; :   1 ,
-        ---  为 Age 新建降序 索引
-        &apos;user.Age &apos; :   - 1
-    },
-    打开后台执行
-    {    ‘background&apos; :   true}
-    );
-    重建索引
-    db. things .reIndex();
-3.删除索引
-    删除集合中的所有 索引
-    db . things . dropIndexes ();  
-    删除指定键的索引  
-    db.things.dropIndex ({
-        x :   1 ,
-        y :   - 1
-    });  
-    使用 command 删除指定键的 索引
-    db.runCommand ({
-        dropIndexes : &apos;foo &apos; ,
-        index  :   {   y :   1   }
-    });  
-    使用 command 删除所有 索引
-    db . runCommand ({dropIndexes : &apos;foo &apos; ,index  :   &apos;*‘})
-    如果是删除集合中所有的文档（remove）则不会影响索引，当有新文档插入时，索引就会重建。
-4.唯一索引
-    创建唯一索引，同时这也是一个符合唯一索引  
-    db.things.ensureIndex (
-    {
-        &apos;firstName &apos; :   1 ,
-        &apos;lastName &apos; :   1
-    },   {
-    指定为唯一索引
-    &apos;unique &apos; :   true ,
-    删除重复 记录
-    &apos;dropDups &apos; :   true
-    });
-
-5、强制使用索引
-  强制使用索引 a 和 b
-    db.collection.find ({
-        &apos;a &apos; :   4 ,
-        &apos;b &apos; :   5 ,
-        &apos;c &apos; :   6
-    }). hint ({
-        &apos;a &apos; :   1 ,
-        &apos;b &apos; :   1
-    });
-    强制不使用任何 索引
-    db.collection.find ().hint ({
-        &apos;$ natural&apos; :   1
-    });
-</code></pre><hr>
-<p>索引总结:<br>        索引可以加速查询；<br>        单个索引无需在意其索引方向；<br>        多键索引需要慎重考虑每个索引的方向；<br>        做海量数据更新时应当先卸载所有索引，待数据更新完成后再重建索引；<br>        不要试图为每个键都创建索引，应考虑实际需要，并不是索引越多越好；<br>        唯一索引可以用来消除重复记录；<br>        地理空间索引是没有单位的，其内部实现是基本的勾股定理算法</p>
-<h2 id="4-mongo_u6570_u636E_u5E93_u7BA1_u7406"><a href="#4-mongo_u6570_u636E_u5E93_u7BA1_u7406" class="headerlink" title="4.mongo数据库管理"></a>4.mongo数据库管理</h2><pre><code>- 安全与认证
-1、 默认为无认证，启动用登录 shell ；
-2、 添加账号；
-3、 关闭 shell 、关闭 MongoDB ；
-4、 为 MongoDB 增加 — auth 参数；
-5、 重 启 MongoDB ；
-6、 登录 shell ，此时就需要认证了
-
-- 冷备份
-1、关闭MongoDB引擎
-2、拷贝数据库文件夹及文件
-3、恢复时反向操作即可        
-    -- 优点：可以完全保证数据完整性；
-    -- 缺点：需要数据库引擎离线     
-- 热备份
-1、 保持MongoDB为运行状态
-2、使用mongodump备份数据
-3、使用mongorestore恢复数据
-    --    优点：数据库引擎无须离线
-    --缺点：不能保证数据完整性，操作时会降低MongoDB性能
-
-- 主从复制备份
-1、创建主从复制机制
-2、配置完成后数据会自动同步
-3、恢复途径很多
-    -- 优点：可以保持MongoDB处于联机状态，不影响性能
-    -- 缺点：在数据写入密集的情况下可能无法保证数据完整性
-
-- 修复
-db.repairDatabase();
-  修复数据库还可以起到压缩数据的作用；
-  修复数据库的操作相当耗时，万不得已请不要使用；
-  建议经常做数据备份；
-</code></pre><h2 id="5-mongo_u590D_u5236_28_u96C6_u7FA4_29"><a href="#5-mongo_u590D_u5236_28_u96C6_u7FA4_29" class="headerlink" title="5.mongo复制(集群)"></a>5.mongo复制(集群)</h2><pre><code>1、主从复制
-    选项      说明
-    --only  作用是限定仅复制指定的某个数据库
-    --slavedelay  为复制设置操作延迟，单位为秒
-    --fastsync  以主节点的数据快照为基础启动从节点。
-    --autoresync  当主从节点数据不一致时，是否自动重新同步
-    --oplogSize  设定主节点中的oplog的容量，单位是MB
-
-2、副本集
-    与普通主从复制集群相比，具有自动检测机制
-    需要使用—replSet 选项指定副本同伴
-    任何时候，副本集当中最多只允许有1个活跃节点
-
-3、读写分离
-    将密集的读取操作分流到从节点上，降低主节点的负载
-    默认情况下，从节点是不允许处理
-    客户端请求的，需要使用—slaveOkay打开
-    不适用于实时性要求非常高的应用
-
-4、工作原理—— OPLOG
-    oplog保存在local数据库中，oplog就在其中的
-    oplog.$main集合内保存。该集合的每个文档都记录了主节点上执行的一个操作，其键定义如下：
-     ts：操作时间戳，占用4字节
-     op：操作类型，占用1字节
-     ns：操作对象的命名空间（或理解为集合全名）
-     o：进一步指定所执行的操作，例如插入
-
-5、工作原理—— 同步
-     从节点首次启动时，做完整同步
-     主节点数据发生变化时，做增量同步
-     从节点与主节点数据严重不一致时，做完整同步
-
-6、复制管理—— 诊断
-    db.printReplicationInfo()
-    在主节点上使用
-     返回信息是oplog的大小以及各种操作的耗时、空间占用等数据
-    在从节点上使用
-    db.printSlaveReplicationInfo()
-     返回信息是从节点的数据源列表、同步延迟时间等
-
-7、复制管理—— 变更OPLOG 容量
-    在主节点上使用
-      设定—oplogSize参数
-      重启MongoDB
-
-8、复制管理—— 复制认证
-    主从节点皆须配置
-     存储在local.system.users
-     优先尝试repl用户
-     主从节点的用户配置必须保持一致
-</code></pre><h2 id="6-MONGODB_u5206_u7247"><a href="#6-MONGODB_u5206_u7247" class="headerlink" title="6.MONGODB分片"></a>6.MONGODB分片</h2><pre><code>- 1、分片与自动分片
-      分片是指将数据拆分，分散到不同的实例上进行负载分流的做法。我们常说的“分表”、“分
-        库”、“分区”等概念都属于分片的实际体现。
-      传统分片做法是手工分表、分库。自动分片技术是根据指定的“片键”自动拆分数据并维护数据
-    请求路由的过程。
-
-    递增片键--连续 不均匀 写入集中 分流较差
-    随机片键--不连续 均匀 写入分散 分流较好
-    三个组成部分
-    --片
-      保存子集数据的容器
-    --mongos
-      MongoDB的路由器进程
-    --配置服务器
-      分片集群的配置信息
-- 2、创建分片
-    --启动配置服务器
-      可以创建一个或多个
-    --添加片
-      每个片都应该是副本集
-    --物理服务器
-      性能、安全和稳定性
-- 3、管理分片
-    --查询分片
-      db.shards.find();
-    --数据库
-      db.databases.find();
-    --块
-      db.chunks.find();
-    --分片状态
-      db.printShardingStatus();
-    --删除片
-      db.runCommand({ “removeshard” : “ip:port” });
-</code></pre><hr>
-]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> mongodb从入门到精通</strong> <Excerpt in index | 首页摘要><br>    mongodb日常使用的一些知识，增删改查，索引，分片。</p>
-<ul>
-<li>]]>
-
-        </summary>
-
-        <category term="dbs" scheme="http://geekwalker.cn/tags/dbs/"/>
-
-        <category term="学习笔记" scheme="http://geekwalker.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-
-    </entry>
-
-    <entry>
-        <title><![CDATA[Node学习]]></title>
-        <link href="http://geekwalker.cn/2015/12/19/node-study/"/>
-        <id>http://geekwalker.cn/2015/12/19/node-study/</id>
-        <published>2015-12-19T10:58:56.000Z</published>
-        <updated>2016-04-21T16:27:07.795Z</updated>
-        <content type="html"><![CDATA[<p><strong> node学习： </strong> <Excerpt in index | 首页摘要><br>    nodejs学习的方法，进阶路线</p>
-<ul>
-<li><a id="more"></a>
-<The rest of contents | 余下全文>
-
-</li>
-</ul>
-<h3 id="u4E00__u5B66_u4E60_u5185_u5BB9"><a href="#u4E00__u5B66_u4E60_u5185_u5BB9" class="headerlink" title="一 学习内容"></a>一 学习内容</h3><ol>
-<li>node的常用模块,buffer,fs,http,net等.</li>
-<li>node常用框架express,mongoose,koa,mocha,should</li>
-<li>部署上线,pm2,grunt,</li>
-</ol>
-<h3 id="u4E8C__u5B66_u4E60_u8981_u70B9"><a href="#u4E8C__u5B66_u4E60_u8981_u70B9" class="headerlink" title="二 学习要点"></a>二 学习要点</h3><ol>
-<li>了解node的特性和语法</li>
-<li>编写扩展node模块</li>
-<li>用异步的思想编程</li>
-</ol>
-<h3 id="u4E09__u5165_u95E8_u5B9E_u6218"><a href="#u4E09__u5165_u95E8_u5B9E_u6218" class="headerlink" title="三 入门实战"></a>三 入门实战</h3><ol>
-<li>参照nodejs实战上的微博系统,使用express4.x+ mongoose实现</li>
-<li>使用socket.io实现一个简单的即时聊天的系统</li>
-<li>使用mongoose+express+angular+node开发一个论坛系统</li>
-</ol>
-<h3 id="u56DB__u5B66_u4E60_u65B9_u6CD5"><a href="#u56DB__u5B66_u4E60_u65B9_u6CD5" class="headerlink" title="四 学习方法"></a>四 学习方法</h3><ul>
-<li>建议有基础的直接开始入门实战,在练习中熟悉node的api,昨晚一个项目再去看书</li>
-<li>不要一直看书,没什么效果的,实战永远是最有效的</li>
-</ul>
-]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> node学习： </strong> <Excerpt in index | 首页摘要><br>    nodejs学习的方法，进阶路线</p>
-<ul>
-<li>]]>
-
-        </summary>
-
-        <category term="node" scheme="http://geekwalker.cn/tags/node/"/>
-
-        <category term="编程语言" scheme="http://geekwalker.cn/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-
-    </entry>
-
-    <entry>
-        <title><![CDATA[Hello World]]></title>
-        <link href="http://geekwalker.cn/2015/12/17/hello-world/"/>
-        <id>http://geekwalker.cn/2015/12/17/hello-world/</id>
-        <published>2015-12-17T04:37:19.000Z</published>
-        <updated>2016-04-30T14:31:22.769Z</updated>
-        <content type="html"><![CDATA[<p><strong> Hello World：</strong> <Excerpt in index | 首页摘要><br>    hexo的Hello World教程</p>
-<ul>
-<li><a id="more"></a>
-<The rest of contents | 余下全文>
-
-</li>
-</ul>
-<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html">Deployment</a></p>
-]]></content>
-        <summary type="html">
-            <![CDATA[<p><strong> Hello World：</strong> <Excerpt in index | 首页摘要><br>    hexo的Hello World教程</p>
-<ul>
-<li>]]>
-
-        </summary>
-
-        <category term="others" scheme="http://geekwalker.cn/tags/others/"/>
-
-    </entry>
-
+    
+    <summary type="html">
+    
+      &lt;p&gt;** hexo和coding打造静态博客 ：** \&lt;Excerpt in index | 首页摘要\&gt;&lt;br&gt;    使用hexo和coding打造属于自己的静态博客，展示自己的作品，思想……&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="node" scheme="http://geeksblog.cc/tags/node/"/>
+    
+  </entry>
+  
 </feed>
