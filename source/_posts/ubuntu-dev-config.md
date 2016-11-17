@@ -5,7 +5,7 @@ categories: 开发工具
 ---
 ** ubuntu开发环境配置：** <Excerpt in index | 首页摘要>
     ubuntu16下node,java开发环境配置
-+ <!-- more -->
+ <!-- more -->
 <The rest of contents | 余下全文>
 
 ### 安装系统软件

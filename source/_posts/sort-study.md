@@ -5,7 +5,7 @@ categories: 算法
 ---
 ** {{ title }}：** <Excerpt in index | 首页摘要>
     各种排序算法，算法的实现和分析
-+ <!-- more -->
+ <!-- more -->
 <The rest of contents | 余下全文>
 
 ## 排序算法的分类

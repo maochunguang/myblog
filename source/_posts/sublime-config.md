@@ -5,7 +5,7 @@ categories: 开发工具
 ---
 ** sublime详细配置：** <Excerpt in index | 首页摘要>
 	subime的常用配置应有尽有，快快来看吧
-+ <!-- more -->
+ <!-- more -->
 <The rest of contents | 余下全文>
 
 ### 安装sublime text3

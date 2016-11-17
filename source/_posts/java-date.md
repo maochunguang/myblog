@@ -5,7 +5,7 @@ categories: 编程语言
 ---
 ** java，js日期转换：** <Excerpt in index | 首页摘要>
     java的各种日期转换
-+ <!-- more -->
+<!-- more -->
 <The rest of contents | 余下全文>
 
 ### 日期表示类型

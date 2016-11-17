@@ -5,7 +5,7 @@ categories: 学习笔记
 ---
 ** {{ title }}：** <Excerpt in index | 首页摘要>
     js学习中遇到的问题,非常实用!
-+ <!-- more -->部分来自js秘密花园,其他都是自己的总结
+ <!-- more -->部分来自js秘密花园,其他都是自己的总结
 <The rest of contents | 余下全文>
 
 ## 函数与匿名函数的写法

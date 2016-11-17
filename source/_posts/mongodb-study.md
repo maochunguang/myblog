@@ -5,7 +5,7 @@ categories: 数据库
 ---
 ** mongodb从入门到精通** <Excerpt in index | 首页摘要>
     mongodb日常使用的一些知识，增删改查，索引，分片。
-+ <!-- more -->
+ <!-- more -->
 <The rest of contents | 余下全文>
 
 ### mongodb学习

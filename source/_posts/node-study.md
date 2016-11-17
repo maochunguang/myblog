@@ -5,7 +5,7 @@ categories: 编程语言
 ---
 ** node学习： ** <Excerpt in index | 首页摘要>
     nodejs学习的方法，进阶路线
-+ <!-- more -->
+ <!-- more -->
 <The rest of contents | 余下全文>
 
 ### 一 学习内容

@@ -5,7 +5,7 @@ categories: 个人随笔
 ---
 ** 制定学习目标和计划：** <Excerpt in index | 首页摘要>
 	近期的学习目标和学习重点,提高自己的能力
-+ <!-- more -->
+ <!-- more -->
 <The rest of contents | 余下全文>
 
 ### 找到自己的兴趣
