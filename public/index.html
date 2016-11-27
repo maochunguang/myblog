@@ -22,6 +22,8 @@
     <link rel="icon" href="/img/favicon.png">
   
   
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -38,7 +40,7 @@
   <script>
       var yiliaConfig = {
           fancybox: true,
-          animate: false,
+          animate: true,
           isHome: true,
           isPost: false,
           isArchive: false,
@@ -56,7 +58,7 @@
     <header id="header" class="inner">
         <a href="/" class="profilepic">
             
-            <img src="/img/avatar.png" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+            <img lazy-src="/img/avatar.png" class="js-avatar">
             
         </a>
 
@@ -135,6 +137,8 @@
                         
                             <li><a rel="external nofollow" href="/archives/">所有文章</a></li>
                         
+                            <li><a rel="external nofollow" href="/categories/开发工具/">玩转开发工具</a></li>
+                        
                             <li><a rel="external nofollow" href="/tags/">标签云</a></li>
                         
                             <li><a rel="external nofollow" href="/about/">关于我</a></li>
@@ -157,7 +161,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/http/" style="font-size: 12.5px;">http</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/javacript/" style="font-size: 10px;">javacript</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/node/" style="font-size: 17.5px;">node</a> <a href="/tags/others/" style="font-size: 20px;">others</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/开发工具/" style="font-size: 10px;">开发工具</a>
+                        <a href="/tags/http/" style="font-size: 12.5px;">http</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/javacript/" style="font-size: 10px;">javacript</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/node/" style="font-size: 17.5px;">node</a> <a href="/tags/others/" style="font-size: 20px;">others</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/开发工具/" style="font-size: 10px;">开发工具</a>
                     </div>
                 </section>
                 
@@ -197,7 +201,7 @@
         <header id="header" class="inner">
             <a href="/" class="profilepic">
                 
-                    <img src="/img/avatar.png" class="js-avatar" style="width: 100%; height: 100%; opacity: 1;">
+                    <img lazy-src="/img/avatar.png" class="js-avatar">
                 
             </a>
             <hgroup>
@@ -210,6 +214,8 @@
                     <li><a href="/">主页</a></li>
                 
                     <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/categories/开发工具/">玩转开发工具</a></li>
                 
                     <li><a href="/tags/">标签云</a></li>
                 
@@ -234,6 +240,76 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-mac-dev" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a rel="external nofollow" href="/mac-dev.html" class="article-date">
+      <time datetime="2016-11-27T07:52:38.000Z" itemprop="datePublished">2016-11-27</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a rel="external nofollow" class="article-title" href="/mac-dev.html">Mac开发环境配置</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><strong> mac开发环境配置：</strong> <Excerpt in index | 首页摘要><br>工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac/">mac</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a rel="external nofollow"  href="/mac-dev.html#more">查看更多 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-npm-detail" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -252,7 +328,7 @@
         
   
     <h1 itemprop="name">
-      <a rel="external nofollow" class="article-title" href="/npm-detail.html">Npm-Detail</a>
+      <a rel="external nofollow" class="article-title" href="/npm-detail.html">Npm使用详解</a>
     </h1>
   
 
@@ -263,7 +339,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><strong> Npm-Detail：</strong> <Excerpt in index | 首页摘要><br>    npm所有的常用知识都在这里，没错，所有的！！<br>
+              <p><strong> Npm使用详解：</strong> <Excerpt in index | 首页摘要><br>    npm所有的常用知识都在这里，没错，所有的！！<br>
           
       
     </div>
@@ -322,7 +398,7 @@
         
   
     <h1 itemprop="name">
-      <a rel="external nofollow" class="article-title" href="/node-notes.html">Node-Notes</a>
+      <a rel="external nofollow" class="article-title" href="/node-notes.html">深入浅出Nodejs笔记</a>
     </h1>
   
 
@@ -333,7 +409,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><strong> Node-Notes：</strong> <Excerpt in index | 首页摘要><br>    node学习重点，深入浅出nodejs学习笔记<br>
+              <p><strong> 深入浅出Nodejs笔记：</strong> <Excerpt in index | 首页摘要><br>    node学习重点，深入浅出nodejs学习笔记<br>
           
       
     </div>
@@ -494,76 +570,6 @@
       
         <p class="article-more-link">
           <a rel="external nofollow"  href="/code-resource.html#more">查看更多 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-ajax-jsonp" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a rel="external nofollow" href="/ajax-jsonp.html" class="article-date">
-      <time datetime="2016-07-06T12:54:16.000Z" itemprop="datePublished">2016-07-06</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a rel="external nofollow" class="article-title" href="/ajax-jsonp.html">Ajax和jsonp区别</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><strong> ajax和jsonp区别 ：</strong> <Excerpt in index | 首页摘要><br>    jquery的封装影响了很多人的误解，所以有必要对ajax和jsonp的本质区别讲解，<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程语言/">编程语言</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/">http</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a rel="external nofollow"  href="/ajax-jsonp.html#more">查看更多 >></a>
         </p>
       
       <div class="clearfix"></div>

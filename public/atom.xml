@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2016-11-17T12:58:17.000Z</updated>
+  <updated>2016-11-27T08:32:05.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -16,13 +16,102 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Npm-Detail</title>
+    <title>Mac开发环境配置</title>
+    <link href="http://geeksblog.cc/mac-dev.html"/>
+    <id>http://geeksblog.cc/mac-dev.html</id>
+    <published>2016-11-27T07:52:38.000Z</published>
+    <updated>2016-11-27T08:32:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> mac开发环境配置：</strong> <Excerpt in index | 首页摘要><br>工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="软件下载说明"><a href="#软件下载说明" class="headerlink" title="软件下载说明"></a>软件下载说明</h3><p>下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的<strong>百度云账号</strong>！！！</p>
+<h3 id="软件分类说明"><a href="#软件分类说明" class="headerlink" title="软件分类说明"></a>软件分类说明</h3><ol>
+<li>通用（开发者必备的软件）</li>
+<li>java类（java开发者必不可少）</li>
+<li>前端类（偏前端和nodejs）</li>
+<li>python类</li>
+<li>数据库类</li>
+<li>其他（php，ruby等等）</li>
+</ol>
+<h3 id="通用软件"><a href="#通用软件" class="headerlink" title="通用软件"></a>通用软件</h3><ol>
+<li>Alfred</li>
+<li>dash</li>
+<li>homebrew</li>
+<li>zsh（oh my zsh）</li>
+<li>sublime text3,</li>
+<li>vscode</li>
+<li>paste(剪切板工具)</li>
+<li>BetterSnapTool(分屏软件)</li>
+<li>cornerstone(svn)</li>
+<li>tower(git)</li>
+<li>alternote()</li>
+<li>paw</li>
+<li>chrome</li>
+<li>firefox</li>
+<li>pdf expert</li>
+<li>CheatSheet</li>
+<li>snippetslab</li>
+</ol>
+<h3 id="java软件"><a href="#java软件" class="headerlink" title="java软件"></a>java软件</h3><ol>
+<li>jdk</li>
+<li>idea</li>
+<li>eclipse</li>
+<li>maven</li>
+<li>zookeeper,dubbo</li>
+<li>tomcat</li>
+<li>apache</li>
+</ol>
+<h3 id="前端必备"><a href="#前端必备" class="headerlink" title="前端必备"></a>前端必备</h3><ol>
+<li>nvm(nodejs,npm,cnpm)</li>
+<li>webpack</li>
+<li>yo</li>
+<li>webstorm</li>
+</ol>
+<h3 id="python必备"><a href="#python必备" class="headerlink" title="python必备"></a>python必备</h3><ol>
+<li>pycharm</li>
+<li>sublime text（插件）</li>
+</ol>
+<h3 id="数据库类"><a href="#数据库类" class="headerlink" title="数据库类"></a>数据库类</h3><ol>
+<li>mysql</li>
+<li>mongodb</li>
+<li>sqllite</li>
+<li>navicate</li>
+<li>robomongo</li>
+<li>redis</li>
+</ol>
+<h3 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h3><ol>
+<li>office</li>
+<li>keynote,pages,number</li>
+<li>photoshop</li>
+</ol>
+<p>文章长期更新，请收藏</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; mac开发环境配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Npm使用详解</title>
     <link href="http://geeksblog.cc/npm-detail.html"/>
     <id>http://geeksblog.cc/npm-detail.html</id>
     <published>2016-11-17T12:05:56.000Z</published>
-    <updated>2016-11-17T12:58:17.000Z</updated>
+    <updated>2016-11-27T07:18:51.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> Npm-Detail：</strong> <Excerpt in index | 首页摘要><br>    npm所有的常用知识都在这里，没错，所有的！！<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> Npm使用详解：</strong> <Excerpt in index | 首页摘要><br>    npm所有的常用知识都在这里，没错，所有的！！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h2 id="node版本控制"><a href="#node版本控制" class="headerlink" title="node版本控制"></a>node版本控制</h2><ol>
@@ -51,7 +140,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; Npm-Detail：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    npm所有的常用知识都在这里，没错，所有的！！&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; Npm使用详解：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    npm所有的常用知识都在这里，没错，所有的！！&lt;br&gt;
     
     </summary>
     
@@ -63,13 +152,13 @@
   </entry>
   
   <entry>
-    <title>Node-Notes</title>
+    <title>深入浅出Nodejs笔记</title>
     <link href="http://geeksblog.cc/node-notes.html"/>
     <id>http://geeksblog.cc/node-notes.html</id>
     <published>2016-11-11T11:52:23.000Z</published>
-    <updated>2016-11-17T12:02:05.000Z</updated>
+    <updated>2016-11-27T07:19:19.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> Node-Notes：</strong> <Excerpt in index | 首页摘要><br>    node学习重点，深入浅出nodejs学习笔记<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> 深入浅出Nodejs笔记：</strong> <Excerpt in index | 首页摘要><br>    node学习重点，深入浅出nodejs学习笔记<br><a id="more"></a></p>
 <p><The rest of contents | 余下全文></p>
 <h3 id="node简介："><a href="#node简介：" class="headerlink" title="node简介："></a>node简介：</h3><pre><code>1. 异步IO，适合io密集型的
 2. 单线程，通过childnode实现多线程
@@ -173,7 +262,7 @@ disconnect：
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; Node-Notes：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    node学习重点，深入浅出nodejs学习笔记&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; 深入浅出Nodejs笔记：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    node学习重点，深入浅出nodejs学习笔记&lt;br&gt;
     
     </summary>
     
@@ -1299,56 +1388,6 @@ disconnect：
     </summary>
     
       <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的梦想</title>
-    <link href="http://geeksblog.cc/dream.html"/>
-    <id>http://geeksblog.cc/dream.html</id>
-    <published>2016-04-24T14:07:27.000Z</published>
-    <updated>2016-11-13T05:48:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 我的梦想：</strong> <Excerpt in index | 首页摘要><br>    一个人如果活着没有梦想,那和咸鱼有什么区别?<br><a id="more"></a>请问你的梦想是什么?</p>
-<The rest of contents | 余下全文>
-
-<h3 id="我的梦想是什么"><a href="#我的梦想是什么" class="headerlink" title="我的梦想是什么?"></a>我的梦想是什么?</h3><ul>
-<li><p>刚开始接触编程的时候,感觉代码是个神器的世界,在这里你可以为所欲为,然后看到很多大神的框架,软件,在使用别人好的框架,好的软件,那一刻我感觉 <strong>“我的梦想就是用代码改变世界!”</strong></p>
-</li>
-<li><p>感觉自己迷失了好久,找不到方向,曾经的激情不知道去了哪里?</p>
-</li>
-</ul>
-<h3 id="开始追梦"><a href="#开始追梦" class="headerlink" title="开始追梦"></a>开始追梦</h3><ul>
-<li>有了梦想,我开始了疯狂的奋斗,每天休息4,5个小时,全身心去学习编程,努力还是很快得到了回报,我用了3个月就入门学好了java,然后找了java程序员的工作,就这样开始了我程序员的追梦之旅!</li>
-</ul>
-<h3 id="初级程序员"><a href="#初级程序员" class="headerlink" title="初级程序员"></a>初级程序员</h3><ul>
-<li>虽然入门了,但是刚开始的工作并不是一帆风顺的.我还记得第一份任务,老大让我写一个稍微复杂的接口,客户专用的接口,使用springmvc,还要提交到git上,对我而言,这一切都是新东西,经过我几天的努力,还是搞砸了,就这样第一个任务以失败告终!</li>
-<li>虽然第一个任务失败了,但是工作还在继续,我还是继续努力的工作,我必须承认我不是编程的天才,可能别人一个小时完成的任务,我需要一个半小时,但是我必须做好,因为我有梦想!</li>
-</ul>
-<h3 id="中级程序员"><a href="#中级程序员" class="headerlink" title="中级程序员"></a>中级程序员</h3><ul>
-<li><p>在工作的时候就感觉时间飞逝,一天天很快过去.晚上睡觉的时候,我就会问自己,我今天到底做了什么功能?我收获了哪些技能?曾经有段时间每天都是该页面,我几乎烦的崩溃,感觉每天都在做无用的东西,后来发现,无论是前段后端,其实都是必不可少的技能,我的心态应该调整,让自己去喜欢前段,同时保持后端的热情.</p>
-</li>
-<li><p>一个成熟的程序员和菜鸟最大的区别应该是心态!</p>
-</li>
-</ul>
-<h3 id="高级程序员"><a href="#高级程序员" class="headerlink" title="高级程序员"></a>高级程序员</h3><ul>
-<li>未完待续</li>
-</ul>
-<h3 id="架构师"><a href="#架构师" class="headerlink" title="架构师"></a>架构师</h3><ul>
-<li>未完待续</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 我的梦想：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    一个人如果活着没有梦想,那和咸鱼有什么区别?&lt;br&gt;
-    
-    </summary>
-    
-      <category term="个人随笔" scheme="http://geeksblog.cc/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
     
     
       <category term="others" scheme="http://geeksblog.cc/tags/others/"/>

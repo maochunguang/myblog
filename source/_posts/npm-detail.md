@@ -1,4 +1,4 @@
-title: npm-detail
+title: npm使用详解
 date: 2016-11-17 20:05:56
 tags: node
 categories: 编程语言
