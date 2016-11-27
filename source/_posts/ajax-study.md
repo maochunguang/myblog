@@ -36,7 +36,7 @@ readyState 对象状态值
 
 1. 原生的ajax
 
-```
+```js
 function CreateXmlHttp() {
     //非IE浏览器创建XmlHttpRequest对象
     if (window.XmlHttpRequest) {
@@ -78,7 +78,7 @@ function Ustbwuyi() {
 
 2. jquery调用ajax
 
-```
+```js
 $.ajax({
     type: "get",
     url: "http://www.cnblogs.com/rss",

@@ -9,14 +9,16 @@ categories: 编程语言
 <The rest of contents | 余下全文>
 
 ### jsonp是什么？
-利用在页面中创建`<script>`节点的方法向不同域提交HTTP请求的方法称为JSONP，这项技术可以解决跨域提交Ajax请求的问题。JSONP的工作原理如下所述：假设在http://example1.com/index.php这个页面中向http://example2.com/getinfo.php提交GET请求，我们可以将下面的JavaScript代码放在http://example1.com/index.php这个页面中来实现：
-```
+利用在页面中创建`<script>`节点的方法向不同域提交HTTP请求的方法称为JSONP，这项技术可以解决跨域提交Ajax请求的问题。JSONP的工作原理如下所述：假设在 http://example1.com/index.php 这个页面中向 http://example2.com/getinfo.php 提交GET请求，我们可以将下面的JavaScript代码放在 http://example1.com/index.php 这个页面中来实现：
+
+```js
 var eleScript= document.createElement("script");
 eleScript.type = "text/javascript";
 eleScript.src = "http://example2.com/getinfo.php";
 document.getElementsByTagName("HEAD")[0].appendChild(eleScript);
 ```
-当GET请求从http://example2.com/getinfo.php返回时，可以返回一段JavaScript代码，这段代码会自动执行，可以用来负责调用http://example1.com/index.php页面中的一个callback函数。
+
+当GET请求从 http://example2.com/getinfo.php 返回时，可以返回一段JavaScript代码，这段代码会自动执行，可以用来负责调用 http://example1.com/index.php 页面中的一个callback函数。
 
 JSONP的优点是：它不像XMLHttpRequest对象实现的Ajax请求那样受到同源策略的限制；它的兼容性更好，在更加古老的浏览器中都可以运行，不需要XMLHttpRequest或ActiveX的支持；并且在请求完毕后可以通过调用callback的方式回传结果。
 

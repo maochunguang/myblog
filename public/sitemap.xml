@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://geeksblog.cc/ajax-study.html</loc>
+    
+    <lastmod>2016-11-27T16:16:07.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
+    
+    <lastmod>2016-11-27T16:16:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://geeksblog.cc/mac-dev.html</loc>
     
     <lastmod>2016-11-27T08:32:05.000Z</lastmod>
@@ -79,20 +93,6 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://geeksblog.cc/best-js-snippet.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ajax-study.html</loc>
+    <loc>http://geeksblog.cc/coder-study.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/coder-study.html</loc>
+    <loc>http://geeksblog.cc/dream.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
@@ -142,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/dream.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://geeksblog.cc/ghost-blog.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
@@ -163,14 +156,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/redis-study.html</loc>
+    <loc>http://geeksblog.cc/git-svn.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/git-svn.html</loc>
+    <loc>http://geeksblog.cc/redis-study.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
@@ -198,6 +191,13 @@
   </url>
   
   <url>
+    <loc>http://geeksblog.cc/tags/index.html</loc>
+    
+    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://geeksblog.cc//404.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
@@ -212,7 +212,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/tags/index.html</loc>
+    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
