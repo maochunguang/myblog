@@ -3534,12 +3534,19 @@ pre .link_url {
 .footer-right {
   float: right;
 }
+.article-entry pre,
+.article-entry .highlight {
+  background: #2f2f2f;
+}
+.article-entry pre {
+  color: #ccc;
+}
 .bdshare-button-style2-24 {
   width: 330px;
   margin: 12px auto;
 }
 .bdshare-button-style2-24 .fx {
-  color: #999;
+  color: #258fb8;
   padding: 0;
   margin: 6px;
   display: inline-block;
@@ -3552,6 +3559,9 @@ pre .link_url {
 .bdshare-button-style2-24 .fx:hover {
   color: #fff;
   opacity: 1;
+}
+.ds-login-buttons p {
+  color: #fff;
 }
 .share {
   padding-left: 40px;
