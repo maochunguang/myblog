@@ -2549,6 +2549,7 @@ color
   color: #c8c8c8;
 }
 .article-title {
+  color: #4094c3;
   margin-left: 0px;
   font-weight: initial;
   line-height: 35px;
@@ -3540,6 +3541,9 @@ pre .link_url {
 }
 .article-entry pre {
   color: #ccc;
+}
+.article-entry h3 {
+  color: #258fb8;
 }
 .bdshare-button-style2-24 {
   width: 330px;
