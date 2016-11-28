@@ -1,4 +1,4 @@
-@import url(http://luuman.github.io/font-awesome/css/font-awesome.min.css);
+@import url(http://geeksblog.cc/font-awesome/css/font-awesome.min.css);
 /*CSS源代码*/
 body {
     background: #CFCFCF;
@@ -60,7 +60,7 @@ a{
     color: #FFF;
     font: normal normal normal 36px/1 FontAwesome;
 }
-.bdshare-button-style0-24 a:{
+.bdshare-button-style0-24 a{
     color: #333;
     opacity: 1;
     filter: alpha(opacity=80)
