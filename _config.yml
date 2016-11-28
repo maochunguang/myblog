@@ -54,6 +54,7 @@ category_map:
   - 数据库
   - 设计模式
   - 网络协议
+  - 资源分享
 tag_map:
   - node
   - java
@@ -66,6 +67,7 @@ tag_map:
   - http
   - mac
   - hexo
+  - book
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
