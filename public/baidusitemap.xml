@@ -345,19 +345,19 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/mysql-optimize.html</loc>
+    <loc>http://geeksblog.cc/git-svn.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>Mysql优化</title>
-        <pubTime>2016-06-10T23:25:13.000Z</pubTime>
+        <title>Git比svn的优势</title>
+        <pubTime>2016-05-22T03:13:00.000Z</pubTime>
         
-        <tag>mysql</tag>
+        <tag>others</tag>
          
          
            
              
-              <breadCrumb title="数据库" url="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
@@ -564,19 +564,19 @@
     
     
   <url>
-    <loc>http://geeksblog.cc/git-svn.html</loc>
+    <loc>http://geeksblog.cc/mysql-optimize.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>Git比svn的优势</title>
-        <pubTime>2016-05-22T03:13:00.000Z</pubTime>
+        <title>Mysql优化</title>
+        <pubTime>2016-06-10T23:25:13.000Z</pubTime>
         
-        <tag>others</tag>
+        <tag>mysql</tag>
          
          
            
              
-              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+              <breadCrumb title="数据库" url="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
           
         </display>
     </data>
