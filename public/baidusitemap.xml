@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://geeksblog.cc/server-config.html</loc>
-    <lastmod>2016-11-28T13:01:07.000Z</lastmod>
+    <lastmod>2016-11-28T13:06:26.000Z</lastmod>
     <data>
         <display>
         <title>Ubuntu服务器私人定制</title>
@@ -481,6 +481,26 @@
 
     
   <url>
+    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
+    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>Atom中最好的js代码补全</title>
+        <pubTime>2016-07-21T22:11:30.000Z</pubTime>
+        
+        <tag>others</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://geeksblog.cc/hexo-githup-blog.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
@@ -534,26 +554,6 @@
            
              
               <breadCrumb title="学习笔记" url="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>Atom中最好的js代码补全</title>
-        <pubTime>2016-07-21T22:11:30.000Z</pubTime>
-        
-        <tag>others</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>

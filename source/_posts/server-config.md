@@ -3,7 +3,7 @@ date: 2016-11-28 20:36:03
 tags: linux
 categories: 开发工具
 ---
-** {{ ubuntu服务器私人定制 }}：** <Excerpt in index | 首页摘要>
+** ubuntu服务器私人定制：** <Excerpt in index | 首页摘要>
 把ubuntu服务器打造成自己的个性服务器，装逼必备！！！
 <!-- more -->
 <The rest of contents | 余下全文>
