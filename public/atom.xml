@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2016-11-28T13:06:26.000Z</updated>
+  <updated>2016-11-28T15:23:35.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo配置和优化记录</title>
+    <link href="http://geeksblog.cc/hexo-config.html"/>
+    <id>http://geeksblog.cc/hexo-config.html</id>
+    <published>2016-11-28T15:07:12.000Z</published>
+    <updated>2016-11-28T15:23:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> hexo配置和优化高级篇：</strong> <Excerpt in index | 首页摘要><br>本文章不讲解hexo的基础配置，只针对hexo的高级配置，性能优化，seo配置进行讲解。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>仔细想想，使用hexo搭建博客也有半年多了，但是发现访问量一直几乎没有，特别是经历几次迁移之后，之前从github到coding，<br>现在迁移到了云服务器，研究了一下如何进行seo和网站性能优化，便有了这篇文章。</p>
+<h3 id="实用的功能"><a href="#实用的功能" class="headerlink" title="实用的功能"></a>实用的功能</h3><ol>
+<li>站内搜索（百度的）</li>
+<li>本地搜索（本地插件）</li>
+<li>网站统计</li>
+<li>留言功能</li>
+<li>rss订阅功能</li>
+</ol>
+<h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3><ol>
+<li>html压缩</li>
+<li>css压缩</li>
+<li>js压缩</li>
+<li>img压缩</li>
+<li>nginx代理，开启gzip压缩</li>
+<li>cdn代理css和图片</li>
+<li>删除主题无用的js和css</li>
+</ol>
+<h3 id="seo优化"><a href="#seo优化" class="headerlink" title="seo优化"></a>seo优化</h3><ol>
+<li>sitemap</li>
+<li>a标签添加<code>rel=&quot;external nofollow&quot;</code></li>
+<li>使用meta标签</li>
+<li>使用robots文件</li>
+<li>主动提交sitemap到搜索引擎</li>
+<li>添加外链和内链</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; hexo配置和优化高级篇：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;本文章不讲解hexo的基础配置，只针对hexo的高级配置，性能优化，seo配置进行讲解。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="hexo" scheme="http://geeksblog.cc/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu服务器私人定制</title>
@@ -1343,124 +1396,6 @@ disconnect：
     
     
       <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu16开发环境配置</title>
-    <link href="http://geeksblog.cc/ubuntu-dev-config.html"/>
-    <id>http://geeksblog.cc/ubuntu-dev-config.html</id>
-    <published>2016-04-26T10:48:11.000Z</published>
-    <updated>2016-11-13T06:01:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> ubuntu开发环境配置：</strong> <Excerpt in index | 首页摘要><br>    ubuntu16下node,java开发环境配置<br> <a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h3 id="安装系统软件"><a href="#安装系统软件" class="headerlink" title="安装系统软件"></a>安装系统软件</h3><ol>
-<li><p>更新系统和软件</p>
-<figure class="highlight q"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></div><div class="line">sudo apt-<span class="built_in">get</span> upgade</div></pre></td></tr></table></figure>
-</li>
-<li><p>谷歌浏览器，火狐浏览器，atom编辑器，sublime编辑器，webstome,idea,eclipse</p>
-</li>
-<li>安装搜狗输入法（官网），安装fcitx配置搜狗输入法</li>
-</ol>
-<h3 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装jdk</h3><ol>
-<li><p>下载jdk并新建一个文件夹</p>
- <figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /usr/<span class="class"><span class="keyword">lib</span>/<span class="title">jvm</span></span></div></pre></td></tr></table></figure>
-</li>
-<li><p>解压文件</p>
- <figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo tar zxvf jdk-<span class="number">7</span>u71-linux-x64.tar.gz -C /usr/<span class="class"><span class="keyword">lib</span>/<span class="title">jvm</span>/<span class="title">jdk1</span>.7</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>设置环境变量,设置~/.zshrc文件,或者编辑/etc/profile（全局）文件</p>
- <figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=<span class="regexp">/usr/lib</span><span class="regexp">/jvm/jdk</span>1.<span class="number">7</span></div><div class="line">export JRE_HOME=$&#123;JAVA_HOME&#125;/jre  </div><div class="line">export CLASSPATH=.:$&#123;JAVA_HOME&#125;/<span class="class"><span class="keyword">lib</span>:$&#123;<span class="title">JRE_HOME</span>&#125;/<span class="title">lib</span>  </span></div><div class="line">export PATH=$&#123;JAVA_HOME&#125;/<span class="symbol">bin:</span>$PATH</div></pre></td></tr></table></figure>
-</li>
-<li><p>检查是否安装成功<br> 打开shell,</p>
- <figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java <span class="comment">--version</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><ol>
-<li>nodejs版本迭代较快，有时候需要检查在不同版本下的兼容性问题，用nvm来控制版本</li>
-<li><p>安装nvm,source的时候根据自己的shell版本，~/.bashrc, ~/.profile, 或者 ~/.zshrc</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash</div><div class="line"><span class="built_in">export</span> NVM_DIR=<span class="string">"<span class="variable">$HOME</span>/.nvm"</span></div><div class="line">[ <span class="_">-s</span> <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> ] &amp;&amp; . <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> <span class="comment"># This loads nvm</span></div><div class="line"><span class="built_in">source</span> ~/.profile</div></pre></td></tr></table></figure>
-</li>
-<li><p>安装不同版本的nodejs<br>　　<figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">nvm ls-remote</div><div class="line">nvm install v0<span class="number">.12</span><span class="number">.9</span></div><div class="line">nvm install <span class="number">5.0</span></div><div class="line">nvm use <span class="number">0.12</span><span class="number">.9</span></div><div class="line">nvm alias <span class="section">default</span> <span class="number">0.12</span><span class="number">.9</span></div></pre></td></tr></table></figure></p>
-</li>
-</ol>
-<h3 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h3><ol>
-<li><p>配置公钥</p>
- <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-key adv --keyserver <span class="string">hkp:</span><span class="comment">//keyserver.ubuntu.com:80 --recv 7F0CEB10</span></div><div class="line">echo <span class="string">"deb http://repo.mongodb.org/apt/ubuntu "</span>$(lsb_release -sc)<span class="string">"/mongodb-org/3.0 multiverse"</span> | sudo tee <span class="regexp">/etc/</span>apt<span class="regexp">/sources.list.d/</span>mongodb-org<span class="number">-3.0</span>.list</div></pre></td></tr></table></figure>
-</li>
-<li><p>更新软件列表</p>
- <figure class="highlight q"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></div><div class="line">sudo apt-<span class="built_in">get</span> install -y mongodb-org</div></pre></td></tr></table></figure>
-</li>
-<li><p>完成上面的安装步骤配置mongodb的数据库的位置</p>
- <figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mongod <span class="comment">--dbpath /data/db</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>启动mongod</p>
- <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo service mongod <span class="literal">start</span></div><div class="line">sudo service mongod <span class="literal">stop</span></div><div class="line">sudo service mongod restart</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h3><ol>
-<li><p>下载软件</p>
- <figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget <span class="string">http:</span><span class="comment">//download.redis.io/releases/redis-2.8.11.tar.gz</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>解压安装</p>
- <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">tar</span> <span class="selector-tag">xvfz</span> <span class="selector-tag">redis-2</span><span class="selector-class">.8</span><span class="selector-class">.11</span><span class="selector-class">.tar</span><span class="selector-class">.gz</span></div><div class="line"><span class="selector-tag">cd</span> <span class="selector-tag">redis-2</span><span class="selector-class">.8</span><span class="selector-class">.11</span> &amp;&amp; <span class="selector-tag">sudo</span> <span class="selector-tag">make</span> &amp;&amp; <span class="selector-tag">sudo</span> <span class="selector-tag">make</span> <span class="selector-tag">install</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>配置使用</p>
-<ol>
-<li><p>下载配置文件和init启动脚本</p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">wget <span class="symbol">https:</span>/<span class="regexp">/github.com/ijonas</span><span class="regexp">/dotfiles/raw</span><span class="regexp">/master/etc</span><span class="regexp">/init.d/redis</span>-server</div><div class="line">wget <span class="symbol">https:</span>/<span class="regexp">/github.com/ijonas</span><span class="regexp">/dotfiles/raw</span><span class="regexp">/master/etc</span><span class="regexp">/redis.conf</div><div class="line">sudo mv redis-server /etc</span><span class="regexp">/init.d/redis</span>-server</div><div class="line">sudo chmod +x /etc/init.d/redis-server</div><div class="line">sudo mv redis.conf /etc/redis.conf</div></pre></td></tr></table></figure>
-</li>
-<li><p>初始化用户和日志路径</p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo useradd redis</div><div class="line">sudo mkdir -p /var/<span class="class"><span class="keyword">lib</span>/<span class="title">redis</span></span></div><div class="line">sudo mkdir -p /var/log/redis</div><div class="line">sudo chown redis.redis /var/<span class="class"><span class="keyword">lib</span>/<span class="title">redis</span></span></div><div class="line">sudo chown redis.redis /var/log/redis</div></pre></td></tr></table></figure>
-</li>
-<li><p>设置开机自动启动，关机自动关闭</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo <span class="keyword">update</span>-rc.d redis-<span class="keyword">server</span> <span class="keyword">defaults</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="环境变量配置"><a href="#环境变量配置" class="headerlink" title="环境变量配置"></a>环境变量配置</h3><ol>
-<li>认识环境变量相关的文件</li>
-</ol>
-<ul>
-<li>/etc/profile —— 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置；</li>
-<li>/etc/environment —— 在登录时操作系统使用的第二个文件,系统在读取你自己的profile前,设置环境文件的环境变量；</li>
-<li>/etc/bashrc —— 为每一个运行bash shell的用户执行此文件.当bash shell被打开时,该文件被读取；</li>
-<li>~/.profile —— 每个用户都可使用该文件输入专用于自己使用的shell信息，当用户登录时，该文件仅仅执行一次！默认情况下,它设置一些环境变量,执行用户的.bashrc文件；</li>
-<li>~/.bashrc —— 该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该文件被读取；</li>
-</ul>
-<ol>
-<li><p>配置环境变量</p>
-<ul>
-<li><p>在Ubuntu14.04的~/.bashrc中添加的环境变量,在文件添加</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export PATH=<span class="variable">$PATH</span><span class="symbol">:/home/qtcreator-</span><span class="number">2.6</span>.<span class="number">1</span>/bin</div></pre></td></tr></table></figure>
-</li>
-<li><p>修改profile文件,vim编辑/etc/profile</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo <span class="keyword">vim</span> /etc/<span class="keyword">profile</span></div><div class="line"><span class="keyword">source</span> /etc/<span class="keyword">profile</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ol>
-<h3 id="安装开发工具"><a href="#安装开发工具" class="headerlink" title="安装开发工具"></a>安装开发工具</h3><ol>
-<li>zsh命令行工具</li>
-<li>mysql客户端workbench，mongo客户端工具robomongo</li>
-<li>安装git,svn版本控制工具 <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get <span class="keyword">install</span> git</div><div class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> subversion</div></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; ubuntu开发环境配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    ubuntu16下node,java开发环境配置&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="linux" scheme="http://geeksblog.cc/tags/linux/"/>
     
   </entry>
   

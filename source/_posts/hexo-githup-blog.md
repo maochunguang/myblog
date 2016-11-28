@@ -1,7 +1,7 @@
 title: hexo和github打造个人博客
 date: 2015-12-20 22:35:04
-tags: node
-categories: 编程语言
+tags: hexo
+categories: 开发工具
 ---
 ** hexo和github打造个人博客 ：** <Excerpt in index | 首页摘要>
     使用hexo和github打造属于自己的静态博客，展示自己的作品，思想……

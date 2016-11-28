@@ -2751,7 +2751,7 @@ color
 #article-nav .article-nav-link-wrap .article-nav-title {
   display: inline-block;
   font-size: 1rem;
-  color: #999;
+  color: #d32;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -ms-transition: color 0.3s;
@@ -3403,7 +3403,6 @@ color
 }
 .article-entry .highlight .line {
   font-size: 15px;
-  height: 15px;
 }
 .article-entry .gist {
   margin: 0 -20px;

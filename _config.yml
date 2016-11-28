@@ -65,6 +65,7 @@ tag_map:
   - others
   - http
   - mac
+  - hexo
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

@@ -4,6 +4,67 @@
 
     
   <url>
+    <loc>http://geeksblog.cc/hexo-config.html</loc>
+    <lastmod>2016-11-28T15:23:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo配置和优化记录</title>
+        <pubTime>2016-11-28T15:07:12.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://geeksblog.cc/hexo-githup-blog.html</loc>
+    <lastmod>2016-11-28T15:10:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo和github打造个人博客</title>
+        <pubTime>2015-12-20T14:35:04.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://geeksblog.cc/hexo-coding-blog.html</loc>
+    <lastmod>2016-11-28T15:08:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo和coding打造静态博客</title>
+        <pubTime>2016-04-19T03:32:59.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://geeksblog.cc/server-config.html</loc>
     <lastmod>2016-11-28T13:06:26.000Z</lastmod>
     <data>
@@ -284,66 +345,6 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/coder-study.html</loc>
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>程序员入门指南</title>
-        <pubTime>2016-04-17T04:37:19.000Z</pubTime>
-        
-        <tag>others</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程语言" url="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>mac下mysql5.6字符集设置</title>
-        <pubTime>2016-05-28T15:10:37.000Z</pubTime>
-        
-        <tag>mysql</tag>
-         
-         
-           
-             
-              <breadCrumb title="数据库" url="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://geeksblog.cc/dream.html</loc>
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>我的梦想</title>
-        <pubTime>2016-04-24T14:07:27.000Z</pubTime>
-        
-        <tag>others</tag>
-         
-         
-           
-             
-              <breadCrumb title="个人随笔" url="http://geeksblog.cc/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://geeksblog.cc/mysql-optimize.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
@@ -404,26 +405,6 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/hexo-coding-blog.html</loc>
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo和coding打造静态博客</title>
-        <pubTime>2016-04-19T03:32:59.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程语言" url="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://geeksblog.cc/hello-world.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
@@ -440,20 +421,21 @@
     </url>
 
     
+    
   <url>
-    <loc>http://geeksblog.cc/code-resource.html</loc>
+    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>程序员编程资源汇总</title>
-        <pubTime>2016-07-19T11:06:29.000Z</pubTime>
+        <title>Atom中最好的js代码补全</title>
+        <pubTime>2016-07-21T22:11:30.000Z</pubTime>
         
-        <tag>开发工具</tag>
+        <tag>others</tag>
          
          
            
              
-              <breadCrumb title="others" url="http://geeksblog.cc/categories/others/"/>
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
@@ -481,19 +463,19 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
+    <loc>http://geeksblog.cc/code-resource.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>Atom中最好的js代码补全</title>
-        <pubTime>2016-07-21T22:11:30.000Z</pubTime>
+        <title>程序员编程资源汇总</title>
+        <pubTime>2016-07-19T11:06:29.000Z</pubTime>
         
-        <tag>others</tag>
+        <tag>开发工具</tag>
          
          
            
              
-              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+              <breadCrumb title="others" url="http://geeksblog.cc/categories/others/"/>
           
         </display>
     </data>
@@ -501,14 +483,14 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/hexo-githup-blog.html</loc>
+    <loc>http://geeksblog.cc/coder-study.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>Hexo和github打造个人博客</title>
-        <pubTime>2015-12-20T14:35:04.000Z</pubTime>
+        <title>程序员入门指南</title>
+        <pubTime>2016-04-17T04:37:19.000Z</pubTime>
         
-        <tag>node</tag>
+        <tag>others</tag>
          
          
            
@@ -521,12 +503,32 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/git-svn.html</loc>
+    <loc>http://geeksblog.cc/dream.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>Git比svn的优势</title>
-        <pubTime>2016-05-22T03:13:00.000Z</pubTime>
+        <title>我的梦想</title>
+        <pubTime>2016-04-24T14:07:27.000Z</pubTime>
+        
+        <tag>others</tag>
+         
+         
+           
+             
+              <breadCrumb title="个人随笔" url="http://geeksblog.cc/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://geeksblog.cc/ghost-blog.html</loc>
+    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>使用Ghost搭建个人博客</title>
+        <pubTime>2016-05-03T23:59:22.000Z</pubTime>
         
         <tag>others</tag>
          
@@ -560,13 +562,14 @@
     </url>
 
     
+    
   <url>
-    <loc>http://geeksblog.cc/ghost-blog.html</loc>
+    <loc>http://geeksblog.cc/git-svn.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>使用Ghost搭建个人博客</title>
-        <pubTime>2016-05-03T23:59:22.000Z</pubTime>
+        <title>Git比svn的优势</title>
+        <pubTime>2016-05-22T03:13:00.000Z</pubTime>
         
         <tag>others</tag>
          
@@ -580,6 +583,23 @@
     </url>
 
     
-    
-    
+  <url>
+    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
+    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>mac下mysql5.6字符集设置</title>
+        <pubTime>2016-05-28T15:10:37.000Z</pubTime>
+        
+        <tag>mysql</tag>
+         
+         
+           
+             
+              <breadCrumb title="数据库" url="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
 </urlset>
