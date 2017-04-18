@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2016-11-28T16:22:23.000Z</updated>
+  <updated>2017-04-17T14:16:03.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -16,11 +16,227 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Kobo Aura One配置入门</title>
+    <link href="http://geeksblog.cc/kobo-config.html"/>
+    <id>http://geeksblog.cc/kobo-config.html</id>
+    <published>2017-04-17T02:22:57.000Z</published>
+    <updated>2017-04-17T14:16:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> Kobo Aura One配置入门：</strong> <Excerpt in index | 首页摘要><br>kobo电子书折腾记，从激活到设置，打补丁实现自定义配置，还是自己折腾起来有意思啊。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h3><p>买电子书是为了阅读和学习，不是天天折腾电子书，一天刷一次机，如果只是看书，做笔记，学个英文什么的<br>原生系统是最好的。</p>
+<h3 id="kobo原生系统的功能"><a href="#kobo原生系统的功能" class="headerlink" title="kobo原生系统的功能"></a>kobo原生系统的功能</h3><ol>
+<li>格式支持epub，mobi，cbz漫画，txt，kobo epub格式</li>
+<li>高亮，笔记，导出笔记（需要配置一下）</li>
+<li>字典（英文，法文等多国字典，可以自己修改）</li>
+<li>阅读pocket文章（大赞，堪比推送文章啊）</li>
+</ol>
+<h3 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h3><p><strong>说明：wifi激活需要翻墙，可以实用笔记连接vpn，然后共享wifi给kobo</strong></p>
+<ol>
+<li>wifi激活</li>
+<li>kobo setup desktop激活</li>
+</ol>
+<h3 id="更新固件"><a href="#更新固件" class="headerlink" title="更新固件"></a>更新固件</h3><p>kobo的更新固件，更新补丁都是一个模式，把固件或者补丁放到.kobo文件夹，弹出设备就会自动重启</p>
+<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p>电脑连接kobo，在根目录建立一个fonts文件夹，把需要的字体放进去即可</p>
+<h3 id="词典"><a href="#词典" class="headerlink" title="词典"></a>词典</h3><p>下载网上改好的字典，直接放到.kobo文件夹下的dict目录下，然后重启就可以了</p>
+<h3 id="自定义配置"><a href="#自定义配置" class="headerlink" title="自定义配置"></a>自定义配置</h3><ol>
+<li>刷新页数</li>
+<li>全屏模式</li>
+<li>上下页宽</li>
+<li>字体高级设置</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; Kobo Aura One配置入门：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;kobo电子书折腾记，从激活到设置，打补丁实现自定义配置，还是自己折腾起来有意思啊。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="others" scheme="http://geeksblog.cc/categories/others/"/>
+    
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mybooks</title>
+    <link href="http://geeksblog.cc/mybooks.html"/>
+    <id>http://geeksblog.cc/mybooks.html</id>
+    <published>2017-04-15T06:49:46.000Z</published>
+    <updated>2017-04-17T14:14:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> Mybooks：</strong> <Excerpt in index | 首页摘要><br>人生漫漫，不知不觉读了好多书，但是仔细想想很多没有做总结，实在心里感觉缺失点东西，这次好好总结一下<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="读过哪些种类的"><a href="#读过哪些种类的" class="headerlink" title="读过哪些种类的"></a>读过哪些种类的</h3><ul>
+<li>编程专业类</li>
+<li>小说类</li>
+<li>励志类</li>
+</ul>
+<h3 id="小说"><a href="#小说" class="headerlink" title="小说"></a>小说</h3><ul>
+<li>平凡的世界</li>
+<li>金庸武侠系列</li>
+<li>古龙武侠小说</li>
+<li>梁羽生武侠小说</li>
+<li>余华作品集</li>
+<li><p>雷米小说全集（侦探类）</p>
+</li>
+<li><p>网络小说：</p>
+<ul>
+<li>诛仙，</li>
+<li>盗墓笔记，</li>
+<li>泡沫之夏，</li>
+<li>芈月传，</li>
+</ul>
+</li>
+</ul>
+<h3 id="编程类"><a href="#编程类" class="headerlink" title="编程类"></a>编程类</h3><ul>
+<li>java编程思想</li>
+<li>effective java</li>
+<li>java并发编程的艺术</li>
+<li>代码整洁之道</li>
+<li><p>黑客与画家</p>
+</li>
+<li><p>深入浅出nodejs</p>
+</li>
+<li>nodejs实战</li>
+<li>js高级程序设计</li>
+<li>survivejs</li>
+<li>redux和react中文手册</li>
+<li>你不知道的javascript</li>
+<li><p>算法javascript实现</p>
+</li>
+<li><p>mysql权威指南</p>
+</li>
+<li>mongodb权威指南</li>
+<li>mongodb实战第二版</li>
+<li>redis入门</li>
+</ul>
+<h3 id="经管励志"><a href="#经管励志" class="headerlink" title="经管励志"></a>经管励志</h3><ul>
+<li>时间管理</li>
+<li>一分钟系列</li>
+<li>番茄工作法图解</li>
+</ul>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; Mybooks：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;人生漫漫，不知不觉读了好多书，但是仔细想想很多没有做总结，实在心里感觉缺失点东西，这次好好总结一下&lt;br&gt;
+    
+    </summary>
+    
+      <category term="book" scheme="http://geeksblog.cc/categories/book/"/>
+    
+    
+      <category term="学习笔记" scheme="http://geeksblog.cc/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>异步那些事</title>
+    <link href="http://geeksblog.cc/async-dev.html"/>
+    <id>http://geeksblog.cc/async-dev.html</id>
+    <published>2017-04-14T02:11:58.000Z</published>
+    <updated>2017-04-14T02:15:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 异步那些事：</strong> <Excerpt in index | 首页摘要><br>在异步大行其道的今天，作为一个开发者你如果连异步都不了解，肯定会被同行看不清的，骚年还是学一下吧<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="异步简介"><a href="#异步简介" class="headerlink" title="异步简介"></a>异步简介</h3><h3 id="异步解决方案演变"><a href="#异步解决方案演变" class="headerlink" title="异步解决方案演变"></a>异步解决方案演变</h3><h3 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h3><h3 id="generator"><a href="#generator" class="headerlink" title="generator"></a>generator</h3><h3 id="async"><a href="#async" class="headerlink" title="async"></a>async</h3><blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 异步那些事：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;在异步大行其道的今天，作为一个开发者你如果连异步都不了解，肯定会被同行看不清的，骚年还是学一下吧&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="node" scheme="http://geeksblog.cc/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个完整项目的得失</title>
+    <link href="http://geeksblog.cc/fullprj-desc.html"/>
+    <id>http://geeksblog.cc/fullprj-desc.html</id>
+    <published>2017-04-11T02:18:22.000Z</published>
+    <updated>2017-04-17T03:47:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 一个完整项目的得失：</strong> <Excerpt in index | 首页摘要><br>最近做了一个完整的java项目，感触颇深，写篇文章记录一下自己的得失<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>今年从2月份到4月份做了一个完整到项目，后台cms系统，包括前台应用。写打造一个完美到系统，确实需要考虑太多因素，<br>自己收获颇多，特此总结一下。</p>
+<h3 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h3><p>cms后台主要使用java的spring，mybits，shiro框架，前台就是jquery，jsp，bootstrap，<br>数据库方面是mysql，缓存没有使用</p>
+<h3 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h3><p>使用mysql设计数据库，对业务的不深入很多时候会导致设置的表满足不了需求</p>
+<ol>
+<li>提前预留几个def空字段，这样不需要频繁的修改表结构</li>
+<li>索引要建好，数据量增长起来后，没有索引搜索肯定慢的很，对常见的搜索条件建索引</li>
+<li>对并发有个大致的数</li>
+</ol>
+<h3 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h3><ol>
+<li>反向代理配置，代理80端口，代理域名访问</li>
+<li>静态资源缓存，压缩</li>
+<li>websocket配置，https配置</li>
+<li>集群的负载均衡配置</li>
+</ol>
+<h3 id="tomcat配置"><a href="#tomcat配置" class="headerlink" title="tomcat配置"></a>tomcat配置</h3><ol>
+<li>jvm参数设置</li>
+<li>项目路径设置</li>
+<li>日志，重启配置</li>
+</ol>
+<h3 id="安全问题"><a href="#安全问题" class="headerlink" title="安全问题"></a>安全问题</h3><ol>
+<li>防止</li>
+</ol>
+<h3 id="选购服务器和域名"><a href="#选购服务器和域名" class="headerlink" title="选购服务器和域名"></a>选购服务器和域名</h3><ol>
+<li>估算并发量，预留一定的并发量</li>
+<li>根据并发量计算带宽和cpu还有内存</li>
+<li>根据网络情况选择不同区域的服务器</li>
+<li>根据需求选择域名</li>
+</ol>
+<h3 id="突发状况的处理机制"><a href="#突发状况的处理机制" class="headerlink" title="突发状况的处理机制"></a>突发状况的处理机制</h3><ol>
+<li>选购的第三方接口挂了</li>
+<li>数据库挂了</li>
+<li>服务器挂了</li>
+<li>网络异常</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 一个完整项目的得失：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;最近做了一个完整的java项目，感触颇深，写篇文章记录一下自己的得失&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="java" scheme="http://geeksblog.cc/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>免费的开源书籍</title>
     <link href="http://geeksblog.cc/free-books.html"/>
     <id>http://geeksblog.cc/free-books.html</id>
     <published>2016-11-28T16:15:52.000Z</published>
-    <updated>2016-11-28T16:22:23.000Z</updated>
+    <updated>2016-11-30T23:47:25.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 免费的开源书籍：</strong> <Excerpt in index | 首页摘要><br>国外程序员在 stackoverflow 推荐的程序员必读书籍，中文版。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -623,7 +839,7 @@
     <link href="http://geeksblog.cc/hexo-config.html"/>
     <id>http://geeksblog.cc/hexo-config.html</id>
     <published>2016-11-28T15:07:12.000Z</published>
-    <updated>2016-11-28T15:23:35.000Z</updated>
+    <updated>2016-11-30T23:47:25.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> hexo配置和优化高级篇：</strong> <Excerpt in index | 首页摘要><br>本文章不讲解hexo的基础配置，只针对hexo的高级配置，性能优化，seo配置进行讲解。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -1687,210 +1903,6 @@ disconnect：
     </summary>
     
       <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java和javascript日期详解</title>
-    <link href="http://geeksblog.cc/java-date.html"/>
-    <id>http://geeksblog.cc/java-date.html</id>
-    <published>2016-05-13T13:48:00.000Z</published>
-    <updated>2016-11-13T06:01:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> java，js日期转换：</strong> <Excerpt in index | 首页摘要><br>    java的各种日期转换<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h3 id="日期表示类型"><a href="#日期表示类型" class="headerlink" title="日期表示类型"></a>日期表示类型</h3><ol>
-<li><p>获取long类型的日期格式</p>
-<figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">long <span class="built_in">time</span> = <span class="keyword">System</span>.currentTimeMillis();</div><div class="line"><span class="keyword">System</span>.out.printf(<span class="built_in">time</span>+<span class="string">""</span>);</div><div class="line"><span class="built_in">Date</span> <span class="built_in">date</span> =<span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="keyword">System</span>.out.println(<span class="built_in">date</span>.getTime());</div></pre></td></tr></table></figure>
-</li>
-<li><p>获取制定格式的日期</p>
-<figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd hh:mm:ss"</span>);</div><div class="line"><span class="built_in">Date</span> <span class="built_in">date</span> =<span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="keyword">System</span>.out.println(sdf.<span class="keyword">format</span>(<span class="built_in">date</span>) );</div></pre></td></tr></table></figure>
-</li>
-<li><p>把制定格式的日期转为date或者毫秒值</p>
-<figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd hh:mm:ss"</span>);</div><div class="line"><span class="built_in">Date</span> <span class="built_in">date</span> = sdf.<span class="built_in">parse</span>(<span class="string">"2016-05-22 10:15:21"</span>);</div><div class="line">long mills = <span class="built_in">date</span>.getTime();</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<ul>
-<li>说明:System.currentTimeMillis()并不能精确到1ms的级别,它取决于运行的系统,你再windows,mac,linux精确的范围都有差异,对于有高精度时间的要求,不能使用这个</li>
-</ul>
-<h3 id="日期计算"><a href="#日期计算" class="headerlink" title="日期计算"></a>日期计算</h3><ol>
-<li>最方便的方式是将时间转为毫秒值进行计算<figure class="highlight lasso"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Date</span> from =<span class="literal">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="keyword">Thread</span>.sleep(<span class="number">200</span>);<span class="comment">//线程休眠2ms</span></div><div class="line"><span class="built_in">Date</span> <span class="keyword">to</span> =<span class="literal">new</span> <span class="built_in">Date</span>();</div><div class="line">System.out.println(<span class="keyword">to</span>.getTime()<span class="attr">-from</span>.getTime());</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="高精度时间"><a href="#高精度时间" class="headerlink" title="高精度时间"></a>高精度时间</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">long</span> time1 =System.nanoTime();</div><div class="line">System.out.<span class="built_in">printf</span>(time1+<span class="string">""</span>);</div></pre></td></tr></table></figure>
-<ul>
-<li>说明:System.nanoTime()提高了ns级别的精度,1ms=1000000ns,</li>
-</ul>
-<h3 id="javascript日期"><a href="#javascript日期" class="headerlink" title="javascript日期"></a>javascript日期</h3><ol>
-<li><p>获取时间的毫秒值</p>
-</li>
-<li><p>格式化时间</p>
-</li>
-<li><p>获取月份，时间</p>
-</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; java，js日期转换：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    java的各种日期转换&lt;br&gt;
-    
-    </summary>
-    
-      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="java" scheme="http://geeksblog.cc/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>制定学习目标和计划</title>
-    <link href="http://geeksblog.cc/study-goals.html"/>
-    <id>http://geeksblog.cc/study-goals.html</id>
-    <published>2016-05-06T02:20:45.000Z</published>
-    <updated>2016-11-13T06:00:49.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 制定学习目标和计划：</strong> <Excerpt in index | 首页摘要><br>    近期的学习目标和学习重点,提高自己的能力<br> <a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h3 id="找到自己的兴趣"><a href="#找到自己的兴趣" class="headerlink" title="找到自己的兴趣"></a>找到自己的兴趣</h3><ul>
-<li>自己主动学习一定要基于自己的兴趣,不要看什么框架流行,什么语言火,就去学,学的不温不火,然后放弃.</li>
-<li>一定看自己的兴趣,比如你对色彩,对布局,对特效比较痴迷,那你去css3,html5做出特酷的效果,肯定能让你肯定自己,<br>收获知识和自信.</li>
-<li>没有兴趣的时候,可以适当的多接触一些东西,在最短的时间多接触一些领域,让自己的心去做选择,</li>
-</ul>
-<h3 id="制定目标"><a href="#制定目标" class="headerlink" title="制定目标"></a>制定目标</h3><ol>
-<li>为什么要制定目标?</li>
-</ol>
-<ul>
-<li>制定目标是对自己学习能力的检验,同时也是提高学习效率的关键,而不是自己没有目的的瞎看,</li>
-</ul>
-<ol>
-<li>如何制定目标?</li>
-</ol>
-<ul>
-<li>结合自身的能力,定制比自己能力稍高的目标,这样自己通过一定程度的努力可以实现目标.这样自己的能力能一次一次提高.</li>
-</ul>
-<h3 id="及时反馈"><a href="#及时反馈" class="headerlink" title="及时反馈"></a>及时反馈</h3><ul>
-<li>古人说的好,吾日三省吾身,对待学习目标也是一样,要时不时的看自己的目标完成的如何,进度如何,是不是需要调整,不能闷着头蛮干,方向错了,再多的努力也是白搭了.</li>
-</ul>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
-<li>我在刚开始学编程的时候,每天都给自己定制了目标,一天完成多少课时,完成多少练习,都是按量完成,在最初的几个月收到了立竿见影的效果,让我也在短短三个月的时间学会了java,所以,目标的制定对于结果的影响是非常大.</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 制定学习目标和计划：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    近期的学习目标和学习重点,提高自己的能力&lt;br&gt;
-    
-    </summary>
-    
-      <category term="个人随笔" scheme="http://geeksblog.cc/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用Ghost搭建个人博客</title>
-    <link href="http://geeksblog.cc/ghost-blog.html"/>
-    <id>http://geeksblog.cc/ghost-blog.html</id>
-    <published>2016-05-03T23:59:22.000Z</published>
-    <updated>2016-11-13T05:48:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 使用ghost搭建个人博客：</strong> <Excerpt in index | 首页摘要><br>    使用ghost搭建个人博客<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h3 id="ghost简介"><a href="#ghost简介" class="headerlink" title="ghost简介"></a>ghost简介</h3><ul>
-<li>ghost是轻量级的博客建站工具,使用起来简单,功能强大,适合个人搭建小型网站,个人博客,或者个人展示的网站</li>
-<li>ghost基于nodejs,对于熟悉js的前端小伙伴来说,入手起来也是简单不少.</li>
-</ul>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
-<li>安装nodejs</li>
-<li>安转git</li>
-<li>配置ssh</li>
-<li>下载ghost</li>
-<li>购买域名</li>
-</ol>
-<h3 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h3><h3 id="定制个人博客"><a href="#定制个人博客" class="headerlink" title="定制个人博客"></a>定制个人博客</h3><h3 id="享受吧"><a href="#享受吧" class="headerlink" title="享受吧"></a>享受吧</h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 使用ghost搭建个人博客：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    使用ghost搭建个人博客&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>排序算法学习</title>
-    <link href="http://geeksblog.cc/sort-study.html"/>
-    <id>http://geeksblog.cc/sort-study.html</id>
-    <published>2016-05-03T14:39:24.000Z</published>
-    <updated>2016-11-13T06:00:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 排序算法学习：</strong> <Excerpt in index | 首页摘要><br>    各种排序算法，算法的实现和分析<br> <a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="排序算法的分类"><a href="#排序算法的分类" class="headerlink" title="排序算法的分类"></a>排序算法的分类</h2><ol>
-<li>排序分内排序和外排序。</li>
-<li>内排序:指在排序期间数据对象全部存放在内存的排序。</li>
-<li>外排序:指在排序期间全部对象个数太多,不能同时存放在内存,必须根据排序过程的要求,不断在内、外存之间移动的排序。</li>
-<li>内排序的方法有许多种,按所用策略不同,可归纳为五类:插入排序、选择排序、交换排序、归并排序、分配排序和计数排序。</li>
-<li>插入排序主要包括直接插入排序，折半插入排序和希尔排序两种;</li>
-<li>选择排序主要包括直接选择排序和堆排序;</li>
-<li>交换排序主要包括冒泡排序和快速排序;</li>
-<li>归并排序主要包括二路归并(常用的归并排序)和自然归并。</li>
-<li>分配排序主要包括箱排序和基数排序</li>
-</ol>
-<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><ul>
-<li>冒泡排序就是把小的元素往前调或者把大的元素往后调。比较是相邻的两个元素比较，交换也发生在这两个元素之间。所以，如果两个元素相等，是不用交换的；如果两个相等的元素没有相邻，那么即使通过前面的两两交换把两个相邻起来，这时候也不会交换，所以相同元素的前后顺序并没有改变，所以冒泡排序是一种稳定排序算法<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">// js代码</div><div class="line">function <span class="built_in">sort</span>(arr) &#123;</div><div class="line"><span class="keyword">if</span> (arr.<span class="built_in">length</span> == <span class="number">0</span>) &#123;</div><div class="line">    <span class="built_in">return</span> [];</div><div class="line">&#125;</div><div class="line"><span class="built_in">var</span> <span class="built_in">length</span> = arr.<span class="built_in">length</span>;</div><div class="line"><span class="keyword">for</span> (<span class="built_in">var</span> i = <span class="number">0</span>; i &lt; <span class="built_in">length</span>; i++) &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="built_in">var</span> j = <span class="number">0</span>; j &lt; <span class="built_in">length</span> - i - <span class="number">1</span>; j++) &#123;</div><div class="line">            <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</div><div class="line">                <span class="built_in">var</span> temp = arr[j];</div><div class="line">                arr[j] = arr[j + <span class="number">1</span>];</div><div class="line">                arr[j + <span class="number">1</span>] = temp;</div><div class="line">                console.<span class="built_in">log</span>(arr);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><ul>
-<li>快速排序是对冒泡排序的一种改进。它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列.</li>
-<li>时间复杂度：O（n<em>lgn）最坏：O（n^2）空间复杂度：O（n</em>lgn）</li>
-</ul>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// js递归实现</span></div><div class="line">function <span class="built_in">quickSort</span>(arr) &#123;</div><div class="line">    <span class="keyword">if</span> (arr.length == <span class="number">0</span>) &#123;</div><div class="line">        <span class="keyword">return</span> [];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> <span class="keyword">left</span> = [];</div><div class="line">    <span class="keyword">var</span> <span class="keyword">right</span> = [];</div><div class="line">    <span class="keyword">var</span> pivot = arr[<span class="number">0</span>];</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; arr.length; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (arr[i] &lt; pivot) &#123;</div><div class="line">            <span class="keyword">left</span>.push(arr[i]);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">right</span>.push(arr[i]);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="built_in">quickSort</span>(<span class="keyword">left</span>).concat(pivot, <span class="built_in">quickSort</span>(<span class="keyword">right</span>));</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> a = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; ++i) &#123;</div><div class="line">    a[i] = <span class="type">Math</span>.floor((<span class="type">Math</span>.random() * <span class="number">100</span>) + <span class="number">1</span>);</div><div class="line">&#125;</div><div class="line">console.log(a);</div><div class="line">console.log(<span class="built_in">quickSort</span>(a));</div></pre></td></tr></table></figure>
-<h2 id="直接插入排序"><a href="#直接插入排序" class="headerlink" title="直接插入排序"></a>直接插入排序</h2><ul>
-<li>直接插入排序(straight insertion sort)的作法是：每次从无序表中取出第一个元素，把它插入到有序表的合适位置，使有序表仍然有序.</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">insertionSort</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> temp, inner;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> outer = <span class="number">1</span>; outer &lt;= arr.length - <span class="number">1</span>; ++outer) &#123;</div><div class="line">        temp = arr[outer];</div><div class="line">        inner = outer;</div><div class="line">        <span class="keyword">while</span> (inner &gt; <span class="number">0</span> &amp;&amp; (arr[inner - <span class="number">1</span>] &gt;= temp)) &#123;</div><div class="line">            arr[inner] = arr[inner - <span class="number">1</span>];</div><div class="line">            --inner;</div><div class="line">        &#125;</div><div class="line">        arr[inner] = temp;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> arr;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> a = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; ++i) &#123;</div><div class="line">    a[i] = <span class="built_in">Math</span>.floor((<span class="built_in">Math</span>.random() * <span class="number">100</span>) + <span class="number">1</span>);</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(a);</div><div class="line"><span class="built_in">console</span>.log(insertionSort(a));</div></pre></td></tr></table></figure>
-<h2 id="折半插入排序"><a href="#折半插入排序" class="headerlink" title="折半插入排序"></a>折半插入排序</h2><ul>
-<li>折半插入排序算法的具体操作为：在将一个新元素插入已排好序的数组的过程中，寻找插入点时，将待插入区域的首元素设置为a[low],末元素设置为 a[high]，则轮比较时将待插入元素与a[m],其中m=(low+high)/2相比较,如果比参考元素小，则选择a[low]到a[m-1]为新 的插入区域(即high=m-1)，否则选择a[m+1]到a[high]为新的插入区域（即low=m+1），如此直至low&lt;=high不成 立，即将此位置之后所有元素后移一位，并将新元素插入a[high+1]</li>
-</ul>
-<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><ul>
-<li>先取一个小于n的整数d1作为第一个增量，把文件的全部记录分成d1个组。所有距离为dl的倍数的记录放在同一个组中。先在各组内进行直接插入 排序；然后，取第二个增量d2&lt;d1重复上述的分组和排序，直至所取的增量dt=1(dt&lt;dt-l&lt;…&lt;d2&lt;d1)， 即所有记录放在同一组中进行直接插入排序为止。</li>
-<li>该方法实质上是一种分组插入方法。插入排序（Insertion Sort）的一个重要的特点是，如果原始数据的大部分元素已经排序，那么插入排序的速度很快（因为需要移动的元素很少）。从这个事实我们可以想到，如果原 始数据只有很少元素，那么排序的速度也很快。－－希尔排序就是基于这两点对插入排序作出了改进。</li>
-</ul>
-<h2 id="直接选择排序"><a href="#直接选择排序" class="headerlink" title="直接选择排序"></a>直接选择排序</h2><ul>
-<li>直接选择排序是给每个位置选择当前元素最小的，比如给第一个位置选择最小的，在剩余元素里面给第二个元素选择第二小的，依次类推，直到第n-1个元素，第n个 元素不用选择了，因为只剩下它一个最大的元素了。那么，在一趟选择，如果当前元素比一个元素小，而该小的元素又出现在一个和当前元素相等的元素后面，那么 交换后稳定性就被破坏了。比较拗口，举个例子，序列5 8 5 2 9，我们知道第一遍选择第1个元素5会和2交换，那么原序列中2个5的相对前后顺序就被破坏了，所以选择排序不是一个稳定的排序算法。时间复杂度是O(n^2)</li>
-</ul>
-<h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><ul>
-<li>我们知道堆的结构是节点i的孩子为2<em>i和2</em>i+1节点，大顶堆要求父节点大于等于其2个子节点，小顶堆要求父节点小于等于其2个子节点。在一个长为n 的序列，堆排序的过程是从第n/2开始和其子节点共3个值选择最大(大顶堆)或者最小(小顶堆),这3个元素之间的选择当然不会破坏稳定性。但当为n /2-1, n/2-2, …1这些个父节点选择元素时，就会破坏稳定性。有可能第n/2个父节点交换把后面一个元素交换过去了，而第n/2-1个父节点把后面一个相同的元素没 有交换，那么这2个相同的元素之间的稳定性就被破坏了。所以，堆排序不是稳定的排序算法。</li>
-</ul>
-<h2 id="二路归并排序"><a href="#二路归并排序" class="headerlink" title="二路归并排序"></a>二路归并排序</h2><ul>
-<li>归并排序是把序列递归地分成短序列，递归出口是短序列只有1个元素(认为直接有序)或者2个序列(1次比较和交换),然后把各个有序的段序列合并成一个有 序的长序列，不断合并直到原序列全部排好序。可以发现，在1个或2个元素时，1个元素不会交换，2个元素如果大小相等也没有人故意交换，这不会破坏稳定 性。那么，在短的有序序列合并的过程中，稳定是是否受到破坏？没有，合并过程中我们可以保证如果两个当前元素相等时，我们把处在前面的序列的元素保存在结 果序列的前面，这样就保证了稳定性。所以，归并排序也是稳定的排序算法。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 排序算法学习：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    各种排序算法，算法的实现和分析&lt;br&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="http://geeksblog.cc/categories/%E7%AE%97%E6%B3%95/"/>
     
     
       <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
