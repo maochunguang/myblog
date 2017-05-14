@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-04-17T14:16:03.000Z</updated>
+  <updated>2017-05-13T23:39:46.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,145 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用koa2.x写下载漫画的爬虫</title>
+    <link href="http://geeksblog.cc/spider-koa2.html"/>
+    <id>http://geeksblog.cc/spider-koa2.html</id>
+    <published>2017-05-13T23:15:38.000Z</published>
+    <updated>2017-05-13T23:39:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 用koa2.x写下载漫画的爬虫：</strong> <Excerpt in index | 首页摘要><br>使用koa2.x的async ，await解决异步问题，写一个下载漫画的爬虫，代码里有惊喜和福利哦！<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h3><ol>
+<li>安装nodejs&gt;7.6,安装koa-generator</li>
+<li>直接<code>koa2 spider</code>,生成项目</li>
+<li>安装request,request-promise,cheerio,mkdirp</li>
+<li>npm install安装依赖</li>
+</ol>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>图片或者漫画爬虫的思路很简单，首先观察url的规律，把url按规律加入到下载任务，其实就是请求获得html内容，然后对html进行解析，找到下载的图片url（一般都是img标签的src属性值），把url放到数组保存，使用async await控制所有的任务，直到把所有的图片下载完。</p>
+<h3 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h3><p>但是nodejs本身上异步的，如果你直接在for循环里去下载，肯定是不行的，必须控制好异步的执行上关键。<br>爬虫简单，处理好异步难。这里我使用的es7中async，await配合promise解决异步问题，还可以使用async模块，eventproxy，等等异步控制模块来解决。</p>
+<h3 id="核心代码-spider-js"><a href="#核心代码-spider-js" class="headerlink" title="核心代码,spider.js"></a>核心代码,spider.js</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</div><div class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">"request-promise"</span>);</div><div class="line"><span class="keyword">const</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>);</div><div class="line"><span class="keyword">const</span> mkdirp = <span class="built_in">require</span>(<span class="string">'mkdirp'</span>);</div><div class="line"><span class="keyword">const</span> config = <span class="built_in">require</span>(<span class="string">'../config'</span>);</div><div class="line">exports.download = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params">ctx, next</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> dir = <span class="string">'images'</span>;</div><div class="line">    <span class="comment">// 图片链接地址</span></div><div class="line">    <span class="keyword">let</span> links = [];</div><div class="line">    <span class="comment">// 创建目录</span></div><div class="line">    mkdirp(dir);</div><div class="line">    <span class="keyword">var</span> urls = [];</div><div class="line">    <span class="keyword">let</span> tasks = [];</div><div class="line">    <span class="keyword">let</span> downloadTask = [];</div><div class="line">    <span class="keyword">let</span> url = config.url;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= config.size; i++) &#123;</div><div class="line">        <span class="keyword">let</span> link = url + <span class="string">'_'</span> + i + <span class="string">'.html'</span>;</div><div class="line">        <span class="keyword">if</span> (i == <span class="number">1</span>) &#123;</div><div class="line">            link = url + <span class="string">'.html'</span>;</div><div class="line">        &#125;</div><div class="line">        tasks.push(getResLink(i, link))</div><div class="line">    &#125;</div><div class="line">    links = <span class="keyword">await</span> <span class="built_in">Promise</span>.all(tasks)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'links=========='</span>, links.length);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; links.length; i++) &#123;</div><div class="line">        <span class="keyword">let</span> item = links[i];</div><div class="line">        <span class="keyword">let</span> index = item.split(<span class="string">'___'</span>)[<span class="number">0</span>];</div><div class="line">        <span class="keyword">let</span> src = item.split(<span class="string">'___'</span>)[<span class="number">1</span>];</div><div class="line">        downloadTask.push(downloadImg(src, dir, index + links[i].substr(<span class="number">-4</span>, <span class="number">4</span>)));</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">await</span> <span class="built_in">Promise</span>.all(downloadTask);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">downloadImg</span>(<span class="params">url, dir, filename</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'download begin---'</span>, url);</div><div class="line">    request.get(url).pipe(fs.createWriteStream(dir + <span class="string">"/"</span> + filename)).on(<span class="string">'close'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'download success'</span>, url);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getResLink</span>(<span class="params">index, url</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> body = <span class="keyword">await</span> request(url);</div><div class="line">    <span class="keyword">let</span> urls = [];</div><div class="line">    <span class="keyword">var</span> $ = cheerio.load(body);</div><div class="line">    $(config.rule).each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> src = $(<span class="keyword">this</span>).attr(<span class="string">'src'</span>);</div><div class="line">        urls.push(src);</div><div class="line">    &#125;);</div><div class="line">    <span class="keyword">return</span> index + <span class="string">'___'</span> + urls[<span class="number">0</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h3><p>由于爬虫的复杂性基于不同的网站，不同的任务很不一样，这里只是把几个常用的变量抽取到了config.js。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="comment">//初始url</span></div><div class="line">    url: <span class="string">'http://www.xieet.com/meinv/230'</span>,</div><div class="line">    size: <span class="number">10</span>,</div><div class="line">    <span class="comment">// 选中图片img标签的选择器</span></div><div class="line">    rule: <span class="string">'.imgbox a img'</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h3 id="运行代码"><a href="#运行代码" class="headerlink" title="运行代码"></a>运行代码</h3><ol>
+<li>下载我上传的代码<a href="https://github.com/maochunguang/koa-spider">koa-spider</a></li>
+<li>npm install,npm start即可运行</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>其实无论是写爬虫还是些其他程序，使用nodejs很大一部分都是要处理异步，要学好nodejs必须学好异步处理。</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 用koa2.x写下载漫画的爬虫：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;使用koa2.x的async ，await解决异步问题，写一个下载漫画的爬虫，代码里有惊喜和福利哦！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="nodejs" scheme="http://geeksblog.cc/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信公众号开发</title>
+    <link href="http://geeksblog.cc/wechat-dev.html"/>
+    <id>http://geeksblog.cc/wechat-dev.html</id>
+    <published>2017-04-28T04:55:33.000Z</published>
+    <updated>2017-05-14T00:05:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 微信公众号开发：</strong> <Excerpt in index | 首页摘要><br>微信公众号开发的一些注意事项<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="开发环境搭建"><a href="#开发环境搭建" class="headerlink" title="开发环境搭建"></a>开发环境搭建</h3><ol>
+<li>微信公众号开发者配置，url，token，</li>
+<li>本地调试，使用内网穿透工具，花生壳，或者netapp，买一个可以自定义域名的，内网映射到制定端口，</li>
+<li>项目搭建，express或koa搭建项目，npm有微信的现成包，直接配置</li>
+</ol>
+<h3 id="回复"><a href="#回复" class="headerlink" title="回复"></a>回复</h3><ol>
+<li>回复和发消息并没有什么特别注意的地方，这里不多说</li>
+</ol>
+<h3 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h3><ol>
+<li>微信菜单有自定义菜单，有个性化菜单，但是个性化菜单优先级高于个性化菜单</li>
+<li>个性化菜单可以根据用户的tag，sex，group等属性进行区分菜单</li>
+<li>注意，我在使用时发现<strong>个性化菜单经常会失效</strong>，不起作用，偶尔会起作用，如果线上打算使用个性化菜单，请慎重并仔细测试</li>
+</ol>
+<h3 id="授权"><a href="#授权" class="headerlink" title="授权"></a>授权</h3><p>授权有网页授权，js sdk授权，<br>网页授权也有两种，一个上静默授权，一个是点击授权，贴一下js sdk调用前认证的代码，要使用sha1加密<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">async</span> getSignConfig(originUrl) &#123;</div><div class="line">      <span class="keyword">let</span> data = &#123;&#125;</div><div class="line">      <span class="keyword">const</span> sha1 = crypto.createHash(<span class="string">'sha1'</span>)</div><div class="line">      <span class="keyword">const</span> appId = <span class="keyword">this</span>.app.config.weixin.appID</div><div class="line">      <span class="keyword">const</span> jsapi_ticket = <span class="keyword">await</span> <span class="keyword">this</span>.ctx.service.token.getJSApiTicket()</div><div class="line">      <span class="keyword">const</span> noncestr = <span class="keyword">this</span>.app.config.jsapi.noncestr</div><div class="line">      <span class="keyword">const</span> url = <span class="keyword">this</span>.app.config.domain + originUrl</div><div class="line">      <span class="keyword">const</span> timestamp = <span class="built_in">parseInt</span>(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime() / <span class="number">1000</span>)</div><div class="line">      <span class="comment">// sha1加密</span></div><div class="line">      <span class="keyword">const</span> str = <span class="string">`jsapi_ticket=<span class="subst">$&#123;jsapi_ticket&#125;</span>&amp;noncestr=<span class="subst">$&#123;noncestr&#125;</span>&amp;timestamp=<span class="subst">$&#123;timestamp&#125;</span>&amp;url=<span class="subst">$&#123;url&#125;</span>`</span></div><div class="line">      sha1.update(str)</div><div class="line">      <span class="keyword">const</span> signature = sha1.digest(<span class="string">'hex'</span>)</div><div class="line">      data = &#123; jsapi_ticket, noncestr, timestamp, url, signature, appId &#125;</div><div class="line">      <span class="keyword">return</span> data</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<p>调用js sdk页面上代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">wx.config(&#123;</div><div class="line">    debug: <span class="literal">false</span>, <span class="comment">// 开启调试模式,</span></div><div class="line">    appId: appId, <span class="comment">// 必填，公众号的唯一标识</span></div><div class="line">    timestamp: timestamp, <span class="comment">// 必填，生成签名的时间戳</span></div><div class="line">    nonceStr: nonceStr, <span class="comment">// 必填，生成签名的随机串</span></div><div class="line">    signature:  signature,<span class="comment">// 必填，签名，见附录1</span></div><div class="line">    jsApiList: [<span class="string">'closeWindow'</span>] <span class="comment">// 必填，需要使用的JS接口列表，所有JS接口列表见附录2</span></div><div class="line">&#125;);</div><div class="line">wx.ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      wx.closeWindow();</div><div class="line">    &#125;,<span class="number">2000</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h3 id="实用的常识"><a href="#实用的常识" class="headerlink" title="实用的常识"></a>实用的常识</h3><ol>
+<li>tag不能重复创建，但是给用户可以重复打同一个tag</li>
+<li>更改菜单一般五分钟生效，或者重新关注公众号，立马能看到</li>
+<li>如果调用js sdk，务必使用https，防止因为安全问题，导致ios下js下载失败。如果你的服务是https，而引用了https的微信js，在ios下肯定会下载失败，这是ios的安全机制导致的。</li>
+<li>微信关闭窗口的js接口，不管jsconfig验证是否通过，窗口都可以关闭</li>
+<li>微信的token过期时间上2h，但是很多时候30分钟不到可能已经失效，建议<strong>把token过期时间设置为10分钟之内</strong></li>
+</ol>
+<h3 id="常见报错"><a href="#常见报错" class="headerlink" title="常见报错"></a>常见报错</h3><ol>
+<li>创建菜单的时候，菜单长度不合法，仔细检查自己传的json菜单，一般都是<strong>json格式问题</strong>，而不是长度</li>
+<li>redirect_uri不合法，是创建授权菜单的redirect_uri和<strong>网页授权域名</strong>配置不一样</li>
+<li>关注公众号，服务端设置的欢迎消息发不过去，如果自己代码无异常，一般是因为<strong>token过期</strong></li>
+</ol>
+<h3 id="以后遇到其他问题继续补充"><a href="#以后遇到其他问题继续补充" class="headerlink" title="以后遇到其他问题继续补充"></a>以后遇到其他问题继续补充</h3><blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 微信公众号开发：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;微信公众号开发的一些注意事项&lt;br&gt;
+    
+    </summary>
+    
+      <category term="javacript" scheme="http://geeksblog.cc/categories/javacript/"/>
+    
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac最实用快捷键</title>
+    <link href="http://geeksblog.cc/mac-shortcut.html"/>
+    <id>http://geeksblog.cc/mac-shortcut.html</id>
+    <published>2017-04-21T02:53:08.000Z</published>
+    <updated>2017-04-28T15:51:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> Mac最实用快捷键：</strong> <Excerpt in index | 首页摘要><br>mac系统最常用的一些快捷键，吐血推荐<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><ul>
+<li>打开文件／文件夹    cmd + o</li>
+<li>选择文件／文件夹    文件夹名称（英文）</li>
+<li>删除文件／文件夹    cmd + del</li>
+<li>新建文件夹         cmd + shift + n</li>
+<li>新建文件</li>
+<li>预览文件           space</li>
+<li>重命名             enter</li>
+<li>文件目录前进后退        cmd + [ 或者 cmd + ]</li>
+<li>文件上层目录，下层目录   cmd + ⬆️  cmd + ⬇️</li>
+</ul>
+<h3 id="搜索操作"><a href="#搜索操作" class="headerlink" title="搜索操作"></a>搜索操作</h3><p>全局搜索  ctrl + space<br>文本搜索  cmd + f</p>
+<h3 id="mac-fn快捷键"><a href="#mac-fn快捷键" class="headerlink" title="mac fn快捷键"></a>mac fn快捷键</h3><p>屏幕亮度 f1 f2<br>任务视图 f3<br>应用程序 f4<br>键盘背光 f5 f6<br>音乐播放 f7 f8 f9<br>音量 f10 f11 f12</p>
+<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h3><blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; Mac最实用快捷键：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;mac系统最常用的一些快捷键，吐血推荐&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
+    
+  </entry>
   
   <entry>
     <title>Kobo Aura One配置入门</title>
@@ -146,12 +285,12 @@
     <link href="http://geeksblog.cc/async-dev.html"/>
     <id>http://geeksblog.cc/async-dev.html</id>
     <published>2017-04-14T02:11:58.000Z</published>
-    <updated>2017-04-14T02:15:23.000Z</updated>
+    <updated>2017-05-13T23:15:18.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 异步那些事：</strong> <Excerpt in index | 首页摘要><br>在异步大行其道的今天，作为一个开发者你如果连异步都不了解，肯定会被同行看不清的，骚年还是学一下吧<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="异步简介"><a href="#异步简介" class="headerlink" title="异步简介"></a>异步简介</h3><h3 id="异步解决方案演变"><a href="#异步解决方案演变" class="headerlink" title="异步解决方案演变"></a>异步解决方案演变</h3><h3 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h3><h3 id="generator"><a href="#generator" class="headerlink" title="generator"></a>generator</h3><h3 id="async"><a href="#async" class="headerlink" title="async"></a>async</h3><blockquote>
+<h3 id="异步简介"><a href="#异步简介" class="headerlink" title="异步简介`"></a>异步简介`</h3><h3 id="异步解决方案演变"><a href="#异步解决方案演变" class="headerlink" title="异步解决方案演变"></a>异步解决方案演变</h3><h3 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h3><h3 id="generator"><a href="#generator" class="headerlink" title="generator"></a>generator</h3><h3 id="async"><a href="#async" class="headerlink" title="async"></a>async</h3><blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
 ]]></content>
@@ -1673,239 +1812,6 @@ disconnect：
     
     
       <category term="mysql" scheme="http://geeksblog.cc/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nodejs开发规范</title>
-    <link href="http://geeksblog.cc/node-develop.html"/>
-    <id>http://geeksblog.cc/node-develop.html</id>
-    <published>2016-05-23T06:18:02.000Z</published>
-    <updated>2016-11-13T05:48:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> nodejs开发规范：</strong> <Excerpt in index | 首页摘要><br>    nodejs开发中应当遵循的规范，以及最佳实践<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h3 id="node开发需要编程规范吗？"><a href="#node开发需要编程规范吗？" class="headerlink" title="node开发需要编程规范吗？"></a>node开发需要编程规范吗？</h3><ol>
-<li>js的灵活性非常大，如果开发人员每个人都按自己的习惯随意编写，js的代码会非常混乱不堪。js程序员需要更强的自律性和规范，才能写出易读性，易维护的代码。</li>
-<li>随着前端mvc的崛起，前端的js代码会更加庞大难以管理，如果没有统一的规范，后期维护会比登天还难。</li>
-</ol>
-<h3 id="编码规范"><a href="#编码规范" class="headerlink" title="编码规范"></a>编码规范</h3><ol>
-<li><p>缩进<br>采用两个空格缩进，在编辑器中设置tab为两个空格</p>
-</li>
-<li><p>变量声明</p>
-</li>
-</ol>
-<ul>
-<li>用var声明变量<br>var assert = require(‘assert’);<br>var fork = require(‘child_process’).fork;<br>var net = require(‘net’);</li>
-</ul>
-<p>错误实例：<br>var assert = require(‘assert’)<br>, fork = require(‘child_process’).fork<br>, net = require(‘net’)；</p>
-<ul>
-<li>用字面量声明方式<br>var num = 123;<br>var aaa = {};<br>var arr = [];<br>var isAdmin = true;</li>
-<li><p>避免使用：<br>var obj =new Object();<br>var arr = new Array();<br>var test  =new String(“”);<br>var size = new Number();</p>
-</li>
-<li><p>不要在for循环等循环里声明var变量<br>首先var是函数作用域，在循环声明以后只有等函数声明周期结束这些资源才会释放</p>
-</li>
-</ul>
-<ol>
-<li><p>空格<br>在操作符前后需要加上空格,= 、% 、* 、- 、+ 前后都应该加一个空格<br>比如：var foo = ‘bar’ + baz;<br>错误实例：var foo=’bar’+baz;</p>
-</li>
-<li><p>单双引号的使用<br>在node中尽量使用单引号，<br>var html = ‘<a href="http://cnodejs.org">CNode</a>‘;<br>在json中使用双引号</p>
-</li>
-<li><p>分号<br>给表达式结尾加分号，尽管js会自动在行尾加上分号，但是会产生一些误解</p>
-</li>
-</ol>
-<h3 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h3><p>在编码中，命名是重头戏。好的命名可以使代码赏心悦目，具有良好的维护性。</p>
-<ol>
-<li>变量命名<br>变量名采用小驼峰命名，单词之间没有任何符号如：<br>var adminUser = {};<br>var callNum = 2134323;</li>
-<li><p>方法命名<br>也是采用小驼峰命名，与变量不同的是采用动词或判断行词汇，如：<br>var getUser = function(){};<br>var isAdmin = function(){};<br>var findUser = function(){};</p>
-</li>
-<li><p>类命名<br>类名采用大驼峰，所有单词首字母大写，如：<br>function User{}</p>
-</li>
-<li><p>常量命名<br>作为常量，单词所有字母大写，用下划线分割，如：<br>var PINK_COLOR = “PINK”;</p>
-</li>
-<li><p>文件命名<br>命名文件时，尽量使用下划线分割单词，比如child_process.js和string_decode.js</p>
-</li>
-<li><p>包名<br>在包名中尽量不要包含js和node的字样，应当适当短并且有意义</p>
-</li>
-</ol>
-<h3 id="其它要点"><a href="#其它要点" class="headerlink" title="其它要点"></a>其它要点</h3><ol>
-<li><p>作用域<br>慎用with和eval（），容易引起作用域混乱</p>
-</li>
-<li><p>比较操作<br>尽量使用===代替==,否则会遇到下面的情况，’0’==0;//true;<br>‘’==0;//true;<br>‘0’===’’//false;</p>
-</li>
-<li><p>严格模式<br>在node后台中尽量全使用严格模式<br>‘use strict’;</p>
-</li>
-<li><p>对象和数组遍历<br>数组遍历使用普通for循环，避免使用for in对数组遍历，<br>对象的遍历使用for in</p>
-</li>
-</ol>
-<h3 id="项目中实践"><a href="#项目中实践" class="headerlink" title="项目中实践"></a>项目中实践</h3><ol>
-<li><p>sublime和webstorm都有JSLint,JSHint这样的代码质量工具，在配置文件中制定好模板规范即可</p>
-</li>
-<li><p>在版本控制工具中设置hook，在precommit的脚本中设置，如果代码不符合标准，就无法提交</p>
-</li>
-</ol>
-<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><ol>
-<li>深入浅出nodejs</li>
-<li>js秘密花园</li>
-<li>js高级编程</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; nodejs开发规范：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    nodejs开发中应当遵循的规范，以及最佳实践&lt;br&gt;
-    
-    </summary>
-    
-      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="node" scheme="http://geeksblog.cc/tags/node/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis学习笔记</title>
-    <link href="http://geeksblog.cc/redis-study.html"/>
-    <id>http://geeksblog.cc/redis-study.html</id>
-    <published>2016-05-23T00:25:57.000Z</published>
-    <updated>2016-11-13T05:48:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> redis学习笔记：</strong> <Excerpt in index | 首页摘要><br>    redis数据库的基本操作，增删改查<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h3 id="keys"><a href="#keys" class="headerlink" title="keys"></a>keys</h3><p>redis本质上是一个key-value数据库</p>
-<ol>
-<li>设置：set key value</li>
-<li>获取：get key</li>
-<li>判断存在：exists key</li>
-<li>删除：del key        del  test:fan:age</li>
-<li>重命名：rename  oldkey newkey        </li>
-<li>数量：dbsize  返回数据</li>
-<li>获取所有key（通配符）：<code>Keys test:*:age</code><br><code>Keys test:?:age</code></li>
-<li>清空：flushdb    flushall</li>
-<li>设置有效时间：expire test:fan:age 30</li>
-<li>查询有效时间：ttl test:fan:age</li>
-</ol>
-<h3 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h3><ol>
-<li>设置：<br> set key value<br> setnx ky value(nx是not exist)<br> mset key1 value1 keyN valueN<br> msetnx key1 value1 keyN valueN</li>
-<li>获取：<br> get            不存在返回nil<br> getset        设置key的值，并返回key的旧值，不存在返回nil<br> mget        </li>
-<li>自增减：<br> incr key   对key的值进行++操作，返回新的值<br> decr key<br> incrby key integer        对key加上一个数值<br> decrby key integer</li>
-<li>截取：<br> substr key indexStart indexEnd             下标从0开始</li>
-<li>追加：<br> append key value</li>
-</ol>
-<h3 id="list类型"><a href="#list类型" class="headerlink" title="list类型"></a>list类型</h3><p>redis的list其实就是一个每个元素都是string 的双向链表，所以push和pop的时间复杂度都是O（1）</p>
-<ol>
-<li>添加<br> lpush key string         在头部添加<br> rpush key string        在尾部添加</li>
-<li>修改<br> lset key index value  修改指定下标的key的值</li>
-<li>删除<br> lpop key     从头部返回删除<br> rpop key  从尾部<br> lrem key count value  删除count个相同的value，count为0删除全部<br> blpop key …keyN timeout<br> brpop 从尾部删除</li>
-<li>获取<br> lrange key indexStart indexEnd</li>
-<li>数量<br> llen key        返回key对应的list长度</li>
-<li>截取<br> ltrim key start end</li>
-<li>转移<br> rpoplpush key1 key2    从key1尾部移到key2头部</li>
-</ol>
-<h3 id="set集合"><a href="#set集合" class="headerlink" title="set集合"></a>set集合</h3><p>redis的set就是String的无序集合，通过hashtable实现</p>
-<ol>
-<li>添加<br> sadd key member</li>
-<li>删除<br> srem key member        移除指定的元素<br> spop key                     删除并返回一个随机的</li>
-<li>获取<br> smembers key            返回所有<br> srandmember            随机取一个不删除</li>
-<li>判断存在<br> sismember key member</li>
-<li>数量<br> scard key                     返回元素个数</li>
-<li>转移<br> smove srckey dstkey member</li>
-<li>取交集<br> sinter key1 key2 keyN<br> sinterstore dstkey key1 keyN        将交集存在dstkey</li>
-<li>取并集<br> sunion key1 key2 keyN<br> sunionstore dstkey key1 keyN    将并集存在dstkey</li>
-<li>取差集<br> sdiff key1 key2 keyN<br> sdiffstore dstkey key1 keyN        将差集存在dstkey</li>
-</ol>
-<h3 id="有序set类型"><a href="#有序set类型" class="headerlink" title="有序set类型"></a>有序set类型</h3><p>和set一样，不同的是每个元素关联一个double类型的score，根据score排序，sorted set的实现由skip list和hashtable</p>
-<ol>
-<li>添加<br> zadd key score member</li>
-<li>删除<br> zrem key member<br> zremrangebyrank key min max<br> zremrangebyscore key min max     删除集合score在给定区间的元素</li>
-<li>获取<br> zrange key start end<br> zrevrange    key start end            按score的逆序<br> zrangebyscore key min max        </li>
-<li>判断存在<br> zrank key member        返回下标<br> zrerank key member        返回逆序的下标</li>
-<li>数量<br> zcard key                        总数<br> zcount key min max         区间的数量</li>
-<li>修改<br> zincrby key incr member    增加member的score值并排序</li>
-</ol>
-<h3 id="hash类型"><a href="#hash类型" class="headerlink" title="hash类型"></a>hash类型</h3><p>redis的hash是一个string类型的field和value的映射表，hash特别适合存储对象，</p>
-<ol>
-<li>设置：<br> hset key field value<br> hmset key field1 value1 field2 value2</li>
-<li>获取：<br> hget key field<br> hmget key field1 field2</li>
-<li>判断存在<br> hexists key field</li>
-<li>删除<br> hdel key field</li>
-<li>查找<br> hkeys key            返回所有 field<br> hvals key            返回所有的value<br> hgetall key        返回所有field和value</li>
-<li>数量<br> hlen key</li>
-<li>值加减<br> hincrby key field integer    将指定的hash field加上定值</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; redis学习笔记：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    redis数据库的基本操作，增删改查&lt;br&gt;
-    
-    </summary>
-    
-      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="redis" scheme="http://geeksblog.cc/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git比svn的优势</title>
-    <link href="http://geeksblog.cc/git-svn.html"/>
-    <id>http://geeksblog.cc/git-svn.html</id>
-    <published>2016-05-22T03:13:00.000Z</published>
-    <updated>2016-11-13T05:48:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> git比svn的优势：</strong> <Excerpt in index | 首页摘要><br>    主要介绍svn和git在使用的时候一些区别<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h3 id="合并操作时对提交过程的保留"><a href="#合并操作时对提交过程的保留" class="headerlink" title="合并操作时对提交过程的保留"></a>合并操作时对提交过程的保留</h3><ul>
-<li>git:合并操作保留原有的提交过程</li>
-<li>svn:多个提交合并为一个提交</li>
-<li>不用因为合并操作而导致追踪的困难</li>
-</ul>
-<h3 id="修正提交"><a href="#修正提交" class="headerlink" title="修正提交"></a>修正提交</h3><ul>
-<li>git：可以修正提交。<br>使用功能分支工作流，在自己的分支可以方便修正提交而不会影响大家。</li>
-<li>svn：一旦提交就到服务器上，实际使用中就是不能修改<br>（svn可以在服务器上修改，因为过程复杂需要权限实际上从不会这样做）</li>
-</ul>
-<h3 id="本地分支"><a href="#本地分支" class="headerlink" title="本地分支"></a>本地分支</h3><ul>
-<li>git可以方便的创建本地分支,创建时间极短,分支可以是本地的,不会存在svn中目录权限的问题</li>
-</ul>
-<h3 id="强大的合并能力"><a href="#强大的合并能力" class="headerlink" title="强大的合并能力"></a>强大的合并能力</h3><ul>
-<li><p>git：重命名（无论文件还有目录）提交 可以合并上 文件重命名前的这些文件的提交</p>
-</li>
-<li><p>svn：重命名（无论文件还有目录）提交后，你本地/或是分支上 有文件重命名前的这些文件的修改或提交，在做合并操作时,你会碰上传说中难搞的<strong><em>树冲突</em></strong>！</p>
-</li>
-<li><p>这就导致在调整目录名称和类名调整的时候比较繁琐,需要告诉大家,我修改完以后你再修改</p>
-</li>
-</ul>
-<h3 id="tag的支持"><a href="#tag的支持" class="headerlink" title="tag的支持"></a>tag的支持</h3><ul>
-<li>svn在模型上是没有分支和tag的。tag是通过目录权限限制（对开发只读）来保证不变。</li>
-<li>git模型上一等公民支持tag，保证只读。</li>
-</ul>
-<h3 id="速度优势"><a href="#速度优势" class="headerlink" title="速度优势"></a>速度优势</h3><ul>
-<li>git的提交是个本地提交,相对svn来说如闪电一般</li>
-<li>git提供了暂存区,可以方便制定提交内容,而不是全部内容</li>
-</ul>
-<h3 id="日志查看"><a href="#日志查看" class="headerlink" title="日志查看"></a>日志查看</h3><ul>
-<li>git：本地包含了完整的日志，闪电的速度（并且无需网络)</li>
-<li>svn：需要从服务拉取。</li>
-<li>一旦用了git后，等待svn日志过程简直让我发狂</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; git比svn的优势：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    主要介绍svn和git在使用的时候一些区别&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
     
   </entry>
   
