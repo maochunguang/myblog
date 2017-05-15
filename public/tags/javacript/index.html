@@ -59,6 +59,7 @@
     <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
+        <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
         <a href="/" class="profilepic">
             
             <img lazy-src="/img/avatar.png" class="js-avatar">
@@ -71,6 +72,56 @@
 
         
         
+            <form>
+                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder=" Search...">
+            </form>
+            <div id="local-search-result"></div>
+        
+        
+            <script type="text/javascript">
+                (function() {
+                    'use strict';
+                    function getMatchData(keyword, data) {
+                        var matchData = [];
+                        for(var i =0;i<data.length;i++){
+                            if(data[i].title.toLowerCase().indexOf(keyword)>=0) 
+                                matchData.push(data[i])
+                        }
+                        return matchData;
+                    }
+                    var $input = $('#local-search-input');
+                    var $resultContent = $('#local-search-result');
+                    $input.keyup(function(){
+                        $.ajax({
+                            url: '/search.json',
+                            dataType: "json",
+                            success: function( json ) {
+                                var str='<ul class=\"search-result-list\">';                
+                                var keyword = $input.val().trim().toLowerCase();
+                                $resultContent.innerHTML = "";
+                                if ($input.val().trim().length <= 0) {
+                                    $resultContent.empty();
+                                    $('#switch-area').show();
+                                    return;
+                                }
+                                var results = getMatchData(keyword, json);
+                                if(results.length === 0){
+                                    $resultContent.empty();
+                                    $('#switch-area').show();
+                                    return;
+                                } 
+                                for(var i =0; i<results.length; i++){
+                                    str += "<li><a href='"+ results[i].url +"' class='search-result-title'>"+ results[i].title +"</a></li>";
+                                }
+                                str += "</ul>";
+                                $resultContent.empty();
+                                $resultContent.append(str);
+                                $('#switch-area').hide();
+                            }
+                        });
+                    });
+                })();
+            </script>
         
         
             <div id="switch-btn" class="switch-btn">
@@ -148,7 +199,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/book/" style="font-size: 10px;">book</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/http/" style="font-size: 12.5px;">http</a> <a href="/tags/java/" style="font-size: 12.5px;">java</a> <a href="/tags/javacript/" style="font-size: 10px;">javacript</a> <a href="/tags/linux/" style="font-size: 12.5px;">linux</a> <a href="/tags/mac/" style="font-size: 12.5px;">mac</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/node/" style="font-size: 17.5px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/others/" style="font-size: 20px;">others</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/学习笔记/" style="font-size: 10px;">学习笔记</a> <a href="/tags/开发工具/" style="font-size: 12.5px;">开发工具</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a>
+                        <a href="/tags/book/" style="font-size: 10px;">book</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/http/" style="font-size: 12.5px;">http</a> <a href="/tags/java/" style="font-size: 12.5px;">java</a> <a href="/tags/javacript/" style="font-size: 10px;">javacript</a> <a href="/tags/linux/" style="font-size: 12.5px;">linux</a> <a href="/tags/mac/" style="font-size: 12.5px;">mac</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/node/" style="font-size: 17.5px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/others/" style="font-size: 20px;">others</a> <a href="/tags/redis/" style="font-size: 12.5px;">redis</a> <a href="/tags/学习笔记/" style="font-size: 10px;">学习笔记</a> <a href="/tags/开发工具/" style="font-size: 12.5px;">开发工具</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a>
                     </div>
                 </section>
                 

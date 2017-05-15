@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-05-13T23:39:46.000Z</updated>
+  <updated>2017-05-15T15:27:48.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何写一篇好博客？</title>
+    <link href="http://geeksblog.cc/bestblog.html"/>
+    <id>http://geeksblog.cc/bestblog.html</id>
+    <published>2017-05-15T15:04:48.000Z</published>
+    <updated>2017-05-15T15:27:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 提高自己博客的质量：</strong> <Excerpt in index | 首页摘要><br>写博客陆陆续续也有一年了，但是一直没有多少访问量，仔细看了很多大神的博客，总结了几点，分享一下。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="好博客，好文章是什么样的？"><a href="#好博客，好文章是什么样的？" class="headerlink" title="好博客，好文章是什么样的？"></a>好博客，好文章是什么样的？</h2><ol>
+<li>文章名称鲜明，一看名称就知道关于什么的内容</li>
+<li>整体结构清晰，把事件或者原理的始末按照‘什么样（what？）’，‘为什么（why）’，‘怎么做（how）’说明</li>
+<li>简明扼要。太啰嗦，没人看。</li>
+<li>难易适中，太高深也没人看</li>
+<li>图文搭配，有句话说的好，<strong>一图胜千文</strong>，好的图片胜过千言万语</li>
+</ol>
+<h2 id="怎么写出好博客？"><a href="#怎么写出好博客？" class="headerlink" title="怎么写出好博客？"></a>怎么写出好博客？</h2><ol>
+<li>定主题和文章名称。如果想写一个关于redis后台启动的文章，名称要准确，就叫redis后台启动，不要起啰嗦的名字，比如redis如何后台启动</li>
+<li>准备资料阶段，熟悉redis配置相关资料，做好功课</li>
+<li>定文章的结构和提纲。还拿这个redis后台启动为例，你得说明什么是后台启动？为什么要后台启动？如何做到后台启动？</li>
+<li>语言表单，简单直白，不用凑字数</li>
+<li>深入主题，比如挖掘更多redis的配置，把参数简要说明</li>
+<li>找一个好图片，如果找不到，自己制作一个最契合自己主题的图片</li>
+<li>把文章发给好友阅读，提出宝贵的意见</li>
+<li>改进博客</li>
+<li>坚持写博客</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 提高自己博客的质量：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;写博客陆陆续续也有一年了，但是一直没有多少访问量，仔细看了很多大神的博客，总结了几点，分享一下。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="个人随笔" scheme="http://geeksblog.cc/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Redis后台启动详细配置</title>
+    <link href="http://geeksblog.cc/redis-config.html"/>
+    <id>http://geeksblog.cc/redis-config.html</id>
+    <published>2017-05-15T14:58:07.000Z</published>
+    <updated>2017-05-15T15:46:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> Redis后台启动详细配置：</strong> <Excerpt in index | 首页摘要><br>  redis启动的时候有多种模式，后台启动，集群启动等等。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>在开发中一般都是在命令行中直接运行<code>redis-server</code>,但是这样命令行关闭，服务就停止了。<br>如果要在后台运行redis服务，需要制定配置文件。这里以<strong>ubuntu14</strong>为例子</p>
+<h3 id="准备配置文件"><a href="#准备配置文件" class="headerlink" title="准备配置文件"></a>准备配置文件</h3><p>查看‘/etc/redis/redis.conf’,没有可以创建一个，或者下载一个，配置文件位置没有要求</p>
+<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>把daemonize设置为yes，<br>然后<code>redis-server /etc/redis/redis.conf</code>启动服务，</p>
+<h3 id="查看服务"><a href="#查看服务" class="headerlink" title="查看服务"></a>查看服务</h3><p><code>ps -ef|grep redis-server</code>查看是否有redis进程存在</p>
+<h3 id="更多配置，在conf文件有说明"><a href="#更多配置，在conf文件有说明" class="headerlink" title="更多配置，在conf文件有说明"></a>更多配置，在conf文件有说明</h3><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"># 是否以后台daemon方式运行，默认是 no，一般我们会改为 yes</div><div class="line">daemonize no</div><div class="line">pidfile /var/run/redis.pid</div><div class="line"># 只允许本机访问</div><div class="line">bind <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></div><div class="line"># 端口设置</div><div class="line">port <span class="number">6379</span></div><div class="line">tcp-backlog <span class="number">511</span></div><div class="line">timeout <span class="number">0</span></div><div class="line">tcp-keepalive <span class="number">0</span></div><div class="line">loglevel notice</div><div class="line"># 日志文件</div><div class="line">logfile <span class="string">""</span></div><div class="line"># 开启数据库的数量，Redis 是有数据库概念的，默认是 <span class="number">16</span> 个，数字从 <span class="number">0</span> ~ <span class="number">15</span></div><div class="line">databases <span class="number">16</span></div><div class="line">save <span class="number">900</span> <span class="number">1</span></div><div class="line">save <span class="number">300</span> <span class="number">10</span></div><div class="line">save <span class="number">60</span> <span class="number">10000</span></div><div class="line">stop-writes-on-bgsave-error yes</div><div class="line">rdbcompression yes</div><div class="line">rdbchecksum yes</div><div class="line">dbfilename dump.rdb</div><div class="line">dir ./</div><div class="line">slave-serve-stale-data yes</div><div class="line">slave-read-only yes</div><div class="line">repl-diskless-sync no</div><div class="line">repl-diskless-sync-delay <span class="number">5</span></div><div class="line">repl-disable-tcp-nodelay no</div><div class="line"># 密码设置，需要设置密码打开</div><div class="line">requirepass <span class="number">123455</span></div><div class="line">slave-priority <span class="number">100</span></div><div class="line">appendonly no</div><div class="line">appendfilename <span class="string">"appendonly.aof"</span></div><div class="line">appendfsync everysec</div><div class="line">no-appendfsync-on-rewrite no</div><div class="line">auto-aof-rewrite-percentage <span class="number">100</span></div><div class="line">auto-aof-rewrite-min-size <span class="number">64</span>mb</div><div class="line">aof-load-truncated yes</div><div class="line">lua-time-limit <span class="number">5000</span></div><div class="line">slowlog-log-slower-than <span class="number">10000</span></div><div class="line">slowlog-max-len <span class="number">128</span></div><div class="line">latency-monitor-threshold <span class="number">0</span></div><div class="line">notify-keyspace-events <span class="string">""</span></div><div class="line">hash-max-ziplist-entries <span class="number">512</span></div><div class="line">hash-max-ziplist-value <span class="number">64</span></div><div class="line"><span class="type">list</span>-max-ziplist-entries <span class="number">512</span></div><div class="line"><span class="type">list</span>-max-ziplist-value <span class="number">64</span></div><div class="line">set-max-intset-entries <span class="number">512</span></div><div class="line">zset-max-ziplist-entries <span class="number">128</span></div><div class="line">zset-max-ziplist-value <span class="number">64</span></div><div class="line">hll-sparse-max-bytes <span class="number">3000</span></div><div class="line">activerehashing yes</div><div class="line">client-output-buffer-limit normal <span class="number">0</span> <span class="number">0</span> <span class="number">0</span></div><div class="line">client-output-buffer-limit slave <span class="number">256</span>mb <span class="number">64</span>mb <span class="number">60</span></div><div class="line">client-output-buffer-limit pubsub <span class="number">32</span>mb <span class="number">8</span>mb <span class="number">60</span></div><div class="line">hz <span class="number">10</span></div><div class="line">aof-rewrite-incremental-fsync yes</div></pre></td></tr></table></figure>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; Redis后台启动详细配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;  redis启动的时候有多种模式，后台启动，集群启动等等。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="redis" scheme="http://geeksblog.cc/tags/redis/"/>
+    
+  </entry>
   
   <entry>
     <title>用koa2.x写下载漫画的爬虫</title>
@@ -1692,119 +1771,6 @@ disconnect：
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt; mysql优化：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    mysql的优化措施，从sql优化做起&lt;br&gt;
-    
-    </summary>
-    
-      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="mysql" scheme="http://geeksblog.cc/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mac下mysql5.6字符集设置</title>
-    <link href="http://geeksblog.cc/mac-mysql-unicode.html"/>
-    <id>http://geeksblog.cc/mac-mysql-unicode.html</id>
-    <published>2016-05-28T15:10:37.000Z</published>
-    <updated>2016-11-13T05:48:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> mac下mysql5.6字符集设置：</strong> <Excerpt in index | 首页摘要><br>    在mac下设置mysql5.6字符集时踩过的坑，百分百保证有效<br><a id="more"></a></p>
-<p><The rest of contents | 余下全文></p>
-<h3 id="为什么要设置字符集"><a href="#为什么要设置字符集" class="headerlink" title="为什么要设置字符集"></a>为什么要设置字符集</h3><ol>
-<li>设置字符集主要是解决乱码问题，由于中文和英文编码不同导致，中文出现乱码，所以一般都设置为utf8格式</li>
-<li>不同的字符集和编码占用的字节不同，选择适合的编码会提高数据库性能</li>
-</ol>
-<h3 id="mac下设置"><a href="#mac下设置" class="headerlink" title="mac下设置"></a>mac下设置</h3><ul>
-<li>在/etc/my.cnf文件进行设置，如果没有此文件可以从/usr/local/mysql/support-files/拷贝，命令如下<figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">cd</span> /usr/local/mysql/support-<span class="keyword">files</span></div><div class="line">sudo <span class="keyword">cp</span> my.<span class="keyword">cnf</span> /etc/my.<span class="keyword">cnf</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>查看文件的读写权限，如果为644（rw- r– r–）则改为(664) (rw- rw- r–)<br>如果改为(666)(rw- rw- rw-)则修改以后配置文件不会生效<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod <span class="number">664</span> /etc/<span class="keyword">my</span>.cnf</div></pre></td></tr></table></figure></p>
-<ul>
-<li>my.cnf设置如下：<figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="section">[client]</span></div><div class="line"><span class="attr">default-character-set</span>=utf8</div><div class="line"><span class="section">[mysqld]</span></div><div class="line"><span class="attr">collation-server</span> = utf8_unicode_ci</div><div class="line"><span class="attr">init-connect</span>=<span class="string">'SET NAMES utf8'</span></div><div class="line"><span class="attr">character-set-server</span> = utf8</div><div class="line"><span class="section">[mysql]</span></div><div class="line"><span class="attr">default-character-set</span>=utf8</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="查看设置是否成功"><a href="#查看设置是否成功" class="headerlink" title="查看设置是否成功"></a>查看设置是否成功</h3><p>在命令行输入mysql，如果提示没有命令的话，在bash或者zsh的文件里修改，我用的是zsh，设置~/.zshrc,<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> MYSQL=<span class="string">"/usr/local/mysql/bin/"</span></div><div class="line"><span class="built_in">export</span> PATH=<span class="string">"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:<span class="variable">$MYSQL</span>"</span></div></pre></td></tr></table></figure></p>
-<p>在命令行输入mysql,进入mysql命令行后，输入<code>status;</code>或者<code>show variables like &#39;%char%&#39;;</code><br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">|<span class="string"> character_set_client     </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_connection </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_database   </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_filesystem </span>|<span class="string"> binary                                                  </span>|</div><div class="line">|<span class="string"> character_set_results    </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_server     </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_set_system     </span>|<span class="string"> utf8                                                    </span>|</div><div class="line">|<span class="string"> character_sets_dir       </span>|<span class="string"> /usr/local/mysql-5.6.30-osx10.11-x86_64/share/charsets/</span></div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; mac下mysql5.6字符集设置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    在mac下设置mysql5.6字符集时踩过的坑，百分百保证有效&lt;br&gt;
-    
-    </summary>
-    
-      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="mysql" scheme="http://geeksblog.cc/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mysql学习笔记</title>
-    <link href="http://geeksblog.cc/mysql-study.html"/>
-    <id>http://geeksblog.cc/mysql-study.html</id>
-    <published>2016-05-28T14:24:56.000Z</published>
-    <updated>2016-11-13T05:48:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> mysql学习笔记：</strong> <Excerpt in index | 首页摘要><br>    mysql学习，基础的增删改查，数据库优化，索引，分片，集群搭建等等。<br><a id="more"></a></p>
-<The rest of contents | 余下全文\>
-
-<h3 id="mysql的特点"><a href="#mysql的特点" class="headerlink" title="mysql的特点"></a>mysql的特点</h3><ol>
-<li>关系型数据库，免费使用，</li>
-<li>插入式存储引擎，</li>
-<li>性能高，</li>
-</ol>
-<h3 id="基础的增删改查"><a href="#基础的增删改查" class="headerlink" title="基础的增删改查"></a>基础的增删改查</h3><ol>
-<li><p>ddl语句，数据定义语句</p>
- <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">database</span> test1;</div><div class="line"><span class="keyword">drop</span> <span class="keyword">database</span> test1;</div><div class="line"><span class="keyword">use</span> test1;</div><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> emp(ename <span class="built_in">varchar</span>(<span class="number">10</span>),hiredate <span class="built_in">date</span>,sal <span class="built_in">decimal</span>(<span class="number">10</span>,<span class="number">2</span>),deptno <span class="built_in">int</span>(<span class="number">2</span>));</div><div class="line"><span class="keyword">drop</span> <span class="keyword">table</span> emp;</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">modify</span> ename <span class="built_in">varchar</span>(<span class="number">20</span>);</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> <span class="keyword">column</span> age <span class="built_in">int</span>(<span class="number">3</span>);</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">drop</span> <span class="keyword">column</span> age;</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">change</span> age age1 <span class="built_in">int</span>(<span class="number">4</span>);</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> birth <span class="built_in">date</span> <span class="keyword">after</span> ename;</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">modify</span> age <span class="built_in">int</span>(<span class="number">3</span>) <span class="keyword">first</span>;</div><div class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">rename</span> emp1;</div></pre></td></tr></table></figure>
-</li>
-<li><p>dml语句，数据操纵语句</p>
- <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> emp(ename,hiredate,sal,deptno) <span class="keyword">values</span>(<span class="string">'zzx1'</span>,<span class="string">'2000-10-11'</span>,<span class="number">2000</span>,<span class="number">1</span>);</div><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> emp <span class="keyword">values</span>(<span class="string">'lisa'</span>,<span class="string">'2004-05-09'</span>,<span class="number">3000</span>,<span class="number">2</span>);</div><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> dept <span class="keyword">values</span>(<span class="number">5</span>,<span class="string">'dept5'</span>),(<span class="number">6</span>,<span class="string">'dept6'</span>);</div><div class="line"><span class="keyword">update</span> emp <span class="keyword">set</span> sal=<span class="number">4000</span> <span class="keyword">where</span> ename=<span class="string">'lisa'</span>;</div><div class="line"><span class="keyword">update</span> emp a,dept b <span class="keyword">set</span> a.sal=a.sal*b.deptno,b.deptname=a.ename <span class="keyword">where</span> a.deptno=b.deptno;</div><div class="line"><span class="keyword">delete</span> <span class="keyword">from</span> emp <span class="keyword">where</span> ename=<span class="string">'dony'</span>;</div><div class="line"><span class="keyword">delete</span> a,b <span class="keyword">from</span> emp a,dept b <span class="keyword">where</span> a.deptno=b.deptno <span class="keyword">and</span> a.deptno=<span class="number">3</span>;</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> emp <span class="keyword">where</span> ename=<span class="string">'lisa'</span>;</div><div class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> deptno <span class="keyword">from</span> emp;</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> sal(<span class="keyword">desc</span>);</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> sal <span class="keyword">limit</span> <span class="number">5</span>;</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> emp <span class="keyword">order</span> <span class="keyword">by</span> sal <span class="keyword">limit</span> <span class="number">1</span>,<span class="number">5</span>;ss</div></pre></td></tr></table></figure>
-</li>
-<li><p>dcl语句，数据控制语句</p>
-</li>
-</ol>
-<h3 id="sql优化"><a href="#sql优化" class="headerlink" title="sql优化"></a>sql优化</h3><ol>
-<li>尽量使用 prepareStatement(java)，利用预处理功能。</li>
-<li>在进行多条记录的增加、修改、删除时，建议使用批处理功能，批处理的次数以整<br>个 SQL 语句不超过相应数据库的 SQL 语句大小的限制为准。</li>
-<li>建议每条 SQL 语句中 in 中的元素个数在 200 以下，如果个数超过时，应拆分为多<br>条 SQL 语句。禁止使用 xx in(‘’,’’….) or xx in(‘’,’’,’’)。 ★</li>
-<li>禁止使用 or 超过 200，如 xx =’123’ or xx=’456’。 ★</li>
-<li>尽量不使用外连接。</li>
-<li>禁止使用 not in 语句，建议用 not exist。 ★</li>
-<li>禁止使用 Union, 如果有业务需要，请拆分为两个查询。 ★</li>
-<li>禁止在一条 SQL 语句中使用 3 层以上的嵌套查询，如果有，请考虑使用临时表或<br>中间结果集。</li>
-<li>尽量避免在一条 SQL 语句中从&gt;= 4 个表中同时取数， 对于仅是作为过滤条件关联，<br>但不涉及取数的表，不参与表个数计算</li>
-<li>查询条件里任何对列的操作都将导致表扫描，所以应尽量将数据库函数、计算表达<br>式写在逻辑操作符右边。</li>
-<li>在对 char 类型比较时,建议不要使用 rtrim()函数,应该在程序中将不足的长度补<br>齐。</li>
-<li>用多表连接代替 EXISTS 子句。</li>
-<li>如果有多表连接时， 应该有主从之分， 并尽量从一个表取数， 如 select a.col1, a.col2<br>from a join b on a.col3=b.col4 where b.col5 = ‘a’。</li>
-<li>在使用 Like 时，建议 Like 的一边是字符串，表列在一边出现。</li>
-<li>不允许将 where 子句的条件放到 having 中。</li>
-<li>将更新操作放到事务的最后执行。如</li>
-<li>一个事务需更新多个对象时，需保证更新的顺序一致以避免死锁的发生。如总是先<br>更新子表再更新主表，根据存货档案批量更新现存量时，对传入的存货档案 PK 进<br>行排序，再做更新处理等。</li>
-<li>禁止随意使用临时表，在临时数据不超过 200 行的情况下禁止使用临时表。</li>
-<li>禁止随意使用 distinct，避免造成不必要的排序。</li>
-</ol>
-<h3 id="索引优化"><a href="#索引优化" class="headerlink" title="索引优化"></a>索引优化</h3><ol>
-<li><p>创建索引，删除索引</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">index</span> cityname <span class="keyword">on</span> city(city(<span class="number">10</span>));</div><div class="line"><span class="keyword">drop</span> <span class="keyword">index</span> cityname <span class="keyword">on</span> city;</div></pre></td></tr></table></figure>
-</li>
-<li><p>搜索的索引列最好在where的字句或者连接子句</p>
-</li>
-<li>使用唯一索引</li>
-<li>使用短索引，对于较长的字段，使用其前缀做索引</li>
-<li>不要过度使用索引，索引引起额外的性能开销和维护</li>
-</ol>
-<h3 id="高级优化措施"><a href="#高级优化措施" class="headerlink" title="高级优化措施"></a>高级优化措施</h3><h3 id="集群搭建"><a href="#集群搭建" class="headerlink" title="集群搭建"></a>集群搭建</h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; mysql学习笔记：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    mysql学习，基础的增删改查，数据库优化，索引，分片，集群搭建等等。&lt;br&gt;
     
     </summary>
     

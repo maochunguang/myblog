@@ -55,6 +55,8 @@ category_map:
   - 设计模式
   - 网络协议
   - 资源分享
+  - 数码产品
+  - 自我提升
 tag_map:
   - node
   - java
@@ -92,6 +94,10 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+
+search:
+  path: search.json
+  field: post
 
 sitemap:
   path: sitemap.xml

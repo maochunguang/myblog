@@ -60,6 +60,7 @@
     <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
+        <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
         <a href="/" class="profilepic">
             
             <img lazy-src="/img/avatar.png" class="js-avatar">
@@ -72,6 +73,56 @@
 
         
         
+            <form>
+                <input type="text" class="st-default-search-input search" id="local-search-input" placeholder=" Search...">
+            </form>
+            <div id="local-search-result"></div>
+        
+        
+            <script type="text/javascript">
+                (function() {
+                    'use strict';
+                    function getMatchData(keyword, data) {
+                        var matchData = [];
+                        for(var i =0;i<data.length;i++){
+                            if(data[i].title.toLowerCase().indexOf(keyword)>=0) 
+                                matchData.push(data[i])
+                        }
+                        return matchData;
+                    }
+                    var $input = $('#local-search-input');
+                    var $resultContent = $('#local-search-result');
+                    $input.keyup(function(){
+                        $.ajax({
+                            url: '/search.json',
+                            dataType: "json",
+                            success: function( json ) {
+                                var str='<ul class=\"search-result-list\">';                
+                                var keyword = $input.val().trim().toLowerCase();
+                                $resultContent.innerHTML = "";
+                                if ($input.val().trim().length <= 0) {
+                                    $resultContent.empty();
+                                    $('#switch-area').show();
+                                    return;
+                                }
+                                var results = getMatchData(keyword, json);
+                                if(results.length === 0){
+                                    $resultContent.empty();
+                                    $('#switch-area').show();
+                                    return;
+                                } 
+                                for(var i =0; i<results.length; i++){
+                                    str += "<li><a href='"+ results[i].url +"' class='search-result-title'>"+ results[i].title +"</a></li>";
+                                }
+                                str += "</ul>";
+                                $resultContent.empty();
+                                $resultContent.append(str);
+                                $('#switch-area').hide();
+                            }
+                        });
+                    });
+                })();
+            </script>
         
         
             <div id="switch-btn" class="switch-btn">
@@ -149,7 +200,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/book/" style="font-size: 10px;">book</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/http/" style="font-size: 12.5px;">http</a> <a href="/tags/java/" style="font-size: 12.5px;">java</a> <a href="/tags/javacript/" style="font-size: 10px;">javacript</a> <a href="/tags/linux/" style="font-size: 12.5px;">linux</a> <a href="/tags/mac/" style="font-size: 12.5px;">mac</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/node/" style="font-size: 17.5px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/others/" style="font-size: 20px;">others</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/学习笔记/" style="font-size: 10px;">学习笔记</a> <a href="/tags/开发工具/" style="font-size: 12.5px;">开发工具</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a>
+                        <a href="/tags/book/" style="font-size: 10px;">book</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/http/" style="font-size: 12.5px;">http</a> <a href="/tags/java/" style="font-size: 12.5px;">java</a> <a href="/tags/javacript/" style="font-size: 10px;">javacript</a> <a href="/tags/linux/" style="font-size: 12.5px;">linux</a> <a href="/tags/mac/" style="font-size: 12.5px;">mac</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/node/" style="font-size: 17.5px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/others/" style="font-size: 20px;">others</a> <a href="/tags/redis/" style="font-size: 12.5px;">redis</a> <a href="/tags/学习笔记/" style="font-size: 10px;">学习笔记</a> <a href="/tags/开发工具/" style="font-size: 12.5px;">开发工具</a> <a href="/tags/编程语言/" style="font-size: 10px;">编程语言</a>
                     </div>
                 </section>
                 
@@ -229,6 +280,146 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-fullprj-desc" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a rel="external nofollow" href="/fullprj-desc.html" class="article-date">
+      <time datetime="2017-04-11T02:18:22.000Z" itemprop="datePublished">2017-04-11</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a rel="external nofollow" class="article-title" href="/fullprj-desc.html">一个完整项目的得失</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><strong> 一个完整项目的得失：</strong> <Excerpt in index | 首页摘要><br>最近做了一个完整的java项目，感触颇深，写篇文章记录一下自己的得失<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/编程语言/">编程语言</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a rel="external nofollow"  href="/fullprj-desc.html#more">查看更多 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-free-books" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a rel="external nofollow" href="/free-books.html" class="article-date">
+      <time datetime="2016-11-28T16:15:52.000Z" itemprop="datePublished">2016-11-29</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a rel="external nofollow" class="article-title" href="/free-books.html">免费的开源书籍</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><strong> 免费的开源书籍：</strong> <Excerpt in index | 首页摘要><br>国外程序员在 stackoverflow 推荐的程序员必读书籍，中文版。<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/资源分享/">资源分享</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/book/">book</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a rel="external nofollow"  href="/free-books.html#more">查看更多 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-hexo-config" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -630,146 +821,6 @@
       
         <p class="article-more-link">
           <a rel="external nofollow"  href="/best-js-snippet.html#more">查看更多 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-code-resource" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a rel="external nofollow" href="/code-resource.html" class="article-date">
-      <time datetime="2016-07-19T11:06:29.000Z" itemprop="datePublished">2016-07-19</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a rel="external nofollow" class="article-title" href="/code-resource.html">程序员编程资源汇总</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><strong> 程序员编程资源汇总：</strong> <Excerpt in index | 首页摘要><br>    自己收集的编程相关的资源，分享给大家，希望能帮助更多的人在编程的道路上越走越远！<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/others/">others</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发工具/">开发工具</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a rel="external nofollow"  href="/code-resource.html#more">查看更多 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-ajax-jsonp" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a rel="external nofollow" href="/ajax-jsonp.html" class="article-date">
-      <time datetime="2016-07-06T12:54:16.000Z" itemprop="datePublished">2016-07-06</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a rel="external nofollow" class="article-title" href="/ajax-jsonp.html">Ajax和jsonp区别</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <p><strong> ajax和jsonp区别 ：</strong> <Excerpt in index | 首页摘要><br>    jquery的封装影响了很多人的误解，所以有必要对ajax和jsonp的本质区别讲解，<br>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/编程语言/">编程语言</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/">http</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a rel="external nofollow"  href="/ajax-jsonp.html#more">查看更多 >></a>
         </p>
       
       <div class="clearfix"></div>
