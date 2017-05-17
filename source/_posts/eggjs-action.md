@@ -1,5 +1,5 @@
-title: {{ title }}
-date: {{ date }}
+title: eggjs-action
+date: 2017-05-16 03:07:27
 tags:
 categories:
 ---
