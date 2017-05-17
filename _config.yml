@@ -105,7 +105,7 @@ baidusitemap:
   path: baidusitemap.xml
 
 ## Themes: http://hexo.io/themes/
-theme: spfk
+theme: black-blue
 
 
 baidu_url_submit:

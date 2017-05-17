@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://geeksblog.cc/eggjs-action.html</loc>
+    <lastmod>2017-05-17T14:37:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>egg.js实战技巧</title>
+        <pubTime>2017-05-15T19:07:27.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程语言" url="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://geeksblog.cc/redis-config.html</loc>
     <lastmod>2017-05-15T15:46:16.000Z</lastmod>
     <data>
@@ -203,6 +223,25 @@
     </url>
 
     
+  <url>
+    <loc>http://geeksblog.cc/free-books.html</loc>
+    <lastmod>2016-11-30T23:47:25.000Z</lastmod>
+    <data>
+        <display>
+        <title>免费的开源书籍</title>
+        <pubTime>2016-11-28T16:15:52.000Z</pubTime>
+        
+        <tag>book</tag>
+         
+         
+           
+             
+              <breadCrumb title="资源分享" url="http://geeksblog.cc/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://geeksblog.cc/hexo-coding-blog.html</loc>
@@ -264,25 +303,6 @@
     </url>
 
     
-  <url>
-    <loc>http://geeksblog.cc/free-books.html</loc>
-    <lastmod>2016-11-30T23:47:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>免费的开源书籍</title>
-        <pubTime>2016-11-28T16:15:52.000Z</pubTime>
-        
-        <tag>book</tag>
-         
-         
-           
-             
-              <breadCrumb title="资源分享" url="http://geeksblog.cc/categories/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://geeksblog.cc/server-config.html</loc>
@@ -565,26 +585,6 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/ghost-blog.html</loc>
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>使用Ghost搭建个人博客</title>
-        <pubTime>2016-05-03T23:59:22.000Z</pubTime>
-        
-        <tag>others</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://geeksblog.cc/git-config-study.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
@@ -605,19 +605,19 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/git-svn.html</loc>
+    <loc>http://geeksblog.cc/coder-study.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>Git比svn的优势</title>
-        <pubTime>2016-05-22T03:13:00.000Z</pubTime>
+        <title>程序员入门指南</title>
+        <pubTime>2016-04-17T04:37:19.000Z</pubTime>
         
         <tag>others</tag>
          
          
            
              
-              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+              <breadCrumb title="编程语言" url="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
           
         </display>
     </data>
@@ -645,36 +645,19 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/hello-world.html</loc>
+    <loc>http://geeksblog.cc/git-svn.html</loc>
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2015-12-17T04:37:19.000Z</pubTime>
-        
-        <tag>others</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://geeksblog.cc/coder-study.html</loc>
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    <data>
-        <display>
-        <title>程序员入门指南</title>
-        <pubTime>2016-04-17T04:37:19.000Z</pubTime>
+        <title>Git比svn的优势</title>
+        <pubTime>2016-05-22T03:13:00.000Z</pubTime>
         
         <tag>others</tag>
          
          
            
              
-              <breadCrumb title="编程语言" url="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
@@ -701,6 +684,43 @@
     </url>
 
     
+    
+  <url>
+    <loc>http://geeksblog.cc/hello-world.html</loc>
+    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2015-12-17T04:37:19.000Z</pubTime>
+        
+        <tag>others</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://geeksblog.cc/ghost-blog.html</loc>
+    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>使用Ghost搭建个人博客</title>
+        <pubTime>2016-05-03T23:59:22.000Z</pubTime>
+        
+        <tag>others</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://geeksblog.cc/mysql-optimize.html</loc>

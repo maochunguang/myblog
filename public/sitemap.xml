@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://geeksblog.cc/eggjs-action.html</loc>
+    
+    <lastmod>2017-05-17T14:37:06.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://geeksblog.cc/redis-config.html</loc>
     
     <lastmod>2017-05-15T15:46:16.000Z</lastmod>
@@ -72,7 +79,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/about/index.html</loc>
+    <loc>http://geeksblog.cc/free-books.html</loc>
     
     <lastmod>2016-11-30T23:47:25.000Z</lastmod>
     
@@ -100,7 +107,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/free-books.html</loc>
+    <loc>http://geeksblog.cc/about/index.html</loc>
     
     <lastmod>2016-11-30T23:47:25.000Z</lastmod>
     
@@ -205,13 +212,6 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ghost-blog.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://geeksblog.cc/git-config-study.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
@@ -219,7 +219,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/git-svn.html</loc>
+    <loc>http://geeksblog.cc/coder-study.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
@@ -233,14 +233,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/hello-world.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/coder-study.html</loc>
+    <loc>http://geeksblog.cc/git-svn.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
@@ -255,6 +248,20 @@
   
   <url>
     <loc>http://geeksblog.cc/tags/index.html</loc>
+    
+    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/hello-world.html</loc>
+    
+    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ghost-blog.html</loc>
     
     <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
