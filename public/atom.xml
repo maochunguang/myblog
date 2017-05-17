@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-05-17T14:37:06.000Z</updated>
+  <updated>2017-05-17T23:39:51.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://geeksblog.cc/eggjs-action.html"/>
     <id>http://geeksblog.cc/eggjs-action.html</id>
     <published>2017-05-15T19:07:27.000Z</published>
-    <updated>2017-05-17T14:37:06.000Z</updated>
+    <updated>2017-05-17T23:39:51.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> egg.js实战技巧：</strong> <Excerpt in index | 首页摘要><br>用eggjs一个多月，踩了不少坑，把踩坑过程分享出来，希望大家少走弯路。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -36,8 +36,10 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">exports.register = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">register</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// logger获取，request对象获取</span></div><div class="line">  <span class="keyword">this</span>.logger.info(<span class="keyword">this</span>.request.body)</div><div class="line">  <span class="keyword">try</span> &#123;</div><div class="line">    <span class="comment">// 全局配置文件获取</span></div><div class="line">    <span class="keyword">const</span> domain = <span class="keyword">this</span>.app.config.domain</div><div class="line">    <span class="comment">// service获取</span></div><div class="line">    <span class="keyword">await</span> <span class="keyword">this</span>.service.register.register(<span class="keyword">this</span>.token, <span class="keyword">this</span>.request.body)</div><div class="line">    <span class="comment">// 全局插件获取</span></div><div class="line">    <span class="keyword">const</span> users = <span class="keyword">await</span> <span class="keyword">this</span>.app.model.user.find(&#123;&#125;)</div><div class="line">    <span class="keyword">this</span>.service.message.send()</div><div class="line">  &#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">    <span class="keyword">this</span>.logger.error(e)</div><div class="line">  &#125;</div><div class="line">  <span class="comment">// 获取body</span></div><div class="line">  <span class="keyword">this</span>.body = &#123; <span class="string">'success'</span> &#125;</div><div class="line">  <span class="comment">// 重定向写法</span></div><div class="line">  <span class="keyword">this</span>.redirect(<span class="string">'http://www.baidu.com'</span>)</div><div class="line">  <span class="comment">// render 模版引擎，</span></div><div class="line">  <span class="keyword">this</span>.body = <span class="keyword">this</span>.app.nunjucks.render(<span class="string">'success.nj'</span>, data)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="自定义配置文件"><a href="#自定义配置文件" class="headerlink" title="自定义配置文件"></a>自定义配置文件</h3><p>egg.js的配置文件非常人性化，有config.default.js,config.default.prod.js,config.test.js等等。<br>运行时根据环境变量加载不同的配置文件。默认时config.default.js,指定环境变量后会把config.env.js(对应环境)的配置文件<br>和config.default.js合并。</p>
-<h3 id="调试代码"><a href="#调试代码" class="headerlink" title="调试代码"></a>调试代码</h3><p>由于使用了async await，调试起来有些麻烦，建议使用webstorm或者chrome进行调试，eggjs自带egg-bin，支持在chrome里进行调试，对async，await有良好的支持。</p>
+<h3 id="自定义配置文件"><a href="#自定义配置文件" class="headerlink" title="自定义配置文件"></a>自定义配置文件</h3><p>egg.js的配置文件非常人性化，有config.default.js,config.default.prod.js,config.test.js等等。<br>运行时根据环境变量加载不同的配置文件。默认时config.default.js,指定环境变量后会把config.env.js(对应环境)的配置文件和config.default.js合并。</p>
+<h3 id="调试代码"><a href="#调试代码" class="headerlink" title="调试代码"></a>调试代码</h3><p>由于使用了async await，调试起来有些麻烦，建议使用webstorm或者chrome进行调试，eggjs自带egg-bin，支持在chrome里进行调试，对async，await有良好的支持。<br>使用chrome调试，配置如下：<br>在package.json中添加script,使用<code>npm run debug</code>启动，复制链接在chrome中打开，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">  <span class="string">"start"</span>: <span class="string">"node index.js"</span>,</div><div class="line">  <span class="string">"debug"</span>: <span class="string">"egg-bin debug"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="http://o7kalf5h3.bkt.clouddn.com/debug-egg.png" alt="命令行显示"></p>
+<p><img src="http://o7kalf5h3.bkt.clouddn.com/debug-egg-point.png" alt="断点调试"></p>
 <h3 id="此文章持续更新-欢迎收藏关注"><a href="#此文章持续更新-欢迎收藏关注" class="headerlink" title="此文章持续更新,欢迎收藏关注"></a>此文章持续更新,欢迎收藏关注</h3><blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>

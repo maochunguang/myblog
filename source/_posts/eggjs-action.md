@@ -75,11 +75,21 @@ exports.register = async function register() {
 
 ### 自定义配置文件
 egg.js的配置文件非常人性化，有config.default.js,config.default.prod.js,config.test.js等等。
-运行时根据环境变量加载不同的配置文件。默认时config.default.js,指定环境变量后会把config.env.js(对应环境)的配置文件
-和config.default.js合并。
+运行时根据环境变量加载不同的配置文件。默认时config.default.js,指定环境变量后会把config.env.js(对应环境)的配置文件和config.default.js合并。
 
 ### 调试代码
 由于使用了async await，调试起来有些麻烦，建议使用webstorm或者chrome进行调试，eggjs自带egg-bin，支持在chrome里进行调试，对async，await有良好的支持。
+使用chrome调试，配置如下：
+在package.json中添加script,使用`npm run debug`启动，复制链接在chrome中打开，
+```js
+  "scripts": {
+    "start": "node index.js",
+    "debug": "egg-bin debug"
+  }
+```
+![命令行显示](http://o7kalf5h3.bkt.clouddn.com/debug-egg.png)
+
+![断点调试](http://o7kalf5h3.bkt.clouddn.com/debug-egg-point.png)
 
 ### 此文章持续更新,欢迎收藏关注
 
