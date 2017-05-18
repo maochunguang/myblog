@@ -2,9 +2,219 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://geeksblog.cc/digital-info.html</loc>
+    
+    <lastmod>2017-05-18T02:39:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/cognition-deep.html</loc>
+    
+    <lastmod>2017-05-18T02:32:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://geeksblog.cc/eggjs-action.html</loc>
     
-    <lastmod>2017-05-17T23:39:51.000Z</lastmod>
+    <lastmod>2017-05-17T23:45:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/about/index.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/code-resource.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/coder-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/tags/index.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ajax-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/dream.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc//404.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ubuntu-dev-config.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ghost-blog.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/git-config-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/git-svn.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/hello-world.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/hexo-coding-blog.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/sublime-config.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/hexo-githup-blog.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/java-date.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/js-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/study-goals.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/sort-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/redis-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/mongodb-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/node-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/mysql-optimize.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/mysql-study.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/node-develop.html</loc>
+    
+    <lastmod>2017-05-17T23:42:12.000Z</lastmod>
     
   </url>
   
@@ -51,13 +261,6 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/dream.html</loc>
-    
-    <lastmod>2017-04-28T04:59:53.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://geeksblog.cc/kobo-config.html</loc>
     
     <lastmod>2017-04-17T14:16:03.000Z</lastmod>
@@ -79,20 +282,6 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/free-books.html</loc>
-    
-    <lastmod>2016-11-30T23:47:25.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/hexo-coding-blog.html</loc>
-    
-    <lastmod>2016-11-30T23:47:25.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://geeksblog.cc/hexo-config.html</loc>
     
     <lastmod>2016-11-30T23:47:25.000Z</lastmod>
@@ -100,14 +289,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/hexo-githup-blog.html</loc>
-    
-    <lastmod>2016-11-30T23:47:25.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/about/index.html</loc>
+    <loc>http://geeksblog.cc/free-books.html</loc>
     
     <lastmod>2016-11-30T23:47:25.000Z</lastmod>
     
@@ -117,20 +299,6 @@
     <loc>http://geeksblog.cc/server-config.html</loc>
     
     <lastmod>2016-11-28T13:06:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ajax-study.html</loc>
-    
-    <lastmod>2016-11-27T16:16:07.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
-    
-    <lastmod>2016-11-27T16:16:00.000Z</lastmod>
     
   </url>
   
@@ -152,160 +320,6 @@
     <loc>http://geeksblog.cc/npm-detail.html</loc>
     
     <lastmod>2016-11-27T07:18:51.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/java-date.html</loc>
-    
-    <lastmod>2016-11-13T06:01:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/js-study.html</loc>
-    
-    <lastmod>2016-11-13T06:01:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/mongodb-study.html</loc>
-    
-    <lastmod>2016-11-13T06:01:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/node-study.html</loc>
-    
-    <lastmod>2016-11-13T06:01:09.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ubuntu-dev-config.html</loc>
-    
-    <lastmod>2016-11-13T06:01:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/sublime-config.html</loc>
-    
-    <lastmod>2016-11-13T06:00:55.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/study-goals.html</loc>
-    
-    <lastmod>2016-11-13T06:00:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/sort-study.html</loc>
-    
-    <lastmod>2016-11-13T06:00:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ghost-blog.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/git-config-study.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/git-svn.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/redis-study.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/hello-world.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/tags/index.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/code-resource.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/mysql-optimize.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/node-develop.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/mysql-study.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc//404.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/coder-study.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
-    
-    <lastmod>2016-11-13T05:48:05.000Z</lastmod>
     
   </url>
   

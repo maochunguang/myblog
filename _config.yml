@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Blog
+title: 山不转水转
 subtitle:
 description: tommy's blog
 author: 山不转水转
@@ -55,21 +55,23 @@ category_map:
   - 设计模式
   - 网络协议
   - 资源分享
-  - 数码产品
-  - 自我提升
+  - digital
+  - cognition
 tag_map:
   - node
   - java
   - linux
   - mongodb
   - mysql
-  - javacript
+  - javacript·
   - redis
   - others
   - http
   - mac
   - hexo
   - book
+  - 数码产品
+  - 认知提升
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
