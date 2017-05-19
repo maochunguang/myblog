@@ -64,16 +64,15 @@
     <link href="http://geeksblog.cc/cognition-deep.html"/>
     <id>http://geeksblog.cc/cognition-deep.html</id>
     <published>2017-05-18T02:27:43.000Z</published>
-    <updated>2017-05-18T15:46:01.000Z</updated>
+    <updated>2017-05-19T02:41:22.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 谈一谈认知：</strong> <Excerpt in index | 首页摘要><br>认知这个词好像是从逻辑思维火起来的，一群牛人把自己的成功，商业的革命归于认知的革命，认知的提升。我也被这个词深深的震撼了，想好好说一下认知。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h3 id="我的认知革命"><a href="#我的认知革命" class="headerlink" title="我的认知革命"></a>我的认知革命</h3><p>在大学的时候开始接触认知，但当时对这个词并没有什么理解。有句名言说的好，人只有遭受重大挫折的时候才会改变自己的认知，重识自己的认知。这点我非常赞同。</p>
 <h3 id="认知的作用"><a href="#认知的作用" class="headerlink" title="认知的作用"></a>认知的作用</h3><ol>
-<li>带你走向成功，</li>
-<li>成为亿万富翁</li>
-<li>赢取白富美</li>
+<li>改变自己思维方式</li>
+<li>改变自己的行为方式</li>
 </ol>
 <h3 id="提升自我的认知"><a href="#提升自我的认知" class="headerlink" title="提升自我的认知"></a>提升自我的认知</h3><ol>
 <li>培养良好的思维习惯</li>
@@ -1184,7 +1183,7 @@
     <link href="http://geeksblog.cc/hexo-config.html"/>
     <id>http://geeksblog.cc/hexo-config.html</id>
     <published>2016-11-28T15:07:12.000Z</published>
-    <updated>2016-11-30T23:47:25.000Z</updated>
+    <updated>2017-05-19T14:11:35.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> hexo配置和优化高级篇：</strong> <Excerpt in index | 首页摘要><br>本文章不讲解hexo的基础配置，只针对hexo的高级配置，性能优化，seo配置进行讲解。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -1200,10 +1199,10 @@
 <h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3><ol>
 <li>html压缩</li>
 <li>css压缩</li>
-<li>js压缩</li>
+<li>js压缩·</li>
 <li>img压缩</li>
 <li>nginx代理，开启gzip压缩</li>
-<li>cdn代理css和图片</li>
+<li>cdn代理css和图·片</li>
 <li>删除主题无用的js和css</li>
 </ol>
 <h3 id="seo优化"><a href="#seo优化" class="headerlink" title="seo优化"></a>seo优化</h3><ol>

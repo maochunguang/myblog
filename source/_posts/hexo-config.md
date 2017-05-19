@@ -23,10 +23,10 @@ categories: 开发工具
 ### 性能优化
 1. html压缩
 2. css压缩
-3. js压缩
+3. js压缩·
 4. img压缩
 5. nginx代理，开启gzip压缩
-6. cdn代理css和图片
+6. cdn代理css和图·片
 7. 删除主题无用的js和css
 
 ### seo优化
