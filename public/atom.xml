@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-05-18T15:42:08.000Z</updated>
+  <updated>2017-05-23T15:14:32.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo自用黑色主题</title>
+    <link href="http://geeksblog.cc/hexo-theme.html"/>
+    <id>http://geeksblog.cc/hexo-theme.html</id>
+    <published>2017-05-23T03:32:59.000Z</published>
+    <updated>2017-05-23T15:14:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> hexo和coding打造静态博客 ：</strong> <Excerpt in index | 首页摘要\><br>使用hexo一年有余，对所有主题都感觉有所缺陷，便修改了一个自用黑色主题，本主题以黑色和蓝色为主，色彩鲜明，主题明确。<br><a id="more"></a></p>
+<The rest of contents | 余下全文\>
+
+<h3 id="主题图片"><a href="#主题图片" class="headerlink" title="主题图片"></a>主题图片</h3><p><img src="http://o7kalf5h3.bkt.clouddn.com/blog-index.png" alt="主题首页"> </p>
+<h3 id="black-blue主题来源"><a href="#black-blue主题来源" class="headerlink" title="black-blue主题来源"></a>black-blue主题来源</h3><p>本主题修改自<strong>spfk</strong>主题，但之前spfk主题有很多问题，本主题改进如下：</p>
+<ol>
+<li>压缩js，css提高性能</li>
+<li>代码段样式显示更完美</li>
+<li>增加本地搜索</li>
+<li>设置更合适的字体大小</li>
+<li>颜色以黑色和蓝色为主，色彩鲜明</li>
+<li>seo适当优化</li>
+<li>删除多说，有言，增加畅言评论</li>
+<li>删除stylus，全部改用css方便修改</li>
+</ol>
+<h3 id="主题地址"><a href="#主题地址" class="headerlink" title="主题地址"></a>主题地址</h3><p><a href="https://github.com/maochunguang/black-blue">black-blue</a></p>
+<h3 id="black-blue主题配置"><a href="#black-blue主题配置" class="headerlink" title="black-blue主题配置"></a>black-blue主题配置</h3><ol>
+<li><p>切换主题<br>复制主题到themes目录下<code>cd themes &amp;&amp; git clone https://github.com/maochunguang/black-blue</code>，修改_config.yml <code>theme: black-blue</code></p>
+</li>
+<li><p>安装常用插件，建议全部安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">## rss插件</span></div><div class="line">npm install hexo-generator-feed --save</div><div class="line"><span class="comment">## 站点sitemap生成插件</span></div><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div><div class="line"><span class="comment">## 百度url提交</span></div><div class="line">npm install hexo-baidu-url-submit --save</div><div class="line"><span class="comment">## 本地搜索插件集成</span></div><div class="line">npm install hexo-generator-search --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>博客全局配置，修改根目录下_config.yml<br>插件配置</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">Plugins:</span></div><div class="line"><span class="bullet">-</span> hexo-generator-feed</div><div class="line"><span class="bullet">-</span> hexo-generator-sitemap</div><div class="line"><span class="bullet">-</span> hexo-generator-baidu-sitemap</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>rss设置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">feed:</span></div><div class="line"><span class="attr">  type:</span> atom</div><div class="line"><span class="attr">  path:</span> atom.xml</div><div class="line"><span class="attr">  limit:</span> <span class="number">20</span></div></pre></td></tr></table></figure></p>
+<p>本地搜索配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">search:</span></div><div class="line"><span class="attr">  path:</span> search.json</div><div class="line"><span class="attr">  field:</span> post</div></pre></td></tr></table></figure></p>
+<p>站点地图，seo搜索引擎需要<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">sitemap:</span></div><div class="line"><span class="attr">  path:</span> sitemap.xml</div><div class="line"><span class="attr">baidusitemap:</span></div><div class="line"><span class="attr">  path:</span> baidusitemap.xml</div></pre></td></tr></table></figure></p>
+<ol>
+<li>主题配置<br>菜单配置<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Header | 主菜单</span></div><div class="line"><span class="comment">## About Page: `hexo new page about`</span></div><div class="line"><span class="comment">## Tags Cloud Page: `hexo new page tags`</span></div><div class="line"><span class="attr">menu:</span></div><div class="line">  <span class="comment"># 主页: /archives/</span></div><div class="line">  所有文章: /archives/</div><div class="line">  玩转开发工具: /categories/开发工具/</div><div class="line">  玩转数码: /categories/digital</div><div class="line">  认知提升: /categories/cognition</div><div class="line">  关于我: /about/</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>评论配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 是否开启畅言评论，</span></div><div class="line"><span class="attr">changyan:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  appid:</span> xxxx</div><div class="line"><span class="attr">  conf:</span> xxxxxxxxxxxx</div><div class="line"><span class="comment"># 是否开启disqus，</span></div><div class="line"><span class="attr">disqus:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  shortname:</span> mmmmmm</div></pre></td></tr></table></figure></p>
+<p>其他配置，<strong>详细的配置请下载主题，都有注释</strong><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 数学公式支持</span></div><div class="line"><span class="attr">mathjax:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># Socail Share | 是否开启分享</span></div><div class="line"><span class="attr">baidushare:</span> <span class="literal">true</span></div><div class="line"><span class="comment"># 谷歌分析，百度分析，seo分析很有用</span></div><div class="line"><span class="attr">google_analytics:</span> xxxxxx</div><div class="line"><span class="attr">baidu_analytics:</span> xxcxcxcsdsf</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; hexo和coding打造静态博客 ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要\&gt;&lt;br&gt;使用hexo一年有余，对所有主题都感觉有所缺陷，便修改了一个自用黑色主题，本主题以黑色和蓝色为主，色彩鲜明，主题明确。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="hexo" scheme="http://geeksblog.cc/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>数码产品选购</title>
@@ -1646,70 +1703,6 @@ disconnect：
     
     
       <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>程序员编程资源汇总</title>
-    <link href="http://geeksblog.cc/code-resource.html"/>
-    <id>http://geeksblog.cc/code-resource.html</id>
-    <published>2016-07-19T11:06:29.000Z</published>
-    <updated>2017-05-17T23:42:12.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 程序员编程资源汇总：</strong> <Excerpt in index | 首页摘要><br>    自己收集的编程相关的资源，分享给大家，希望能帮助更多的人在编程的道路上越走越远！<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h3 id="为什么写这边博客？"><a href="#为什么写这边博客？" class="headerlink" title="为什么写这边博客？"></a>为什么写这边博客？</h3><p>每个程序员都会面临一个问题，如何搜索自己需要的资料，我自己也有很多的时间花费在找寻资料上，<br>希望能把最实用的书籍和资源收集起来给大家一个</p>
-<h3 id="免费的编程书籍网站"><a href="#免费的编程书籍网站" class="headerlink" title="免费的编程书籍网站"></a>免费的编程书籍网站</h3><ol>
-<li>原版英文书籍<ul>
-<li><a href="http://www.salttiger.com/">英文原版</a></li>
-</ul>
-</li>
-<li>中文开源书籍<ul>
-<li><a href="https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md">免费开源</a></li>
-<li><a href="https://www.gitbook.com">gitbook</a></li>
-</ul>
-</li>
-<li>免费下载的网站<ul>
-<li><a href="http://www.jb51.net/jiaoben/">脚本之家</a></li>
-<li><a href="http://vdisk.weibo.com/">新浪微盘</a></li>
-</ul>
-</li>
-</ol>
-<h3 id="代码资源"><a href="#代码资源" class="headerlink" title="代码资源"></a>代码资源</h3><ol>
-<li>最好的代码仓库 <a href="https://github.com/">github</a></li>
-<li><a href="https://code.csdn.net/">csdn代码仓库</a></li>
-<li><a href="https://gist.github.com/">gist</a></li>
-<li><a href="http://www.phpxs.com/code/">代码片段之家</a></li>
-</ol>
-<h3 id="博客资源"><a href="#博客资源" class="headerlink" title="博客资源"></a>博客资源</h3><ol>
-<li>csdn</li>
-<li>博客园</li>
-<li>伯乐在线</li>
-<li>简书</li>
-</ol>
-<h2 id="问题解答"><a href="#问题解答" class="headerlink" title="问题解答"></a>问题解答</h2><ol>
-<li>stackoverflow</li>
-<li>segmentfault</li>
-<li>知乎</li>
-<li>谷歌</li>
-</ol>
-<p><strong>此文章会继续更新,把最好的资源奉献给大家!!</strong></p>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 程序员编程资源汇总：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    自己收集的编程相关的资源，分享给大家，希望能帮助更多的人在编程的道路上越走越远！&lt;br&gt;
-    
-    </summary>
-    
-      <category term="others" scheme="http://geeksblog.cc/categories/others/"/>
-    
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   

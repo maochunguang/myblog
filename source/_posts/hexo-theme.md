@@ -1,5 +1,5 @@
 title: hexo自用黑色主题
-date: 2016-04-19 11:32:59
+date: 2017-05-23 11:32:59
 tags: hexo
 categories: 开发工具
 ---
@@ -7,6 +7,9 @@ categories: 开发工具
 使用hexo一年有余，对所有主题都感觉有所缺陷，便修改了一个自用黑色主题，本主题以黑色和蓝色为主，色彩鲜明，主题明确。	
 <!-- more -->
 <The rest of contents | 余下全文\>
+
+### 主题图片
+![主题首页](http://o7kalf5h3.bkt.clouddn.com/blog-index.png) 
 
 ### black-blue主题来源
 本主题修改自**spfk**主题，但之前spfk主题有很多问题，本主题改进如下：
@@ -18,6 +21,9 @@ categories: 开发工具
 6. seo适当优化
 7. 删除多说，有言，增加畅言评论
 8. 删除stylus，全部改用css方便修改
+
+### 主题地址
+[black-blue](https://github.com/maochunguang/black-blue)
 
 ### black-blue主题配置
 1. 切换主题
@@ -43,20 +49,61 @@ Plugins:
 - hexo-generator-sitemap
 - hexo-generator-baidu-sitemap
 ```
+rss设置
 ```yml
 feed:
   type: atom
   path: atom.xml
   limit: 20
 ```
+本地搜索配置
 ```yml
 search:
   path: search.json
   field: post
 ```
+站点地图，seo搜索引擎需要
 ```yml
 sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+```
+4. 主题配置
+菜单配置
+```yml
+# Header | 主菜单
+## About Page: `hexo new page about`
+## Tags Cloud Page: `hexo new page tags`
+menu:
+  # 主页: /archives/
+  所有文章: /archives/
+  玩转开发工具: /categories/开发工具/
+  玩转数码: /categories/digital
+  认知提升: /categories/cognition
+  关于我: /about/
+```
+评论配置
+```yml
+# 是否开启畅言评论，
+changyan:
+  on: true
+  appid: xxxx
+  conf: xxxxxxxxxxxx
+# 是否开启disqus，
+disqus:
+  on: false
+  shortname: mmmmmm
+```
+
+其他配置，**详细的配置请下载主题，都有注释**
+```yml
+# 数学公式支持
+mathjax: false
+# Socail Share | 是否开启分享
+baidushare: true
+# 谷歌分析，百度分析，seo分析很有用
+google_analytics: xxxxxx
+baidu_analytics: xxcxcxcsdsf
+
 ```
