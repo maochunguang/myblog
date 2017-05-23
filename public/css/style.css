@@ -3669,12 +3669,12 @@ pre .operator {
   overflow: hidden
 }
 
-.youyan {
+.changyan {
   padding: 20px 40px
 }
 
 @media (max-width:767px) {
-  .youyan {
+  .changyan {
     padding: 20px 10px
   }
 }
