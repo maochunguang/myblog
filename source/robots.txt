@@ -1,7 +1,5 @@
 # hexo robots.txt
 User-agent: *
-Allow: /
-Allow: /archives/
 
 Disallow: /vendors/
 Disallow: /js/

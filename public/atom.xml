@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>山不转水转</title>
-  
+  <subtitle>不想成为架构师的程序员不是一个好程序员！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-05-23T15:14:32.000Z</updated>
+  <updated>2017-05-26T03:59:28.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://geeksblog.cc/hexo-theme.html"/>
     <id>http://geeksblog.cc/hexo-theme.html</id>
     <published>2017-05-23T03:32:59.000Z</published>
-    <updated>2017-05-23T15:14:32.000Z</updated>
+    <updated>2017-05-26T03:59:28.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> hexo和coding打造静态博客 ：</strong> <Excerpt in index | 首页摘要\><br>使用hexo一年有余，对所有主题都感觉有所缺陷，便修改了一个自用黑色主题，本主题以黑色和蓝色为主，色彩鲜明，主题明确。<br><a id="more"></a></p>
 <The rest of contents | 余下全文\>
@@ -38,26 +38,16 @@
 <li>删除stylus，全部改用css方便修改</li>
 </ol>
 <h3 id="主题地址"><a href="#主题地址" class="headerlink" title="主题地址"></a>主题地址</h3><p><a href="https://github.com/maochunguang/black-blue">black-blue</a></p>
-<h3 id="black-blue主题配置"><a href="#black-blue主题配置" class="headerlink" title="black-blue主题配置"></a>black-blue主题配置</h3><ol>
-<li><p>切换主题<br>复制主题到themes目录下<code>cd themes &amp;&amp; git clone https://github.com/maochunguang/black-blue</code>，修改_config.yml <code>theme: black-blue</code></p>
-</li>
-<li><p>安装常用插件，建议全部安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">## rss插件</span></div><div class="line">npm install hexo-generator-feed --save</div><div class="line"><span class="comment">## 站点sitemap生成插件</span></div><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div><div class="line"><span class="comment">## 百度url提交</span></div><div class="line">npm install hexo-baidu-url-submit --save</div><div class="line"><span class="comment">## 本地搜索插件集成</span></div><div class="line">npm install hexo-generator-search --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>博客全局配置，修改根目录下_config.yml<br>插件配置</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">Plugins:</span></div><div class="line"><span class="bullet">-</span> hexo-generator-feed</div><div class="line"><span class="bullet">-</span> hexo-generator-sitemap</div><div class="line"><span class="bullet">-</span> hexo-generator-baidu-sitemap</div></pre></td></tr></table></figure>
-</li>
-</ol>
+<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>大家使用主题的时候，把<strong>主题配置文件_config.yml</strong>以下几项必须修改，项目里实用的是我博客的正式代码，请大家修改成自己的！<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="attr">google_analytics:</span> xxx</div><div class="line"><span class="attr">baidu_analytics:</span> xxxxxxx</div><div class="line"><span class="attr">disqus:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  shortname:</span> xxxx</div><div class="line"><span class="comment"># 畅言评论</span></div><div class="line"><span class="attr">changyan:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  appid:</span> xxxx</div><div class="line"><span class="attr">  conf:</span> xxxxx</div></pre></td></tr></table></figure></p>
+<h3 id="black-blue主题配置"><a href="#black-blue主题配置" class="headerlink" title="black-blue主题配置"></a>black-blue主题配置</h3><h4 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h4><p>复制主题到themes目录下<code>cd themes &amp;&amp; git clone https://github.com/maochunguang/black-blue</code>，修改_config.yml <code>theme: black-blue</code></p>
+<h4 id="安装常用插件，建议全部安装"><a href="#安装常用插件，建议全部安装" class="headerlink" title="安装常用插件，建议全部安装"></a>安装常用插件，建议全部安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">## rss插件</span></div><div class="line">npm install hexo-generator-feed --save</div><div class="line"><span class="comment">## 站点sitemap生成插件</span></div><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div><div class="line"><span class="comment">## 百度url提交</span></div><div class="line">npm install hexo-baidu-url-submit --save</div><div class="line"><span class="comment">## 本地搜索插件集成</span></div><div class="line">npm install hexo-generator-search --save</div></pre></td></tr></table></figure>
+<h4 id="博客全局配置，修改根目录下-config-yml"><a href="#博客全局配置，修改根目录下-config-yml" class="headerlink" title="博客全局配置，修改根目录下_config.yml"></a>博客全局配置，修改根目录下_config.yml</h4><p>插件配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">Plugins:</span></div><div class="line"><span class="bullet">-</span> hexo-generator-feed</div><div class="line"><span class="bullet">-</span> hexo-generator-sitemap</div><div class="line"><span class="bullet">-</span> hexo-generator-baidu-sitemap</div></pre></td></tr></table></figure></p>
 <p>rss设置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">feed:</span></div><div class="line"><span class="attr">  type:</span> atom</div><div class="line"><span class="attr">  path:</span> atom.xml</div><div class="line"><span class="attr">  limit:</span> <span class="number">20</span></div></pre></td></tr></table></figure></p>
 <p>本地搜索配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">search:</span></div><div class="line"><span class="attr">  path:</span> search.json</div><div class="line"><span class="attr">  field:</span> post</div></pre></td></tr></table></figure></p>
 <p>站点地图，seo搜索引擎需要<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">sitemap:</span></div><div class="line"><span class="attr">  path:</span> sitemap.xml</div><div class="line"><span class="attr">baidusitemap:</span></div><div class="line"><span class="attr">  path:</span> baidusitemap.xml</div></pre></td></tr></table></figure></p>
-<ol>
-<li>主题配置<br>菜单配置<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Header | 主菜单</span></div><div class="line"><span class="comment">## About Page: `hexo new page about`</span></div><div class="line"><span class="comment">## Tags Cloud Page: `hexo new page tags`</span></div><div class="line"><span class="attr">menu:</span></div><div class="line">  <span class="comment"># 主页: /archives/</span></div><div class="line">  所有文章: /archives/</div><div class="line">  玩转开发工具: /categories/开发工具/</div><div class="line">  玩转数码: /categories/digital</div><div class="line">  认知提升: /categories/cognition</div><div class="line">  关于我: /about/</div></pre></td></tr></table></figure>
-</li>
-</ol>
+<h4 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h4><p>菜单配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Header | 主菜单</span></div><div class="line"><span class="comment">## About Page: `hexo new page about`</span></div><div class="line"><span class="comment">## Tags Cloud Page: `hexo new page tags`</span></div><div class="line"><span class="attr">menu:</span></div><div class="line">  <span class="comment"># 主页: /archives/</span></div><div class="line">  所有文章: /archives/</div><div class="line">  玩转开发工具: /categories/开发工具/</div><div class="line">  玩转数码: /categories/digital</div><div class="line">  认知提升: /categories/cognition</div><div class="line">  关于我: /about/</div></pre></td></tr></table></figure></p>
 <p>评论配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 是否开启畅言评论，</span></div><div class="line"><span class="attr">changyan:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  appid:</span> xxxx</div><div class="line"><span class="attr">  conf:</span> xxxxxxxxxxxx</div><div class="line"><span class="comment"># 是否开启disqus，</span></div><div class="line"><span class="attr">disqus:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  shortname:</span> mmmmmm</div></pre></td></tr></table></figure></p>
-<p>其他配置，<strong>详细的配置请下载主题，都有注释</strong><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 数学公式支持</span></div><div class="line"><span class="attr">mathjax:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># Socail Share | 是否开启分享</span></div><div class="line"><span class="attr">baidushare:</span> <span class="literal">true</span></div><div class="line"><span class="comment"># 谷歌分析，百度分析，seo分析很有用</span></div><div class="line"><span class="attr">google_analytics:</span> xxxxxx</div><div class="line"><span class="attr">baidu_analytics:</span> xxcxcxcsdsf</div></pre></td></tr></table></figure></p>
-]]></content>
+<h4 id="其他配置，详细的配置请下载主题，都有注释"><a href="#其他配置，详细的配置请下载主题，都有注释" class="headerlink" title="其他配置，详细的配置请下载主题，都有注释"></a>其他配置，<strong>详细的配置请下载主题，都有注释</strong></h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 数学公式支持</span></div><div class="line"><span class="attr">mathjax:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># Socail Share | 是否开启分享</span></div><div class="line"><span class="attr">baidushare:</span> <span class="literal">true</span></div><div class="line"><span class="comment"># 谷歌分析，百度分析，seo分析很有用</span></div><div class="line"><span class="attr">google_analytics:</span> xxxxxx</div><div class="line"><span class="attr">baidu_analytics:</span> xxcxcxcsdsf</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -160,7 +150,7 @@
     <link href="http://geeksblog.cc/eggjs-action.html"/>
     <id>http://geeksblog.cc/eggjs-action.html</id>
     <published>2017-05-15T19:07:27.000Z</published>
-    <updated>2017-05-17T23:45:44.000Z</updated>
+    <updated>2017-05-26T03:59:58.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> egg.js实战技巧：</strong> <Excerpt in index | 首页摘要><br>用eggjs一个多月，踩了不少坑，把踩坑过程分享出来，希望大家少走弯路。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -575,9 +565,9 @@
     <link href="http://geeksblog.cc/fullprj-desc.html"/>
     <id>http://geeksblog.cc/fullprj-desc.html</id>
     <published>2017-04-11T02:18:22.000Z</published>
-    <updated>2017-04-17T03:47:52.000Z</updated>
+    <updated>2017-05-26T04:01:53.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> 一个完整项目的得失：</strong> <Excerpt in index | 首页摘要><br>最近做了一个完整的java项目，感触颇深，写篇文章记录一下自己的得失<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> 一个完整项目的得失：</strong> <Excerpt in index | 首页摘要><br>想做一个完美的cms太难，架构本身就是要有取舍，只有最合适的架构，没有最好的架构。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>今年从2月份到4月份做了一个完整到项目，后台cms系统，包括前台应用。写打造一个完美到系统，确实需要考虑太多因素，<br>自己收获颇多，特此总结一下。</p>
@@ -621,7 +611,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; 一个完整项目的得失：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;最近做了一个完整的java项目，感触颇深，写篇文章记录一下自己的得失&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; 一个完整项目的得失：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;想做一个完美的cms太难，架构本身就是要有取舍，只有最合适的架构，没有最好的架构。&lt;br&gt;
     
     </summary>
     
@@ -1240,7 +1230,7 @@
     <link href="http://geeksblog.cc/hexo-config.html"/>
     <id>http://geeksblog.cc/hexo-config.html</id>
     <published>2016-11-28T15:07:12.000Z</published>
-    <updated>2017-05-19T14:11:35.000Z</updated>
+    <updated>2017-05-26T03:50:30.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> hexo配置和优化高级篇：</strong> <Excerpt in index | 首页摘要><br>本文章不讲解hexo的基础配置，只针对hexo的高级配置，性能优化，seo配置进行讲解。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -1264,7 +1254,7 @@
 </ol>
 <h3 id="seo优化"><a href="#seo优化" class="headerlink" title="seo优化"></a>seo优化</h3><ol>
 <li>sitemap</li>
-<li>a标签添加<code>rel=&quot;external nofollow&quot;</code></li>
+<li>对于没有价值的外链a标签添加<code>rel=&quot;external nofollow&quot;</code></li>
 <li>使用meta标签</li>
 <li>使用robots文件</li>
 <li>主动提交sitemap到搜索引擎</li>

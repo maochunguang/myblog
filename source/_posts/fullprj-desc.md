@@ -4,7 +4,7 @@ tags: java
 categories: 编程语言
 ---
 ** {{ title }}：** <Excerpt in index | 首页摘要>
-最近做了一个完整的java项目，感触颇深，写篇文章记录一下自己的得失
+想做一个完美的cms太难，架构本身就是要有取舍，只有最合适的架构，没有最好的架构。
 <!-- more -->
 <The rest of contents | 余下全文>
 

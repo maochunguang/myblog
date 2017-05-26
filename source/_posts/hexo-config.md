@@ -31,7 +31,7 @@ categories: 开发工具
 
 ### seo优化
 1. sitemap
-2. a标签添加`rel="external nofollow"`
+2. 对于没有价值的外链a标签添加`rel="external nofollow"`
 3. 使用meta标签
 4. 使用robots文件
 5. 主动提交sitemap到搜索引擎
