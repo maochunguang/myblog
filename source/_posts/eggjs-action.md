@@ -8,13 +8,13 @@ categories: 编程语言
 <!-- more -->
 <The rest of contents | 余下全文>
 
-### egg.js介绍
+## egg.js介绍
 请去官网看介绍 [egg.js](https://eggjs.org/zh-cn/)
 
-### 说明
+## 说明
 本文所有示例基于async function，node版本node>=7.6.
 
-### controller和service的两种写法：基于类和普通方法
+## controller和service的两种写法：基于类和普通方法
 这两种写法在获取全局变量有些地方不一样，这里列举最常见的几个全局变量的异同。
 
 1. 基于类的controller
@@ -73,11 +73,11 @@ exports.register = async function register() {
 }
 ```
 
-### 自定义配置文件
+## 自定义配置文件
 egg.js的配置文件非常人性化，有config.default.js,config.default.prod.js,config.test.js等等。
 运行时根据环境变量加载不同的配置文件。默认时config.default.js,指定环境变量后会把config.env.js(对应环境)的配置文件和config.default.js合并。
 
-### 调试代码
+## 调试代码
 由于使用了async await，调试起来有些麻烦，建议使用webstorm或者chrome进行调试，eggjs自带egg-bin，支持在chrome里进行调试，对async，await有良好的支持。
 使用chrome调试，配置如下：
 在package.json中添加script,使用`npm run debug`启动，复制链接在chrome中打开，
@@ -91,7 +91,7 @@ egg.js的配置文件非常人性化，有config.default.js,config.default.prod.
 
 ![断点调试](http://o7kalf5h3.bkt.clouddn.com/debug-egg-point.png)
 
-### 此文章持续更新,欢迎收藏关注
+## 此文章持续更新,欢迎收藏关注
 
 
 > 如果文章对你有帮助,请去我的博客留个言吧! [我的博客][1]

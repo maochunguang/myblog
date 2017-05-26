@@ -8,12 +8,12 @@ categories: book
 <!-- more -->
 <The rest of contents | 余下全文>
 
-### 读过哪些种类的
+## 读过哪些种类的
 - 编程专业类
 - 小说类
 - 励志类
 
-### 小说
+## 小说
 - 平凡的世界
 - 金庸武侠系列
 - 古龙武侠小说
@@ -28,7 +28,7 @@ categories: book
     - 芈月传，
 
 
-### 编程类
+## 编程类
 - java编程思想
 - effective java
 - java并发编程的艺术
@@ -48,7 +48,7 @@ categories: book
 - mongodb实战第二版
 - redis入门
 
-### 经管励志
+## 经管励志
 - 时间管理
 - 一分钟系列
 - 番茄工作法图解

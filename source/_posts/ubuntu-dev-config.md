@@ -8,7 +8,7 @@ categories: 开发工具
  <!-- more -->
 <The rest of contents | 余下全文>
 
-### 安装系统软件
+## 安装系统软件
 1. 更新系统和软件
    ```
    sudo apt-get update
@@ -17,7 +17,7 @@ categories: 开发工具
 2. 谷歌浏览器，火狐浏览器，atom编辑器，sublime编辑器，webstome,idea,eclipse
 3. 安装搜狗输入法（官网），安装fcitx配置搜狗输入法
 
-### 安装jdk
+## 安装jdk
 1. 下载jdk并新建一个文件夹
     ```
     sudo mkdir /usr/lib/jvm
@@ -39,7 +39,7 @@ categories: 开发工具
     java --version
     ```
 
-### 安装nodejs
+## 安装nodejs
 1. nodejs版本迭代较快，有时候需要检查在不同版本下的兼容性问题，用nvm来控制版本
 2. 安装nvm,source的时候根据自己的shell版本，~/.bashrc, ~/.profile, 或者 ~/.zshrc
     ```
@@ -57,7 +57,7 @@ categories: 开发工具
     nvm alias default 0.12.9
     ```
 
-### 安装mongodb
+## 安装mongodb
 1. 配置公钥
     ```
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
@@ -79,7 +79,7 @@ categories: 开发工具
     sudo service mongod restart
     ```
 
-### 安装redis
+## 安装redis
 1. 下载软件
     ```
     wget http://download.redis.io/releases/redis-2.8.11.tar.gz
@@ -111,7 +111,7 @@ categories: 开发工具
     sudo update-rc.d redis-server defaults
     ```
 
-### 环境变量配置
+## 环境变量配置
 1. 认识环境变量相关的文件
 - /etc/profile —— 此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置；
 - /etc/environment —— 在登录时操作系统使用的第二个文件,系统在读取你自己的profile前,设置环境文件的环境变量；
@@ -129,7 +129,7 @@ categories: 开发工具
     source /etc/profile
     ```
 
-### 安装开发工具
+## 安装开发工具
 1. zsh命令行工具
 2. mysql客户端workbench，mongo客户端工具robomongo
 3. 安装git,svn版本控制工具

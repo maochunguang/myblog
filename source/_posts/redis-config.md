@@ -8,21 +8,21 @@ categories: 数据库
 <!-- more -->
 <The rest of contents | 余下全文>
 
-### 说明
+## 说明
 在开发中一般都是在命令行中直接运行`redis-server`,但是这样命令行关闭，服务就停止了。
 如果要在后台运行redis服务，需要制定配置文件。这里以**ubuntu14**为例子
 
-### 准备配置文件
+## 准备配置文件
 查看‘/etc/redis/redis.conf’,没有可以创建一个，或者下载一个，配置文件位置没有要求
 
-### 修改配置文件
+## 修改配置文件
 把daemonize设置为yes，
 然后`redis-server /etc/redis/redis.conf`启动服务，
 
-### 查看服务
+## 查看服务
 `ps -ef|grep redis-server`查看是否有redis进程存在
 
-### 更多配置，在conf文件有说明
+## 更多配置，在conf文件有说明
 ```
 # 是否以后台daemon方式运行，默认是 no，一般我们会改为 yes
 daemonize no

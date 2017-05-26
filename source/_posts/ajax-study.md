@@ -8,7 +8,7 @@ categories: 编程语言
 <!-- more -->
 <The rest of contents | 余下全文>
 
-### ajax原理
+## ajax原理
 Ajax的原理简单来说通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面。这其中最关键的一步就是从服务器获得请求数据。要清楚这个过程和原理，我们必须对 XMLHttpRequest有所了解。
 XMLHttpRequest是ajax的核心机制，它是在IE5中首先引入的，是一种支持异步请求的技术。简单的说，也就是javascript可以及时向服务器提出请求和处理响应，而不阻塞用户。达到无刷新的效果。
 所以我们先从XMLHttpRequest讲起，来看看它的工作原理。首先，我们先来看看XMLHttpRequest这个对象的属性。
@@ -32,7 +32,7 @@ readyState 对象状态值
 - 3 (数据传送中) 已接收部分数据，因为响应及http头不全，这时通过responseBody和responseText获取部分数据会出现错误，
 - 4 (完成) 数据接收完毕,此时可以通过通过responseXml和responseText获取完整的回应数据
 
-### ajax的使用
+## ajax的使用
 
 1. 原生的ajax
 

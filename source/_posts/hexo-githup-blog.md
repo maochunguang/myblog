@@ -58,7 +58,7 @@ deploy:
   message: [message]
 ```
 访问地址就是 http://tom.github.io/
-### 5.常用命令
+## 5.常用命令
     命令的简写为：
     ```
     hexo n == hexo new

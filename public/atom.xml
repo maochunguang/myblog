@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-05-26T03:59:28.000Z</updated>
+  <updated>2017-05-26T06:12:27.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://geeksblog.cc/hexo-theme.html"/>
     <id>http://geeksblog.cc/hexo-theme.html</id>
     <published>2017-05-23T03:32:59.000Z</published>
-    <updated>2017-05-26T03:59:28.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> hexo和coding打造静态博客 ：</strong> <Excerpt in index | 首页摘要\><br>使用hexo一年有余，对所有主题都感觉有所缺陷，便修改了一个自用黑色主题，本主题以黑色和蓝色为主，色彩鲜明，主题明确。<br><a id="more"></a></p>
 <The rest of contents | 余下全文\>
 
-<h3 id="主题图片"><a href="#主题图片" class="headerlink" title="主题图片"></a>主题图片</h3><p><img src="http://o7kalf5h3.bkt.clouddn.com/blog-index.png" alt="主题首页"> </p>
-<h3 id="black-blue主题来源"><a href="#black-blue主题来源" class="headerlink" title="black-blue主题来源"></a>black-blue主题来源</h3><p>本主题修改自<strong>spfk</strong>主题，但之前spfk主题有很多问题，本主题改进如下：</p>
+<h2 id="主题图片"><a href="#主题图片" class="headerlink" title="主题图片"></a>主题图片</h2><p><img src="http://o7kalf5h3.bkt.clouddn.com/blog-index.png" alt="主题首页"> </p>
+<h2 id="black-blue主题来源"><a href="#black-blue主题来源" class="headerlink" title="black-blue主题来源"></a>black-blue主题来源</h2><p>本主题修改自<strong>spfk</strong>主题，但之前spfk主题有很多问题，本主题改进如下：</p>
 <ol>
 <li>压缩js，css提高性能</li>
 <li>代码段样式显示更完美</li>
@@ -37,17 +37,17 @@
 <li>删除多说，有言，增加畅言评论</li>
 <li>删除stylus，全部改用css方便修改</li>
 </ol>
-<h3 id="主题地址"><a href="#主题地址" class="headerlink" title="主题地址"></a>主题地址</h3><p><a href="https://github.com/maochunguang/black-blue">black-blue</a></p>
-<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>大家使用主题的时候，把<strong>主题配置文件_config.yml</strong>以下几项必须修改，项目里实用的是我博客的正式代码，请大家修改成自己的！<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="attr">google_analytics:</span> xxx</div><div class="line"><span class="attr">baidu_analytics:</span> xxxxxxx</div><div class="line"><span class="attr">disqus:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  shortname:</span> xxxx</div><div class="line"><span class="comment"># 畅言评论</span></div><div class="line"><span class="attr">changyan:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  appid:</span> xxxx</div><div class="line"><span class="attr">  conf:</span> xxxxx</div></pre></td></tr></table></figure></p>
-<h3 id="black-blue主题配置"><a href="#black-blue主题配置" class="headerlink" title="black-blue主题配置"></a>black-blue主题配置</h3><h4 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h4><p>复制主题到themes目录下<code>cd themes &amp;&amp; git clone https://github.com/maochunguang/black-blue</code>，修改_config.yml <code>theme: black-blue</code></p>
-<h4 id="安装常用插件，建议全部安装"><a href="#安装常用插件，建议全部安装" class="headerlink" title="安装常用插件，建议全部安装"></a>安装常用插件，建议全部安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">## rss插件</span></div><div class="line">npm install hexo-generator-feed --save</div><div class="line"><span class="comment">## 站点sitemap生成插件</span></div><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div><div class="line"><span class="comment">## 百度url提交</span></div><div class="line">npm install hexo-baidu-url-submit --save</div><div class="line"><span class="comment">## 本地搜索插件集成</span></div><div class="line">npm install hexo-generator-search --save</div></pre></td></tr></table></figure>
-<h4 id="博客全局配置，修改根目录下-config-yml"><a href="#博客全局配置，修改根目录下-config-yml" class="headerlink" title="博客全局配置，修改根目录下_config.yml"></a>博客全局配置，修改根目录下_config.yml</h4><p>插件配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">Plugins:</span></div><div class="line"><span class="bullet">-</span> hexo-generator-feed</div><div class="line"><span class="bullet">-</span> hexo-generator-sitemap</div><div class="line"><span class="bullet">-</span> hexo-generator-baidu-sitemap</div></pre></td></tr></table></figure></p>
+<h2 id="主题地址"><a href="#主题地址" class="headerlink" title="主题地址"></a>主题地址</h2><p><a href="https://github.com/maochunguang/black-blue">black-blue</a></p>
+<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><p>大家使用主题的时候，把<strong>主题配置文件_config.yml</strong>以下几项必须修改，项目里实用的是我博客的正式代码，请大家修改成自己的！<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="attr">google_analytics:</span> xxx</div><div class="line"><span class="attr">baidu_analytics:</span> xxxxxxx</div><div class="line"><span class="attr">disqus:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  shortname:</span> xxxx</div><div class="line"><span class="comment"># 畅言评论</span></div><div class="line"><span class="attr">changyan:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  appid:</span> xxxx</div><div class="line"><span class="attr">  conf:</span> xxxxx</div></pre></td></tr></table></figure></p>
+<h2 id="black-blue主题配置"><a href="#black-blue主题配置" class="headerlink" title="black-blue主题配置"></a>black-blue主题配置</h2><h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p>复制主题到themes目录下<code>cd themes &amp;&amp; git clone https://github.com/maochunguang/black-blue</code>，修改_config.yml <code>theme: black-blue</code></p>
+<h3 id="安装常用插件，建议全部安装"><a href="#安装常用插件，建议全部安装" class="headerlink" title="安装常用插件，建议全部安装"></a>安装常用插件，建议全部安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">## rss插件</span></div><div class="line">npm install hexo-generator-feed --save</div><div class="line"><span class="comment">## 站点sitemap生成插件</span></div><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div><div class="line"><span class="comment">## 百度url提交</span></div><div class="line">npm install hexo-baidu-url-submit --save</div><div class="line"><span class="comment">## 本地搜索插件集成</span></div><div class="line">npm install hexo-generator-search --save</div></pre></td></tr></table></figure>
+<h3 id="博客全局配置，修改根目录下-config-yml"><a href="#博客全局配置，修改根目录下-config-yml" class="headerlink" title="博客全局配置，修改根目录下_config.yml"></a>博客全局配置，修改根目录下_config.yml</h3><p>插件配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">Plugins:</span></div><div class="line"><span class="bullet">-</span> hexo-generator-feed</div><div class="line"><span class="bullet">-</span> hexo-generator-sitemap</div><div class="line"><span class="bullet">-</span> hexo-generator-baidu-sitemap</div></pre></td></tr></table></figure></p>
 <p>rss设置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">feed:</span></div><div class="line"><span class="attr">  type:</span> atom</div><div class="line"><span class="attr">  path:</span> atom.xml</div><div class="line"><span class="attr">  limit:</span> <span class="number">20</span></div></pre></td></tr></table></figure></p>
 <p>本地搜索配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">search:</span></div><div class="line"><span class="attr">  path:</span> search.json</div><div class="line"><span class="attr">  field:</span> post</div></pre></td></tr></table></figure></p>
 <p>站点地图，seo搜索引擎需要<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">sitemap:</span></div><div class="line"><span class="attr">  path:</span> sitemap.xml</div><div class="line"><span class="attr">baidusitemap:</span></div><div class="line"><span class="attr">  path:</span> baidusitemap.xml</div></pre></td></tr></table></figure></p>
-<h4 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h4><p>菜单配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Header | 主菜单</span></div><div class="line"><span class="comment">## About Page: `hexo new page about`</span></div><div class="line"><span class="comment">## Tags Cloud Page: `hexo new page tags`</span></div><div class="line"><span class="attr">menu:</span></div><div class="line">  <span class="comment"># 主页: /archives/</span></div><div class="line">  所有文章: /archives/</div><div class="line">  玩转开发工具: /categories/开发工具/</div><div class="line">  玩转数码: /categories/digital</div><div class="line">  认知提升: /categories/cognition</div><div class="line">  关于我: /about/</div></pre></td></tr></table></figure></p>
+<h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><p>菜单配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Header | 主菜单</span></div><div class="line"><span class="comment">## About Page: `hexo new page about`</span></div><div class="line"><span class="comment">## Tags Cloud Page: `hexo new page tags`</span></div><div class="line"><span class="attr">menu:</span></div><div class="line">  <span class="comment"># 主页: /archives/</span></div><div class="line">  所有文章: /archives/</div><div class="line">  玩转开发工具: /categories/开发工具/</div><div class="line">  玩转数码: /categories/digital</div><div class="line">  认知提升: /categories/cognition</div><div class="line">  关于我: /about/</div></pre></td></tr></table></figure></p>
 <p>评论配置<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 是否开启畅言评论，</span></div><div class="line"><span class="attr">changyan:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  appid:</span> xxxx</div><div class="line"><span class="attr">  conf:</span> xxxxxxxxxxxx</div><div class="line"><span class="comment"># 是否开启disqus，</span></div><div class="line"><span class="attr">disqus:</span></div><div class="line"><span class="attr">  on:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  shortname:</span> mmmmmm</div></pre></td></tr></table></figure></p>
-<h4 id="其他配置，详细的配置请下载主题，都有注释"><a href="#其他配置，详细的配置请下载主题，都有注释" class="headerlink" title="其他配置，详细的配置请下载主题，都有注释"></a>其他配置，<strong>详细的配置请下载主题，都有注释</strong></h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 数学公式支持</span></div><div class="line"><span class="attr">mathjax:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># Socail Share | 是否开启分享</span></div><div class="line"><span class="attr">baidushare:</span> <span class="literal">true</span></div><div class="line"><span class="comment"># 谷歌分析，百度分析，seo分析很有用</span></div><div class="line"><span class="attr">google_analytics:</span> xxxxxx</div><div class="line"><span class="attr">baidu_analytics:</span> xxcxcxcsdsf</div></pre></td></tr></table></figure>]]></content>
+<h3 id="其他配置，详细的配置请下载主题，都有注释"><a href="#其他配置，详细的配置请下载主题，都有注释" class="headerlink" title="其他配置，详细的配置请下载主题，都有注释"></a>其他配置，<strong>详细的配置请下载主题，都有注释</strong></h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 数学公式支持</span></div><div class="line"><span class="attr">mathjax:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># Socail Share | 是否开启分享</span></div><div class="line"><span class="attr">baidushare:</span> <span class="literal">true</span></div><div class="line"><span class="comment"># 谷歌分析，百度分析，seo分析很有用</span></div><div class="line"><span class="attr">google_analytics:</span> xxxxxx</div><div class="line"><span class="attr">baidu_analytics:</span> xxcxcxcsdsf</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -67,19 +67,19 @@
     <link href="http://geeksblog.cc/digital-info.html"/>
     <id>http://geeksblog.cc/digital-info.html</id>
     <published>2017-05-18T02:35:22.000Z</published>
-    <updated>2017-05-18T15:42:08.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 数码产品选购：</strong> <Excerpt in index | 首页摘要><br>作为一个数码产品控，一出新的的电子产品，我都欣喜若狂。看参数，看评价，感觉合适，就会买。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="我喜欢的电子产品"><a href="#我喜欢的电子产品" class="headerlink" title="我喜欢的电子产品"></a>我喜欢的电子产品</h3><ul>
+<h2 id="我喜欢的电子产品"><a href="#我喜欢的电子产品" class="headerlink" title="我喜欢的电子产品"></a>我喜欢的电子产品</h2><ul>
 <li>电脑（笔记本，台式机，游戏主机，工作站）</li>
 <li>手机（苹果，安卓，其它智能手机）</li>
 <li>平板（安卓平板，ios平板）</li>
 <li>电子书阅读器</li>
 <li>电子手表</li>
 </ul>
-<h3 id="选购的原则"><a href="#选购的原则" class="headerlink" title="选购的原则"></a>选购的原则</h3><ol>
+<h2 id="选购的原则"><a href="#选购的原则" class="headerlink" title="选购的原则"></a>选购的原则</h2><ol>
 <li>产品生态，买电子产品虽然不是随大流，但是用户群体一定程度决定了生态。用的人多，相应的资源会比较丰富，遇到问题很快找到解决方案。</li>
 <li>产品价格，性价比在中国，乃至全世界都是很具有吸引力的。物美价廉的都不买的要么是脑残，要么是钱多没地方花。</li>
 <li>产品硬件参数，买电子产品不看参数，肯定是买不到物美价廉的产品。</li>
@@ -87,7 +87,7 @@
 <li>功能，买电子产品，首要的就是功能，如果功能都不齐全，再漂亮，再便宜都没用。</li>
 <li>买电子产品的目的，没有任何需求就是瞎买。</li>
 </ol>
-<h3 id="电子产品的使用"><a href="#电子产品的使用" class="headerlink" title="电子产品的使用"></a>电子产品的使用</h3><p>我见过很多人买电子产品，比如买电子书阅读器，买一个kobo电子书折腾来折腾去，今天刷这个系统，明天改那个设置，<br>书还没读几本，系统刷了几十次，天天刷固件。这真的是得不偿失，捡了芝麻丢了西瓜。<br>第一，买电子产品是为了用的，买回来之后配置好之后，就不要来回折腾系统和配置了，把时间放到核心功能上。<br>第二，买电子产品不要攀比，就跟买苹果手机一样，如果只是为了装B买，真没必要，结果自己还用不习惯。<br>第三，了解自己的需求，需要什么买什么，</p>
+<h2 id="电子产品的使用"><a href="#电子产品的使用" class="headerlink" title="电子产品的使用"></a>电子产品的使用</h2><p>我见过很多人买电子产品，比如买电子书阅读器，买一个kobo电子书折腾来折腾去，今天刷这个系统，明天改那个设置，<br>书还没读几本，系统刷了几十次，天天刷固件。这真的是得不偿失，捡了芝麻丢了西瓜。<br>第一，买电子产品是为了用的，买回来之后配置好之后，就不要来回折腾系统和配置了，把时间放到核心功能上。<br>第二，买电子产品不要攀比，就跟买苹果手机一样，如果只是为了装B买，真没必要，结果自己还用不习惯。<br>第三，了解自己的需求，需要什么买什么，</p>
 <blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
@@ -111,17 +111,17 @@
     <link href="http://geeksblog.cc/cognition-deep.html"/>
     <id>http://geeksblog.cc/cognition-deep.html</id>
     <published>2017-05-18T02:27:43.000Z</published>
-    <updated>2017-05-19T02:41:22.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 谈一谈认知：</strong> <Excerpt in index | 首页摘要><br>认知这个词好像是从逻辑思维火起来的，一群牛人把自己的成功，商业的革命归于认知的革命，认知的提升。我也被这个词深深的震撼了，想好好说一下认知。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="我的认知革命"><a href="#我的认知革命" class="headerlink" title="我的认知革命"></a>我的认知革命</h3><p>在大学的时候开始接触认知，但当时对这个词并没有什么理解。有句名言说的好，人只有遭受重大挫折的时候才会改变自己的认知，重识自己的认知。这点我非常赞同。</p>
-<h3 id="认知的作用"><a href="#认知的作用" class="headerlink" title="认知的作用"></a>认知的作用</h3><ol>
+<h2 id="我的认知革命"><a href="#我的认知革命" class="headerlink" title="我的认知革命"></a>我的认知革命</h2><p>在大学的时候开始接触认知，但当时对这个词并没有什么理解。有句名言说的好，人只有遭受重大挫折的时候才会改变自己的认知，重识自己的认知。这点我非常赞同。</p>
+<h2 id="认知的作用"><a href="#认知的作用" class="headerlink" title="认知的作用"></a>认知的作用</h2><ol>
 <li>改变自己思维方式</li>
 <li>改变自己的行为方式</li>
 </ol>
-<h3 id="提升自我的认知"><a href="#提升自我的认知" class="headerlink" title="提升自我的认知"></a>提升自我的认知</h3><ol>
+<h2 id="提升自我的认知"><a href="#提升自我的认知" class="headerlink" title="提升自我的认知"></a>提升自我的认知</h2><ol>
 <li>培养良好的思维习惯</li>
 <li>培养良好的学习习惯</li>
 <li>培养良好的知识架构总结习惯</li>
@@ -150,14 +150,14 @@
     <link href="http://geeksblog.cc/eggjs-action.html"/>
     <id>http://geeksblog.cc/eggjs-action.html</id>
     <published>2017-05-15T19:07:27.000Z</published>
-    <updated>2017-05-26T03:59:58.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> egg.js实战技巧：</strong> <Excerpt in index | 首页摘要><br>用eggjs一个多月，踩了不少坑，把踩坑过程分享出来，希望大家少走弯路。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="egg-js介绍"><a href="#egg-js介绍" class="headerlink" title="egg.js介绍"></a>egg.js介绍</h3><p>请去官网看介绍 <a href="https://eggjs.org/zh-cn/">egg.js</a></p>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>本文所有示例基于async function，node版本node&gt;=7.6.</p>
-<h3 id="controller和service的两种写法：基于类和普通方法"><a href="#controller和service的两种写法：基于类和普通方法" class="headerlink" title="controller和service的两种写法：基于类和普通方法"></a>controller和service的两种写法：基于类和普通方法</h3><p>这两种写法在获取全局变量有些地方不一样，这里列举最常见的几个全局变量的异同。</p>
+<h2 id="egg-js介绍"><a href="#egg-js介绍" class="headerlink" title="egg.js介绍"></a>egg.js介绍</h2><p>请去官网看介绍 <a href="https://eggjs.org/zh-cn/">egg.js</a></p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>本文所有示例基于async function，node版本node&gt;=7.6.</p>
+<h2 id="controller和service的两种写法：基于类和普通方法"><a href="#controller和service的两种写法：基于类和普通方法" class="headerlink" title="controller和service的两种写法：基于类和普通方法"></a>controller和service的两种写法：基于类和普通方法</h2><p>这两种写法在获取全局变量有些地方不一样，这里列举最常见的几个全局变量的异同。</p>
 <ol>
 <li><p>基于类的controller</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = app =&gt; &#123;</div><div class="line">  <span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">extends</span> <span class="title">app</span>.<span class="title">Controller</span> </span>&#123;</div><div class="line">    <span class="keyword">async</span> queryUser() &#123;</div><div class="line">      <span class="comment">// logger获取，request对象获取</span></div><div class="line">      app.logger.info(<span class="keyword">this</span>.ctx.request.body)</div><div class="line">      <span class="comment">// 全局配置文件获取</span></div><div class="line">      <span class="keyword">const</span> domain = app.config.domain</div><div class="line">      <span class="keyword">let</span> users = []</div><div class="line">      <span class="keyword">try</span> &#123;</div><div class="line">        <span class="comment">// 全局插件获取</span></div><div class="line">        users = <span class="keyword">await</span> app.model.user.find(&#123;&#125;)</div><div class="line">        <span class="comment">// service获取</span></div><div class="line">        <span class="keyword">await</span> <span class="keyword">this</span>.ctx.service.user.find(&#123;&#125;)</div><div class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">        app.logger.error(e)</div><div class="line">      &#125;</div><div class="line">      <span class="comment">// 获取body</span></div><div class="line">      <span class="keyword">this</span>.ctx.body = &#123;</div><div class="line">        users,</div><div class="line">      &#125;</div><div class="line">      <span class="comment">// 重定向写法</span></div><div class="line">      <span class="keyword">this</span>.ctx.redirect(<span class="string">'http://www.baidu.com'</span>)</div><div class="line">      <span class="comment">// render 模版引擎，</span></div><div class="line">      <span class="keyword">this</span>.ctx.body = app.nunjucks.render(<span class="string">'register.nj'</span>)</div><div class="line">    &#125;</div><div class="line">  <span class="keyword">return</span> User</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -166,11 +166,11 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">exports.register = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">register</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// logger获取，request对象获取</span></div><div class="line">  <span class="keyword">this</span>.logger.info(<span class="keyword">this</span>.request.body)</div><div class="line">  <span class="keyword">try</span> &#123;</div><div class="line">    <span class="comment">// 全局配置文件获取</span></div><div class="line">    <span class="keyword">const</span> domain = <span class="keyword">this</span>.app.config.domain</div><div class="line">    <span class="comment">// service获取</span></div><div class="line">    <span class="keyword">await</span> <span class="keyword">this</span>.service.register.register(<span class="keyword">this</span>.token, <span class="keyword">this</span>.request.body)</div><div class="line">    <span class="comment">// 全局插件获取</span></div><div class="line">    <span class="keyword">const</span> users = <span class="keyword">await</span> <span class="keyword">this</span>.app.model.user.find(&#123;&#125;)</div><div class="line">    <span class="keyword">this</span>.service.message.send()</div><div class="line">  &#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">    <span class="keyword">this</span>.logger.error(e)</div><div class="line">  &#125;</div><div class="line">  <span class="comment">// 获取body</span></div><div class="line">  <span class="keyword">this</span>.body = &#123; <span class="string">'success'</span> &#125;</div><div class="line">  <span class="comment">// 重定向写法</span></div><div class="line">  <span class="keyword">this</span>.redirect(<span class="string">'http://www.baidu.com'</span>)</div><div class="line">  <span class="comment">// render 模版引擎，</span></div><div class="line">  <span class="keyword">this</span>.body = <span class="keyword">this</span>.app.nunjucks.render(<span class="string">'success.nj'</span>, data)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="自定义配置文件"><a href="#自定义配置文件" class="headerlink" title="自定义配置文件"></a>自定义配置文件</h3><p>egg.js的配置文件非常人性化，有config.default.js,config.default.prod.js,config.test.js等等。<br>运行时根据环境变量加载不同的配置文件。默认时config.default.js,指定环境变量后会把config.env.js(对应环境)的配置文件和config.default.js合并。</p>
-<h3 id="调试代码"><a href="#调试代码" class="headerlink" title="调试代码"></a>调试代码</h3><p>由于使用了async await，调试起来有些麻烦，建议使用webstorm或者chrome进行调试，eggjs自带egg-bin，支持在chrome里进行调试，对async，await有良好的支持。<br>使用chrome调试，配置如下：<br>在package.json中添加script,使用<code>npm run debug</code>启动，复制链接在chrome中打开，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">  <span class="string">"start"</span>: <span class="string">"node index.js"</span>,</div><div class="line">  <span class="string">"debug"</span>: <span class="string">"egg-bin debug"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="自定义配置文件"><a href="#自定义配置文件" class="headerlink" title="自定义配置文件"></a>自定义配置文件</h2><p>egg.js的配置文件非常人性化，有config.default.js,config.default.prod.js,config.test.js等等。<br>运行时根据环境变量加载不同的配置文件。默认时config.default.js,指定环境变量后会把config.env.js(对应环境)的配置文件和config.default.js合并。</p>
+<h2 id="调试代码"><a href="#调试代码" class="headerlink" title="调试代码"></a>调试代码</h2><p>由于使用了async await，调试起来有些麻烦，建议使用webstorm或者chrome进行调试，eggjs自带egg-bin，支持在chrome里进行调试，对async，await有良好的支持。<br>使用chrome调试，配置如下：<br>在package.json中添加script,使用<code>npm run debug</code>启动，复制链接在chrome中打开，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">  <span class="string">"start"</span>: <span class="string">"node index.js"</span>,</div><div class="line">  <span class="string">"debug"</span>: <span class="string">"egg-bin debug"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p><img src="http://o7kalf5h3.bkt.clouddn.com/debug-egg.png" alt="命令行显示"></p>
 <p><img src="http://o7kalf5h3.bkt.clouddn.com/debug-egg-point.png" alt="断点调试"></p>
-<h3 id="此文章持续更新-欢迎收藏关注"><a href="#此文章持续更新-欢迎收藏关注" class="headerlink" title="此文章持续更新,欢迎收藏关注"></a>此文章持续更新,欢迎收藏关注</h3><blockquote>
+<h2 id="此文章持续更新-欢迎收藏关注"><a href="#此文章持续更新-欢迎收藏关注" class="headerlink" title="此文章持续更新,欢迎收藏关注"></a>此文章持续更新,欢迎收藏关注</h2><blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
 ]]></content>
@@ -239,16 +239,16 @@
     <link href="http://geeksblog.cc/redis-config.html"/>
     <id>http://geeksblog.cc/redis-config.html</id>
     <published>2017-05-15T14:58:07.000Z</published>
-    <updated>2017-05-15T15:46:16.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> Redis后台启动详细配置：</strong> <Excerpt in index | 首页摘要><br>  redis启动的时候有多种模式，后台启动，集群启动等等。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>在开发中一般都是在命令行中直接运行<code>redis-server</code>,但是这样命令行关闭，服务就停止了。<br>如果要在后台运行redis服务，需要制定配置文件。这里以<strong>ubuntu14</strong>为例子</p>
-<h3 id="准备配置文件"><a href="#准备配置文件" class="headerlink" title="准备配置文件"></a>准备配置文件</h3><p>查看‘/etc/redis/redis.conf’,没有可以创建一个，或者下载一个，配置文件位置没有要求</p>
-<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>把daemonize设置为yes，<br>然后<code>redis-server /etc/redis/redis.conf</code>启动服务，</p>
-<h3 id="查看服务"><a href="#查看服务" class="headerlink" title="查看服务"></a>查看服务</h3><p><code>ps -ef|grep redis-server</code>查看是否有redis进程存在</p>
-<h3 id="更多配置，在conf文件有说明"><a href="#更多配置，在conf文件有说明" class="headerlink" title="更多配置，在conf文件有说明"></a>更多配置，在conf文件有说明</h3><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"># 是否以后台daemon方式运行，默认是 no，一般我们会改为 yes</div><div class="line">daemonize no</div><div class="line">pidfile /var/run/redis.pid</div><div class="line"># 只允许本机访问</div><div class="line">bind <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></div><div class="line"># 端口设置</div><div class="line">port <span class="number">6379</span></div><div class="line">tcp-backlog <span class="number">511</span></div><div class="line">timeout <span class="number">0</span></div><div class="line">tcp-keepalive <span class="number">0</span></div><div class="line">loglevel notice</div><div class="line"># 日志文件</div><div class="line">logfile <span class="string">""</span></div><div class="line"># 开启数据库的数量，Redis 是有数据库概念的，默认是 <span class="number">16</span> 个，数字从 <span class="number">0</span> ~ <span class="number">15</span></div><div class="line">databases <span class="number">16</span></div><div class="line">save <span class="number">900</span> <span class="number">1</span></div><div class="line">save <span class="number">300</span> <span class="number">10</span></div><div class="line">save <span class="number">60</span> <span class="number">10000</span></div><div class="line">stop-writes-on-bgsave-error yes</div><div class="line">rdbcompression yes</div><div class="line">rdbchecksum yes</div><div class="line">dbfilename dump.rdb</div><div class="line">dir ./</div><div class="line">slave-serve-stale-data yes</div><div class="line">slave-read-only yes</div><div class="line">repl-diskless-sync no</div><div class="line">repl-diskless-sync-delay <span class="number">5</span></div><div class="line">repl-disable-tcp-nodelay no</div><div class="line"># 密码设置，需要设置密码打开</div><div class="line">requirepass <span class="number">123455</span></div><div class="line">slave-priority <span class="number">100</span></div><div class="line">appendonly no</div><div class="line">appendfilename <span class="string">"appendonly.aof"</span></div><div class="line">appendfsync everysec</div><div class="line">no-appendfsync-on-rewrite no</div><div class="line">auto-aof-rewrite-percentage <span class="number">100</span></div><div class="line">auto-aof-rewrite-min-size <span class="number">64</span>mb</div><div class="line">aof-load-truncated yes</div><div class="line">lua-time-limit <span class="number">5000</span></div><div class="line">slowlog-log-slower-than <span class="number">10000</span></div><div class="line">slowlog-max-len <span class="number">128</span></div><div class="line">latency-monitor-threshold <span class="number">0</span></div><div class="line">notify-keyspace-events <span class="string">""</span></div><div class="line">hash-max-ziplist-entries <span class="number">512</span></div><div class="line">hash-max-ziplist-value <span class="number">64</span></div><div class="line"><span class="type">list</span>-max-ziplist-entries <span class="number">512</span></div><div class="line"><span class="type">list</span>-max-ziplist-value <span class="number">64</span></div><div class="line">set-max-intset-entries <span class="number">512</span></div><div class="line">zset-max-ziplist-entries <span class="number">128</span></div><div class="line">zset-max-ziplist-value <span class="number">64</span></div><div class="line">hll-sparse-max-bytes <span class="number">3000</span></div><div class="line">activerehashing yes</div><div class="line">client-output-buffer-limit normal <span class="number">0</span> <span class="number">0</span> <span class="number">0</span></div><div class="line">client-output-buffer-limit slave <span class="number">256</span>mb <span class="number">64</span>mb <span class="number">60</span></div><div class="line">client-output-buffer-limit pubsub <span class="number">32</span>mb <span class="number">8</span>mb <span class="number">60</span></div><div class="line">hz <span class="number">10</span></div><div class="line">aof-rewrite-incremental-fsync yes</div></pre></td></tr></table></figure>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>在开发中一般都是在命令行中直接运行<code>redis-server</code>,但是这样命令行关闭，服务就停止了。<br>如果要在后台运行redis服务，需要制定配置文件。这里以<strong>ubuntu14</strong>为例子</p>
+<h2 id="准备配置文件"><a href="#准备配置文件" class="headerlink" title="准备配置文件"></a>准备配置文件</h2><p>查看‘/etc/redis/redis.conf’,没有可以创建一个，或者下载一个，配置文件位置没有要求</p>
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>把daemonize设置为yes，<br>然后<code>redis-server /etc/redis/redis.conf</code>启动服务，</p>
+<h2 id="查看服务"><a href="#查看服务" class="headerlink" title="查看服务"></a>查看服务</h2><p><code>ps -ef|grep redis-server</code>查看是否有redis进程存在</p>
+<h2 id="更多配置，在conf文件有说明"><a href="#更多配置，在conf文件有说明" class="headerlink" title="更多配置，在conf文件有说明"></a>更多配置，在conf文件有说明</h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"># 是否以后台daemon方式运行，默认是 no，一般我们会改为 yes</div><div class="line">daemonize no</div><div class="line">pidfile /var/run/redis.pid</div><div class="line"># 只允许本机访问</div><div class="line">bind <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></div><div class="line"># 端口设置</div><div class="line">port <span class="number">6379</span></div><div class="line">tcp-backlog <span class="number">511</span></div><div class="line">timeout <span class="number">0</span></div><div class="line">tcp-keepalive <span class="number">0</span></div><div class="line">loglevel notice</div><div class="line"># 日志文件</div><div class="line">logfile <span class="string">""</span></div><div class="line"># 开启数据库的数量，Redis 是有数据库概念的，默认是 <span class="number">16</span> 个，数字从 <span class="number">0</span> ~ <span class="number">15</span></div><div class="line">databases <span class="number">16</span></div><div class="line">save <span class="number">900</span> <span class="number">1</span></div><div class="line">save <span class="number">300</span> <span class="number">10</span></div><div class="line">save <span class="number">60</span> <span class="number">10000</span></div><div class="line">stop-writes-on-bgsave-error yes</div><div class="line">rdbcompression yes</div><div class="line">rdbchecksum yes</div><div class="line">dbfilename dump.rdb</div><div class="line">dir ./</div><div class="line">slave-serve-stale-data yes</div><div class="line">slave-read-only yes</div><div class="line">repl-diskless-sync no</div><div class="line">repl-diskless-sync-delay <span class="number">5</span></div><div class="line">repl-disable-tcp-nodelay no</div><div class="line"># 密码设置，需要设置密码打开</div><div class="line">requirepass <span class="number">123455</span></div><div class="line">slave-priority <span class="number">100</span></div><div class="line">appendonly no</div><div class="line">appendfilename <span class="string">"appendonly.aof"</span></div><div class="line">appendfsync everysec</div><div class="line">no-appendfsync-on-rewrite no</div><div class="line">auto-aof-rewrite-percentage <span class="number">100</span></div><div class="line">auto-aof-rewrite-min-size <span class="number">64</span>mb</div><div class="line">aof-load-truncated yes</div><div class="line">lua-time-limit <span class="number">5000</span></div><div class="line">slowlog-log-slower-than <span class="number">10000</span></div><div class="line">slowlog-max-len <span class="number">128</span></div><div class="line">latency-monitor-threshold <span class="number">0</span></div><div class="line">notify-keyspace-events <span class="string">""</span></div><div class="line">hash-max-ziplist-entries <span class="number">512</span></div><div class="line">hash-max-ziplist-value <span class="number">64</span></div><div class="line"><span class="type">list</span>-max-ziplist-entries <span class="number">512</span></div><div class="line"><span class="type">list</span>-max-ziplist-value <span class="number">64</span></div><div class="line">set-max-intset-entries <span class="number">512</span></div><div class="line">zset-max-ziplist-entries <span class="number">128</span></div><div class="line">zset-max-ziplist-value <span class="number">64</span></div><div class="line">hll-sparse-max-bytes <span class="number">3000</span></div><div class="line">activerehashing yes</div><div class="line">client-output-buffer-limit normal <span class="number">0</span> <span class="number">0</span> <span class="number">0</span></div><div class="line">client-output-buffer-limit slave <span class="number">256</span>mb <span class="number">64</span>mb <span class="number">60</span></div><div class="line">client-output-buffer-limit pubsub <span class="number">32</span>mb <span class="number">8</span>mb <span class="number">60</span></div><div class="line">hz <span class="number">10</span></div><div class="line">aof-rewrite-incremental-fsync yes</div></pre></td></tr></table></figure>
 <blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
@@ -272,26 +272,26 @@
     <link href="http://geeksblog.cc/spider-koa2.html"/>
     <id>http://geeksblog.cc/spider-koa2.html</id>
     <published>2017-05-13T23:15:38.000Z</published>
-    <updated>2017-05-13T23:39:46.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 用koa2.x写下载漫画的爬虫：</strong> <Excerpt in index | 首页摘要><br>使用koa2.x的async ，await解决异步问题，写一个下载漫画的爬虫，代码里有惊喜和福利哦！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h3><ol>
+<h2 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h2><ol>
 <li>安装nodejs&gt;7.6,安装koa-generator</li>
 <li>直接<code>koa2 spider</code>,生成项目</li>
 <li>安装request,request-promise,cheerio,mkdirp</li>
 <li>npm install安装依赖</li>
 </ol>
-<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>图片或者漫画爬虫的思路很简单，首先观察url的规律，把url按规律加入到下载任务，其实就是请求获得html内容，然后对html进行解析，找到下载的图片url（一般都是img标签的src属性值），把url放到数组保存，使用async await控制所有的任务，直到把所有的图片下载完。</p>
-<h3 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h3><p>但是nodejs本身上异步的，如果你直接在for循环里去下载，肯定是不行的，必须控制好异步的执行上关键。<br>爬虫简单，处理好异步难。这里我使用的es7中async，await配合promise解决异步问题，还可以使用async模块，eventproxy，等等异步控制模块来解决。</p>
-<h3 id="核心代码-spider-js"><a href="#核心代码-spider-js" class="headerlink" title="核心代码,spider.js"></a>核心代码,spider.js</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</div><div class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">"request-promise"</span>);</div><div class="line"><span class="keyword">const</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>);</div><div class="line"><span class="keyword">const</span> mkdirp = <span class="built_in">require</span>(<span class="string">'mkdirp'</span>);</div><div class="line"><span class="keyword">const</span> config = <span class="built_in">require</span>(<span class="string">'../config'</span>);</div><div class="line">exports.download = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params">ctx, next</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> dir = <span class="string">'images'</span>;</div><div class="line">    <span class="comment">// 图片链接地址</span></div><div class="line">    <span class="keyword">let</span> links = [];</div><div class="line">    <span class="comment">// 创建目录</span></div><div class="line">    mkdirp(dir);</div><div class="line">    <span class="keyword">var</span> urls = [];</div><div class="line">    <span class="keyword">let</span> tasks = [];</div><div class="line">    <span class="keyword">let</span> downloadTask = [];</div><div class="line">    <span class="keyword">let</span> url = config.url;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= config.size; i++) &#123;</div><div class="line">        <span class="keyword">let</span> link = url + <span class="string">'_'</span> + i + <span class="string">'.html'</span>;</div><div class="line">        <span class="keyword">if</span> (i == <span class="number">1</span>) &#123;</div><div class="line">            link = url + <span class="string">'.html'</span>;</div><div class="line">        &#125;</div><div class="line">        tasks.push(getResLink(i, link))</div><div class="line">    &#125;</div><div class="line">    links = <span class="keyword">await</span> <span class="built_in">Promise</span>.all(tasks)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'links=========='</span>, links.length);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; links.length; i++) &#123;</div><div class="line">        <span class="keyword">let</span> item = links[i];</div><div class="line">        <span class="keyword">let</span> index = item.split(<span class="string">'___'</span>)[<span class="number">0</span>];</div><div class="line">        <span class="keyword">let</span> src = item.split(<span class="string">'___'</span>)[<span class="number">1</span>];</div><div class="line">        downloadTask.push(downloadImg(src, dir, index + links[i].substr(<span class="number">-4</span>, <span class="number">4</span>)));</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">await</span> <span class="built_in">Promise</span>.all(downloadTask);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">downloadImg</span>(<span class="params">url, dir, filename</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'download begin---'</span>, url);</div><div class="line">    request.get(url).pipe(fs.createWriteStream(dir + <span class="string">"/"</span> + filename)).on(<span class="string">'close'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'download success'</span>, url);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getResLink</span>(<span class="params">index, url</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> body = <span class="keyword">await</span> request(url);</div><div class="line">    <span class="keyword">let</span> urls = [];</div><div class="line">    <span class="keyword">var</span> $ = cheerio.load(body);</div><div class="line">    $(config.rule).each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> src = $(<span class="keyword">this</span>).attr(<span class="string">'src'</span>);</div><div class="line">        urls.push(src);</div><div class="line">    &#125;);</div><div class="line">    <span class="keyword">return</span> index + <span class="string">'___'</span> + urls[<span class="number">0</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h3><p>由于爬虫的复杂性基于不同的网站，不同的任务很不一样，这里只是把几个常用的变量抽取到了config.js。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="comment">//初始url</span></div><div class="line">    url: <span class="string">'http://www.xieet.com/meinv/230'</span>,</div><div class="line">    size: <span class="number">10</span>,</div><div class="line">    <span class="comment">// 选中图片img标签的选择器</span></div><div class="line">    rule: <span class="string">'.imgbox a img'</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-<h3 id="运行代码"><a href="#运行代码" class="headerlink" title="运行代码"></a>运行代码</h3><ol>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>图片或者漫画爬虫的思路很简单，首先观察url的规律，把url按规律加入到下载任务，其实就是请求获得html内容，然后对html进行解析，找到下载的图片url（一般都是img标签的src属性值），把url放到数组保存，使用async await控制所有的任务，直到把所有的图片下载完。</p>
+<h2 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h2><p>但是nodejs本身上异步的，如果你直接在for循环里去下载，肯定是不行的，必须控制好异步的执行上关键。<br>爬虫简单，处理好异步难。这里我使用的es7中async，await配合promise解决异步问题，还可以使用async模块，eventproxy，等等异步控制模块来解决。</p>
+<h2 id="核心代码-spider-js"><a href="#核心代码-spider-js" class="headerlink" title="核心代码,spider.js"></a>核心代码,spider.js</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</div><div class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">"request-promise"</span>);</div><div class="line"><span class="keyword">const</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>);</div><div class="line"><span class="keyword">const</span> mkdirp = <span class="built_in">require</span>(<span class="string">'mkdirp'</span>);</div><div class="line"><span class="keyword">const</span> config = <span class="built_in">require</span>(<span class="string">'../config'</span>);</div><div class="line">exports.download = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params">ctx, next</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> dir = <span class="string">'images'</span>;</div><div class="line">    <span class="comment">// 图片链接地址</span></div><div class="line">    <span class="keyword">let</span> links = [];</div><div class="line">    <span class="comment">// 创建目录</span></div><div class="line">    mkdirp(dir);</div><div class="line">    <span class="keyword">var</span> urls = [];</div><div class="line">    <span class="keyword">let</span> tasks = [];</div><div class="line">    <span class="keyword">let</span> downloadTask = [];</div><div class="line">    <span class="keyword">let</span> url = config.url;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= config.size; i++) &#123;</div><div class="line">        <span class="keyword">let</span> link = url + <span class="string">'_'</span> + i + <span class="string">'.html'</span>;</div><div class="line">        <span class="keyword">if</span> (i == <span class="number">1</span>) &#123;</div><div class="line">            link = url + <span class="string">'.html'</span>;</div><div class="line">        &#125;</div><div class="line">        tasks.push(getResLink(i, link))</div><div class="line">    &#125;</div><div class="line">    links = <span class="keyword">await</span> <span class="built_in">Promise</span>.all(tasks)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'links=========='</span>, links.length);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; links.length; i++) &#123;</div><div class="line">        <span class="keyword">let</span> item = links[i];</div><div class="line">        <span class="keyword">let</span> index = item.split(<span class="string">'___'</span>)[<span class="number">0</span>];</div><div class="line">        <span class="keyword">let</span> src = item.split(<span class="string">'___'</span>)[<span class="number">1</span>];</div><div class="line">        downloadTask.push(downloadImg(src, dir, index + links[i].substr(<span class="number">-4</span>, <span class="number">4</span>)));</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">await</span> <span class="built_in">Promise</span>.all(downloadTask);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">downloadImg</span>(<span class="params">url, dir, filename</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'download begin---'</span>, url);</div><div class="line">    request.get(url).pipe(fs.createWriteStream(dir + <span class="string">"/"</span> + filename)).on(<span class="string">'close'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'download success'</span>, url);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getResLink</span>(<span class="params">index, url</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> body = <span class="keyword">await</span> request(url);</div><div class="line">    <span class="keyword">let</span> urls = [];</div><div class="line">    <span class="keyword">var</span> $ = cheerio.load(body);</div><div class="line">    $(config.rule).each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> src = $(<span class="keyword">this</span>).attr(<span class="string">'src'</span>);</div><div class="line">        urls.push(src);</div><div class="line">    &#125;);</div><div class="line">    <span class="keyword">return</span> index + <span class="string">'___'</span> + urls[<span class="number">0</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><p>由于爬虫的复杂性基于不同的网站，不同的任务很不一样，这里只是把几个常用的变量抽取到了config.js。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="comment">//初始url</span></div><div class="line">    url: <span class="string">'http://www.xieet.com/meinv/230'</span>,</div><div class="line">    size: <span class="number">10</span>,</div><div class="line">    <span class="comment">// 选中图片img标签的选择器</span></div><div class="line">    rule: <span class="string">'.imgbox a img'</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h2 id="运行代码"><a href="#运行代码" class="headerlink" title="运行代码"></a>运行代码</h2><ol>
 <li>下载我上传的代码<a href="https://github.com/maochunguang/koa-spider">koa-spider</a></li>
 <li>npm install,npm start即可运行</li>
 </ol>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>其实无论是写爬虫还是些其他程序，使用nodejs很大一部分都是要处理异步，要学好nodejs必须学好异步处理。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>其实无论是写爬虫还是些其他程序，使用nodejs很大一部分都是要处理异步，要学好nodejs必须学好异步处理。</p>
 <blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
@@ -315,39 +315,39 @@
     <link href="http://geeksblog.cc/wechat-dev.html"/>
     <id>http://geeksblog.cc/wechat-dev.html</id>
     <published>2017-04-28T04:55:33.000Z</published>
-    <updated>2017-05-14T00:05:45.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 微信公众号开发：</strong> <Excerpt in index | 首页摘要><br>微信公众号开发的一些注意事项<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="开发环境搭建"><a href="#开发环境搭建" class="headerlink" title="开发环境搭建"></a>开发环境搭建</h3><ol>
+<h2 id="开发环境搭建"><a href="#开发环境搭建" class="headerlink" title="开发环境搭建"></a>开发环境搭建</h2><ol>
 <li>微信公众号开发者配置，url，token，</li>
 <li>本地调试，使用内网穿透工具，花生壳，或者netapp，买一个可以自定义域名的，内网映射到制定端口，</li>
 <li>项目搭建，express或koa搭建项目，npm有微信的现成包，直接配置</li>
 </ol>
-<h3 id="回复"><a href="#回复" class="headerlink" title="回复"></a>回复</h3><ol>
+<h2 id="回复"><a href="#回复" class="headerlink" title="回复"></a>回复</h2><ol>
 <li>回复和发消息并没有什么特别注意的地方，这里不多说</li>
 </ol>
-<h3 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h3><ol>
+<h2 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2><ol>
 <li>微信菜单有自定义菜单，有个性化菜单，但是个性化菜单优先级高于个性化菜单</li>
 <li>个性化菜单可以根据用户的tag，sex，group等属性进行区分菜单</li>
 <li>注意，我在使用时发现<strong>个性化菜单经常会失效</strong>，不起作用，偶尔会起作用，如果线上打算使用个性化菜单，请慎重并仔细测试</li>
 </ol>
-<h3 id="授权"><a href="#授权" class="headerlink" title="授权"></a>授权</h3><p>授权有网页授权，js sdk授权，<br>网页授权也有两种，一个上静默授权，一个是点击授权，贴一下js sdk调用前认证的代码，要使用sha1加密<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">async</span> getSignConfig(originUrl) &#123;</div><div class="line">      <span class="keyword">let</span> data = &#123;&#125;</div><div class="line">      <span class="keyword">const</span> sha1 = crypto.createHash(<span class="string">'sha1'</span>)</div><div class="line">      <span class="keyword">const</span> appId = <span class="keyword">this</span>.app.config.weixin.appID</div><div class="line">      <span class="keyword">const</span> jsapi_ticket = <span class="keyword">await</span> <span class="keyword">this</span>.ctx.service.token.getJSApiTicket()</div><div class="line">      <span class="keyword">const</span> noncestr = <span class="keyword">this</span>.app.config.jsapi.noncestr</div><div class="line">      <span class="keyword">const</span> url = <span class="keyword">this</span>.app.config.domain + originUrl</div><div class="line">      <span class="keyword">const</span> timestamp = <span class="built_in">parseInt</span>(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime() / <span class="number">1000</span>)</div><div class="line">      <span class="comment">// sha1加密</span></div><div class="line">      <span class="keyword">const</span> str = <span class="string">`jsapi_ticket=<span class="subst">$&#123;jsapi_ticket&#125;</span>&amp;noncestr=<span class="subst">$&#123;noncestr&#125;</span>&amp;timestamp=<span class="subst">$&#123;timestamp&#125;</span>&amp;url=<span class="subst">$&#123;url&#125;</span>`</span></div><div class="line">      sha1.update(str)</div><div class="line">      <span class="keyword">const</span> signature = sha1.digest(<span class="string">'hex'</span>)</div><div class="line">      data = &#123; jsapi_ticket, noncestr, timestamp, url, signature, appId &#125;</div><div class="line">      <span class="keyword">return</span> data</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
+<h2 id="授权"><a href="#授权" class="headerlink" title="授权"></a>授权</h2><p>授权有网页授权，js sdk授权，<br>网页授权也有两种，一个上静默授权，一个是点击授权，贴一下js sdk调用前认证的代码，要使用sha1加密<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">async</span> getSignConfig(originUrl) &#123;</div><div class="line">      <span class="keyword">let</span> data = &#123;&#125;</div><div class="line">      <span class="keyword">const</span> sha1 = crypto.createHash(<span class="string">'sha1'</span>)</div><div class="line">      <span class="keyword">const</span> appId = <span class="keyword">this</span>.app.config.weixin.appID</div><div class="line">      <span class="keyword">const</span> jsapi_ticket = <span class="keyword">await</span> <span class="keyword">this</span>.ctx.service.token.getJSApiTicket()</div><div class="line">      <span class="keyword">const</span> noncestr = <span class="keyword">this</span>.app.config.jsapi.noncestr</div><div class="line">      <span class="keyword">const</span> url = <span class="keyword">this</span>.app.config.domain + originUrl</div><div class="line">      <span class="keyword">const</span> timestamp = <span class="built_in">parseInt</span>(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime() / <span class="number">1000</span>)</div><div class="line">      <span class="comment">// sha1加密</span></div><div class="line">      <span class="keyword">const</span> str = <span class="string">`jsapi_ticket=<span class="subst">$&#123;jsapi_ticket&#125;</span>&amp;noncestr=<span class="subst">$&#123;noncestr&#125;</span>&amp;timestamp=<span class="subst">$&#123;timestamp&#125;</span>&amp;url=<span class="subst">$&#123;url&#125;</span>`</span></div><div class="line">      sha1.update(str)</div><div class="line">      <span class="keyword">const</span> signature = sha1.digest(<span class="string">'hex'</span>)</div><div class="line">      data = &#123; jsapi_ticket, noncestr, timestamp, url, signature, appId &#125;</div><div class="line">      <span class="keyword">return</span> data</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
 <p>调用js sdk页面上代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">wx.config(&#123;</div><div class="line">    debug: <span class="literal">false</span>, <span class="comment">// 开启调试模式,</span></div><div class="line">    appId: appId, <span class="comment">// 必填，公众号的唯一标识</span></div><div class="line">    timestamp: timestamp, <span class="comment">// 必填，生成签名的时间戳</span></div><div class="line">    nonceStr: nonceStr, <span class="comment">// 必填，生成签名的随机串</span></div><div class="line">    signature:  signature,<span class="comment">// 必填，签名，见附录1</span></div><div class="line">    jsApiList: [<span class="string">'closeWindow'</span>] <span class="comment">// 必填，需要使用的JS接口列表，所有JS接口列表见附录2</span></div><div class="line">&#125;);</div><div class="line">wx.ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      wx.closeWindow();</div><div class="line">    &#125;,<span class="number">2000</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h3 id="实用的常识"><a href="#实用的常识" class="headerlink" title="实用的常识"></a>实用的常识</h3><ol>
+<h2 id="实用的常识"><a href="#实用的常识" class="headerlink" title="实用的常识"></a>实用的常识</h2><ol>
 <li>tag不能重复创建，但是给用户可以重复打同一个tag</li>
 <li>更改菜单一般五分钟生效，或者重新关注公众号，立马能看到</li>
 <li>如果调用js sdk，务必使用https，防止因为安全问题，导致ios下js下载失败。如果你的服务是https，而引用了https的微信js，在ios下肯定会下载失败，这是ios的安全机制导致的。</li>
 <li>微信关闭窗口的js接口，不管jsconfig验证是否通过，窗口都可以关闭</li>
 <li>微信的token过期时间上2h，但是很多时候30分钟不到可能已经失效，建议<strong>把token过期时间设置为10分钟之内</strong></li>
 </ol>
-<h3 id="常见报错"><a href="#常见报错" class="headerlink" title="常见报错"></a>常见报错</h3><ol>
+<h2 id="常见报错"><a href="#常见报错" class="headerlink" title="常见报错"></a>常见报错</h2><ol>
 <li>创建菜单的时候，菜单长度不合法，仔细检查自己传的json菜单，一般都是<strong>json格式问题</strong>，而不是长度</li>
 <li>redirect_uri不合法，是创建授权菜单的redirect_uri和<strong>网页授权域名</strong>配置不一样</li>
 <li>关注公众号，服务端设置的欢迎消息发不过去，如果自己代码无异常，一般是因为<strong>token过期</strong></li>
 </ol>
-<h3 id="以后遇到其他问题继续补充"><a href="#以后遇到其他问题继续补充" class="headerlink" title="以后遇到其他问题继续补充"></a>以后遇到其他问题继续补充</h3><blockquote>
+<h2 id="以后遇到其他问题继续补充"><a href="#以后遇到其他问题继续补充" class="headerlink" title="以后遇到其他问题继续补充"></a>以后遇到其他问题继续补充</h2><blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
 ]]></content>
@@ -370,12 +370,12 @@
     <link href="http://geeksblog.cc/mac-shortcut.html"/>
     <id>http://geeksblog.cc/mac-shortcut.html</id>
     <published>2017-04-21T02:53:08.000Z</published>
-    <updated>2017-04-28T15:51:25.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> Mac最实用快捷键：</strong> <Excerpt in index | 首页摘要><br>mac系统最常用的一些快捷键，吐血推荐<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><ul>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><ul>
 <li>打开文件／文件夹    cmd + o</li>
 <li>选择文件／文件夹    文件夹名称（英文）</li>
 <li>删除文件／文件夹    cmd + del</li>
@@ -386,9 +386,9 @@
 <li>文件目录前进后退        cmd + [ 或者 cmd + ]</li>
 <li>文件上层目录，下层目录   cmd + ⬆️  cmd + ⬇️</li>
 </ul>
-<h3 id="搜索操作"><a href="#搜索操作" class="headerlink" title="搜索操作"></a>搜索操作</h3><p>全局搜索  ctrl + space<br>文本搜索  cmd + f</p>
-<h3 id="mac-fn快捷键"><a href="#mac-fn快捷键" class="headerlink" title="mac fn快捷键"></a>mac fn快捷键</h3><p>屏幕亮度 f1 f2<br>任务视图 f3<br>应用程序 f4<br>键盘背光 f5 f6<br>音乐播放 f7 f8 f9<br>音量 f10 f11 f12</p>
-<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h3><blockquote>
+<h2 id="搜索操作"><a href="#搜索操作" class="headerlink" title="搜索操作"></a>搜索操作</h2><p>全局搜索  ctrl + space<br>文本搜索  cmd + f</p>
+<h2 id="mac-fn快捷键"><a href="#mac-fn快捷键" class="headerlink" title="mac fn快捷键"></a>mac fn快捷键</h2><p>屏幕亮度 f1 f2<br>任务视图 f3<br>应用程序 f4<br>键盘背光 f5 f6<br>音乐播放 f7 f8 f9<br>音量 f10 f11 f12</p>
+<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2><blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
 ]]></content>
@@ -411,27 +411,27 @@
     <link href="http://geeksblog.cc/kobo-config.html"/>
     <id>http://geeksblog.cc/kobo-config.html</id>
     <published>2017-04-17T02:22:57.000Z</published>
-    <updated>2017-05-19T02:04:33.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> Kobo Aura One配置入门：</strong> <Excerpt in index | 首页摘要><br>kobo电子书折腾记，从激活到设置，打补丁实现自定义配置，还是自己折腾起来有意思啊。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h3><p>买电子书是为了阅读和学习，不是天天折腾电子书，一天刷一次机，如果只是看书，做笔记，学个英文什么的<br>原生系统是最好的。</p>
-<h3 id="kobo原生系统的功能"><a href="#kobo原生系统的功能" class="headerlink" title="kobo原生系统的功能"></a>kobo原生系统的功能</h3><ol>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><p>买电子书是为了阅读和学习，不是天天折腾电子书，一天刷一次机，如果只是看书，做笔记，学个英文什么的<br>原生系统是最好的。</p>
+<h2 id="kobo原生系统的功能"><a href="#kobo原生系统的功能" class="headerlink" title="kobo原生系统的功能"></a>kobo原生系统的功能</h2><ol>
 <li>格式支持epub，mobi，cbz漫画，txt，kobo epub格式</li>
 <li>高亮，笔记，导出笔记（需要配置一下）</li>
 <li>字典（英文，法文等多国字典，可以自己修改）</li>
 <li>阅读pocket文章（大赞，堪比推送文章啊）</li>
 </ol>
-<h3 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h3><p><strong>说明：wifi激活需要翻墙，可以实用笔记连接vpn，然后共享wifi给kobo</strong></p>
+<h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><p><strong>说明：wifi激活需要翻墙，可以实用笔记连接vpn，然后共享wifi给kobo</strong></p>
 <ol>
 <li>wifi激活</li>
 <li>kobo setup desktop激活</li>
 </ol>
-<h3 id="更新固件"><a href="#更新固件" class="headerlink" title="更新固件"></a>更新固件</h3><p>kobo的更新固件，更新补丁都是一个模式，把固件或者补丁放到.kobo文件夹，弹出设备就会自动重启</p>
-<h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p>电脑连接kobo，在根目录建立一个fonts文件夹，把需要的字体放进去即可</p>
-<h3 id="词典"><a href="#词典" class="headerlink" title="词典"></a>词典</h3><p>下载网上改好的字典，直接放到.kobo文件夹下的dict目录下，然后重启就可以了</p>
-<h3 id="自定义配置"><a href="#自定义配置" class="headerlink" title="自定义配置"></a>自定义配置</h3><ol>
+<h2 id="更新固件"><a href="#更新固件" class="headerlink" title="更新固件"></a>更新固件</h2><p>kobo的更新固件，更新补丁都是一个模式，把固件或者补丁放到.kobo文件夹，弹出设备就会自动重启</p>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>电脑连接kobo，在根目录建立一个fonts文件夹，把需要的字体放进去即可</p>
+<h2 id="词典"><a href="#词典" class="headerlink" title="词典"></a>词典</h2><p>下载网上改好的字典，直接放到.kobo文件夹下的dict目录下，然后重启就可以了</p>
+<h2 id="自定义配置"><a href="#自定义配置" class="headerlink" title="自定义配置"></a>自定义配置</h2><ol>
 <li>刷新页数</li>
 <li>全屏模式</li>
 <li>上下页宽</li>
@@ -460,17 +460,17 @@
     <link href="http://geeksblog.cc/mybooks.html"/>
     <id>http://geeksblog.cc/mybooks.html</id>
     <published>2017-04-15T06:49:46.000Z</published>
-    <updated>2017-04-17T14:14:53.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> Mybooks：</strong> <Excerpt in index | 首页摘要><br>人生漫漫，不知不觉读了好多书，但是仔细想想很多没有做总结，实在心里感觉缺失点东西，这次好好总结一下<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="读过哪些种类的"><a href="#读过哪些种类的" class="headerlink" title="读过哪些种类的"></a>读过哪些种类的</h3><ul>
+<h2 id="读过哪些种类的"><a href="#读过哪些种类的" class="headerlink" title="读过哪些种类的"></a>读过哪些种类的</h2><ul>
 <li>编程专业类</li>
 <li>小说类</li>
 <li>励志类</li>
 </ul>
-<h3 id="小说"><a href="#小说" class="headerlink" title="小说"></a>小说</h3><ul>
+<h2 id="小说"><a href="#小说" class="headerlink" title="小说"></a>小说</h2><ul>
 <li>平凡的世界</li>
 <li>金庸武侠系列</li>
 <li>古龙武侠小说</li>
@@ -487,7 +487,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="编程类"><a href="#编程类" class="headerlink" title="编程类"></a>编程类</h3><ul>
+<h2 id="编程类"><a href="#编程类" class="headerlink" title="编程类"></a>编程类</h2><ul>
 <li>java编程思想</li>
 <li>effective java</li>
 <li>java并发编程的艺术</li>
@@ -509,7 +509,7 @@
 <li>mongodb实战第二版</li>
 <li>redis入门</li>
 </ul>
-<h3 id="经管励志"><a href="#经管励志" class="headerlink" title="经管励志"></a>经管励志</h3><ul>
+<h2 id="经管励志"><a href="#经管励志" class="headerlink" title="经管励志"></a>经管励志</h2><ul>
 <li>时间管理</li>
 <li>一分钟系列</li>
 <li>番茄工作法图解</li>
@@ -537,12 +537,12 @@
     <link href="http://geeksblog.cc/async-dev.html"/>
     <id>http://geeksblog.cc/async-dev.html</id>
     <published>2017-04-14T02:11:58.000Z</published>
-    <updated>2017-05-13T23:15:18.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 异步那些事：</strong> <Excerpt in index | 首页摘要><br>在异步大行其道的今天，作为一个开发者你如果连异步都不了解，肯定会被同行看不清的，骚年还是学一下吧<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="异步简介"><a href="#异步简介" class="headerlink" title="异步简介`"></a>异步简介`</h3><h3 id="异步解决方案演变"><a href="#异步解决方案演变" class="headerlink" title="异步解决方案演变"></a>异步解决方案演变</h3><h3 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h3><h3 id="generator"><a href="#generator" class="headerlink" title="generator"></a>generator</h3><h3 id="async"><a href="#async" class="headerlink" title="async"></a>async</h3><blockquote>
+<h2 id="异步简介"><a href="#异步简介" class="headerlink" title="异步简介`"></a>异步简介`</h2><h2 id="异步解决方案演变"><a href="#异步解决方案演变" class="headerlink" title="异步解决方案演变"></a>异步解决方案演变</h2><h2 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h2><h2 id="generator"><a href="#generator" class="headerlink" title="generator"></a>generator</h2><h2 id="async"><a href="#async" class="headerlink" title="async"></a>async</h2><blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
 ]]></content>
@@ -565,40 +565,40 @@
     <link href="http://geeksblog.cc/fullprj-desc.html"/>
     <id>http://geeksblog.cc/fullprj-desc.html</id>
     <published>2017-04-11T02:18:22.000Z</published>
-    <updated>2017-05-26T04:01:53.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 一个完整项目的得失：</strong> <Excerpt in index | 首页摘要><br>想做一个完美的cms太难，架构本身就是要有取舍，只有最合适的架构，没有最好的架构。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>今年从2月份到4月份做了一个完整到项目，后台cms系统，包括前台应用。写打造一个完美到系统，确实需要考虑太多因素，<br>自己收获颇多，特此总结一下。</p>
-<h3 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h3><p>cms后台主要使用java的spring，mybits，shiro框架，前台就是jquery，jsp，bootstrap，<br>数据库方面是mysql，缓存没有使用</p>
-<h3 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h3><p>使用mysql设计数据库，对业务的不深入很多时候会导致设置的表满足不了需求</p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>今年从2月份到4月份做了一个完整到项目，后台cms系统，包括前台应用。写打造一个完美到系统，确实需要考虑太多因素，<br>自己收获颇多，特此总结一下。</p>
+<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><p>cms后台主要使用java的spring，mybits，shiro框架，前台就是jquery，jsp，bootstrap，<br>数据库方面是mysql，缓存没有使用</p>
+<h2 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h2><p>使用mysql设计数据库，对业务的不深入很多时候会导致设置的表满足不了需求</p>
 <ol>
 <li>提前预留几个def空字段，这样不需要频繁的修改表结构</li>
 <li>索引要建好，数据量增长起来后，没有索引搜索肯定慢的很，对常见的搜索条件建索引</li>
 <li>对并发有个大致的数</li>
 </ol>
-<h3 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h3><ol>
+<h2 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h2><ol>
 <li>反向代理配置，代理80端口，代理域名访问</li>
 <li>静态资源缓存，压缩</li>
 <li>websocket配置，https配置</li>
 <li>集群的负载均衡配置</li>
 </ol>
-<h3 id="tomcat配置"><a href="#tomcat配置" class="headerlink" title="tomcat配置"></a>tomcat配置</h3><ol>
+<h2 id="tomcat配置"><a href="#tomcat配置" class="headerlink" title="tomcat配置"></a>tomcat配置</h2><ol>
 <li>jvm参数设置</li>
 <li>项目路径设置</li>
 <li>日志，重启配置</li>
 </ol>
-<h3 id="安全问题"><a href="#安全问题" class="headerlink" title="安全问题"></a>安全问题</h3><ol>
+<h2 id="安全问题"><a href="#安全问题" class="headerlink" title="安全问题"></a>安全问题</h2><ol>
 <li>防止</li>
 </ol>
-<h3 id="选购服务器和域名"><a href="#选购服务器和域名" class="headerlink" title="选购服务器和域名"></a>选购服务器和域名</h3><ol>
+<h2 id="选购服务器和域名"><a href="#选购服务器和域名" class="headerlink" title="选购服务器和域名"></a>选购服务器和域名</h2><ol>
 <li>估算并发量，预留一定的并发量</li>
 <li>根据并发量计算带宽和cpu还有内存</li>
 <li>根据网络情况选择不同区域的服务器</li>
 <li>根据需求选择域名</li>
 </ol>
-<h3 id="突发状况的处理机制"><a href="#突发状况的处理机制" class="headerlink" title="突发状况的处理机制"></a>突发状况的处理机制</h3><ol>
+<h2 id="突发状况的处理机制"><a href="#突发状况的处理机制" class="headerlink" title="突发状况的处理机制"></a>突发状况的处理机制</h2><ol>
 <li>选购的第三方接口挂了</li>
 <li>数据库挂了</li>
 <li>服务器挂了</li>
@@ -627,7 +627,7 @@
     <link href="http://geeksblog.cc/free-books.html"/>
     <id>http://geeksblog.cc/free-books.html</id>
     <published>2016-11-28T16:15:52.000Z</published>
-    <updated>2016-11-30T23:47:25.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 免费的开源书籍：</strong> <Excerpt in index | 首页摘要><br>国外程序员在 stackoverflow 推荐的程序员必读书籍，中文版。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -701,14 +701,14 @@
 </ul>
 </li>
 </ul>
-<h2 id="语言无关"><a href="#语言无关" class="headerlink" title="语言无关"></a>语言无关</h2><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><ul>
+<h2 id="语言无关"><a href="#语言无关" class="headerlink" title="语言无关"></a>语言无关</h2><h2 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h2><ul>
 <li><a href="https://github.com/judasn/IntelliJ-IDEA-Tutorial">IntelliJ IDEA 简体中文专题教程</a></li>
 </ul>
-<h3 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h3><ul>
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><ul>
 <li><a href="http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html">21分钟MySQL入门教程</a></li>
 <li><a href="http://blog.codinglabs.org/articles/theory-of-mysql-index.html">MySQL索引背后的数据结构及算法原理</a></li>
 </ul>
-<h3 id="NoSQL"><a href="#NoSQL" class="headerlink" title="NoSQL"></a>NoSQL</h3><ul>
+<h2 id="NoSQL"><a href="#NoSQL" class="headerlink" title="NoSQL"></a>NoSQL</h2><ul>
 <li><a href="http://disquebook.com">Disque 使用教程</a></li>
 <li><a href="http://neo4j.tw">Neo4j .rb 中文資源</a></li>
 <li><a href="http://docs.neo4j.org.cn">Neo4j 简体中文手册 v1.8</a></li>
@@ -719,11 +719,11 @@
 <li><a href="https://github.com/huangz1990/annotated_redis_source">带有详细注释的 Redis 2.6 代码</a></li>
 <li><a href="https://github.com/huangz1990/redis-3.0-annotated">带有详细注释的 Redis 3.0 代码</a></li>
 </ul>
-<h3 id="PostgreSQL"><a href="#PostgreSQL" class="headerlink" title="PostgreSQL"></a>PostgreSQL</h3><ul>
+<h2 id="PostgreSQL"><a href="#PostgreSQL" class="headerlink" title="PostgreSQL"></a>PostgreSQL</h2><ul>
 <li><a href="http://works.jinbuguo.com/postgresql/menu823/index.html">PostgreSQL 8.2.3 中文文档</a></li>
 <li><a href="http://www.postgres.cn/docs/9.3/index.html">PostgreSQL 9.3.1 中文文档</a></li>
 </ul>
-<h3 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h3><ul>
+<h2 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h2><ul>
 <li><a href="https://www.gitbook.com/book/juntao/3-web-designs-in-3-weeks/details">3 Web Designs in 3 Weeks</a></li>
 <li><a href="https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools">Chrome 开发者工具中文手册</a></li>
 <li><a href="http://open.chrome.360.cn/extension_dev/overview.html">Chrome扩展开发文档</a></li>
@@ -747,24 +747,24 @@
 <li><a href="https://github.com/AlloyTeam/Mars">移动Web前端知识库</a></li>
 <li><a href="https://github.com/hoosin/mobile-web-favorites">移动前端开发收藏夹</a></li>
 </ul>
-<h3 id="WEB服务器"><a href="#WEB服务器" class="headerlink" title="WEB服务器"></a>WEB服务器</h3><ul>
+<h2 id="WEB服务器"><a href="#WEB服务器" class="headerlink" title="WEB服务器"></a>WEB服务器</h2><ul>
 <li><a href="http://works.jinbuguo.com/apache/menu22/index.html">Apache 中文手册</a></li>
 <li><a href="http://tengine.taobao.org/book/index.html">Nginx开发从入门到精通</a> (淘宝团队出品)</li>
 <li><a href="http://www.ttlsa.com/nginx/nginx-stu-pdf/">Nginx教程从入门到精通</a> (PDF版本，运维生存时间出品)</li>
 </ul>
-<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><ul>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><ul>
 <li><a href="https://softwaredownload.gitbooks.io/openwrt-fanqiang/content/">OpenWrt智能、自动、透明翻墙路由器教程</a></li>
 <li><a href="https://community.emc.com/docs/DOC-16067">SAN 管理入门系列</a></li>
 <li><a href="http://sketchcn.com/sketch-chinese-user-manual.html#introduce">Sketch 中文手册</a></li>
 <li><a href="http://ifeve.com/perfbook/">深入理解并行编程</a></li>
 </ul>
-<h3 id="函数式概念"><a href="#函数式概念" class="headerlink" title="函数式概念"></a>函数式概念</h3><ul>
+<h2 id="函数式概念"><a href="#函数式概念" class="headerlink" title="函数式概念"></a>函数式概念</h2><ul>
 <li><a href="https://github.com/justinyhuang/Functional-Programming-For-The-Rest-of-Us-Cn">傻瓜函数编程</a></li>
 </ul>
-<h3 id="分布式系统"><a href="#分布式系统" class="headerlink" title="分布式系统"></a>分布式系统</h3><ul>
+<h2 id="分布式系统"><a href="#分布式系统" class="headerlink" title="分布式系统"></a>分布式系统</h2><ul>
 <li><a href="http://dcaoyuan.github.io/papers/pdfs/Scalability.pdf">走向分布式</a> (PDF)</li>
 </ul>
-<h3 id="在线教育"><a href="#在线教育" class="headerlink" title="在线教育"></a>在线教育</h3><ul>
+<h2 id="在线教育"><a href="#在线教育" class="headerlink" title="在线教育"></a>在线教育</h2><ul>
 <li><a href="http://edu.51cto.com">51CTO学院</a></li>
 <li><a href="https://www.codecademy.com/?locale_code=zh">Codecademy</a></li>
 <li><a href="https://www.codeschool.com">CodeSchool</a></li>
@@ -778,14 +778,14 @@
 <li><a href="http://www.jikexueyuan.com">极客学院</a></li>
 <li><a href="http://www.jisuanke.com">计蒜客</a></li>
 </ul>
-<h3 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h3><ul>
+<h2 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h2><ul>
 <li><a href="https://aiyanbo.gitbooks.io/spark-programming-guide-zh-cn/content/">Spark 编程指南简体中文版</a></li>
 <li><a href="https://code.csdn.net/CODE_Translation/spark_matei_phd">大型集群上的快速和通用数据处理架构</a></li>
 <li><a href="https://github.com/Flowerowl/Big-Data-Resources">大数据/数据挖掘/推荐系统/机器学习相关资源</a></li>
 <li><a href="https://github.com/linyiqun/DataMiningAlgorithm">数据挖掘中经典的算法实现和详细的注释</a></li>
 <li><a href="http://dataminingguide.books.yourtion.com">面向程序员的数据挖掘指南</a></li>
 </ul>
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><ul>
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><ul>
 <li><a href="http://man.chinaunix.net/linux/debian/reference/reference.zh-cn.html">Debian 参考手册 </a></li>
 <li><a href="https://github.com/yeasy/docker_practice">Docker —— 从入门到实践</a></li>
 <li><a href="https://github.com/widuu/chinese_docker">Docker中文指南</a></li>
@@ -811,17 +811,17 @@
 <li><a href="http://vbird.dic.ksu.edu.tw/linux_basic/linux_basic.php">鸟哥的 Linux 私房菜 基础学习篇</a></li>
 <li><a href="http://vbird.dic.ksu.edu.tw/linux_server/">鸟哥的 Linux 私房菜 服务器架设篇</a></li>
 </ul>
-<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ul>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ul>
 <li><a href="http://redisbook.com">Redis 设计与实现</a></li>
 <li><a href="https://github.com/justinyhuang/the-little-mongodb-book-cn">The Little MongoDB Book 中文版</a></li>
 </ul>
-<h3 id="智能系统"><a href="#智能系统" class="headerlink" title="智能系统"></a>智能系统</h3><ul>
+<h2 id="智能系统"><a href="#智能系统" class="headerlink" title="智能系统"></a>智能系统</h2><ul>
 <li><a href="https://github.com/phodal/designiot">一步步搭建物联网系统</a></li>
 </ul>
-<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><ul>
+<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><ul>
 <li><a href="http://deerchao.net/tutorials/regex/regex.htm">正则表达式30分钟入门教程</a></li>
 </ul>
-<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><ul>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><ul>
 <li><a href="http://rogerdudler.github.io/git-guide/index.zh.html">Git - 简易指南</a></li>
 <li><a href="https://github.com/flyhigher139/Git-Cheat-Sheet">Git-Cheat-Sheet</a> （感谢 @flyhigher139 翻译了中文版）</li>
 <li><a href="http://gitbook.liuhui998.com">Git Community Book 中文版</a></li>
@@ -843,10 +843,10 @@
 <li><a href="http://igit.linuxtoy.org/index.html">沉浸式学 Git</a></li>
 <li><a href="http://backlogtool.com/git-guide/cn/">猴子都能懂的GIT入门</a></li>
 </ul>
-<h3 id="程序员杂谈"><a href="#程序员杂谈" class="headerlink" title="程序员杂谈"></a>程序员杂谈</h3><ul>
+<h2 id="程序员杂谈"><a href="#程序员杂谈" class="headerlink" title="程序员杂谈"></a>程序员杂谈</h2><ul>
 <li><a href="http://www.kancloud.cn/kancloud/a-programmer-prepares">程序员的自我修养</a></li>
 </ul>
-<h3 id="管理和监控"><a href="#管理和监控" class="headerlink" title="管理和监控"></a>管理和监控</h3><ul>
+<h2 id="管理和监控"><a href="#管理和监控" class="headerlink" title="管理和监控"></a>管理和监控</h2><ul>
 <li><a href="https://www.gitbook.com/book/fuxiaopang/learnelasticsearch/details">ElasticSearch 权威指南</a></li>
 <li><a href="http://es.xiaoleilu.com">Elasticsearch 权威指南（中文版）</a></li>
 <li><a href="http://kibana.logstash.es">ELKstack 中文指南</a></li>
@@ -854,33 +854,33 @@
 <li><a href="http://udn.yyuap.com/doc/mastering-elasticsearch/">Mastering Elasticsearch(中文版)</a></li>
 <li><a href="http://bbs.konotes.org/workdoc/puppet-27/">Puppet 2.7 Cookbook 中文版</a></li>
 </ul>
-<h3 id="编程艺术"><a href="#编程艺术" class="headerlink" title="编程艺术"></a>编程艺术</h3><ul>
+<h2 id="编程艺术"><a href="#编程艺术" class="headerlink" title="编程艺术"></a>编程艺术</h2><ul>
 <li><a href="http://read.douban.com/ebook/4972883/">取悦的工序：如何理解游戏</a> (豆瓣阅读，免费书籍)</li>
 <li><a href="http://www.oschina.net/translate/what-every-programmer-should-know-about-memory-part1?print">每个程序员都应该了解的内存知识(译)</a>【第一部分】</li>
 <li><a href="https://github.com/julycoding/The-Art-Of-Programming-by-July">程序员编程艺术</a></li>
 <li><a href="http://www.kancloud.cn/kancloud/intro-to-prog/52592">编程入门指南</a></li>
 </ul>
-<h3 id="编译原理"><a href="#编译原理" class="headerlink" title="编译原理"></a>编译原理</h3><ul>
+<h2 id="编译原理"><a href="#编译原理" class="headerlink" title="编译原理"></a>编译原理</h2><ul>
 <li><a href="https://github.com/DeathKing/Learning-SICP">《计算机程序的结构和解释》公开课 翻译项目</a></li>
 </ul>
-<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><ul>
+<h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><ul>
 <li><a href="http://exvim.github.io/docs-zh/intro/">exvim–vim 改良成IDE项目</a></li>
 <li><a href="https://github.com/vimcn/vimcdoc">Vim中文文档</a></li>
 <li><a href="https://github.com/yangyangwithgnu/use_vim_as_ide">所需即所获：像 IDE 一样使用 vim</a></li>
 <li><a href="http://learnvimscriptthehardway.onefloweroneworld.com">笨方法学Vimscript 中译本</a></li>
 </ul>
-<h3 id="计算机图形学"><a href="#计算机图形学" class="headerlink" title="计算机图形学"></a>计算机图形学</h3><ul>
+<h2 id="计算机图形学"><a href="#计算机图形学" class="headerlink" title="计算机图形学"></a>计算机图形学</h2><ul>
 <li><a href="https://github.com/zilongshanren/opengl-tutorials">OpenGL 教程</a></li>
 </ul>
-<h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3><ul>
+<h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><ul>
 <li><a href="http://blog.csdn.net/lovelion/article/details/17517213">史上最全设计模式导学目录</a></li>
 <li><a href="https://github.com/me115/design_patterns">图说设计模式</a></li>
 </ul>
-<h3 id="软件开发方法"><a href="#软件开发方法" class="headerlink" title="软件开发方法"></a>软件开发方法</h3><ul>
+<h2 id="软件开发方法"><a href="#软件开发方法" class="headerlink" title="软件开发方法"></a>软件开发方法</h2><ul>
 <li><a href="https://github.com/justinyhuang/Functional-Programming-For-The-Rest-of-Us-Cn">傻瓜函数编程</a> (《Functional Programming For The Rest of Us》中文版)</li>
 <li><a href="http://www.infoq.com/cn/minibooks/scrum-xp-from-the-trenches">硝烟中的 Scrum 和 XP</a></li>
 </ul>
-<h3 id="项目相关"><a href="#项目相关" class="headerlink" title="项目相关"></a>项目相关</h3><ul>
+<h2 id="项目相关"><a href="#项目相关" class="headerlink" title="项目相关"></a>项目相关</h2><ul>
 <li><a href="http://docs.huihoo.com/gnu/linux/gmake.html">GNU make 指南</a></li>
 <li><a href="https://github.com/waylau/Gradle-2-User-Guide">Gradle 2 用户指南</a></li>
 <li><a href="http://yuedu.baidu.com/ebook/f23af265998fcc22bcd10da2">Gradle 中文使用文档</a></li>
@@ -893,7 +893,7 @@
 <li><a href="http://www.ibm.com/developerworks/cn/java/j-ap/">让开发自动化系列专栏</a></li>
 <li><a href="http://www.ibm.com/developerworks/cn/java/j-cq/">追求代码质量</a></li>
 </ul>
-<h2 id="语言相关"><a href="#语言相关" class="headerlink" title="语言相关"></a>语言相关</h2><h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><ul>
+<h2 id="语言相关"><a href="#语言相关" class="headerlink" title="语言相关"></a>语言相关</h2><h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><ul>
 <li><a href="http://www.apkbus.com/design/index.html">Android Design(中文版)</a></li>
 <li><a href="https://github.com/CharonChui/AndroidNote">Android Note(开发过程中积累的知识点)</a></li>
 <li><a href="http://leanote.com/blog/post/561658f938f41126b2000298?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io">Android6.0新特性详解</a></li>
@@ -904,20 +904,20 @@
 <li><a href="http://wiki.jikexueyuan.com/project/material-design/">Material Design 中文版</a></li>
 <li><a href="https://github.com/FX-Max/Point-of-Android">Point-of-Android</a> Android 一些重要知识点解析整理</li>
 </ul>
-<h3 id="AWK"><a href="#AWK" class="headerlink" title="AWK"></a>AWK</h3><ul>
+<h2 id="AWK"><a href="#AWK" class="headerlink" title="AWK"></a>AWK</h2><ul>
 <li><a href="http://awk.readthedocs.org/en/latest/index.html">awk中文指南</a></li>
 <li><a href="https://github.com/wuzhouhui/awk">awk程序设计语言</a></li>
 </ul>
-<h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><ul>
+<h2 id="C"><a href="#C" class="headerlink" title="C"></a>C</h2><ul>
 <li><a href="http://c-faq-chn.sourceforge.net/ccfaq/ccfaq.html">C 语言常见问题集</a></li>
 <li><a href="http://doc.lellansin.com">C/C++ 学习教程</a></li>
 <li><a href="http://docs.linuxtone.org/ebooks/C&amp;CPP/c/">Linux C 编程一站式学习</a></li>
 <li><a href="https://github.com/limingth/NCCL">新概念 C 语言教程</a></li>
 </ul>
-<h3 id="C-Sharp"><a href="#C-Sharp" class="headerlink" title="C Sharp"></a>C Sharp</h3><ul>
+<h2 id="C-Sharp"><a href="#C-Sharp" class="headerlink" title="C Sharp"></a>C Sharp</h2><ul>
 <li><a href="http://book.douban.com/subject/24827879/">精通C#(第6版) </a></li>
 </ul>
-<h3 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h3><ul>
+<h2 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h2><ul>
 <li><a href="https://github.com/hellogcc/100-gcc-tips/blob/master/src/index.md">100个gcc小技巧</a></li>
 <li><a href="https://github.com/hellogcc/100-gdb-tips/blob/master/src/index.md">100个gdb小技巧</a></li>
 <li><a href="https://tinylab.gitbooks.io/cbook/content/">C 语言编程透视</a></li>
@@ -938,31 +938,31 @@
 <li><a href="http://www.nowamagic.net/librarys/books/contents/c">简单易懂的C魔法</a></li>
 <li><a href="http://scc.qibebt.cas.cn/docs/linux/base/%B8%FA%CE%D2%D2%BB%C6%F0%D0%B4Makefile-%B3%C2%F0%A9.pdf">跟我一起写Makefile(PDF)</a> (PDF)</li>
 </ul>
-<h3 id="CoffeeScript"><a href="#CoffeeScript" class="headerlink" title="CoffeeScript"></a>CoffeeScript</h3><ul>
+<h2 id="CoffeeScript"><a href="#CoffeeScript" class="headerlink" title="CoffeeScript"></a>CoffeeScript</h2><ul>
 <li><a href="http://coffee-script.org">CoffeeScript 中文</a></li>
 <li><a href="https://github.com/elrrrrrrr/coffeescript-style-guide/blob/master/README-ZH.md">CoffeeScript 编程风格指南</a></li>
 </ul>
-<h3 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h3><ul>
+<h2 id="Dart"><a href="#Dart" class="headerlink" title="Dart"></a>Dart</h2><ul>
 <li><a href="http://dart.lidian.info/wiki/Language_Tour">Dart 语言导览</a></li>
 </ul>
-<h3 id="Elasticsearch"><a href="#Elasticsearch" class="headerlink" title="Elasticsearch"></a>Elasticsearch</h3><ul>
+<h2 id="Elasticsearch"><a href="#Elasticsearch" class="headerlink" title="Elasticsearch"></a>Elasticsearch</h2><ul>
 <li><a href="https://github.com/looly/elasticsearch-definitive-guide-cn">Elasticsearch 权威指南</a> （《Elasticsearch the definitive guide》中文版）</li>
 <li><a href="http://kibana.logstash.es">ELKstack 中文指南</a></li>
 <li><a href="http://udn.yyuap.com/doc/mastering-elasticsearch/">Mastering Elasticsearch(中文版)</a></li>
 </ul>
-<h3 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h3><ul>
+<h2 id="Elixir"><a href="#Elixir" class="headerlink" title="Elixir"></a>Elixir</h2><ul>
 <li><a href="https://github.com/Ljzn/ElixrGettingStartedChinese">Elixir Getting Started 中文翻译</a></li>
 <li><a href="https://elixirschool.com/cn/">Elixir 编程语言教程</a> (Elixir School)</li>
 <li><a href="https://github.com/Ljzn/MetaProgrammingInElixirChinese">Elixir元编程与DSL 中文翻译</a></li>
 <li><a href="https://mydearxym.gitbooks.io/phoenix-doc-in-chinese/content/">Phoenix 框架中文文档</a></li>
 </ul>
-<h3 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h3><ul>
+<h2 id="Erlang"><a href="#Erlang" class="headerlink" title="Erlang"></a>Erlang</h2><ul>
 <li><a href="https://github.com/liancheng/cpie-cn">Erlang 并发编程</a> (《Concurrent Programming in Erlang (Part I)》中文版)</li>
 </ul>
-<h3 id="Fortran"><a href="#Fortran" class="headerlink" title="Fortran"></a>Fortran</h3><ul>
+<h2 id="Fortran"><a href="#Fortran" class="headerlink" title="Fortran"></a>Fortran</h2><ul>
 <li><a href="http://micro.ustc.edu.cn/Fortran/ZJDing/">Fortran77和90/95编程入门</a></li>
 </ul>
-<h3 id="Golang"><a href="#Golang" class="headerlink" title="Golang"></a>Golang</h3><ul>
+<h2 id="Golang"><a href="#Golang" class="headerlink" title="Golang"></a>Golang</h2><ul>
 <li><a href="http://www.hellogcc.org/effective_go.html">Effective Go</a></li>
 <li><a href="https://github.com/astaxie/build-web-application-with-golang">Go Web 编程</a></li>
 <li><a href="https://github.com/Unknwon/the-way-to-go_ZH_CN">Go 入门指南</a> (《The Way to Go》中文版)</li>
@@ -979,14 +979,14 @@
 <li><a href="http://gorevel.cn/docs/manual/index.html">Revel 框架手册</a></li>
 <li><a href="http://mikespook.com/learning-go/">学习Go语言</a></li>
 </ul>
-<h3 id="Groovy"><a href="#Groovy" class="headerlink" title="Groovy"></a>Groovy</h3><ul>
+<h2 id="Groovy"><a href="#Groovy" class="headerlink" title="Groovy"></a>Groovy</h2><ul>
 <li><a href="http://www.ibm.com/developerworks/cn/java/j-pg/">实战 Groovy 系列</a></li>
 </ul>
-<h3 id="Haskell"><a href="#Haskell" class="headerlink" title="Haskell"></a>Haskell</h3><ul>
+<h2 id="Haskell"><a href="#Haskell" class="headerlink" title="Haskell"></a>Haskell</h2><ul>
 <li><a href="http://learnyoua.haskell.sg">Haskell 趣学指南</a></li>
 <li><a href="http://cnhaskell.com">Real World Haskell 中文版</a></li>
 </ul>
-<h3 id="HTML-CSS"><a href="#HTML-CSS" class="headerlink" title="HTML / CSS"></a>HTML / CSS</h3><ul>
+<h2 id="HTML-CSS"><a href="#HTML-CSS" class="headerlink" title="HTML / CSS"></a>HTML / CSS</h2><ul>
 <li><a href="https://github.com/waylau/css3-tutorial">CSS3 Tutorial 《CSS3 教程》</a></li>
 <li><a href="http://css.doyoe.com">CSS参考手册</a></li>
 <li><a href="http://yanxyz.github.io/emmet-docs/">Emmet 文档</a></li>
@@ -997,7 +997,7 @@
 <li><a href="http://zh.learnlayout.com">学习CSS布局</a></li>
 <li><a href="https://github.com/chadluo/CSS-Guidelines/blob/master/README.md">通用 CSS 笔记、建议与指导</a></li>
 </ul>
-<h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h3><ul>
+<h2 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h2><ul>
 <li><a href="http://nilsun.github.io/apple-watch/">Apple Watch开发初探</a></li>
 <li><a href="http://zh-google-styleguide.readthedocs.org/en/latest/google-objc-styleguide/">Google Objective-C Style Guide 中文版</a></li>
 <li><a href="http://isux.tencent.com/ios-human-interface-guidelines-ui-design-basics-ios7.html">iOS7人机界面指南</a></li>
@@ -1005,7 +1005,7 @@
 <li><a href="http://wileam.com/iphone-6-screen-cn/">iPhone 6 屏幕揭秘</a></li>
 <li><a href="https://github.com/jkyin/Subtitle">网易斯坦福大学公开课：iOS 7应用开发字幕文件</a></li>
 </ul>
-<h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><ul>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><ul>
 <li><a href="https://github.com/waylau/activiti-5.x-user-guide">Activiti 5.x 用户指南</a></li>
 <li><a href="https://github.com/waylau/apache-mina-2.x-user-guide">Apache MINA 2 用户指南</a></li>
 <li><a href="https://github.com/waylau/apache-shiro-1.2.x-reference">Apache Shiro 用户指南</a></li>
@@ -1023,7 +1023,7 @@
 <li><a href="https://github.com/waylau/spring-framework-4-reference">Spring Framework 4.x参考文档</a></li>
 <li><a href="https://github.com/waylau/RestDemo">用jersey构建REST服务</a></li>
 </ul>
-<h3 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h3><ul>
+<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><ul>
 <li><a href="https://github.com/adamlu/javascript-style-guide">Airbnb JavaScript 规范</a></li>
 <li>AngularJS<ul>
 <li><a href="https://github.com/peiransun/angularjs-cn">AngularJS中译本</a></li>
@@ -1116,94 +1116,94 @@
 <li><a href="http://www.oschina.net/translate/learning-javascript-design-patterns">学用 JavaScript 设计模式</a> (开源中国)</li>
 <li><a href="http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html">深入理解JavaScript系列</a></li>
 </ul>
-<h3 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h3><ul>
+<h2 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h2><ul>
 <li><a href="http://www.dralpha.com/zh/tech/tech.htm">LaTeX 笔记</a></li>
 <li><a href="http://ctan.org/pkg/lshort-zh-cn">一份不太简短的 LaTeX2ε 介绍</a></li>
 <li><a href="https://github.com/49951331/graduate-project-102pj/blob/master/docs/latex123.pdf">大家來學 LaTeX</a> (PDF)</li>
 </ul>
-<h3 id="LISP"><a href="#LISP" class="headerlink" title="LISP"></a>LISP</h3><ul>
+<h2 id="LISP"><a href="#LISP" class="headerlink" title="LISP"></a>LISP</h2><ul>
 <li><a href="http://acl.readthedocs.org/en/latest/">ANSI Common Lisp 中文翻译版</a></li>
 <li><a href="http://www.ituring.com.cn/minibook/862">Common Lisp 高级编程技术</a> (《On Lisp》中文版)</li>
 </ul>
-<h3 id="Lua"><a href="#Lua" class="headerlink" title="Lua"></a>Lua</h3><ul>
+<h2 id="Lua"><a href="#Lua" class="headerlink" title="Lua"></a>Lua</h2><ul>
 <li><a href="http://www.w3cschool.cc/manual/lua53doc/contents.html">Lua 5.3 参考手册</a></li>
 </ul>
-<h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><ul>
+<h2 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h2><ul>
 <li><a href="http://wowubuntu.com/markdown/basic.html">Markdown 快速入门</a></li>
 <li><a href="http://www.jianshu.com/p/7bd23251da0a">Markdown 简明教程</a></li>
 <li><a href="http://wowubuntu.com/markdown/">Markdown 语法说明</a></li>
 <li><a href="http://www.jianshu.com/p/q81RER">献给写作者的 Markdown 新手指南</a></li>
 </ul>
-<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><ul>
+<h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><ul>
 <li><a href="http://www.nodebeginner.org/index-zh-cn.html">Node 入门</a></li>
 <li><a href="https://www.gitbook.com/book/0532/nodejs/details">The NodeJS 中文文档</a>（社区翻译）</li>
 <li><a href="http://nqdeng.github.io/7-days-nodejs/">七天学会NodeJS</a> 阿里出品，很好的入门资料</li>
 </ul>
-<h3 id="Perl"><a href="#Perl" class="headerlink" title="Perl"></a>Perl</h3><ul>
+<h2 id="Perl"><a href="#Perl" class="headerlink" title="Perl"></a>Perl</h2><ul>
 <li><a href="https://github.com/fayland/chinese-perl-book">Master Perl Today</a></li>
 <li><a href="https://github.com/horus/modern_perl_book">《Modern Perl》中文版</a></li>
 <li><a href="http://www.cbi.pku.edu.cn/chinese/documents/perl/index.htm">Perl 5 教程</a></li>
 <li><a href="http://www.yiibai.com/perl">Perl 教程</a></li>
 </ul>
-<h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h3><ul>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><ul>
 <li><a href="http://wulijun.github.io/php-the-right-way/">PHP 之道</a></li>
 <li><a href="http://php.net/manual/zh/">PHP5中文手册</a></li>
 <li><a href="http://www.walu.cc/phpbook/preface.md">PHP扩展开发及内核应用</a></li>
 <li><a href="https://wusuopu.gitbooks.io/symfony2_tutorial/content">Symfony2 实例教程</a></li>
 <li><a href="http://www.php-internals.com/book/">深入理解 PHP 内核</a></li>
 </ul>
-<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><ul>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><ul>
 <li><a href="http://djangobook.py3k.cn/2.0/">Django book 2.0</a></li>
 <li><a href="http://docspy3zh.readthedocs.org/en/latest/">Python 3 文档(简体中文) 3.2.2 documentation</a></li>
 <li><a href="http://www.pythondoc.com">Python 中文学习大本营</a></li>
 <li><a href="https://github.com/jiechic/diveintopython3">深入 Python 3</a></li>
 <li><a href="http://old.sebug.net/paper/books/LearnPythonTheHardWay/">笨办法学 Python</a></li>
 </ul>
-<h3 id="R"><a href="#R" class="headerlink" title="R"></a>R</h3><ul>
+<h2 id="R"><a href="#R" class="headerlink" title="R"></a>R</h2><ul>
 <li><a href="http://cran.r-project.org/doc/contrib/Liu-FAQ.pdf">153分钟学会 R</a> (PDF)</li>
 <li><a href="http://www.biosino.org/R/R-doc/files/R4beg_cn_2.0.pdf">《R for beginners》中文版</a> (PDF)</li>
 <li><a href="http://cran.r-project.org/doc/contrib/Ding-R-intro_cn.pdf">R 导论</a> (《An Introduction to R》中文版) (PDF)</li>
 <li><a href="http://yanping.me/shiny-tutorial/">用 R 构建 Shiny 应用程序</a> (《Building ‘Shiny’ Applications with R》中文版)</li>
 <li><a href="http://cran.r-project.org/doc/contrib/Xu-Statistics_and_R.pdf">统计学与 R 读书笔记</a> (PDF)</li>
 </ul>
-<h3 id="reStructuredText"><a href="#reStructuredText" class="headerlink" title="reStructuredText"></a>reStructuredText</h3><ul>
+<h2 id="reStructuredText"><a href="#reStructuredText" class="headerlink" title="reStructuredText"></a>reStructuredText</h2><ul>
 <li><a href="http://www.pythondoc.com/sphinx/rest.html">reStructuredText 入门</a></li>
 <li><a href="http://jwch.sdut.edu.cn/book/rst.html">reStructuredText 简明教程</a></li>
 </ul>
-<h3 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h3><ul>
+<h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h2><ul>
 <li><a href="https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md">Rails 风格指南</a></li>
 <li><a href="http://railstutorial-china.org">Ruby on Rails Tutorial 原书第 2 版</a></li>
 <li><a href="https://ihower.tw/rails4/">Ruby on Rails 实战圣经</a></li>
 <li><a href="https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhCN.md">Ruby 风格指南</a></li>
 <li><a href="http://lrthw.github.io">笨方法学 Ruby</a></li>
 </ul>
-<h3 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h3><ul>
+<h2 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h2><ul>
 <li><a href="https://github.com/KaiserY/rust-book-chinese">Rust 官方教程</a></li>
 <li><a href="https://github.com/photino/rust-notes">Rust 语言学习笔记</a></li>
 <li><a href="https://github.com/rustcc/RustPrimer">RustPrimer</a></li>
 <li><a href="https://github.com/rustcc/rust-by-example/">通过例子学习 Rust</a></li>
 </ul>
-<h3 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h3><ul>
+<h2 id="Scala"><a href="#Scala" class="headerlink" title="Scala"></a>Scala</h2><ul>
 <li><a href="http://twitter.github.io/effectivescala/index-cn.html">Effective Scala</a></li>
 <li><a href="https://www.gitbook.com/book/windor/beginners-guide-to-scala/details">Scala 初学者指南</a> (The Neophyte’s Guide to Scala)</li>
 <li><a href="http://twitter.github.io/scala_school/zh_cn/index.html">Scala 课堂</a> (Twitter的Scala中文教程)</li>
 </ul>
-<h3 id="Scheme"><a href="#Scheme" class="headerlink" title="Scheme"></a>Scheme</h3><ul>
+<h2 id="Scheme"><a href="#Scheme" class="headerlink" title="Scheme"></a>Scheme</h2><ul>
 <li><a href="http://deathking.github.io/yast-cn/">Scheme 入门教程</a> (《Yet Another Scheme Tutorial》中文版)</li>
 </ul>
-<h3 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h3><ul>
+<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><ul>
 <li><a href="http://wiki.ubuntu.org.cn/Shell%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80">Shell 编程基础</a></li>
 <li><a href="https://github.com/qinjx/30min_guides/blob/master/shell.md">Shell 脚本编程30分钟入门</a></li>
 <li><a href="http://billie66.github.io/TLCL/book/zh">The Linux Command Line 中文版</a></li>
 </ul>
-<h3 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h3><ul>
+<h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a>Swift</h2><ul>
 <li><a href="https://www.gitbook.com/book/numbbbbb/-the-swift-programming-language-/details">《The Swift Programming Language》中文版</a></li>
 </ul>
-<h3 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h3><ul>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><ul>
 <li><a href="http://man.chinaunix.net/newsoft/vi/doc/help.html">Vim Manual(中文版)</a></li>
 <li><a href="http://www.study-area.org/tips/vim/index.html">大家來學 VIM</a></li>
 </ul>
-<h3 id="Visual-Prolog"><a href="#Visual-Prolog" class="headerlink" title="Visual Prolog"></a>Visual Prolog</h3><ul>
+<h2 id="Visual-Prolog"><a href="#Visual-Prolog" class="headerlink" title="Visual Prolog"></a>Visual Prolog</h2><ul>
 <li><a href="http://wiki.visual-prolog.com/index.php?title=A_Beginners_Guide_to_Visual_Prolog_in_Chinese">Visual Prolog 7初学指南</a></li>
 <li><a href="http://wiki.visual-prolog.com/index.php?title=Visual_Prolog_for_Tyros_in_Chinese">Visual Prolog 7边练边学</a></li>
 </ul>
@@ -1230,20 +1230,20 @@
     <link href="http://geeksblog.cc/hexo-config.html"/>
     <id>http://geeksblog.cc/hexo-config.html</id>
     <published>2016-11-28T15:07:12.000Z</published>
-    <updated>2017-05-26T03:50:30.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> hexo配置和优化高级篇：</strong> <Excerpt in index | 首页摘要><br>本文章不讲解hexo的基础配置，只针对hexo的高级配置，性能优化，seo配置进行讲解。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>仔细想想，使用hexo搭建博客也有半年多了，但是发现访问量一直几乎没有，特别是经历几次迁移之后，之前从github到coding，<br>现在迁移到了云服务器，研究了一下如何进行seo和网站性能优化，便有了这篇文章。</p>
-<h3 id="实用的功能"><a href="#实用的功能" class="headerlink" title="实用的功能"></a>实用的功能</h3><ol>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>仔细想想，使用hexo搭建博客也有半年多了，但是发现访问量一直几乎没有，特别是经历几次迁移之后，之前从github到coding，<br>现在迁移到了云服务器，研究了一下如何进行seo和网站性能优化，便有了这篇文章。</p>
+<h2 id="实用的功能"><a href="#实用的功能" class="headerlink" title="实用的功能"></a>实用的功能</h2><ol>
 <li>站内搜索（百度的）</li>
 <li>本地搜索（本地插件）</li>
 <li>网站统计</li>
 <li>留言功能</li>
 <li>rss订阅功能</li>
 </ol>
-<h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3><ol>
+<h2 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h2><ol>
 <li>html压缩</li>
 <li>css压缩</li>
 <li>js压缩·</li>
@@ -1252,7 +1252,7 @@
 <li>cdn代理css和图·片</li>
 <li>删除主题无用的js和css</li>
 </ol>
-<h3 id="seo优化"><a href="#seo优化" class="headerlink" title="seo优化"></a>seo优化</h3><ol>
+<h2 id="seo优化"><a href="#seo优化" class="headerlink" title="seo优化"></a>seo优化</h2><ol>
 <li>sitemap</li>
 <li>对于没有价值的外链a标签添加<code>rel=&quot;external nofollow&quot;</code></li>
 <li>使用meta标签</li>
@@ -1283,13 +1283,13 @@
     <link href="http://geeksblog.cc/server-config.html"/>
     <id>http://geeksblog.cc/server-config.html</id>
     <published>2016-11-28T12:36:03.000Z</published>
-    <updated>2016-11-28T13:06:26.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> ubuntu服务器私人定制：</strong> <Excerpt in index | 首页摘要><br>把ubuntu服务器打造成自己的个性服务器，装逼必备！！！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<p>###　说明<br><strong>此教程针对Ubuntu14,其他版本仅作参考</strong></p>
-<p>###　用户密码管理<br><code>sudo passwd root</code></p>
+<p>##　说明<br><strong>此教程针对Ubuntu14,其他版本仅作参考</strong></p>
+<p>##　用户密码管理<br><code>sudo passwd root</code></p>
 <ol>
 <li>添加一个用户组并指定id为1002<br><code>sudo groupadd －g 1002 www</code></li>
 <li><p>添加一个用户到www组并指定id为1003<br><code>sudo useradd wyx -g 1002 -u 1003 -m</code></p>
@@ -1306,18 +1306,18 @@
 <li>查看所有用户和用户组：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cat /etc/passwd</div><div class="line">cat /etc/group</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><ol>
+<h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><ol>
 <li>安装nvm<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</code></li>
 <li>安装node<code>nvm install v4.4.4</code>,安装<code>nvm install v6.9.1</code></li>
 <li>设置默认的node版本<code>nvm alias default v4.4.4</code></li>
 <li>安装npm3  <code>npm install -g npm@3</code></li>
 <li>设置淘宝的cnpm源  <code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></li>
-<li>验证安装<code>node -v,npm -v,cnpm -v</code><h3 id="安装node常用包"><a href="#安装node常用包" class="headerlink" title="安装node常用包"></a>安装node常用包</h3></li>
+<li>验证安装<code>node -v,npm -v,cnpm -v</code><h2 id="安装node常用包"><a href="#安装node常用包" class="headerlink" title="安装node常用包"></a>安装node常用包</h2></li>
 <li>安装pm2<code>cnpm install -g pm2</code></li>
 <li>安装hexo博客<code>cnpm install -g hexo-cli</code></li>
 <li>安装同步插件rsync<code>cnpm install -g rsync</code></li>
 </ol>
-<h3 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h3><ol>
+<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><ol>
 <li>apt安装</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install -y docker.io</div><div class="line">sudo ln -sf /usr/bin/docker.io /usr/<span class="built_in">local</span>/bin/docker</div><div class="line">sudo sed -i <span class="string">'$acomplete -F _docker docker'</span> /etc/bash_completion.d/docker.io</div></pre></td></tr></table></figure>
@@ -1328,9 +1328,9 @@
 <ol>
 <li>验证安装版本<br><code>docker -v</code></li>
 </ol>
-<h3 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h3><p><code>sudo apt-get install nginx</code><br>启动和配置nginx</p>
-<h3 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h3><p><code>sudo apt-get install redis-server</code><br>启动和配置文件:</p>
-<h3 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h3><ol>
+<h2 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h2><p><code>sudo apt-get install nginx</code><br>启动和配置nginx</p>
+<h2 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h2><p><code>sudo apt-get install redis-server</code><br>启动和配置文件:</p>
+<h2 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h2><ol>
 <li>安装3.0</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10</div><div class="line"><span class="built_in">echo</span> <span class="string">"deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.0 main"</span> | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list</div><div class="line">apt-get update  </div><div class="line">apt-get install mongodb-org</div></pre></td></tr></table></figure>
@@ -1349,10 +1349,10 @@
 <li>验证安装<br><code>mongod --version</code></li>
 </ol>
 <p>配置</p>
-<h3 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装jdk</h3><p>安装jdk1.7<code>sudo apt-get install openjdk-7-jdk</code><br>源码安装</p>
+<h2 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装jdk</h2><p>安装jdk1.7<code>sudo apt-get install openjdk-7-jdk</code><br>源码安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /usr/lib/jvm</div><div class="line">sudo tar zxvf jdk-7u21-linux-i586.tar.gz -C /usr/lib/jvm</div><div class="line"><span class="built_in">cd</span> /usr/lib/jvm</div><div class="line">sudo mv jdk1.7.0_21 java</div><div class="line"></div><div class="line">sudo vim ~/.bashrc</div><div class="line"></div><div class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java</div><div class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">$&#123;JAVA_HOME&#125;</span>/jre  </div><div class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$&#123;JAVA_HOME&#125;</span>/lib:<span class="variable">$&#123;JRE_HOME&#125;</span>/lib  </div><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$&#123;JAVA_HOME&#125;</span>/bin:<span class="variable">$PATH</span></div></pre></td></tr></table></figure>
-<h3 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h3><p>实用ubuntu自带的工具下载<br><code>sudo apt-get install mysql-server</code></p>
-<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><p>常见的方法有两种。</p>
+<h2 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h2><p>实用ubuntu自带的工具下载<br><code>sudo apt-get install mysql-server</code></p>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p>常见的方法有两种。</p>
 <ol>
 <li><p>在用户主目录下有一个 .bashrc 文件，可以在此文件中加入 PATH 的设置如下：<br><code>export PATH=”$PATH:/your path1/:/your path2/…..”</code></p>
 </li>
@@ -1362,21 +1362,21 @@
 </code></pre>
 </li>
 </ol>
-<h3 id="开机自启动"><a href="#开机自启动" class="headerlink" title="开机自启动"></a>开机自启动</h3><ol>
+<h2 id="开机自启动"><a href="#开机自启动" class="headerlink" title="开机自启动"></a>开机自启动</h2><ol>
 <li><p>方法一，编辑rc.loacl脚本<br>Ubuntu开机之后会执行/etc/rc.local文件中的脚本，<br>所以我们可以直接在/etc/rc.local中添加启动脚本。<br>当然要添加到语句：exit 0 前面才行。代码如下:<br><code>sudo vi /etc/rc.local</code><br>然后在 exit 0 前面添加好脚本代码。</p>
 </li>
 <li><p>方法二，添加一个Ubuntu的开机启动服务。<br>如果要添加为开机启动执行的脚本文件，<br>可先将脚本复制或者软连接到/etc/init.d/目录下，<br>然后用：update-rc.d xxx defaults NN命令(NN为启动顺序)，<br>将脚本添加到初始化执行的队列中去。<br>注意如果脚本需要用到网络，则NN需设置一个比较大的数字，如99。<br>1) 将你的启动脚本复制到 /etc/init.d目录下<br>以下假设你的脚本文件名为 test。<br>2) 设置脚本文件的权限</p>
 </li>
 </ol>
 <p>代码如下:<br><code>sudo chmod 755 /etc/init.d/test</code><br>3) 执行如下命令将脚本放到启动脚本中去：<br>代码如下:<br><code>cd /etc/init.d</code>  <code>sudo update-rc.d test defaults 95</code><br> 注：其中数字95是脚本启动的顺序号，按照自己的需要相应修改即可。在你有多个启动脚本，而它们之间又有先后启动的依赖关系时你就知道这个数字的具体作用了。该命令的输出信息参考如下：<br>卸载启动脚本的方法：<br>代码如下:<br><code>cd /etc/init.d</code><br><code>sudo update-rc.d -f test remove</code></p>
-<h3 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h3><p>在Ubuntu下，cron是被默认安装并启动的。通过查看/etc/crontab<br>推荐使用crontab -e命令添加自定义的任务（编辑的是/var/spool/cron下对应用户的cron文件，在/var/spool/cron下的crontab文件 不可以直接创建或者直接修改，crontab文件是通过crontab命令得到的）。<br><code>crontab -e</code></p>
+<h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h2><p>在Ubuntu下，cron是被默认安装并启动的。通过查看/etc/crontab<br>推荐使用crontab -e命令添加自定义的任务（编辑的是/var/spool/cron下对应用户的cron文件，在/var/spool/cron下的crontab文件 不可以直接创建或者直接修改，crontab文件是通过crontab命令得到的）。<br><code>crontab -e</code></p>
 <ol>
 <li><p>直接执行命令行<br>每2分钟打印一个字符串“Hello World”，保存至文件/home/laigw/cron/HelloWorld.txt中，cron 格式如下：<br><code>*/2 * * * * echo “Hello World.” &gt;&gt; /home/HelloWorld.txt</code></p>
 </li>
 <li><p>shell 文件<br>每3分钟调用一次 /home/laigw/cron/test.sh 文件，cron 格式如下：<br><code>*/3 * * * * /home/laigw/cron/test.sh</code></p>
-<h3 id="ftp和rsync配置"><a href="#ftp和rsync配置" class="headerlink" title="ftp和rsync配置"></a>ftp和rsync配置</h3></li>
+<h2 id="ftp和rsync配置"><a href="#ftp和rsync配置" class="headerlink" title="ftp和rsync配置"></a>ftp和rsync配置</h2></li>
 </ol>
-<h3 id="持续集成环境"><a href="#持续集成环境" class="headerlink" title="持续集成环境"></a>持续集成环境</h3><ol>
+<h2 id="持续集成环境"><a href="#持续集成环境" class="headerlink" title="持续集成环境"></a>持续集成环境</h2><ol>
 <li>jenkens配置</li>
 <li>gitlab配置</li>
 <li>git服务器</li>
@@ -1404,13 +1404,13 @@
     <link href="http://geeksblog.cc/mac-dev.html"/>
     <id>http://geeksblog.cc/mac-dev.html</id>
     <published>2016-11-27T07:52:38.000Z</published>
-    <updated>2016-11-27T08:32:05.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> mac开发环境配置：</strong> <Excerpt in index | 首页摘要><br>工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h3 id="软件下载说明"><a href="#软件下载说明" class="headerlink" title="软件下载说明"></a>软件下载说明</h3><p>下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的<strong>百度云账号</strong>！！！</p>
-<h3 id="软件分类说明"><a href="#软件分类说明" class="headerlink" title="软件分类说明"></a>软件分类说明</h3><ol>
+<h2 id="软件下载说明"><a href="#软件下载说明" class="headerlink" title="软件下载说明"></a>软件下载说明</h2><p>下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的<strong>百度云账号</strong>！！！</p>
+<h2 id="软件分类说明"><a href="#软件分类说明" class="headerlink" title="软件分类说明"></a>软件分类说明</h2><ol>
 <li>通用（开发者必备的软件）</li>
 <li>java类（java开发者必不可少）</li>
 <li>前端类（偏前端和nodejs）</li>
@@ -1418,7 +1418,7 @@
 <li>数据库类</li>
 <li>其他（php，ruby等等）</li>
 </ol>
-<h3 id="通用软件"><a href="#通用软件" class="headerlink" title="通用软件"></a>通用软件</h3><ol>
+<h2 id="通用软件"><a href="#通用软件" class="headerlink" title="通用软件"></a>通用软件</h2><ol>
 <li>Alfred</li>
 <li>dash</li>
 <li>homebrew</li>
@@ -1437,7 +1437,7 @@
 <li>CheatSheet</li>
 <li>snippetslab</li>
 </ol>
-<h3 id="java软件"><a href="#java软件" class="headerlink" title="java软件"></a>java软件</h3><ol>
+<h2 id="java软件"><a href="#java软件" class="headerlink" title="java软件"></a>java软件</h2><ol>
 <li>jdk</li>
 <li>idea</li>
 <li>eclipse</li>
@@ -1446,17 +1446,17 @@
 <li>tomcat</li>
 <li>apache</li>
 </ol>
-<h3 id="前端必备"><a href="#前端必备" class="headerlink" title="前端必备"></a>前端必备</h3><ol>
+<h2 id="前端必备"><a href="#前端必备" class="headerlink" title="前端必备"></a>前端必备</h2><ol>
 <li>nvm(nodejs,npm,cnpm)</li>
 <li>webpack</li>
 <li>yo</li>
 <li>webstorm</li>
 </ol>
-<h3 id="python必备"><a href="#python必备" class="headerlink" title="python必备"></a>python必备</h3><ol>
+<h2 id="python必备"><a href="#python必备" class="headerlink" title="python必备"></a>python必备</h2><ol>
 <li>pycharm</li>
 <li>sublime text（插件）</li>
 </ol>
-<h3 id="数据库类"><a href="#数据库类" class="headerlink" title="数据库类"></a>数据库类</h3><ol>
+<h2 id="数据库类"><a href="#数据库类" class="headerlink" title="数据库类"></a>数据库类</h2><ol>
 <li>mysql</li>
 <li>mongodb</li>
 <li>sqllite</li>
@@ -1464,7 +1464,7 @@
 <li>robomongo</li>
 <li>redis</li>
 </ol>
-<h3 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h3><ol>
+<h2 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h2><ol>
 <li>office</li>
 <li>keynote,pages,number</li>
 <li>photoshop</li>
@@ -1540,29 +1540,29 @@
     <link href="http://geeksblog.cc/node-notes.html"/>
     <id>http://geeksblog.cc/node-notes.html</id>
     <published>2016-11-11T11:52:23.000Z</published>
-    <updated>2016-11-27T07:19:19.000Z</updated>
+    <updated>2017-05-26T06:12:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 深入浅出Nodejs笔记：</strong> <Excerpt in index | 首页摘要><br>    node学习重点，深入浅出nodejs学习笔记<br><a id="more"></a></p>
 <p><The rest of contents | 余下全文></p>
-<h3 id="node简介："><a href="#node简介：" class="headerlink" title="node简介："></a>node简介：</h3><pre><code>1. 异步IO，适合io密集型的
+<h2 id="node简介："><a href="#node简介：" class="headerlink" title="node简介："></a>node简介：</h2><pre><code>1. 异步IO，适合io密集型的
 2. 单线程，通过childnode实现多线程
 3. 跨平台，通过electron编写跨平台客户端
 4. 上手简单,功能强大
-</code></pre><h3 id="node模块"><a href="#node模块" class="headerlink" title="node模块"></a>node模块</h3><pre><code>1. node模块分为两类，一是node的内建模块（核心模块），二是用户编写的文件模块
+</code></pre><h2 id="node模块"><a href="#node模块" class="headerlink" title="node模块"></a>node模块</h2><pre><code>1. node模块分为两类，一是node的内建模块（核心模块），二是用户编写的文件模块
 2. 核心模块在node编译时加载到内存，文件模块在运行时动态加载
 3. node的每一个文件模块都是一个对象
 4. 文件模块需要经过路径分析，文件定位，编译执行3个过程
 5. node对引入过的模块都进行缓存，require会优先使用缓存
-</code></pre><h3 id="异步IO"><a href="#异步IO" class="headerlink" title="异步IO"></a>异步IO</h3><pre><code>1. node中都是异步的，实现同步的话要通过回调函数或者同步框架
+</code></pre><h2 id="异步IO"><a href="#异步IO" class="headerlink" title="异步IO"></a>异步IO</h2><pre><code>1. node中都是异步的，实现同步的话要通过回调函数或者同步框架
 2. 异步的方案：事件发布/事件监听，Promise/Deferred模式,流程控制库
 3. 事件监听模式：Node自身的events模块提供了简单的实现，具有addListener/on(). once(). remove        Listener(). removeAllListeners()和emit()方法。
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">emitter.on(<span class="string">"event1"</span>, <span class="function"><span class="keyword">function</span> (<span class="params">message</span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(message);</div><div class="line">&#125;);</div><div class="line"><span class="comment">// 发布</span></div><div class="line">emitter.emit(<span class="string">'event1'</span>, <span class="string">"I am message!"</span>);</div></pre></td></tr></table></figure>
-</code></pre><h3 id="内存控制"><a href="#内存控制" class="headerlink" title="内存控制"></a>内存控制</h3><pre><code>1. 在node中内存限制为64位1.4G（32位0.7G）
+</code></pre><h2 id="内存控制"><a href="#内存控制" class="headerlink" title="内存控制"></a>内存控制</h2><pre><code>1. 在node中内存限制为64位1.4G（32位0.7G）
 2. 限制内存的原因：V8做垃圾回收如果以1.5G为例，做一次小的垃圾回收需要50ms,做一次非增量式内存回收耗时1s以上
 3. node在启动时可以更改内存大小，--max-old-space-size=或者--max-new-space-size=
 4. v8的内存回收机制：内存分代为新生代（生命周期短）和老生代（生命周期长），
 5. 堆外内存不受内存限制，如buffer对象的使用
-</code></pre><h3 id="理解buffer"><a href="#理解buffer" class="headerlink" title="理解buffer"></a>理解buffer</h3><h3 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h3><pre><code>1. tcp服务
+</code></pre><h2 id="理解buffer"><a href="#理解buffer" class="headerlink" title="理解buffer"></a>理解buffer</h2><h2 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h2><pre><code>1. tcp服务
     服务端：
 </code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> net = <span class="built_in">require</span>(<span class="string">'net'</span>);</div><div class="line"><span class="keyword">var</span> server = net.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">socket</span>) </span>&#123;</div><div class="line">socket.on(<span class="string">'data'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</div><div class="line">	socket.write(<span class="string">"你好"</span>);</div><div class="line">&#125;);</div><div class="line">socket.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'断开连接'</span>);</div><div class="line">&#125;);</div><div class="line">socket.write(<span class="string">"欢迎光临：\n"</span>);</div><div class="line">&#125;);</div><div class="line">server.listen(<span class="number">8124</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'server bound'</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <pre><code>客户端：
@@ -1592,7 +1592,7 @@
 </code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> https = <span class="built_in">require</span>(<span class="string">'https'</span>);</div><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</div><div class="line"><span class="keyword">var</span> options = &#123;</div><div class="line">	key: fs.readFileSync(<span class="string">'./keys/server.key'</span>),</div><div class="line">	cert: fs.readFileSync(<span class="string">'./keys/server.crt'</span>)</div><div class="line">&#125;;</div><div class="line">https.createServer(options, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</div><div class="line">res.writeHead(<span class="number">200</span>);</div><div class="line">	res.end(<span class="string">"hello world\n"</span>);</div><div class="line">&#125;).listen(<span class="number">8000</span>);</div></pre></td></tr></table></figure>
 <pre><code>客户端：
 </code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> https = <span class="built_in">require</span>(<span class="string">'https'</span>);</div><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</div><div class="line"><span class="keyword">var</span> options = &#123;</div><div class="line">	hostname: <span class="string">'localhost'</span>,</div><div class="line">	port: <span class="number">8000</span>,</div><div class="line">	path: <span class="string">'/'</span>,</div><div class="line">	method: <span class="string">'GET'</span>,</div><div class="line">	key: fs.readFileSync(<span class="string">'./keys/client.key'</span>),</div><div class="line">	cert: fs.readFileSync(<span class="string">'./keys/client.crt'</span>),</div><div class="line">	ca: [fs.readFileSync(<span class="string">'./keys/ca.crt'</span>)]</div><div class="line">&#125;;</div><div class="line">options.agent = <span class="keyword">new</span> https.Agent(options);</div><div class="line"><span class="keyword">var</span> req = https.request(options, <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</div><div class="line">	res.setEncoding(<span class="string">'utf-8'</span>);</div><div class="line">	res.on(<span class="string">'data'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123;</div><div class="line">		<span class="built_in">console</span>.log(d);</div><div class="line">	&#125;);</div><div class="line">&#125;);</div><div class="line">req.end();</div><div class="line">req.on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(e);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<h3 id="玩转进程"><a href="#玩转进程" class="headerlink" title="玩转进程"></a>玩转进程</h3><pre><code>node提供了child_process.fork()实现进程的复制
+<h2 id="玩转进程"><a href="#玩转进程" class="headerlink" title="玩转进程"></a>玩转进程</h2><pre><code>node提供了child_process.fork()实现进程的复制
 </code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line">http.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</div><div class="line">	res.writeHead(<span class="number">200</span>, &#123;<span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span>&#125;);</div><div class="line">	res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">&#125;).listen(<span class="built_in">Math</span>.round((<span class="number">1</span> + <span class="built_in">Math</span>.random()) * <span class="number">1000</span>), <span class="string">'127.0.0.1'</span>);</div></pre></td></tr></table></figure>
 <pre><code>运行node worker.js，监听?1000到2000之间的端口。
 

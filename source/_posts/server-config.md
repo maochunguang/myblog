@@ -8,10 +8,10 @@ categories: 开发工具
 <!-- more -->
 <The rest of contents | 余下全文>
 
-###　说明
+##　说明
 **此教程针对Ubuntu14,其他版本仅作参考**
 
-###　用户密码管理
+##　用户密码管理
 `sudo passwd root`
 1. 添加一个用户组并指定id为1002
 `sudo groupadd －g 1002 www`
@@ -35,19 +35,19 @@ sudo usermod -a -G sudo wyx
 cat /etc/passwd
 cat /etc/group
 ```
-### 安装nodejs
+## 安装nodejs
 1. 安装nvm`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash`
 2. 安装node`nvm install v4.4.4`,安装`nvm install v6.9.1`
 3. 设置默认的node版本`nvm alias default v4.4.4`
 4. 安装npm3  `npm install -g npm@3`
 5. 设置淘宝的cnpm源  `npm install -g cnpm --registry=https://registry.npm.taobao.org`
 6. 验证安装`node -v,npm -v,cnpm -v`
-### 安装node常用包
+## 安装node常用包
 1. 安装pm2`cnpm install -g pm2`
 2. 安装hexo博客`cnpm install -g hexo-cli`
 3. 安装同步插件rsync`cnpm install -g rsync`
 
-### 安装docker
+## 安装docker
 1. apt安装
 
 ```bash
@@ -70,13 +70,13 @@ sudo apt-get install lxc-docker
 3. 验证安装版本
 ` docker -v`
 
-### 安装nginx
+## 安装nginx
 `sudo apt-get install nginx`
 启动和配置nginx
-### 安装redis
+## 安装redis
 `sudo apt-get install redis-server`
 启动和配置文件:
-### 安装mongodb
+## 安装mongodb
 1. 安装3.0
 
 ```bash
@@ -110,7 +110,7 @@ sudo service mongod stop
 
 配置
 
-### 安装jdk
+## 安装jdk
 安装jdk1.7`sudo apt-get install openjdk-7-jdk`
 源码安装
 
@@ -127,11 +127,11 @@ export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
 export PATH=${JAVA_HOME}/bin:$PATH  
 ```
-### 安装mysql
+## 安装mysql
 实用ubuntu自带的工具下载
 `sudo apt-get install mysql-server`
 
-### 环境变量
+## 环境变量
 常见的方法有两种。
 
 1. 在用户主目录下有一个 .bashrc 文件，可以在此文件中加入 PATH 的设置如下： 
@@ -143,7 +143,7 @@ PATH="$PATH:/home/zhengb66/bin"
 export PATH
 ``` 
 
-### 开机自启动
+## 开机自启动
 1. 方法一，编辑rc.loacl脚本
 Ubuntu开机之后会执行/etc/rc.local文件中的脚本，
 所以我们可以直接在/etc/rc.local中添加启动脚本。
@@ -172,7 +172,7 @@ Ubuntu开机之后会执行/etc/rc.local文件中的脚本，
 `cd /etc/init.d`
 `sudo update-rc.d -f test remove`
 
-### 定时任务
+## 定时任务
 在Ubuntu下，cron是被默认安装并启动的。通过查看/etc/crontab
 推荐使用crontab -e命令添加自定义的任务（编辑的是/var/spool/cron下对应用户的cron文件，在/var/spool/cron下的crontab文件 不可以直接创建或者直接修改，crontab文件是通过crontab命令得到的）。
 `crontab -e`
@@ -184,9 +184,9 @@ Ubuntu开机之后会执行/etc/rc.local文件中的脚本，
 2. shell 文件
 每3分钟调用一次 /home/laigw/cron/test.sh 文件，cron 格式如下：
 `*/3 * * * * /home/laigw/cron/test.sh`
-### ftp和rsync配置
+## ftp和rsync配置
 
-### 持续集成环境
+## 持续集成环境
 1. jenkens配置
 2. gitlab配置
 3. git服务器

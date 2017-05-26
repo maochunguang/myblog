@@ -8,11 +8,11 @@ categories: others
 <!-- more -->
 <The rest of contents | 余下全文>
 
-### 为什么写这边博客？
+## 为什么写这边博客？
 每个程序员都会面临一个问题，如何搜索自己需要的资料，我自己也有很多的时间花费在找寻资料上，
 希望能把最实用的书籍和资源收集起来给大家一个
 
-### 免费的编程书籍网站
+## 免费的编程书籍网站
 1. 原版英文书籍
     - [英文原版](http://www.salttiger.com/)
 2. 中文开源书籍
@@ -23,14 +23,14 @@ categories: others
     - [新浪微盘](http://vdisk.weibo.com/)
 
 
-### 代码资源
+## 代码资源
 
 1. 最好的代码仓库 [github](https://github.com/)
 2. [csdn代码仓库](https://code.csdn.net/)
 3. [gist](https://gist.github.com/)
 4. [代码片段之家](http://www.phpxs.com/code/)
 
-### 博客资源
+## 博客资源
 1. csdn
 2. 博客园
 3. 伯乐在线

@@ -7,18 +7,18 @@ categories: 编程语言
     node学习重点，深入浅出nodejs学习笔记
 <!-- more -->
 <The rest of contents | 余下全文>
-### node简介：
+## node简介：
 	1. 异步IO，适合io密集型的
 	2. 单线程，通过childnode实现多线程
 	3. 跨平台，通过electron编写跨平台客户端
 	4. 上手简单,功能强大
-### node模块
+## node模块
 	1. node模块分为两类，一是node的内建模块（核心模块），二是用户编写的文件模块
 	2. 核心模块在node编译时加载到内存，文件模块在运行时动态加载
 	3. node的每一个文件模块都是一个对象
 	4. 文件模块需要经过路径分析，文件定位，编译执行3个过程
 	5. node对引入过的模块都进行缓存，require会优先使用缓存
-### 异步IO
+## 异步IO
 	1. node中都是异步的，实现同步的话要通过回调函数或者同步框架
 	2. 异步的方案：事件发布/事件监听，Promise/Deferred模式,流程控制库
 	3. 事件监听模式：Node自身的events模块提供了简单的实现，具有addListener/on(). once(). remove		Listener(). removeAllListeners()和emit()方法。
@@ -29,16 +29,16 @@ categories: 编程语言
 	// 发布
 	emitter.emit('event1', "I am message!");
 	```
-### 内存控制
+## 内存控制
 	1. 在node中内存限制为64位1.4G（32位0.7G）
 	2. 限制内存的原因：V8做垃圾回收如果以1.5G为例，做一次小的垃圾回收需要50ms,做一次非增量式内存回收耗时1s以上
 	3. node在启动时可以更改内存大小，--max-old-space-size=或者--max-new-space-size=
 	4. v8的内存回收机制：内存分代为新生代（生命周期短）和老生代（生命周期长），
 	5. 堆外内存不受内存限制，如buffer对象的使用
-### 理解buffer
+## 理解buffer
 
 
-### 网络编程
+## 网络编程
 	1. tcp服务
 		服务端：
 ```js
@@ -293,7 +293,7 @@ categories: 编程语言
 				console.log(e);
 			});
 ```
-### 玩转进程
+## 玩转进程
 	node提供了child_process.fork()实现进程的复制
 ```js
 	var http = require('http');

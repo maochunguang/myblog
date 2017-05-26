@@ -7,11 +7,11 @@ categories: 数据库
     在mac下设置mysql5.6字符集时踩过的坑，百分百保证有效
 <!-- more -->
 <The rest of contents | 余下全文>
-### 为什么要设置字符集
+## 为什么要设置字符集
 1. 设置字符集主要是解决乱码问题，由于中文和英文编码不同导致，中文出现乱码，所以一般都设置为utf8格式
 2. 不同的字符集和编码占用的字节不同，选择适合的编码会提高数据库性能
 
-### mac下设置
+## mac下设置
 - 在/etc/my.cnf文件进行设置，如果没有此文件可以从/usr/local/mysql/support-files/拷贝，命令如下
 ```
 cd /usr/local/mysql/support-files
@@ -35,7 +35,7 @@ character-set-server = utf8
 default-character-set=utf8
 ```
 
-### 查看设置是否成功
+## 查看设置是否成功
 在命令行输入mysql，如果提示没有命令的话，在bash或者zsh的文件里修改，我用的是zsh，设置~/.zshrc,
 ```
 export MYSQL="/usr/local/mysql/bin/"

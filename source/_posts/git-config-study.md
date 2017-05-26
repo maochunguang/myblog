@@ -8,12 +8,12 @@ categories: 学习笔记
 <!-- more -->
 <The rest of contents | 余下全文\>
 
-### 安装git
+## 安装git
 1. 下载安装包 ￼下载地址￼
 2. 安装git
 3. 进入命令行,输入git看看是否成功
 
-### 配置git
+## 配置git
 1. 配置全局用户名和密码
 	\`git config --global user.name "John Doe"
 	git config --global user.email johndoe@example.com
@@ -27,7 +27,7 @@ categories: 学习笔记
 	\`\`\`
 	把公钥配置到github的个人设置
 
-### 常用的命令
+## 常用的命令
 1. repository操作
 	- 检出（clone）仓库代码：`git clone repository-url` / `git clone repository-url local-directoryname`
 		+ 例如，clone jquery 仓库到本地： `git clone git://github.com/jquery/jquery.git`

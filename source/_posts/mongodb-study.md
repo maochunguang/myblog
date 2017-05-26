@@ -8,7 +8,7 @@ categories: 数据库
  <!-- more -->
 <The rest of contents | 余下全文>
 
-### mongodb学习
+## mongodb学习
 ## 1.mongodb特性
     1）mongo是一个面向文档的数据库，它集合了nosql和sql数据库两方面的特性。
     2）所有实体都是在首次使用时创建。

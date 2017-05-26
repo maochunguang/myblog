@@ -8,7 +8,7 @@ categories: 数据库
 <!-- more -->
 <The rest of contents | 余下全文>
 
-### keys
+## keys
 redis本质上是一个key-value数据库
 1. 设置：set key value
 2. 获取：get key
@@ -22,7 +22,7 @@ redis本质上是一个key-value数据库
 9. 设置有效时间：expire test:fan:age 30
 10. 查询有效时间：ttl test:fan:age
 
-### String类型
+## String类型
 1. 设置：
 	set key value
 	setnx ky value(nx是not exist)
@@ -42,7 +42,7 @@ redis本质上是一个key-value数据库
 5. 追加：
 	append key value
 
-### list类型
+## list类型
 redis的list其实就是一个每个元素都是string 的双向链表，所以push和pop的时间复杂度都是O（1）
 1. 添加
 	lpush key string 		在头部添加
@@ -64,7 +64,7 @@ redis的list其实就是一个每个元素都是string 的双向链表，所以p
 7. 转移
 	rpoplpush key1 key2	从key1尾部移到key2头部
 
-### set集合
+## set集合
 redis的set就是String的无序集合，通过hashtable实现
 1. 添加
 	sadd key member
@@ -90,7 +90,7 @@ redis的set就是String的无序集合，通过hashtable实现
 	sdiff key1 key2 keyN
 	sdiffstore dstkey key1 keyN		将差集存在dstkey
 
-### 有序set类型
+## 有序set类型
 和set一样，不同的是每个元素关联一个double类型的score，根据score排序，sorted set的实现由skip list和hashtable
 1. 添加
 	zadd key score member
@@ -111,7 +111,7 @@ redis的set就是String的无序集合，通过hashtable实现
 6. 修改
 	zincrby key incr member	增加member的score值并排序
 
-### hash类型
+## hash类型
 redis的hash是一个string类型的field和value的映射表，hash特别适合存储对象，
 1. 设置：
 	hset key field value

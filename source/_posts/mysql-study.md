@@ -8,12 +8,12 @@ categories: 数据库
 <!-- more -->
 <The rest of contents | 余下全文\>
  
-### mysql的特点
+## mysql的特点
 1. 关系型数据库，免费使用，
 2. 插入式存储引擎，
 3. 性能高，
 
-### 基础的增删改查
+## 基础的增删改查
 1. ddl语句，数据定义语句
 	```
 	create database test1;
@@ -47,7 +47,7 @@ categories: 数据库
 	```
 3. dcl语句，数据控制语句
 
-### sql优化
+## sql优化
 1. 尽量使用 prepareStatement(java)，利用预处理功能。
 2. 在进行多条记录的增加、修改、删除时，建议使用批处理功能，批处理的次数以整
 个 SQL 语句不超过相应数据库的 SQL 语句大小的限制为准。
@@ -77,7 +77,7 @@ from a join b on a.col3=b.col4 where b.col5 = ‘a’。
 18. 禁止随意使用临时表，在临时数据不超过 200 行的情况下禁止使用临时表。
 29. 禁止随意使用 distinct，避免造成不必要的排序。
 
-### 索引优化
+## 索引优化
 1. 创建索引，删除索引
 ```
 create index cityname on city(city(10));
@@ -88,6 +88,6 @@ drop index cityname on city;
 4. 使用短索引，对于较长的字段，使用其前缀做索引
 5. 不要过度使用索引，索引引起额外的性能开销和维护
 
-### 高级优化措施
+## 高级优化措施
 
-### 集群搭建
+## 集群搭建

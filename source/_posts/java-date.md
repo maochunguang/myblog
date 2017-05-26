@@ -8,7 +8,7 @@ categories: 编程语言
 <!-- more -->
 <The rest of contents | 余下全文>
 
-### 日期表示类型
+## 日期表示类型
 1. 获取long类型的日期格式
 ```java
 long time = System.currentTimeMillis();
@@ -30,7 +30,7 @@ long mills = date.getTime();
 ```
 - 说明:System.currentTimeMillis()并不能精确到1ms的级别,它取决于运行的系统,你再windows,mac,linux精确的范围都有差异,对于有高精度时间的要求,不能使用这个
 
-### 日期计算
+## 日期计算
 1. 最方便的方式是将时间转为毫秒值进行计算
 ```java
 Date from =new Date();
@@ -39,14 +39,14 @@ Date to =new Date();
 System.out.println(to.getTime()-from.getTime());
 ```
 
-### 高精度时间
+## 高精度时间
 ```java
 long time1 =System.nanoTime();
 System.out.printf(time1+"");
 ```
 - 说明:System.nanoTime()提高了ns级别的精度,1ms=1000000ns,
 
-### javascript日期
+## javascript日期
 1. 获取时间的毫秒值，获取月份，时间
 ```js
 var myDate = new Date();

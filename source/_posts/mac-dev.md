@@ -8,10 +8,10 @@ categories: 开发工具
 <!-- more -->
 <The rest of contents | 余下全文>
 
-### 软件下载说明
+## 软件下载说明
 下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的**百度云账号**！！！
 
-### 软件分类说明
+## 软件分类说明
 1. 通用（开发者必备的软件）
 2. java类（java开发者必不可少）
 3. 前端类（偏前端和nodejs）
@@ -19,7 +19,7 @@ categories: 开发工具
 5. 数据库类
 6. 其他（php，ruby等等）
 
-### 通用软件
+## 通用软件
 1. Alfred
 2. dash
 3. homebrew
@@ -38,7 +38,7 @@ categories: 开发工具
 16. CheatSheet
 17. snippetslab
 
-### java软件
+## java软件
 1. jdk
 2. idea
 3. eclipse
@@ -47,18 +47,18 @@ categories: 开发工具
 6. tomcat
 7. apache
 
-### 前端必备
+## 前端必备
 1. nvm(nodejs,npm,cnpm)
 2. webpack
 3. yo
 4. webstorm
 
 
-### python必备
+## python必备
 1. pycharm
 2. sublime text（插件）
 
-### 数据库类
+## 数据库类
 1. mysql
 2. mongodb
 3. sqllite
@@ -66,7 +66,7 @@ categories: 开发工具
 5. robomongo
 6. redis
 
-### 其他软件
+## 其他软件
 1. office
 2. keynote,pages,number
 3. photoshop
