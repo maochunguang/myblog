@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://geeksblog.cc/kobo-config.html</loc>
+    <loc>http://geeksblog.cc/mongodb-study.html</loc>
     
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ajax-study.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    <lastmod>2017-05-28T00:30:41.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/async-dev.html</loc>
+    <loc>http://geeksblog.cc/hexo-theme.html</loc>
     
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    <lastmod>2017-05-28T00:09:46.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://geeksblog.cc/about/index.html</loc>
+    
+    <lastmod>2017-05-27T23:58:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/mac-dev.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -72,13 +72,6 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ghost-blog.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://geeksblog.cc/eggjs-action.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
@@ -86,7 +79,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/fullprj-desc.html</loc>
+    <loc>http://geeksblog.cc/ghost-blog.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -94,6 +87,13 @@
   
   <url>
     <loc>http://geeksblog.cc/free-books.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/fullprj-desc.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -128,14 +128,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/hexo-theme.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ubuntu-dev-config.html</loc>
+    <loc>http://geeksblog.cc/async-dev.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -149,14 +142,21 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/mac-dev.html</loc>
+    <loc>http://geeksblog.cc/ubuntu-dev-config.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
+    <loc>http://geeksblog.cc/kobo-config.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ajax-study.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -177,14 +177,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/mongodb-study.html</loc>
+    <loc>http://geeksblog.cc/mybooks.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/mybooks.html</loc>
+    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -212,14 +212,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/node-notes.html</loc>
+    <loc>http://geeksblog.cc/node-study.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/node-study.html</loc>
+    <loc>http://geeksblog.cc/node-notes.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -254,14 +254,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/spider-koa2.html</loc>
+    <loc>http://geeksblog.cc/study-goals.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/study-goals.html</loc>
+    <loc>http://geeksblog.cc/spider-koa2.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -282,14 +282,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
+    <loc>http://geeksblog.cc//404.html</loc>
     
     <lastmod>2017-05-17T23:42:12.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc//404.html</loc>
+    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
     
     <lastmod>2017-05-17T23:42:12.000Z</lastmod>
     
