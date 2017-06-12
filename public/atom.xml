@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-06-05T03:48:56.000Z</updated>
+  <updated>2017-06-12T03:34:02.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Illegal Mix of Collations</title>
+    <link href="http://geeksblog.cc/mysql-collation.html"/>
+    <id>http://geeksblog.cc/mysql-collation.html</id>
+    <published>2017-06-12T03:00:14.000Z</published>
+    <updated>2017-06-12T03:34:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> mysql排序字符集问题：</strong> <Excerpt in index | 首页摘要><br>mysql表的每个字段都可以设置单独的排序字符集和文本字符集，如果你创建表的时候不注意，很可能会遇到Illegal mix of collations这个问题。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>用mysql进行两个表的联合查询的时候，出现下面的错误。<br><figure class="highlight fortran"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Illegal mix of collations (utf8_unicode_ci,<span class="keyword">IMPLICIT</span>) and (utf8_general_ci,<span class="keyword">IMPLICIT</span>) for operation <span class="string">'='</span></div></pre></td></tr></table></figure></p>
+<h2 id="排查过程"><a href="#排查过程" class="headerlink" title="排查过程"></a>排查过程</h2><ol>
+<li>通过google搜索找到原因，这个错误是mysql的排序字符集不一致导致的。</li>
+<li>把联合查询的表使用navicat查看字段的设置，发现了有一个关联字段排序字符集的问题，如图：</li>
+<li>这两个表中openid的排序规则不一致，导致出现问题。<br><img src="http://o7kalf5h3.bkt.clouddn.com/openid01.png" alt="user表中opeid"><br><img src="http://o7kalf5h3.bkt.clouddn.com/openid02.png" alt="user_tag表中opeid"></li>
+</ol>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>将user表中的字符集和排序规则设置为默认，保持一致即可。</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; mysql排序字符集问题：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;mysql表的每个字段都可以设置单独的排序字符集和文本字符集，如果你创建表的时候不注意，很可能会遇到Illegal mix of collations这个问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="mysql" scheme="http://geeksblog.cc/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>如何选购合适的电脑</title>
@@ -603,24 +638,31 @@
     <link href="http://geeksblog.cc/kobo-config.html"/>
     <id>http://geeksblog.cc/kobo-config.html</id>
     <published>2017-04-17T02:22:57.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
+    <updated>2017-06-12T02:59:26.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> Kobo Aura One配置入门：</strong> <Excerpt in index | 首页摘要><br>kobo电子书折腾记，从激活到设置，打补丁实现自定义配置，还是自己折腾起来有意思啊。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><p>买电子书是为了阅读和学习，不是天天折腾电子书，一天刷一次机，如果只是看书，做笔记，学个英文什么的<br>原生系统是最好的。</p>
-<h2 id="kobo原生系统的功能"><a href="#kobo原生系统的功能" class="headerlink" title="kobo原生系统的功能"></a>kobo原生系统的功能</h2><ol>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><p>买电子书是为了阅读和学习，不是天天折腾电子书，一天刷一次机，如果只是看书，做笔记，学个英文什么的<br>原生系统是最好的。如果看pdf为主，不建议买这电子书，看pdf首选电脑，平板，sony dsp系列，用普通的电子书阅读器，体验太差。</p>
+<h2 id="kobo原生系统的功能（推荐原生系统，打上补丁）"><a href="#kobo原生系统的功能（推荐原生系统，打上补丁）" class="headerlink" title="kobo原生系统的功能（推荐原生系统，打上补丁）"></a>kobo原生系统的功能（推荐原生系统，打上补丁）</h2><ol>
 <li>格式支持epub，mobi，cbz漫画，txt，kobo epub格式</li>
 <li>高亮，笔记，导出笔记（需要配置一下）</li>
-<li>字典（英文，法文等多国字典，可以自己修改）</li>
-<li>阅读pocket文章（大赞，堪比推送文章啊）</li>
+<li>字典（英文，中文，法文等多国字典，可以自己修改）</li>
+<li>阅读pocket文章（可以把网页保存到pocket，实用pocket同步到阅读器）</li>
+<li>自动亮度（最大的优点）</li>
+</ol>
+<h2 id="koreader的功能"><a href="#koreader的功能" class="headerlink" title="koreader的功能"></a>koreader的功能</h2><ol>
+<li>格式支持epub，mobi，cbz漫画，txt，kobo epub格式</li>
+<li>扫描版pdf支持重拍，切边（最大特色）</li>
+<li>笔记导出到印象笔记</li>
+<li>字典（强大的字典扩展）</li>
 </ol>
 <h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><p><strong>说明：wifi激活需要翻墙，可以实用笔记连接vpn，然后共享wifi给kobo</strong></p>
 <ol>
-<li>wifi激活</li>
-<li>kobo setup desktop激活</li>
+<li>wifi激活,</li>
+<li>kobo setup desktop激活，去kobo官网下载软件，然后电脑需要翻墙，电子书连接上电脑，用软件登录激活。这个软件很不好用，bug也多，建议使用wifi激活。</li>
 </ol>
-<h2 id="更新固件"><a href="#更新固件" class="headerlink" title="更新固件"></a>更新固件</h2><p>kobo的更新固件，更新补丁都是一个模式，把固件或者补丁放到.kobo文件夹，弹出设备就会自动重启</p>
+<h2 id="更新固件，打补丁"><a href="#更新固件，打补丁" class="headerlink" title="更新固件，打补丁"></a>更新固件，打补丁</h2><p>kobo的更新固件，更新补丁都是一个模式，把固件或者补丁放到.kobo文件夹，弹出设备就会自动重启</p>
 <h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>电脑连接kobo，在根目录建立一个fonts文件夹，把需要的字体放进去即可</p>
 <h2 id="词典"><a href="#词典" class="headerlink" title="词典"></a>词典</h2><p>下载网上改好的字典，直接放到.kobo文件夹下的dict目录下，然后重启就可以了</p>
 <h2 id="自定义配置"><a href="#自定义配置" class="headerlink" title="自定义配置"></a>自定义配置</h2><ol>
@@ -1677,53 +1719,6 @@
     
     
       <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Npm使用详解</title>
-    <link href="http://geeksblog.cc/npm-detail.html"/>
-    <id>http://geeksblog.cc/npm-detail.html</id>
-    <published>2016-11-17T12:05:56.000Z</published>
-    <updated>2016-11-27T07:18:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> Npm使用详解：</strong> <Excerpt in index | 首页摘要><br>    npm所有的常用知识都在这里，没错，所有的！！<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="node版本控制"><a href="#node版本控制" class="headerlink" title="node版本控制"></a>node版本控制</h2><ol>
-<li><p>使用nvm进行版本控制</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- unix --&gt;</span></div><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</div><div class="line"><span class="comment">&lt;!-- windows --&gt;</span></div><div class="line">https://github.com/coreybutler/nvm-windows需要自己下载</div><div class="line"><span class="comment">&lt;!-- 安装node --&gt;</span></div><div class="line">nvm install v4.4</div><div class="line"><span class="comment">&lt;!-- 选择默认版本 --&gt;</span></div><div class="line">nvm alias default v4.4</div></pre></td></tr></table></figure>
-</li>
-<li><p>镜像管理,使用cnpm进行加速</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- 使用cnpm命令 --&gt;</span></div><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</div><div class="line"><span class="comment">&lt;!-- 使用npm别名 --&gt;</span></div><div class="line">alias cnpm="npm --registry=https://registry.npm.taobao.org \</div><div class="line">--cache=$HOME/.npm/.cache/cnpm \</div><div class="line">--disturl=https://npm.taobao.org/dist \</div><div class="line">--userconfig=$HOME/.cnpmrc"</div></pre></td></tr></table></figure>
-</li>
-<li><p>修改nvm镜像地址进行下载加速</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">export <span class="attr">NVM_NODEJS_ORG_MIRROR=</span>https://nodejs.org/dist</div><div class="line">nvm install <span class="keyword">node</span></div><div class="line"></div><div class="line"><span class="title">NVM_NODEJS_ORG_MIRROR</span>=https://nodejs.org/dist nvm install <span class="number">4.2</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><ol>
-<li><p>安装命令,</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span>;</div><div class="line">npm <span class="keyword">install</span> <span class="comment">--save-dev;</span></div><div class="line">npm <span class="keyword">install</span> -g;</div><div class="line">npm <span class="keyword">uninstall</span> <span class="keyword">name</span>;</div></pre></td></tr></table></figure>
-</li>
-<li><p>npm命令<br>npm可以运行package.json的script命令</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- 集成命令 --&gt;</span></div><div class="line">npm start</div><div class="line">npm restart</div><div class="line">npm test</div><div class="line">npm stop</div><div class="line">npm init（初始化项目时使用）</div><div class="line">npm publish(发布模块需要使用)</div><div class="line">npm update</div><div class="line">npm search</div><div class="line">npm list</div><div class="line">npm view moduleName(查看模块依赖)</div><div class="line"><span class="comment">&lt;!-- script命令 ,在script中定义好--&gt;</span></div><div class="line">npm run build</div><div class="line">npm run dev</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; Npm使用详解：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    npm所有的常用知识都在这里，没错，所有的！！&lt;br&gt;
-    
-    </summary>
-    
-      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="node" scheme="http://geeksblog.cc/tags/node/"/>
     
   </entry>
   
