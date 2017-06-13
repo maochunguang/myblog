@@ -87,8 +87,7 @@ baidusitemap:
 ### 主题配置
 菜单配置
 ```yml
-# Header | 主菜单
-## About Page: `hexo new page about`
+## 添加单独的页面:hexo new page about，about是页面的路径，也是名称
 ## Tags Cloud Page: `hexo new page tags`
 menu:
   # 主页: /archives/
@@ -122,3 +121,33 @@ google_analytics: xxxxxx
 baidu_analytics: xxcxcxcsdsf
 
 ```
+## 自定义配置（对前端技术有了解即可）
+### 头像配置
+在themes/black-blue/source/img/avatar.png,替换此头像即可实现自定义头像
+
+### 背景图片配置
+在themes/black-blue/source/background/,替换为自己喜欢的图片，图片名称不能改
+
+### 添加评论插件
+比如把畅言替换为有言
+1. 先修改themes/black-blue/_config.yml文件
+```yml
+changyan:
+  on: true
+  uid: xxxxxxx
+```
+2. 修改themes/black-blue/layout/_partial/comments/changyan.ejs
+```js
+<section class="changyan" id="comments">
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=<%= uid%>">
+</script>
+</section>
+```
+3. 修改themes/black-blue/layout/_partial/article.ejs
+```js
+<%- partial('comments/changyan', {
+  uid: theme.changyan.uid
+}) %>
+```
+4. 重新生成页面`hexo g`
