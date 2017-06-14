@@ -59,39 +59,39 @@ categories: 开发工具
 
 ## 安装mongodb
 1. 配置公钥
-    ```
-    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-    echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
-    ```
+```bash
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+```
 2. 更新软件列表
-    ```
-    sudo apt-get update
-    sudo apt-get install -y mongodb-org
-    ```
+```bash
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+```
 3. 完成上面的安装步骤配置mongodb的数据库的位置
-    ```
-    sudo mongod --dbpath /data/db
-    ```
+```bash
+sudo mongod --dbpath /data/db
+```
 4. 启动mongod
-    ```
-    sudo service mongod start
-    sudo service mongod stop
-    sudo service mongod restart
-    ```
+```bash
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod restart
+```
 
 ## 安装redis
 1. 下载软件
-    ```
-    wget http://download.redis.io/releases/redis-2.8.11.tar.gz
-    ```
+```bash
+wget http://download.redis.io/releases/redis-2.8.11.tar.gz
+```
 2. 解压安装
-    ```
-    tar xvfz redis-2.8.11.tar.gz
-    cd redis-2.8.11 && sudo make && sudo make install
-    ```
+```bash
+tar xvfz redis-2.8.11.tar.gz
+cd redis-2.8.11 && sudo make && sudo make install
+```
 3. 配置使用
     1. 下载配置文件和init启动脚本
-    ```
+    ```bash
     wget https://github.com/ijonas/dotfiles/raw/master/etc/init.d/redis-server
     wget https://github.com/ijonas/dotfiles/raw/master/etc/redis.conf
     sudo mv redis-server /etc/init.d/redis-server
@@ -99,7 +99,7 @@ categories: 开发工具
     sudo mv redis.conf /etc/redis.conf
     ```
     2. 初始化用户和日志路径
-    ```
+    ```bash
     sudo useradd redis
     sudo mkdir -p /var/lib/redis
     sudo mkdir -p /var/log/redis
@@ -107,7 +107,7 @@ categories: 开发工具
     sudo chown redis.redis /var/log/redis
     ```
     3. 设置开机自动启动，关机自动关闭
-    ```
+    ```bash
     sudo update-rc.d redis-server defaults
     ```
 
@@ -119,21 +119,21 @@ categories: 开发工具
 - ~/.profile —— 每个用户都可使用该文件输入专用于自己使用的shell信息，当用户登录时，该文件仅仅执行一次！默认情况下,它设置一些环境变量,执行用户的.bashrc文件；
 - ~/.bashrc —— 该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该文件被读取；
 2. 配置环境变量
-    - 在Ubuntu14.04的~/.bashrc中添加的环境变量,在文件添加
-    ```
-    export PATH=$PATH:/home/qtcreator-2.6.1/bin
-    ```
-    - 修改profile文件,vim编辑/etc/profile
-    ```
-    sudo vim /etc/profile
-    source /etc/profile
-    ```
+- 在Ubuntu14.04的~/.bashrc中添加的环境变量,在文件添加
+``` bash
+export PATH=$PATH:/home/qtcreator-2.6.1/bin
+```
+- 修改profile文件,vim编辑/etc/profile
+```bash
+sudo vim /etc/profile
+source /etc/profile
+```
 
 ## 安装开发工具
 1. zsh命令行工具
 2. mysql客户端workbench，mongo客户端工具robomongo
 3. 安装git,svn版本控制工具
-    ```
-    sudo apt-get install git
-    sudo apt-get install subversion
-    ```
+```bash
+sudo apt-get install git
+sudo apt-get install subversion
+```

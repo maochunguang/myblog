@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-06-12T03:34:02.000Z</updated>
+  <updated>2017-06-14T03:23:06.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,86 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>程序员入门指南</title>
+    <link href="http://geeksblog.cc/how-study-coding.html"/>
+    <id>http://geeksblog.cc/how-study-coding.html</id>
+    <published>2017-06-14T02:59:28.000Z</published>
+    <updated>2017-06-14T03:23:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 程序员入门指南：</strong> <Excerpt in index | 首页摘要><br>在新踏入一个新的行业的时候，总是充满了困惑和不安。正所谓万事开头难，一旦有了好的开头，就会事半功倍，希望这篇文章，能为初学者解答一些困惑。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="程序员究竟干什么"><a href="#程序员究竟干什么" class="headerlink" title="程序员究竟干什么"></a>程序员究竟干什么</h2><p>我有个消极的看法是：程序员是帮别人实现梦想的人，帮产品经理，帮老板，帮资本家实现梦想！<br>我们平常工作就是把一个一个整理好的需求，实现到软件里，实现到网站上。<br>如果你是创业，做自己的软件，网站什么的，就是为自己实现梦想，</p>
+<h2 id="程序员的未来"><a href="#程序员的未来" class="headerlink" title="程序员的未来"></a>程序员的未来</h2><p>据说21世纪的蓝领将会是程序员，也不知道是哪个经济学家分析的。不过按照目前程序员的数量和发展来看的话，倒是很有这个趋势。所以对于程序员来说，要保持不断学习，不断进步的习惯。</p>
+<h2 id="1-我该学习什么语言？"><a href="#1-我该学习什么语言？" class="headerlink" title="1.我该学习什么语言？"></a>1.我该学习什么语言？</h2><p>这个问题困扰了几乎所有的程序员，比如java应用广好就业，比如php入门简单，ios待遇高，python是万能语言，HTML和js前端缺人才等等</p>
+<p>个人见解：先学习难度小，大众化的编程语言，比如java，php，python，javascript,c/c++,这几个学哪一种其实差不多，入门以后看自己兴趣在进行其它语言的学习。</p>
+<h2 id="2-我该怎么学习编程？"><a href="#2-我该怎么学习编程？" class="headerlink" title="2.我该怎么学习编程？"></a>2.我该怎么学习编程？</h2><p>这个问题是所有的程序员都有的，我也经常会疑问，到底该怎么学习呢？<br>个人见解：</p>
+<ol>
+<li>先了解语言的特性，适用的范围场景，比如是适合web开发，还是适合客户端程序，有的适合并发多线程，有的适合异步，还有的比较稳定，适合构建大型项目，有的开发效率高，等等。</li>
+<li>了解语言的语法和常用api的使用，比如变量的声明，循环的使用，io的读取，http服务的创建，把这些基本的语法搞清楚，在进行下一步的学习。</li>
+<li>学习web开发之前的准备，数据库的学习，http协议的学习，html，css和javacript的常用知识了解</li>
+<li>学习常用框架，比如java学习常用的ssh三大框架，node的学习express，一定要做2个项目练习，把自己的之前学习的知识都巩固一下，</li>
+<li>总结一下自己学习的过程，明白编程的思想在哪里，思路在哪里，学习编程，首先应该培养的是编程的思维和思想，有个正确的思维后面都简单多了。</li>
+<li>养成写博客或者学习笔记的习惯，推荐写博客，</li>
+<li>熟悉项目管理工具，svn，git之类的必须要会，工作中这些都是必须的</li>
+<li>准备面试，通过面试题进一步巩固自己的知识，夯实基础。</li>
+</ol>
+<h2 id="3-我应该去哪里学习编程？"><a href="#3-我应该去哪里学习编程？" class="headerlink" title="3.我应该去哪里学习编程？"></a>3.我应该去哪里学习编程？</h2><p>其实这个看个人，如果自学能力强，自控能力强，自学挺好的，下面我列举几个程序员常用的网站  </p>
+<ol>
+<li><a href="http://study.163.com/">网易云课堂</a>，很多免费的视频课程，适合入门学习</li>
+<li><a href="http://www.imooc.com/">慕课网</a>，很多it入门教学视频，资源也不错</li>
+<li><a href="http://www.jikexueyuan.com/">极客学院</a>，和前两个网站差不多，</li>
+<li><a href="http://www.ibeifeng.com/">北风网</a>，类似的教学网站，其它的就不说了</li>
+</ol>
+<h2 id="4-编程遇到问题怎么办？"><a href="#4-编程遇到问题怎么办？" class="headerlink" title="4.编程遇到问题怎么办？"></a>4.编程遇到问题怎么办？</h2><ul>
+<li>先自己试着分析，看看是不是自己的代码有明显的逻辑问题，或者语法问题</li>
+<li>去stackoverflow搜索关键词，关键句应该是最有效的了</li>
+<li>百度或者谷歌看看网上有没有类似的问题，一回生，二回熟，很快就明白了</li>
+<li>去官网查看api文档查找原因</li>
+<li>自己要学会debug代码，查找原因</li>
+<li>去各大论坛逛逛，说不定早有人提问此类问题了</li>
+</ul>
+<h2 id="5-我想看编程的书籍去哪找呢？"><a href="#5-我想看编程的书籍去哪找呢？" class="headerlink" title="5.我想看编程的书籍去哪找呢？"></a>5.我想看编程的书籍去哪找呢？</h2><p>经典书籍还是买纸质的，买正版的，支持正版！</p>
+<ol>
+<li><a href="http://vdisk.weibo.com/">新浪微盘</a>，非常多的it书籍  </li>
+<li><a href="http://www.jb51.net/">脚本之家</a>，非常多的pdf书籍，可惜大多数不是文字版pdf  </li>
+<li><a href="http://www.salttiger.com/">英文原版书籍</a>，都是高清文字版pdf，强烈推荐，都是英文原版的  </li>
+<li><a href="http://bestcbooks.com/">计算机书控</a>，都是免费的pdf文档，大多数不是文字版pdf</li>
+</ol>
+<h2 id="6-学习心态"><a href="#6-学习心态" class="headerlink" title="6.学习心态"></a>6.学习心态</h2><ol>
+<li>不要老是折腾工具，ide工具和文本编辑器一样一个就够了</li>
+<li>不要自满，编程的东西学一辈子也学不会，要谦虚好学</li>
+<li>不要急躁，既然知识学不完，我们应该掌握学习方法，指定计划去学习</li>
+<li>要持之以恒，学习是一辈子的事，如果你没有这个打算，还是不要做程序员的好</li>
+<li>切忌眼高手低，必须要敲代码才能达到效果</li>
+</ol>
+<h2 id="7-编程进阶之路"><a href="#7-编程进阶之路" class="headerlink" title="7.编程进阶之路"></a>7.编程进阶之路</h2><p>当有了一定的编程基础之后,最大的问题是确定自己的方向,这个时候最容易迷茫和困惑,学习什么技术?<br>怎么去学,这些真的很难<br>个人建议如下:  </p>
+<ol>
+<li>技术型方向:提高自己的编程能力和语言造诣,最有效的是”造轮子”,量变引起质变 ，写插件,写框架,写爬虫,写数据库,自制编程语言,等等.</li>
+<li>业务型方向:提高自己的业务能力,和客户的沟通能力,分析需求,解决客户的难题，多出去见客户,去现场,了解需求,分析需求,把需求整理为功能</li>
+<li>多总结，把专业知识结构化，系统化，形成自己的思维体系，提升自己的认知能力</li>
+<li><strong>持续学习</strong>，对于程序员来说，这个最重要，你一懒惰就跟不上技术的脚步，失业就说不准了</li>
+</ol>
+<hr>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧!  <a href="http://geeksblog.cc/">我的博客</a> </p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 程序员入门指南：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;在新踏入一个新的行业的时候，总是充满了困惑和不安。正所谓万事开头难，一旦有了好的开头，就会事半功倍，希望这篇文章，能为初学者解答一些困惑。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="cognition" scheme="http://geeksblog.cc/categories/cognition/"/>
+    
+    
+      <category term="认知提升" scheme="http://geeksblog.cc/tags/%E8%AE%A4%E7%9F%A5%E6%8F%90%E5%8D%87/"/>
+    
+  </entry>
   
   <entry>
     <title>Illegal Mix of Collations</title>
@@ -707,13 +787,13 @@
   </entry>
   
   <entry>
-    <title>Mybooks</title>
+    <title>那些年读的书</title>
     <link href="http://geeksblog.cc/mybooks.html"/>
     <id>http://geeksblog.cc/mybooks.html</id>
     <published>2017-04-15T06:49:46.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
+    <updated>2017-06-14T02:56:12.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> Mybooks：</strong> <Excerpt in index | 首页摘要><br>人生漫漫，不知不觉读了好多书，但是仔细想想很多没有做总结，实在心里感觉缺失点东西，这次好好总结一下<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> 那些年读的书：</strong> <Excerpt in index | 首页摘要><br>人生漫漫，不知不觉读了好多书，此贴只记录自己读过哪些书，不做多余的分析和总结。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h2 id="读过哪些种类的"><a href="#读过哪些种类的" class="headerlink" title="读过哪些种类的"></a>读过哪些种类的</h2><ul>
@@ -723,6 +803,8 @@
 </ul>
 <h2 id="小说"><a href="#小说" class="headerlink" title="小说"></a>小说</h2><ul>
 <li>平凡的世界</li>
+<li>白鹿原</li>
+<li>穆斯林的葬礼</li>
 <li>金庸武侠系列</li>
 <li>古龙武侠小说</li>
 <li>梁羽生武侠小说</li>
@@ -772,7 +854,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; Mybooks：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;人生漫漫，不知不觉读了好多书，但是仔细想想很多没有做总结，实在心里感觉缺失点东西，这次好好总结一下&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; 那些年读的书：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;人生漫漫，不知不觉读了好多书，此贴只记录自己读过哪些书，不做多余的分析和总结。&lt;br&gt;
     
     </summary>
     
@@ -1530,11 +1612,11 @@
   </entry>
   
   <entry>
-    <title>Ubuntu服务器私人定制</title>
+    <title>Ubuntu服务器详细配置</title>
     <link href="http://geeksblog.cc/server-config.html"/>
     <id>http://geeksblog.cc/server-config.html</id>
     <published>2016-11-28T12:36:03.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
+    <updated>2017-06-14T02:41:17.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> ubuntu服务器私人定制：</strong> <Excerpt in index | 首页摘要><br>把ubuntu服务器打造成自己的个性服务器，装逼必备！！！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -1647,95 +1729,6 @@
     
     
       <category term="linux" scheme="http://geeksblog.cc/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac开发环境配置</title>
-    <link href="http://geeksblog.cc/mac-dev.html"/>
-    <id>http://geeksblog.cc/mac-dev.html</id>
-    <published>2016-11-27T07:52:38.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> mac开发环境配置：</strong> <Excerpt in index | 首页摘要><br>工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="软件下载说明"><a href="#软件下载说明" class="headerlink" title="软件下载说明"></a>软件下载说明</h2><p>下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的<strong>百度云账号</strong>！！！</p>
-<h2 id="软件分类说明"><a href="#软件分类说明" class="headerlink" title="软件分类说明"></a>软件分类说明</h2><ol>
-<li>通用（开发者必备的软件）</li>
-<li>java类（java开发者必不可少）</li>
-<li>前端类（偏前端和nodejs）</li>
-<li>python类</li>
-<li>数据库类</li>
-<li>其他（php，ruby等等）</li>
-</ol>
-<h2 id="通用软件"><a href="#通用软件" class="headerlink" title="通用软件"></a>通用软件</h2><ol>
-<li>Alfred</li>
-<li>dash</li>
-<li>homebrew</li>
-<li>zsh（oh my zsh）</li>
-<li>sublime text3,</li>
-<li>vscode</li>
-<li>paste(剪切板工具)</li>
-<li>BetterSnapTool(分屏软件)</li>
-<li>cornerstone(svn)</li>
-<li>tower(git)</li>
-<li>alternote()</li>
-<li>paw</li>
-<li>chrome</li>
-<li>firefox</li>
-<li>pdf expert</li>
-<li>CheatSheet</li>
-<li>snippetslab</li>
-</ol>
-<h2 id="java软件"><a href="#java软件" class="headerlink" title="java软件"></a>java软件</h2><ol>
-<li>jdk</li>
-<li>idea</li>
-<li>eclipse</li>
-<li>maven</li>
-<li>zookeeper,dubbo</li>
-<li>tomcat</li>
-<li>apache</li>
-</ol>
-<h2 id="前端必备"><a href="#前端必备" class="headerlink" title="前端必备"></a>前端必备</h2><ol>
-<li>nvm(nodejs,npm,cnpm)</li>
-<li>webpack</li>
-<li>yo</li>
-<li>webstorm</li>
-</ol>
-<h2 id="python必备"><a href="#python必备" class="headerlink" title="python必备"></a>python必备</h2><ol>
-<li>pycharm</li>
-<li>sublime text（插件）</li>
-</ol>
-<h2 id="数据库类"><a href="#数据库类" class="headerlink" title="数据库类"></a>数据库类</h2><ol>
-<li>mysql</li>
-<li>mongodb</li>
-<li>sqllite</li>
-<li>navicate</li>
-<li>robomongo</li>
-<li>redis</li>
-</ol>
-<h2 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h2><ol>
-<li>office</li>
-<li>keynote,pages,number</li>
-<li>photoshop</li>
-</ol>
-<p>文章长期更新，请收藏</p>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; mac开发环境配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
     
   </entry>
   

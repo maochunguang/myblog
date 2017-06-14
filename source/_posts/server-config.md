@@ -1,4 +1,4 @@
-title: ubuntu服务器私人定制
+title: ubuntu服务器详细配置
 date: 2016-11-28 20:36:03
 tags: linux
 categories: 开发工具
