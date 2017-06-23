@@ -1,10 +1,10 @@
-title: kobo aura one配置入门
-date: 2017-04-17 10:22:57
+title: kobo aura one导出笔记高级配置
+date: 2017-06-23 10:22:57
 tags: 开发工具
 categories: others
 ---
 ** {{ title }}：** <Excerpt in index | 首页摘要>
-kobo电子书折腾记，从激活到设置，打补丁实现自定义配置，还是自己折腾起来有意思啊。
+kobo电子书折腾记，导出笔记，从激活到设置，打补丁实现自定义配置，还是自己折腾起来有意思啊。
 <!-- more -->
 <The rest of contents | 余下全文>
 
@@ -41,12 +41,44 @@ kobo的更新固件，更新补丁都是一个模式，把固件或者补丁放�
 下载网上改好的字典，直接放到.kobo文件夹下的dict目录下，然后重启就可以了
 
 ## 自定义配置
-1. 刷新页数
-2. 全屏模式
-3. 上下页宽
-4. 字体高级设置
+1. 刷新页数（打补丁）
+2. 上下页宽（打补丁）
+3. 全屏模式（修改配置文件）
+4. 字体高级设置（修改配置文件）
+5. 导出笔记和高亮（修改配置文件）
 
+## kobo高级配置文件详解
+用电脑连接kobo电子书，打开Kobo找到eReader.conf文件，最好用notepad++修改，或者其他文本编辑器。
+```conf
+[FeatureSettings]
+#导出笔记
+ExportHighlightsEnabled=true
+#显示全书的页码，而不是章节的页码
+FullBookPageNumbers=true
+#用在线等维基百科代替词典查询
+OnlineWikipedia=true
+#全屏阅读
+FullScreenReading=true
+#图片缩放
+ImageZoom=true
+#浏览器全屏
+FullScreenBrowser=true
+#关机键截图，但是关机键就无法关机了，不要设置这个鸡肋的功能
+Screenshots=true
+[Reading]
+#翻页刷新的页数，20页全刷一次
+numPartialUpdatePageTurns=20
+#左边距
+readingLeftMargin=0
+#右边距
+readingRightMargin=0
+#行高
+readingLineHeight=1.4
 
+[PowerOptions]
+#自动关机时间
+AutoOffMinutes=60
+```
 
 
 > 如果文章对你有帮助,请去我的博客留个言吧! [我的博客][1]
