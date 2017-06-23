@@ -72,21 +72,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/dream.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/eggjs-action.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/free-books.html</loc>
+    <loc>http://geeksblog.cc/mac-dev.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -94,6 +80,13 @@
   
   <url>
     <loc>http://geeksblog.cc/fullprj-desc.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/free-books.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -135,7 +128,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
+    <loc>http://geeksblog.cc/ajax-study.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -149,42 +142,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/code-resource.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://geeksblog.cc/java-date.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ajax-study.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/mac-dev.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/mac-shortcut.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -205,7 +163,42 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/cognition-deep.html</loc>
+    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/mac-shortcut.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/code-resource.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/digital-info.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/dream.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -268,14 +261,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/spider-koa2.html</loc>
+    <loc>http://geeksblog.cc/eggjs-action.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/digital-info.html</loc>
+    <loc>http://geeksblog.cc/spider-koa2.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     

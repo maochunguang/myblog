@@ -489,45 +489,6 @@
   </entry>
   
   <entry>
-    <title>谈一谈认知</title>
-    <link href="http://geeksblog.cc/cognition-deep.html"/>
-    <id>http://geeksblog.cc/cognition-deep.html</id>
-    <published>2017-05-18T02:27:43.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 谈一谈认知：</strong> <Excerpt in index | 首页摘要><br>认知这个词好像是从逻辑思维火起来的，一群牛人把自己的成功，商业的革命归于认知的革命，认知的提升。我也被这个词深深的震撼了，想好好说一下认知。<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="我的认知革命"><a href="#我的认知革命" class="headerlink" title="我的认知革命"></a>我的认知革命</h2><p>在大学的时候开始接触认知，但当时对这个词并没有什么理解。有句名言说的好，人只有遭受重大挫折的时候才会改变自己的认知，重识自己的认知。这点我非常赞同。</p>
-<h2 id="认知的作用"><a href="#认知的作用" class="headerlink" title="认知的作用"></a>认知的作用</h2><ol>
-<li>改变自己思维方式</li>
-<li>改变自己的行为方式</li>
-</ol>
-<h2 id="提升自我的认知"><a href="#提升自我的认知" class="headerlink" title="提升自我的认知"></a>提升自我的认知</h2><ol>
-<li>培养良好的思维习惯</li>
-<li>培养良好的学习习惯</li>
-<li>培养良好的知识架构总结习惯</li>
-<li>培养学以致用的习惯</li>
-</ol>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 谈一谈认知：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;认知这个词好像是从逻辑思维火起来的，一群牛人把自己的成功，商业的革命归于认知的革命，认知的提升。我也被这个词深深的震撼了，想好好说一下认知。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="cognition" scheme="http://geeksblog.cc/categories/cognition/"/>
-    
-    
-      <category term="认知提升" scheme="http://geeksblog.cc/tags/%E8%AE%A4%E7%9F%A5%E6%8F%90%E5%8D%87/"/>
-    
-  </entry>
-  
-  <entry>
     <title>egg.js实战技巧</title>
     <link href="http://geeksblog.cc/eggjs-action.html"/>
     <id>http://geeksblog.cc/eggjs-action.html</id>
@@ -1731,6 +1692,95 @@
     
     
       <category term="linux" scheme="http://geeksblog.cc/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac开发环境配置</title>
+    <link href="http://geeksblog.cc/mac-dev.html"/>
+    <id>http://geeksblog.cc/mac-dev.html</id>
+    <published>2016-11-27T07:52:38.000Z</published>
+    <updated>2017-05-26T06:12:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> mac开发环境配置：</strong> <Excerpt in index | 首页摘要><br>工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="软件下载说明"><a href="#软件下载说明" class="headerlink" title="软件下载说明"></a>软件下载说明</h2><p>下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的<strong>百度云账号</strong>！！！</p>
+<h2 id="软件分类说明"><a href="#软件分类说明" class="headerlink" title="软件分类说明"></a>软件分类说明</h2><ol>
+<li>通用（开发者必备的软件）</li>
+<li>java类（java开发者必不可少）</li>
+<li>前端类（偏前端和nodejs）</li>
+<li>python类</li>
+<li>数据库类</li>
+<li>其他（php，ruby等等）</li>
+</ol>
+<h2 id="通用软件"><a href="#通用软件" class="headerlink" title="通用软件"></a>通用软件</h2><ol>
+<li>Alfred</li>
+<li>dash</li>
+<li>homebrew</li>
+<li>zsh（oh my zsh）</li>
+<li>sublime text3,</li>
+<li>vscode</li>
+<li>paste(剪切板工具)</li>
+<li>BetterSnapTool(分屏软件)</li>
+<li>cornerstone(svn)</li>
+<li>tower(git)</li>
+<li>alternote()</li>
+<li>paw</li>
+<li>chrome</li>
+<li>firefox</li>
+<li>pdf expert</li>
+<li>CheatSheet</li>
+<li>snippetslab</li>
+</ol>
+<h2 id="java软件"><a href="#java软件" class="headerlink" title="java软件"></a>java软件</h2><ol>
+<li>jdk</li>
+<li>idea</li>
+<li>eclipse</li>
+<li>maven</li>
+<li>zookeeper,dubbo</li>
+<li>tomcat</li>
+<li>apache</li>
+</ol>
+<h2 id="前端必备"><a href="#前端必备" class="headerlink" title="前端必备"></a>前端必备</h2><ol>
+<li>nvm(nodejs,npm,cnpm)</li>
+<li>webpack</li>
+<li>yo</li>
+<li>webstorm</li>
+</ol>
+<h2 id="python必备"><a href="#python必备" class="headerlink" title="python必备"></a>python必备</h2><ol>
+<li>pycharm</li>
+<li>sublime text（插件）</li>
+</ol>
+<h2 id="数据库类"><a href="#数据库类" class="headerlink" title="数据库类"></a>数据库类</h2><ol>
+<li>mysql</li>
+<li>mongodb</li>
+<li>sqllite</li>
+<li>navicate</li>
+<li>robomongo</li>
+<li>redis</li>
+</ol>
+<h2 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h2><ol>
+<li>office</li>
+<li>keynote,pages,number</li>
+<li>photoshop</li>
+</ol>
+<p>文章长期更新，请收藏</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; mac开发环境配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
     
   </entry>
   
