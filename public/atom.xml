@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-06-23T03:36:47.000Z</updated>
+  <updated>2017-07-24T13:20:57.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java面试大全自制版</title>
+    <link href="http://geeksblog.cc/java-interview.html"/>
+    <id>http://geeksblog.cc/java-interview.html</id>
+    <published>2017-07-24T13:07:00.000Z</published>
+    <updated>2017-07-24T13:20:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> Java面试大全自制版：</strong> <Excerpt in index | 首页摘要><br>java语言知识点多而杂，面试时很多人找不到重点。这份java面试大全，有部分网络上资源，大多数是从好的文章和书籍里总结出来的知识点。<br><a id="more"></a></p>
+<p><The rest of contents | 余下全文></p>
+<h2 id="本书的目的"><a href="#本书的目的" class="headerlink" title="本书的目的"></a>本书的目的</h2><p>每个java程序员在面试前都不知该准备什么？或者是随便看几个文章就去面试，这样的结果很容易失败！希望本书能给java程序员一个好的指引，让java程序员没有难找的工作！</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p><a href="https://maochunguang.gitbooks.io/java-interview/">gitbook地址</a><br><img src="http://o7kalf5h3.bkt.clouddn.com/java-tips.png" alt="目录截图"></p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; Java面试大全自制版：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;java语言知识点多而杂，面试时很多人找不到重点。这份java面试大全，有部分网络上资源，大多数是从好的文章和书籍里总结出来的知识点。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="java" scheme="http://geeksblog.cc/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Kobo Aura One导出笔记高级配置</title>
@@ -1692,95 +1721,6 @@
     
     
       <category term="linux" scheme="http://geeksblog.cc/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac开发环境配置</title>
-    <link href="http://geeksblog.cc/mac-dev.html"/>
-    <id>http://geeksblog.cc/mac-dev.html</id>
-    <published>2016-11-27T07:52:38.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> mac开发环境配置：</strong> <Excerpt in index | 首页摘要><br>工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="软件下载说明"><a href="#软件下载说明" class="headerlink" title="软件下载说明"></a>软件下载说明</h2><p>下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的<strong>百度云账号</strong>！！！</p>
-<h2 id="软件分类说明"><a href="#软件分类说明" class="headerlink" title="软件分类说明"></a>软件分类说明</h2><ol>
-<li>通用（开发者必备的软件）</li>
-<li>java类（java开发者必不可少）</li>
-<li>前端类（偏前端和nodejs）</li>
-<li>python类</li>
-<li>数据库类</li>
-<li>其他（php，ruby等等）</li>
-</ol>
-<h2 id="通用软件"><a href="#通用软件" class="headerlink" title="通用软件"></a>通用软件</h2><ol>
-<li>Alfred</li>
-<li>dash</li>
-<li>homebrew</li>
-<li>zsh（oh my zsh）</li>
-<li>sublime text3,</li>
-<li>vscode</li>
-<li>paste(剪切板工具)</li>
-<li>BetterSnapTool(分屏软件)</li>
-<li>cornerstone(svn)</li>
-<li>tower(git)</li>
-<li>alternote()</li>
-<li>paw</li>
-<li>chrome</li>
-<li>firefox</li>
-<li>pdf expert</li>
-<li>CheatSheet</li>
-<li>snippetslab</li>
-</ol>
-<h2 id="java软件"><a href="#java软件" class="headerlink" title="java软件"></a>java软件</h2><ol>
-<li>jdk</li>
-<li>idea</li>
-<li>eclipse</li>
-<li>maven</li>
-<li>zookeeper,dubbo</li>
-<li>tomcat</li>
-<li>apache</li>
-</ol>
-<h2 id="前端必备"><a href="#前端必备" class="headerlink" title="前端必备"></a>前端必备</h2><ol>
-<li>nvm(nodejs,npm,cnpm)</li>
-<li>webpack</li>
-<li>yo</li>
-<li>webstorm</li>
-</ol>
-<h2 id="python必备"><a href="#python必备" class="headerlink" title="python必备"></a>python必备</h2><ol>
-<li>pycharm</li>
-<li>sublime text（插件）</li>
-</ol>
-<h2 id="数据库类"><a href="#数据库类" class="headerlink" title="数据库类"></a>数据库类</h2><ol>
-<li>mysql</li>
-<li>mongodb</li>
-<li>sqllite</li>
-<li>navicate</li>
-<li>robomongo</li>
-<li>redis</li>
-</ol>
-<h2 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h2><ol>
-<li>office</li>
-<li>keynote,pages,number</li>
-<li>photoshop</li>
-</ol>
-<p>文章长期更新，请收藏</p>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; mac开发环境配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
     
   </entry>
   
