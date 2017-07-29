@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-07-24T13:20:57.000Z</updated>
+  <updated>2017-07-29T14:50:48.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿拉伯数字转汉字写法</title>
+    <link href="http://geeksblog.cc/num2Chinese.html"/>
+    <id>http://geeksblog.cc/num2Chinese.html</id>
+    <published>2017-07-29T14:25:27.000Z</published>
+    <updated>2017-07-29T14:50:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 阿拉伯数字转汉字写法：</strong> <Excerpt in index | 首页摘要><br>找工作时看到“某团”的题目，把一个int的数字转为汉字的读法，比如123，转成一百二十三，限时20分钟。如果二十分钟做不出来，简历就不要投了。说实话，20分钟能调通的人真的不多，感觉某团还是装逼成分太多！<br><a id="more"></a></p>
+<p><The rest of contents | 余下全文></p>
+<h2 id="题目要求"><a href="#题目要求" class="headerlink" title="题目要求"></a>题目要求</h2><p>用java实现，把int的数字转为汉字读音，比如123，转成一百二十三，10020转为一万零二十</p>
+<h2 id="思路分析"><a href="#思路分析" class="headerlink" title="思路分析"></a>思路分析</h2><p>中文计数的特点，以万为小节，万以内的都是以“十百千”为权位单独计数，比如一千百，一千千都是非法的。<br>而“十百千”这样的权位可以与“万”，“亿”进行搭配，二十亿，五千万等等。</p>
+<h2 id="中文数字的零"><a href="#中文数字的零" class="headerlink" title="中文数字的零"></a>中文数字的零</h2><p>中文的零的使用总结起来有三个规则，</p>
+<ul>
+<li>以10000为小节，结尾是0，不使用零，比如1020</li>
+<li>以10000为小节，小节内两个非0数字之间需要零</li>
+<li>小节的千位是0，若小节前无其他数字，不用零，否者用零</li>
+</ul>
+<h2 id="完整代码（参考算法的乐趣第四章）"><a href="#完整代码（参考算法的乐趣第四章）" class="headerlink" title="完整代码（参考算法的乐趣第四章）"></a>完整代码（参考算法的乐趣第四章）</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NumberTransfer</span> </span>&#123;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">final</span> String[] chnNumChar = <span class="keyword">new</span> String[]&#123;<span class="string">"零"</span>, <span class="string">"一"</span>, <span class="string">"二"</span>, <span class="string">"三"</span>, <span class="string">"四"</span>, <span class="string">"五"</span>, <span class="string">"六"</span>, <span class="string">"七"</span>, <span class="string">"八"</span>, <span class="string">"九"</span>&#125;;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">final</span> String[] chnUnitSection = <span class="keyword">new</span> String[]&#123;<span class="string">""</span>, <span class="string">"万"</span>, <span class="string">"亿"</span>, <span class="string">"万亿"</span>&#125;;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">final</span> String[] chnUnitChar = <span class="keyword">new</span> String[]&#123;<span class="string">""</span>, <span class="string">"十"</span>, <span class="string">"百"</span>, <span class="string">"千"</span>&#125;;</div><div class="line"></div><div class="line">    <span class="meta">@Test</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testNumberToChinese</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span>[] nums = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">304</span>, <span class="number">4006</span>, <span class="number">4000</span>, <span class="number">10003</span>, <span class="number">10030</span>, <span class="number">21010011</span>, <span class="number">101101101</span>&#125;;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</div><div class="line">            System.out.println(numberToChinese(nums[i]));</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">numberToChinese</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</div><div class="line">        String strIns;</div><div class="line">        String chnStr = <span class="string">""</span>;</div><div class="line">        <span class="keyword">int</span> unitPos = <span class="number">0</span>;</div><div class="line">        <span class="keyword">boolean</span> needZero = <span class="keyword">false</span>;</div><div class="line">        <span class="keyword">if</span> (num == <span class="number">0</span>)</div><div class="line">            <span class="keyword">return</span> <span class="string">"零"</span>;</div><div class="line">        <span class="keyword">while</span> (num &gt; <span class="number">0</span>) &#123;</div><div class="line">            strIns = <span class="string">""</span>;</div><div class="line">            <span class="keyword">int</span> section = num % <span class="number">10000</span>;</div><div class="line">            <span class="keyword">if</span> (needZero) &#123;</div><div class="line">                chnStr = chnNumChar[<span class="number">0</span>] + chnStr;</div><div class="line">            &#125;</div><div class="line">            <span class="comment">// 添加节权（万，亿）</span></div><div class="line">            strIns += (section != <span class="number">0</span>) ? chnUnitSection[unitPos] : chnUnitSection[<span class="number">0</span>];</div><div class="line">            chnStr = strIns + chnStr;</div><div class="line">            <span class="comment">// 以万为单位，求万以内的权位</span></div><div class="line">            chnStr = sectionToChinese(section, chnStr);</div><div class="line">            needZero = (section &lt; <span class="number">1000</span>) &amp;&amp; (section &gt; <span class="number">0</span>);</div><div class="line">            num = num / <span class="number">10000</span>;</div><div class="line">            unitPos++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> chnStr;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">sectionToChinese</span><span class="params">(<span class="keyword">int</span> section, String chnStr)</span> </span>&#123;</div><div class="line">        String strIns;</div><div class="line">        <span class="keyword">int</span> unitPos = <span class="number">0</span>;</div><div class="line">        <span class="keyword">boolean</span> zero = <span class="keyword">true</span>;</div><div class="line">        <span class="keyword">while</span> (section &gt; <span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">int</span> v = section % <span class="number">10</span>;</div><div class="line">            <span class="keyword">if</span> (v == <span class="number">0</span>) &#123;</div><div class="line">                <span class="keyword">if</span> (section == <span class="number">0</span> || !zero) &#123;</div><div class="line">                    zero = <span class="keyword">true</span>;<span class="comment">// zero确保不会出现多个零</span></div><div class="line">                    chnStr = chnNumChar[v] + chnStr;</div><div class="line">                &#125;</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                zero = <span class="keyword">false</span>;</div><div class="line">                strIns = chnNumChar[v]; <span class="comment">// 此位置对应等中文数字</span></div><div class="line">                strIns += chnUnitChar[unitPos];<span class="comment">// 此位置对应的权位</span></div><div class="line">                chnStr = strIns + chnStr;</div><div class="line">            &#125;</div><div class="line">            unitPos++;</div><div class="line">            section = section / <span class="number">10</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> chnStr;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 阿拉伯数字转汉字写法：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;找工作时看到“某团”的题目，把一个int的数字转为汉字的读法，比如123，转成一百二十三，限时20分钟。如果二十分钟做不出来，简历就不要投了。说实话，20分钟能调通的人真的不多，感觉某团还是装逼成分太多！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
+    
+    
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Java面试大全自制版</title>
@@ -1600,127 +1636,6 @@
     
     
       <category term="hexo" scheme="http://geeksblog.cc/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu服务器详细配置</title>
-    <link href="http://geeksblog.cc/server-config.html"/>
-    <id>http://geeksblog.cc/server-config.html</id>
-    <published>2016-11-28T12:36:03.000Z</published>
-    <updated>2017-06-14T02:41:17.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> ubuntu服务器私人定制：</strong> <Excerpt in index | 首页摘要><br>把ubuntu服务器打造成自己的个性服务器，装逼必备！！！<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<p>##　说明<br><strong>此教程针对Ubuntu14,其他版本仅作参考</strong></p>
-<p>##　用户密码管理<br><code>sudo passwd root</code></p>
-<ol>
-<li>添加一个用户组并指定id为1002<br><code>sudo groupadd －g 1002 www</code></li>
-<li><p>添加一个用户到www组并指定id为1003<br><code>sudo useradd wyx -g 1002 -u 1003 -m</code></p>
-</li>
-<li><p>修改用户的密码<br><code>sudo passwd wyx</code></p>
-</li>
-<li><p>删除一个用户<br><code>sudo userdel wyx</code></p>
-</li>
-<li><p>为该用户添加sudo权限</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo usermod <span class="_">-a</span> -G adm wyx</div><div class="line">sudo usermod <span class="_">-a</span> -G sudo wyx</div></pre></td></tr></table></figure>
-<ol>
-<li>查看所有用户和用户组：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cat /etc/passwd</div><div class="line">cat /etc/group</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><ol>
-<li>安装nvm<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</code></li>
-<li>安装node<code>nvm install v4.4.4</code>,安装<code>nvm install v6.9.1</code></li>
-<li>设置默认的node版本<code>nvm alias default v4.4.4</code></li>
-<li>安装npm3  <code>npm install -g npm@3</code></li>
-<li>设置淘宝的cnpm源  <code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></li>
-<li>验证安装<code>node -v,npm -v,cnpm -v</code><h2 id="安装node常用包"><a href="#安装node常用包" class="headerlink" title="安装node常用包"></a>安装node常用包</h2></li>
-<li>安装pm2<code>cnpm install -g pm2</code></li>
-<li>安装hexo博客<code>cnpm install -g hexo-cli</code></li>
-<li>安装同步插件rsync<code>cnpm install -g rsync</code></li>
-</ol>
-<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><ol>
-<li>apt安装</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install -y docker.io</div><div class="line">sudo ln -sf /usr/bin/docker.io /usr/<span class="built_in">local</span>/bin/docker</div><div class="line">sudo sed -i <span class="string">'$acomplete -F _docker docker'</span> /etc/bash_completion.d/docker.io</div></pre></td></tr></table></figure>
-<ol>
-<li>源码安装最新版本</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apt-transport-https</div><div class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9</div><div class="line">sudo bash -c <span class="string">"echo deb https://get.docker.io/ubuntu docker main &gt; /etc/apt/sources.list.d/docker.list"</span></div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install lxc-docker</div></pre></td></tr></table></figure>
-<ol>
-<li>验证安装版本<br><code>docker -v</code></li>
-</ol>
-<h2 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h2><p><code>sudo apt-get install nginx</code><br>启动和配置nginx</p>
-<h2 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h2><p><code>sudo apt-get install redis-server</code><br>启动和配置文件:</p>
-<h2 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h2><ol>
-<li>安装3.0</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10</div><div class="line"><span class="built_in">echo</span> <span class="string">"deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.0 main"</span> | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list</div><div class="line">apt-get update  </div><div class="line">apt-get install mongodb-org</div></pre></td></tr></table></figure>
-<ol>
-<li>安装3.2最新版</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927</div><div class="line"><span class="built_in">echo</span> <span class="string">"deb http://repo.mongodb.org/apt/ubuntu "</span>$(lsb_release -sc)<span class="string">"/mongodb-org/3.2 multiverse"</span> | sudo tee /etc/apt/sources.list.d/mongodb.list</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install mongodb-org</div></pre></td></tr></table></figure>
-<ol>
-<li><p>制定版本<br><code>apt-get install mongodb-org=3.2.0 mongodb-org-server=3.2.0 mongodb-org-shell=3.2.0 mongodb-org-mongos=3.2.0 mongodb-org-tools=3.2.0</code></p>
-</li>
-<li><p>启动服务</p>
-</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo service mongod start</div><div class="line">sudo service mongod stop</div></pre></td></tr></table></figure>
-<ol>
-<li>验证安装<br><code>mongod --version</code></li>
-</ol>
-<p>配置</p>
-<h2 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装jdk</h2><p>安装jdk1.7<code>sudo apt-get install openjdk-7-jdk</code><br>源码安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /usr/lib/jvm</div><div class="line">sudo tar zxvf jdk-7u21-linux-i586.tar.gz -C /usr/lib/jvm</div><div class="line"><span class="built_in">cd</span> /usr/lib/jvm</div><div class="line">sudo mv jdk1.7.0_21 java</div><div class="line"></div><div class="line">sudo vim ~/.bashrc</div><div class="line"></div><div class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java</div><div class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">$&#123;JAVA_HOME&#125;</span>/jre  </div><div class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$&#123;JAVA_HOME&#125;</span>/lib:<span class="variable">$&#123;JRE_HOME&#125;</span>/lib  </div><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$&#123;JAVA_HOME&#125;</span>/bin:<span class="variable">$PATH</span></div></pre></td></tr></table></figure>
-<h2 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h2><p>实用ubuntu自带的工具下载<br><code>sudo apt-get install mysql-server</code></p>
-<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p>常见的方法有两种。</p>
-<ol>
-<li><p>在用户主目录下有一个 .bashrc 文件，可以在此文件中加入 PATH 的设置如下：<br><code>export PATH=”$PATH:/your path1/:/your path2/…..”</code></p>
-</li>
-<li><p>在 /etc/profile中增加</p>
-<pre><code class="bash">PATH=<span class="string">"<span class="variable">$PATH</span>:/home/zhengb66/bin"</span> 
-<span class="built_in">export</span> PATH
-</code></pre>
-</li>
-</ol>
-<h2 id="开机自启动"><a href="#开机自启动" class="headerlink" title="开机自启动"></a>开机自启动</h2><ol>
-<li><p>方法一，编辑rc.loacl脚本<br>Ubuntu开机之后会执行/etc/rc.local文件中的脚本，<br>所以我们可以直接在/etc/rc.local中添加启动脚本。<br>当然要添加到语句：exit 0 前面才行。代码如下:<br><code>sudo vi /etc/rc.local</code><br>然后在 exit 0 前面添加好脚本代码。</p>
-</li>
-<li><p>方法二，添加一个Ubuntu的开机启动服务。<br>如果要添加为开机启动执行的脚本文件，<br>可先将脚本复制或者软连接到/etc/init.d/目录下，<br>然后用：update-rc.d xxx defaults NN命令(NN为启动顺序)，<br>将脚本添加到初始化执行的队列中去。<br>注意如果脚本需要用到网络，则NN需设置一个比较大的数字，如99。<br>1) 将你的启动脚本复制到 /etc/init.d目录下<br>以下假设你的脚本文件名为 test。<br>2) 设置脚本文件的权限</p>
-</li>
-</ol>
-<p>代码如下:<br><code>sudo chmod 755 /etc/init.d/test</code><br>3) 执行如下命令将脚本放到启动脚本中去：<br>代码如下:<br><code>cd /etc/init.d</code>  <code>sudo update-rc.d test defaults 95</code><br> 注：其中数字95是脚本启动的顺序号，按照自己的需要相应修改即可。在你有多个启动脚本，而它们之间又有先后启动的依赖关系时你就知道这个数字的具体作用了。该命令的输出信息参考如下：<br>卸载启动脚本的方法：<br>代码如下:<br><code>cd /etc/init.d</code><br><code>sudo update-rc.d -f test remove</code></p>
-<h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h2><p>在Ubuntu下，cron是被默认安装并启动的。通过查看/etc/crontab<br>推荐使用crontab -e命令添加自定义的任务（编辑的是/var/spool/cron下对应用户的cron文件，在/var/spool/cron下的crontab文件 不可以直接创建或者直接修改，crontab文件是通过crontab命令得到的）。<br><code>crontab -e</code></p>
-<ol>
-<li><p>直接执行命令行<br>每2分钟打印一个字符串“Hello World”，保存至文件/home/laigw/cron/HelloWorld.txt中，cron 格式如下：<br><code>*/2 * * * * echo “Hello World.” &gt;&gt; /home/HelloWorld.txt</code></p>
-</li>
-<li><p>shell 文件<br>每3分钟调用一次 /home/laigw/cron/test.sh 文件，cron 格式如下：<br><code>*/3 * * * * /home/laigw/cron/test.sh</code></p>
-<h2 id="ftp和rsync配置"><a href="#ftp和rsync配置" class="headerlink" title="ftp和rsync配置"></a>ftp和rsync配置</h2></li>
-</ol>
-<h2 id="持续集成环境"><a href="#持续集成环境" class="headerlink" title="持续集成环境"></a>持续集成环境</h2><ol>
-<li>jenkens配置</li>
-<li>gitlab配置</li>
-<li>git服务器</li>
-</ol>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; ubuntu服务器私人定制：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;把ubuntu服务器打造成自己的个性服务器，装逼必备！！！&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="linux" scheme="http://geeksblog.cc/tags/linux/"/>
     
   </entry>
   

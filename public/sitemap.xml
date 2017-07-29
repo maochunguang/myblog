@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://geeksblog.cc/num2Chinese.html</loc>
+    
+    <lastmod>2017-07-29T14:50:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://geeksblog.cc/about/index.html</loc>
     
     <lastmod>2017-07-28T14:52:17.000Z</lastmod>
@@ -86,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ghost-blog.html</loc>
+    <loc>http://geeksblog.cc/git-config-study.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -94,13 +101,6 @@
   
   <url>
     <loc>http://geeksblog.cc/free-books.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/git-config-study.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
+    <loc>http://geeksblog.cc/ajax-study.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -149,7 +149,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/code-resource.html</loc>
+    <loc>http://geeksblog.cc/wechat-dev.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ajax-study.html</loc>
+    <loc>http://geeksblog.cc/code-resource.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/wechat-dev.html</loc>
+    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -219,14 +219,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/node-develop.html</loc>
+    <loc>http://geeksblog.cc/mysql-study.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/mysql-study.html</loc>
+    <loc>http://geeksblog.cc/node-develop.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -254,13 +254,6 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/redis-config.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://geeksblog.cc/fullprj-desc.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
@@ -268,7 +261,21 @@
   </url>
   
   <url>
+    <loc>http://geeksblog.cc/redis-config.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://geeksblog.cc/redis-study.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ghost-blog.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -296,14 +303,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc//404.html</loc>
+    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
     
     <lastmod>2017-05-17T23:42:12.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/best-js-snippet.html</loc>
+    <loc>http://geeksblog.cc//404.html</loc>
     
     <lastmod>2017-05-17T23:42:12.000Z</lastmod>
     
