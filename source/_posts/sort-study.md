@@ -1,10 +1,10 @@
-title: 排序算法学习
-date: 2016-05-03 22:39:24
-tags: others
-categories: 算法
+title: 常用排序算法学习
+date: 2016-07-08 22:39:24
+tags: 算法
+categories: algorithm
 ---
 ** {{ title }}：** <Excerpt in index | 首页摘要>
-    各种排序算法，算法的实现和分析
+    程序员各种排序算法，算法的实现和分析
  <!-- more -->
 <The rest of contents | 余下全文>
 
@@ -22,7 +22,7 @@ categories: 算法
 
 ## 冒泡排序
 - 冒泡排序就是把小的元素往前调或者把大的元素往后调。比较是相邻的两个元素比较，交换也发生在这两个元素之间。所以，如果两个元素相等，是不用交换的；如果两个相等的元素没有相邻，那么即使通过前面的两两交换把两个相邻起来，这时候也不会交换，所以相同元素的前后顺序并没有改变，所以冒泡排序是一种稳定排序算法
-```
+```js
 // js代码
 function sort(arr) {
 if (arr.length == 0) {
@@ -48,7 +48,7 @@ for (var i = 0; i < length; i++) {
 - 快速排序是对冒泡排序的一种改进。它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列.
 - 时间复杂度：O（n*lgn）最坏：O（n^2）空间复杂度：O（n*lgn）
 
-```
+```js
 // js递归实现
 function quickSort(arr) {
     if (arr.length == 0) {
@@ -76,7 +76,7 @@ console.log(quickSort(a));
 ## 直接插入排序  
 - 直接插入排序(straight insertion sort)的作法是：每次从无序表中取出第一个元素，把它插入到有序表的合适位置，使有序表仍然有序.
 
-```
+```js
 function insertionSort(arr) {
     var temp, inner;
     for (var outer = 1; outer <= arr.length - 1; ++outer) {
