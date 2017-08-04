@@ -1,4 +1,4 @@
-title: ubuntu16开发环境配置
+title: ubuntu16服务器环境配置
 date: 2016-04-26 18:48:11
 tags: linux
 categories: 开发工具
@@ -8,6 +8,18 @@ categories: 开发工具
  <!-- more -->
 <The rest of contents | 余下全文>
 
+## ubuntu14升级到ubuntu16
+1. 终端下执行命令
+`sudo apt-get update && sudo apt-get dist-upgrade`
+2. 重启系统以完成更新的安装
+`sudo init 6`
+3. 用命令安装更新管理器核心update-manager-core，如果服务器已安装则可以跳过
+`sudo apt-get install update-manager-core`
+4. 编辑/etc/update-manager/release-upgrades配置文件，设置Prompt=lts
+`sudo vi /etc/update-manager/release-upgrades`
+5. 启动升级进程
+`sudo do-release-upgrade -d`
+
 ## 安装系统软件
 1. 更新系统和软件
    ```
@@ -16,7 +28,6 @@ categories: 开发工具
    ```
 2. 谷歌浏览器，火狐浏览器，atom编辑器，sublime编辑器，webstome,idea,eclipse
 3. 安装搜狗输入法（官网），安装fcitx配置搜狗输入法
-
 ## 安装jdk
 1. 下载jdk并新建一个文件夹
     ```

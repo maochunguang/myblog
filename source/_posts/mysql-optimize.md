@@ -1,4 +1,4 @@
-title: mysql优化
+title: mysql优化的常用方法
 date: 2016-06-11 07:25:13
 tags: mysql
 categories: 数据库

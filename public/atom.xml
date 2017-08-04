@@ -139,86 +139,6 @@
   </entry>
   
   <entry>
-    <title>程序员入门指南</title>
-    <link href="http://geeksblog.cc/how-study-coding.html"/>
-    <id>http://geeksblog.cc/how-study-coding.html</id>
-    <published>2017-06-14T02:59:28.000Z</published>
-    <updated>2017-06-14T03:23:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 程序员入门指南：</strong> <Excerpt in index | 首页摘要><br>在新踏入一个新的行业的时候，总是充满了困惑和不安。正所谓万事开头难，一旦有了好的开头，就会事半功倍，希望这篇文章，能为初学者解答一些困惑。<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="程序员究竟干什么"><a href="#程序员究竟干什么" class="headerlink" title="程序员究竟干什么"></a>程序员究竟干什么</h2><p>我有个消极的看法是：程序员是帮别人实现梦想的人，帮产品经理，帮老板，帮资本家实现梦想！<br>我们平常工作就是把一个一个整理好的需求，实现到软件里，实现到网站上。<br>如果你是创业，做自己的软件，网站什么的，就是为自己实现梦想，</p>
-<h2 id="程序员的未来"><a href="#程序员的未来" class="headerlink" title="程序员的未来"></a>程序员的未来</h2><p>据说21世纪的蓝领将会是程序员，也不知道是哪个经济学家分析的。不过按照目前程序员的数量和发展来看的话，倒是很有这个趋势。所以对于程序员来说，要保持不断学习，不断进步的习惯。</p>
-<h2 id="1-我该学习什么语言？"><a href="#1-我该学习什么语言？" class="headerlink" title="1.我该学习什么语言？"></a>1.我该学习什么语言？</h2><p>这个问题困扰了几乎所有的程序员，比如java应用广好就业，比如php入门简单，ios待遇高，python是万能语言，HTML和js前端缺人才等等</p>
-<p>个人见解：先学习难度小，大众化的编程语言，比如java，php，python，javascript,c/c++,这几个学哪一种其实差不多，入门以后看自己兴趣在进行其它语言的学习。</p>
-<h2 id="2-我该怎么学习编程？"><a href="#2-我该怎么学习编程？" class="headerlink" title="2.我该怎么学习编程？"></a>2.我该怎么学习编程？</h2><p>这个问题是所有的程序员都有的，我也经常会疑问，到底该怎么学习呢？<br>个人见解：</p>
-<ol>
-<li>先了解语言的特性，适用的范围场景，比如是适合web开发，还是适合客户端程序，有的适合并发多线程，有的适合异步，还有的比较稳定，适合构建大型项目，有的开发效率高，等等。</li>
-<li>了解语言的语法和常用api的使用，比如变量的声明，循环的使用，io的读取，http服务的创建，把这些基本的语法搞清楚，在进行下一步的学习。</li>
-<li>学习web开发之前的准备，数据库的学习，http协议的学习，html，css和javacript的常用知识了解</li>
-<li>学习常用框架，比如java学习常用的ssh三大框架，node的学习express，一定要做2个项目练习，把自己的之前学习的知识都巩固一下，</li>
-<li>总结一下自己学习的过程，明白编程的思想在哪里，思路在哪里，学习编程，首先应该培养的是编程的思维和思想，有个正确的思维后面都简单多了。</li>
-<li>养成写博客或者学习笔记的习惯，推荐写博客，</li>
-<li>熟悉项目管理工具，svn，git之类的必须要会，工作中这些都是必须的</li>
-<li>准备面试，通过面试题进一步巩固自己的知识，夯实基础。</li>
-</ol>
-<h2 id="3-我应该去哪里学习编程？"><a href="#3-我应该去哪里学习编程？" class="headerlink" title="3.我应该去哪里学习编程？"></a>3.我应该去哪里学习编程？</h2><p>其实这个看个人，如果自学能力强，自控能力强，自学挺好的，下面我列举几个程序员常用的网站  </p>
-<ol>
-<li><a href="http://study.163.com/">网易云课堂</a>，很多免费的视频课程，适合入门学习</li>
-<li><a href="http://www.imooc.com/">慕课网</a>，很多it入门教学视频，资源也不错</li>
-<li><a href="http://www.jikexueyuan.com/">极客学院</a>，和前两个网站差不多，</li>
-<li><a href="http://www.ibeifeng.com/">北风网</a>，类似的教学网站，其它的就不说了</li>
-</ol>
-<h2 id="4-编程遇到问题怎么办？"><a href="#4-编程遇到问题怎么办？" class="headerlink" title="4.编程遇到问题怎么办？"></a>4.编程遇到问题怎么办？</h2><ul>
-<li>先自己试着分析，看看是不是自己的代码有明显的逻辑问题，或者语法问题</li>
-<li>去stackoverflow搜索关键词，关键句应该是最有效的了</li>
-<li>百度或者谷歌看看网上有没有类似的问题，一回生，二回熟，很快就明白了</li>
-<li>去官网查看api文档查找原因</li>
-<li>自己要学会debug代码，查找原因</li>
-<li>去各大论坛逛逛，说不定早有人提问此类问题了</li>
-</ul>
-<h2 id="5-我想看编程的书籍去哪找呢？"><a href="#5-我想看编程的书籍去哪找呢？" class="headerlink" title="5.我想看编程的书籍去哪找呢？"></a>5.我想看编程的书籍去哪找呢？</h2><p>经典书籍还是买纸质的，买正版的，支持正版！</p>
-<ol>
-<li><a href="http://vdisk.weibo.com/">新浪微盘</a>，非常多的it书籍  </li>
-<li><a href="http://www.jb51.net/">脚本之家</a>，非常多的pdf书籍，可惜大多数不是文字版pdf  </li>
-<li><a href="http://www.salttiger.com/">英文原版书籍</a>，都是高清文字版pdf，强烈推荐，都是英文原版的  </li>
-<li><a href="http://bestcbooks.com/">计算机书控</a>，都是免费的pdf文档，大多数不是文字版pdf</li>
-</ol>
-<h2 id="6-学习心态"><a href="#6-学习心态" class="headerlink" title="6.学习心态"></a>6.学习心态</h2><ol>
-<li>不要老是折腾工具，ide工具和文本编辑器一样一个就够了</li>
-<li>不要自满，编程的东西学一辈子也学不会，要谦虚好学</li>
-<li>不要急躁，既然知识学不完，我们应该掌握学习方法，指定计划去学习</li>
-<li>要持之以恒，学习是一辈子的事，如果你没有这个打算，还是不要做程序员的好</li>
-<li>切忌眼高手低，必须要敲代码才能达到效果</li>
-</ol>
-<h2 id="7-编程进阶之路"><a href="#7-编程进阶之路" class="headerlink" title="7.编程进阶之路"></a>7.编程进阶之路</h2><p>当有了一定的编程基础之后,最大的问题是确定自己的方向,这个时候最容易迷茫和困惑,学习什么技术?<br>怎么去学,这些真的很难<br>个人建议如下:  </p>
-<ol>
-<li>技术型方向:提高自己的编程能力和语言造诣,最有效的是”造轮子”,量变引起质变 ，写插件,写框架,写爬虫,写数据库,自制编程语言,等等.</li>
-<li>业务型方向:提高自己的业务能力,和客户的沟通能力,分析需求,解决客户的难题，多出去见客户,去现场,了解需求,分析需求,把需求整理为功能</li>
-<li>多总结，把专业知识结构化，系统化，形成自己的思维体系，提升自己的认知能力</li>
-<li><strong>持续学习</strong>，对于程序员来说，这个最重要，你一懒惰就跟不上技术的脚步，失业就说不准了</li>
-</ol>
-<hr>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧!  <a href="http://geeksblog.cc/">我的博客</a> </p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 程序员入门指南：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;在新踏入一个新的行业的时候，总是充满了困惑和不安。正所谓万事开头难，一旦有了好的开头，就会事半功倍，希望这篇文章，能为初学者解答一些困惑。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="cognition" scheme="http://geeksblog.cc/categories/cognition/"/>
-    
-    
-      <category term="认知提升" scheme="http://geeksblog.cc/tags/%E8%AE%A4%E7%9F%A5%E6%8F%90%E5%8D%87/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Illegal Mix of Collations</title>
     <link href="http://geeksblog.cc/mysql-collation.html"/>
     <id>http://geeksblog.cc/mysql-collation.html</id>
@@ -890,34 +810,6 @@
     
     
       <category term="学习笔记" scheme="http://geeksblog.cc/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>异步那些事</title>
-    <link href="http://geeksblog.cc/async-dev.html"/>
-    <id>http://geeksblog.cc/async-dev.html</id>
-    <published>2017-04-14T02:11:58.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 异步那些事：</strong> <Excerpt in index | 首页摘要><br>在异步大行其道的今天，作为一个开发者你如果连异步都不了解，肯定会被同行看不清的，骚年还是学一下吧<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="异步简介"><a href="#异步简介" class="headerlink" title="异步简介`"></a>异步简介`</h2><h2 id="异步解决方案演变"><a href="#异步解决方案演变" class="headerlink" title="异步解决方案演变"></a>异步解决方案演变</h2><h2 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h2><h2 id="generator"><a href="#generator" class="headerlink" title="generator"></a>generator</h2><h2 id="async"><a href="#async" class="headerlink" title="async"></a>async</h2><blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 异步那些事：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;在异步大行其道的今天，作为一个开发者你如果连异步都不了解，肯定会被同行看不清的，骚年还是学一下吧&lt;br&gt;
-    
-    </summary>
-    
-      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="node" scheme="http://geeksblog.cc/tags/node/"/>
     
   </entry>
   
@@ -1636,6 +1528,216 @@
     
     
       <category term="hexo" scheme="http://geeksblog.cc/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu服务器详细配置</title>
+    <link href="http://geeksblog.cc/server-config.html"/>
+    <id>http://geeksblog.cc/server-config.html</id>
+    <published>2016-11-28T12:36:03.000Z</published>
+    <updated>2017-06-14T02:41:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> ubuntu服务器私人定制：</strong> <Excerpt in index | 首页摘要><br>把ubuntu服务器打造成自己的个性服务器，装逼必备！！！<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<p>##　说明<br><strong>此教程针对Ubuntu14,其他版本仅作参考</strong></p>
+<p>##　用户密码管理<br><code>sudo passwd root</code></p>
+<ol>
+<li>添加一个用户组并指定id为1002<br><code>sudo groupadd －g 1002 www</code></li>
+<li><p>添加一个用户到www组并指定id为1003<br><code>sudo useradd wyx -g 1002 -u 1003 -m</code></p>
+</li>
+<li><p>修改用户的密码<br><code>sudo passwd wyx</code></p>
+</li>
+<li><p>删除一个用户<br><code>sudo userdel wyx</code></p>
+</li>
+<li><p>为该用户添加sudo权限</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo usermod <span class="_">-a</span> -G adm wyx</div><div class="line">sudo usermod <span class="_">-a</span> -G sudo wyx</div></pre></td></tr></table></figure>
+<ol>
+<li>查看所有用户和用户组：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cat /etc/passwd</div><div class="line">cat /etc/group</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><ol>
+<li>安装nvm<code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash</code></li>
+<li>安装node<code>nvm install v4.4.4</code>,安装<code>nvm install v6.9.1</code></li>
+<li>设置默认的node版本<code>nvm alias default v4.4.4</code></li>
+<li>安装npm3  <code>npm install -g npm@3</code></li>
+<li>设置淘宝的cnpm源  <code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></li>
+<li>验证安装<code>node -v,npm -v,cnpm -v</code><h2 id="安装node常用包"><a href="#安装node常用包" class="headerlink" title="安装node常用包"></a>安装node常用包</h2></li>
+<li>安装pm2<code>cnpm install -g pm2</code></li>
+<li>安装hexo博客<code>cnpm install -g hexo-cli</code></li>
+<li>安装同步插件rsync<code>cnpm install -g rsync</code></li>
+</ol>
+<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><ol>
+<li>apt安装</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install -y docker.io</div><div class="line">sudo ln -sf /usr/bin/docker.io /usr/<span class="built_in">local</span>/bin/docker</div><div class="line">sudo sed -i <span class="string">'$acomplete -F _docker docker'</span> /etc/bash_completion.d/docker.io</div></pre></td></tr></table></figure>
+<ol>
+<li>源码安装最新版本</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apt-transport-https</div><div class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9</div><div class="line">sudo bash -c <span class="string">"echo deb https://get.docker.io/ubuntu docker main &gt; /etc/apt/sources.list.d/docker.list"</span></div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install lxc-docker</div></pre></td></tr></table></figure>
+<ol>
+<li>验证安装版本<br><code>docker -v</code></li>
+</ol>
+<h2 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h2><p><code>sudo apt-get install nginx</code><br>启动和配置nginx</p>
+<h2 id="安装redis"><a href="#安装redis" class="headerlink" title="安装redis"></a>安装redis</h2><p><code>sudo apt-get install redis-server</code><br>启动和配置文件:</p>
+<h2 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h2><ol>
+<li>安装3.0</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10</div><div class="line"><span class="built_in">echo</span> <span class="string">"deb http://repo.mongodb.org/apt/debian wheezy/mongodb-org/3.0 main"</span> | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list</div><div class="line">apt-get update  </div><div class="line">apt-get install mongodb-org</div></pre></td></tr></table></figure>
+<ol>
+<li>安装3.2最新版</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927</div><div class="line"><span class="built_in">echo</span> <span class="string">"deb http://repo.mongodb.org/apt/ubuntu "</span>$(lsb_release -sc)<span class="string">"/mongodb-org/3.2 multiverse"</span> | sudo tee /etc/apt/sources.list.d/mongodb.list</div><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install mongodb-org</div></pre></td></tr></table></figure>
+<ol>
+<li><p>制定版本<br><code>apt-get install mongodb-org=3.2.0 mongodb-org-server=3.2.0 mongodb-org-shell=3.2.0 mongodb-org-mongos=3.2.0 mongodb-org-tools=3.2.0</code></p>
+</li>
+<li><p>启动服务</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo service mongod start</div><div class="line">sudo service mongod stop</div></pre></td></tr></table></figure>
+<ol>
+<li>验证安装<br><code>mongod --version</code></li>
+</ol>
+<p>配置</p>
+<h2 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装jdk</h2><p>安装jdk1.7<code>sudo apt-get install openjdk-7-jdk</code><br>源码安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /usr/lib/jvm</div><div class="line">sudo tar zxvf jdk-7u21-linux-i586.tar.gz -C /usr/lib/jvm</div><div class="line"><span class="built_in">cd</span> /usr/lib/jvm</div><div class="line">sudo mv jdk1.7.0_21 java</div><div class="line"></div><div class="line">sudo vim ~/.bashrc</div><div class="line"></div><div class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java</div><div class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">$&#123;JAVA_HOME&#125;</span>/jre  </div><div class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$&#123;JAVA_HOME&#125;</span>/lib:<span class="variable">$&#123;JRE_HOME&#125;</span>/lib  </div><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$&#123;JAVA_HOME&#125;</span>/bin:<span class="variable">$PATH</span></div></pre></td></tr></table></figure>
+<h2 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h2><p>实用ubuntu自带的工具下载<br><code>sudo apt-get install mysql-server</code></p>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><p>常见的方法有两种。</p>
+<ol>
+<li><p>在用户主目录下有一个 .bashrc 文件，可以在此文件中加入 PATH 的设置如下：<br><code>export PATH=”$PATH:/your path1/:/your path2/…..”</code></p>
+</li>
+<li><p>在 /etc/profile中增加</p>
+<pre><code class="bash">PATH=<span class="string">"<span class="variable">$PATH</span>:/home/zhengb66/bin"</span> 
+<span class="built_in">export</span> PATH
+</code></pre>
+</li>
+</ol>
+<h2 id="开机自启动"><a href="#开机自启动" class="headerlink" title="开机自启动"></a>开机自启动</h2><ol>
+<li><p>方法一，编辑rc.loacl脚本<br>Ubuntu开机之后会执行/etc/rc.local文件中的脚本，<br>所以我们可以直接在/etc/rc.local中添加启动脚本。<br>当然要添加到语句：exit 0 前面才行。代码如下:<br><code>sudo vi /etc/rc.local</code><br>然后在 exit 0 前面添加好脚本代码。</p>
+</li>
+<li><p>方法二，添加一个Ubuntu的开机启动服务。<br>如果要添加为开机启动执行的脚本文件，<br>可先将脚本复制或者软连接到/etc/init.d/目录下，<br>然后用：update-rc.d xxx defaults NN命令(NN为启动顺序)，<br>将脚本添加到初始化执行的队列中去。<br>注意如果脚本需要用到网络，则NN需设置一个比较大的数字，如99。<br>1) 将你的启动脚本复制到 /etc/init.d目录下<br>以下假设你的脚本文件名为 test。<br>2) 设置脚本文件的权限</p>
+</li>
+</ol>
+<p>代码如下:<br><code>sudo chmod 755 /etc/init.d/test</code><br>3) 执行如下命令将脚本放到启动脚本中去：<br>代码如下:<br><code>cd /etc/init.d</code>  <code>sudo update-rc.d test defaults 95</code><br> 注：其中数字95是脚本启动的顺序号，按照自己的需要相应修改即可。在你有多个启动脚本，而它们之间又有先后启动的依赖关系时你就知道这个数字的具体作用了。该命令的输出信息参考如下：<br>卸载启动脚本的方法：<br>代码如下:<br><code>cd /etc/init.d</code><br><code>sudo update-rc.d -f test remove</code></p>
+<h2 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h2><p>在Ubuntu下，cron是被默认安装并启动的。通过查看/etc/crontab<br>推荐使用crontab -e命令添加自定义的任务（编辑的是/var/spool/cron下对应用户的cron文件，在/var/spool/cron下的crontab文件 不可以直接创建或者直接修改，crontab文件是通过crontab命令得到的）。<br><code>crontab -e</code></p>
+<ol>
+<li><p>直接执行命令行<br>每2分钟打印一个字符串“Hello World”，保存至文件/home/laigw/cron/HelloWorld.txt中，cron 格式如下：<br><code>*/2 * * * * echo “Hello World.” &gt;&gt; /home/HelloWorld.txt</code></p>
+</li>
+<li><p>shell 文件<br>每3分钟调用一次 /home/laigw/cron/test.sh 文件，cron 格式如下：<br><code>*/3 * * * * /home/laigw/cron/test.sh</code></p>
+<h2 id="ftp和rsync配置"><a href="#ftp和rsync配置" class="headerlink" title="ftp和rsync配置"></a>ftp和rsync配置</h2></li>
+</ol>
+<h2 id="持续集成环境"><a href="#持续集成环境" class="headerlink" title="持续集成环境"></a>持续集成环境</h2><ol>
+<li>jenkens配置</li>
+<li>gitlab配置</li>
+<li>git服务器</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; ubuntu服务器私人定制：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;把ubuntu服务器打造成自己的个性服务器，装逼必备！！！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="linux" scheme="http://geeksblog.cc/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mac开发环境配置</title>
+    <link href="http://geeksblog.cc/mac-dev.html"/>
+    <id>http://geeksblog.cc/mac-dev.html</id>
+    <published>2016-11-27T07:52:38.000Z</published>
+    <updated>2017-05-26T06:12:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> mac开发环境配置：</strong> <Excerpt in index | 首页摘要><br>工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="软件下载说明"><a href="#软件下载说明" class="headerlink" title="软件下载说明"></a>软件下载说明</h2><p>下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的<strong>百度云账号</strong>！！！</p>
+<h2 id="软件分类说明"><a href="#软件分类说明" class="headerlink" title="软件分类说明"></a>软件分类说明</h2><ol>
+<li>通用（开发者必备的软件）</li>
+<li>java类（java开发者必不可少）</li>
+<li>前端类（偏前端和nodejs）</li>
+<li>python类</li>
+<li>数据库类</li>
+<li>其他（php，ruby等等）</li>
+</ol>
+<h2 id="通用软件"><a href="#通用软件" class="headerlink" title="通用软件"></a>通用软件</h2><ol>
+<li>Alfred</li>
+<li>dash</li>
+<li>homebrew</li>
+<li>zsh（oh my zsh）</li>
+<li>sublime text3,</li>
+<li>vscode</li>
+<li>paste(剪切板工具)</li>
+<li>BetterSnapTool(分屏软件)</li>
+<li>cornerstone(svn)</li>
+<li>tower(git)</li>
+<li>alternote()</li>
+<li>paw</li>
+<li>chrome</li>
+<li>firefox</li>
+<li>pdf expert</li>
+<li>CheatSheet</li>
+<li>snippetslab</li>
+</ol>
+<h2 id="java软件"><a href="#java软件" class="headerlink" title="java软件"></a>java软件</h2><ol>
+<li>jdk</li>
+<li>idea</li>
+<li>eclipse</li>
+<li>maven</li>
+<li>zookeeper,dubbo</li>
+<li>tomcat</li>
+<li>apache</li>
+</ol>
+<h2 id="前端必备"><a href="#前端必备" class="headerlink" title="前端必备"></a>前端必备</h2><ol>
+<li>nvm(nodejs,npm,cnpm)</li>
+<li>webpack</li>
+<li>yo</li>
+<li>webstorm</li>
+</ol>
+<h2 id="python必备"><a href="#python必备" class="headerlink" title="python必备"></a>python必备</h2><ol>
+<li>pycharm</li>
+<li>sublime text（插件）</li>
+</ol>
+<h2 id="数据库类"><a href="#数据库类" class="headerlink" title="数据库类"></a>数据库类</h2><ol>
+<li>mysql</li>
+<li>mongodb</li>
+<li>sqllite</li>
+<li>navicate</li>
+<li>robomongo</li>
+<li>redis</li>
+</ol>
+<h2 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h2><ol>
+<li>office</li>
+<li>keynote,pages,number</li>
+<li>photoshop</li>
+</ol>
+<p>文章长期更新，请收藏</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; mac开发环境配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
     
   </entry>
   
