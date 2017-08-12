@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-07-29T14:50:48.000Z</updated>
+  <updated>2017-08-12T00:01:59.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用java将GBK工程转为uft8</title>
+    <link href="http://geeksblog.cc/trandsferProject.html"/>
+    <id>http://geeksblog.cc/trandsferProject.html</id>
+    <published>2017-08-11T23:43:59.000Z</published>
+    <updated>2017-08-12T00:01:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 用java将GBK工程转为uft8：</strong> <Excerpt in index | 首页摘要><br>windows下的默认编码为GBK还有gb2312，如何把gbk的java工程转为utf8的呢，如果直接修改工程编码，其实里面的java文件中中文是会乱码的，写了个批量转换java工程的程序，消遣一下。<br><a id="more"></a></p>
+<p><The rest of contents | 余下全文></p>
+<h2 id="为什么要转码？"><a href="#为什么要转码？" class="headerlink" title="为什么要转码？"></a>为什么要转码？</h2><p>有些老的项目，或者朋友的项目之前没注意在windows上不是utf8，而你有需要看注释或者什么，总不能一个文件一个文件的去改编码属性吧。</p>
+<h2 id="本程序试用范围"><a href="#本程序试用范围" class="headerlink" title="本程序试用范围"></a>本程序试用范围</h2><p>gbk的代码，或者gb2312的工程均可以转换</p>
+<h2 id="编码转换的思路"><a href="#编码转换的思路" class="headerlink" title="编码转换的思路"></a>编码转换的思路</h2><p>本来想做成一个通用的会自动检测编码，自动转换的程序。但是由于判断编码类型不准，所以做成了针对GBK的转换。</p>
+<ol>
+<li>制定gbk编码把文件流读进来，加载到内存，转为String类型的内容</li>
+<li>将String内容转为utf8的String</li>
+<li>将String内容写入文件</li>
+</ol>
+<h2 id="核心代码："><a href="#核心代码：" class="headerlink" title="核心代码："></a>核心代码：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TransferProject</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">transferFile</span><span class="params">(String pathName, <span class="keyword">int</span> depth)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        File dirFile = <span class="keyword">new</span> File(pathName);</div><div class="line">        <span class="keyword">if</span> (!isValidFile(dirFile)) <span class="keyword">return</span>;</div><div class="line">        <span class="comment">//获取此目录下的所有文件名与目录名</span></div><div class="line">        String[] fileList = dirFile.list();</div><div class="line">        <span class="keyword">int</span> currentDepth = depth + <span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; fileList.length; i++) &#123;</div><div class="line">            String string = fileList[i];</div><div class="line">            File file = <span class="keyword">new</span> File(dirFile.getPath(), string);</div><div class="line">            String name = file.getName();</div><div class="line">            <span class="comment">//如果是一个目录，搜索深度depth++，输出目录名后，进行递归</span></div><div class="line">            <span class="keyword">if</span> (file.isDirectory()) &#123;</div><div class="line">                <span class="comment">//递归</span></div><div class="line">                transferFile(file.getCanonicalPath(), currentDepth);</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                <span class="keyword">if</span> (name.contains(<span class="string">".java"</span>) || name.contains(<span class="string">".properties"</span>) || name.contains(<span class="string">".xml"</span>)) &#123;</div><div class="line">                    readAndWrite(file);</div><div class="line">                    System.out.println(name + <span class="string">" has converted to utf8 "</span>);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isValidFile</span><span class="params">(File dirFile)</span> <span class="keyword">throws</span> IOException </span>&#123;</div><div class="line">        <span class="keyword">if</span> (dirFile.exists()) &#123;</div><div class="line">            System.out.println(<span class="string">"file exist"</span>);</div><div class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span> (dirFile.isDirectory()) &#123;</div><div class="line">            <span class="keyword">if</span> (dirFile.isFile()) &#123;</div><div class="line">                System.out.println(dirFile.getCanonicalFile());</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">readAndWrite</span><span class="params">(File file)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        String  content = FileUtils.readFileByEncode(file.getPath(), <span class="string">"GBK"</span>);</div><div class="line">        FileUtils.writeByBufferedReader(file.getPath(), <span class="keyword">new</span> String(content.getBytes(<span class="string">"UTF-8"</span>), <span class="string">"UTF-8"</span>));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        <span class="comment">//程序入口，制定src的path</span></div><div class="line">        String path = <span class="string">"/Users/mac/Downloads/unit06_jdbc/src"</span>;</div><div class="line">        transferFile(path, <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FileUtils</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">writeByBufferedReader</span><span class="params">(String path, String content)</span> </span>&#123;</div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            File file = <span class="keyword">new</span> File(path);</div><div class="line">            file.delete();</div><div class="line">            <span class="keyword">if</span> (!file.exists()) &#123;</div><div class="line">                file.createNewFile();</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            FileWriter fw = <span class="keyword">new</span> FileWriter(file, <span class="keyword">false</span>);</div><div class="line">            BufferedWriter bw = <span class="keyword">new</span> BufferedWriter(fw);</div><div class="line">            bw.write(content);</div><div class="line">            bw.flush();</div><div class="line">            bw.close();</div><div class="line"></div><div class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">readFileByEncode</span><span class="params">(String path, String chatSet)</span> <span class="keyword">throws</span> Exception </span>&#123;</div><div class="line">        InputStream input = <span class="keyword">new</span> FileInputStream(path);</div><div class="line">        InputStreamReader in = <span class="keyword">new</span> InputStreamReader(input, chatSet);</div><div class="line">        BufferedReader reader = <span class="keyword">new</span> BufferedReader(in);</div><div class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</div><div class="line">        String line = reader.readLine();</div><div class="line">        <span class="keyword">while</span> (line != <span class="keyword">null</span>) &#123;</div><div class="line">            sb.append(line);</div><div class="line">            sb.append(<span class="string">"\r\n"</span>);</div><div class="line">            line = reader.readLine();</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> sb.toString();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>遇到类似的问题，都可以试着用代码来进行实现，给自己的编码带来一些新的乐趣，也增加自己的信心。</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 用java将GBK工程转为uft8：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;windows下的默认编码为GBK还有gb2312，如何把gbk的java工程转为utf8的呢，如果直接修改工程编码，其实里面的java文件中中文是会乱码的，写了个批量转换java工程的程序，消遣一下。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="java" scheme="http://geeksblog.cc/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>阿拉伯数字转汉字写法</title>
@@ -1649,95 +1687,6 @@
     
     
       <category term="linux" scheme="http://geeksblog.cc/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac开发环境配置</title>
-    <link href="http://geeksblog.cc/mac-dev.html"/>
-    <id>http://geeksblog.cc/mac-dev.html</id>
-    <published>2016-11-27T07:52:38.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> mac开发环境配置：</strong> <Excerpt in index | 首页摘要><br>工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="软件下载说明"><a href="#软件下载说明" class="headerlink" title="软件下载说明"></a>软件下载说明</h2><p>下面所提到的软件，有很多需要付费或者破解版，为了方便大家使用，会在网盘分享给大家，只需在评论的地方留下自己的<strong>百度云账号</strong>！！！</p>
-<h2 id="软件分类说明"><a href="#软件分类说明" class="headerlink" title="软件分类说明"></a>软件分类说明</h2><ol>
-<li>通用（开发者必备的软件）</li>
-<li>java类（java开发者必不可少）</li>
-<li>前端类（偏前端和nodejs）</li>
-<li>python类</li>
-<li>数据库类</li>
-<li>其他（php，ruby等等）</li>
-</ol>
-<h2 id="通用软件"><a href="#通用软件" class="headerlink" title="通用软件"></a>通用软件</h2><ol>
-<li>Alfred</li>
-<li>dash</li>
-<li>homebrew</li>
-<li>zsh（oh my zsh）</li>
-<li>sublime text3,</li>
-<li>vscode</li>
-<li>paste(剪切板工具)</li>
-<li>BetterSnapTool(分屏软件)</li>
-<li>cornerstone(svn)</li>
-<li>tower(git)</li>
-<li>alternote()</li>
-<li>paw</li>
-<li>chrome</li>
-<li>firefox</li>
-<li>pdf expert</li>
-<li>CheatSheet</li>
-<li>snippetslab</li>
-</ol>
-<h2 id="java软件"><a href="#java软件" class="headerlink" title="java软件"></a>java软件</h2><ol>
-<li>jdk</li>
-<li>idea</li>
-<li>eclipse</li>
-<li>maven</li>
-<li>zookeeper,dubbo</li>
-<li>tomcat</li>
-<li>apache</li>
-</ol>
-<h2 id="前端必备"><a href="#前端必备" class="headerlink" title="前端必备"></a>前端必备</h2><ol>
-<li>nvm(nodejs,npm,cnpm)</li>
-<li>webpack</li>
-<li>yo</li>
-<li>webstorm</li>
-</ol>
-<h2 id="python必备"><a href="#python必备" class="headerlink" title="python必备"></a>python必备</h2><ol>
-<li>pycharm</li>
-<li>sublime text（插件）</li>
-</ol>
-<h2 id="数据库类"><a href="#数据库类" class="headerlink" title="数据库类"></a>数据库类</h2><ol>
-<li>mysql</li>
-<li>mongodb</li>
-<li>sqllite</li>
-<li>navicate</li>
-<li>robomongo</li>
-<li>redis</li>
-</ol>
-<h2 id="其他软件"><a href="#其他软件" class="headerlink" title="其他软件"></a>其他软件</h2><ol>
-<li>office</li>
-<li>keynote,pages,number</li>
-<li>photoshop</li>
-</ol>
-<p>文章长期更新，请收藏</p>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; mac开发环境配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;工欲善其事，必先利其器，做好开发者，先搞好开发环境啊。针对mac开发者的开发配置，把mac打造成最具生产力工具！&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
     
   </entry>
   
