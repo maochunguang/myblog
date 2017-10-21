@@ -3,7 +3,7 @@ date: 2017-10-20 23:46:59
 tags: 算法
 categories: algorithm
 ---
-** {{ title }}：** <Excerpt in index | 首页摘要>
+** {{ 30天突破算法之快速排序 }}：** <Excerpt in index | 首页摘要>
 30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。
 <!-- more -->
 <The rest of contents | 余下全文>
@@ -70,17 +70,40 @@ public class QuickSort {
 }
 ```
 
-## 快速排序的java实现（非递归）
+## 快速排序三向切分法（改进的实现）
+```java
+    private static void quick3Sort(int[] a, int low, int high) {
+        if (low >= high) return;
+        int lt = low, gt = high;
+        int temp = a[low];
+        int i = low;
+        while (i <= gt) {
+            if (a[i] < temp) swap(a, lt++, i++);
+            else if (a[i] > temp) swap(a, i, gt--);
+            else i++;
+        }
+        quick3Sort(a, low, lt - 1);
+        quick3Sort(a, gt + 1, high);
+    }
+
+    private static void swap(int[] a, int i, int j) {
+        int swap = a[i];
+        a[i] = a[j];
+        a[j] = swap;
+    }
+```
 
 ## 快速排序的复杂度
-时间复杂度 nlogn
-空间复杂度
+时间复杂度 nlogn,排序方法中平均性能最好的。但若初始序列按关键码有序或基本有序时，快排序反而蜕化为冒泡排序。快速排序是一个不稳定的排序方法。
 
 ## 改进方法
+1. 当数组比较小的时候，快速排序比插入排序慢，这个时候用插入排序替换比较好。
+2. 通常以“三者取中法”来选取基准记录，即将排序区间的两个端点与中点三个记录关键码居中的调整为支点记录
 
-
-
-
+## 适用场景
+- 普通的无序集合排序，使用快速排序。 
+- 包含很多重复元素的集合排序，使用三向切分的快速排序。
+- 基本有序的集合使用归并排序。
 
 
 
