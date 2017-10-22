@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-10-22T16:20:01.000Z</updated>
+  <updated>2017-10-22T16:24:45.847Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://geeksblog.cc/suanfa-3.html"/>
     <id>http://geeksblog.cc/suanfa-3.html</id>
     <published>2017-10-22T13:51:03.000Z</published>
-    <updated>2017-10-22T16:20:01.000Z</updated>
+    <updated>2017-10-22T16:24:45.847Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> ：</strong> <Excerpt in index | 首页摘要><br>    希尔排序平常用的比较少，主要是基于插入排序的改进。但是希尔排序的性能很高，数组越大，性能优势越明显。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> 突破算法第三天-希尔排序：</strong> <Excerpt in index | 首页摘要><br>希尔排序平常用的比较少，主要是基于插入排序的改进。但是希尔排序的性能很高，数组越大，性能优势越明显。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h2 id="希尔排序的基本原理"><a href="#希尔排序的基本原理" class="headerlink" title="希尔排序的基本原理"></a>希尔排序的基本原理</h2><p>基本思想：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。<br>操作方法：</p>
@@ -41,7 +41,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    希尔排序平常用的比较少，主要是基于插入排序的改进。但是希尔排序的性能很高，数组越大，性能优势越明显。&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; 突破算法第三天-希尔排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;希尔排序平常用的比较少，主要是基于插入排序的改进。但是希尔排序的性能很高，数组越大，性能优势越明显。&lt;br&gt;
     
     </summary>
     
@@ -57,9 +57,9 @@
     <link href="http://geeksblog.cc/suanfa-2.html"/>
     <id>http://geeksblog.cc/suanfa-2.html</id>
     <published>2017-10-21T01:41:27.000Z</published>
-    <updated>2017-10-22T16:15:31.081Z</updated>
+    <updated>2017-10-22T16:24:49.390Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> ：</strong> <Excerpt in index | 首页摘要><br>    今天是突破算法第二天，插入排序，比较简单。效率比较低，但是思想很广泛，应用很广，是很多高级排序算法的一个子过程。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> 突破算法第二天-插入排序：</strong> <Excerpt in index | 首页摘要><br>今天是突破算法第二天，插入排序，比较简单。效率比较低，但是思想很广泛，应用很广，是很多高级排序算法的一个子过程。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h2 id="插入排序的原理"><a href="#插入排序的原理" class="headerlink" title="插入排序的原理"></a>插入排序的原理</h2><p> 将一个记录插入到已排序好的有序表中，从而得到一个新，记录数增1的有序表。即：先将序列的第1个记录<br> 看成是一个有序的子序列，然后从第2个记录逐个进行插入，直至整个序列有序为止。<br> 要点：设立哨兵，作为临时存储和判断数组边界之用</p>
@@ -81,7 +81,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    今天是突破算法第二天，插入排序，比较简单。效率比较低，但是思想很广泛，应用很广，是很多高级排序算法的一个子过程。&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; 突破算法第二天-插入排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;今天是突破算法第二天，插入排序，比较简单。效率比较低，但是思想很广泛，应用很广，是很多高级排序算法的一个子过程。&lt;br&gt;
     
     </summary>
     
@@ -97,9 +97,9 @@
     <link href="http://geeksblog.cc/suanfa-1.html"/>
     <id>http://geeksblog.cc/suanfa-1.html</id>
     <published>2017-10-20T15:46:59.000Z</published>
-    <updated>2017-10-21T16:12:08.000Z</updated>
+    <updated>2017-10-22T16:24:56.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> ：</strong> <Excerpt in index | 首页摘要><br>    30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> 突破算法第一天-快速排序：</strong> <Excerpt in index | 首页摘要><br>30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h2 id="30天突破算法"><a href="#30天突破算法" class="headerlink" title="30天突破算法"></a>30天突破算法</h2><p>算法种类不计其数，说30天突破只是给自己定的学习计划。目的是通过30天的记录熟悉常见的算法，提高自己的算法能力。对以后的工作来说也是打下夯实的基础。</p>
@@ -129,7 +129,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; 突破算法第一天-快速排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。&lt;br&gt;
     
     </summary>
     
@@ -145,9 +145,9 @@
     <link href="http://geeksblog.cc/study-plan.html"/>
     <id>http://geeksblog.cc/study-plan.html</id>
     <published>2017-10-18T11:47:55.000Z</published>
-    <updated>2017-10-20T16:27:24.266Z</updated>
+    <updated>2017-10-22T16:25:27.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> NaN：</strong> <Excerpt in index | 首页摘要><br>    作为一个非专业出身的程序员，一直对算法的学习赶紧断断续续，终于下定决心对算法做一次详细总结。30天时间把程序员常用算法逐一突破。这次计划更是对自己的一次挑战，希望自己能坚持到最后！<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> 学习计划-30天突破算法：</strong> <Excerpt in index | 首页摘要><br>作为一个非专业出身的程序员，一直对算法的学习赶紧断断续续，终于下定决心对算法做一次详细总结。30天时间把程序员常用算法逐一突破。这次计划更是对自己的一次挑战，希望自己能坚持到最后！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h2 id="30天突破算法"><a href="#30天突破算法" class="headerlink" title="30天突破算法"></a>30天突破算法</h2><h3 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h3><ol>
@@ -208,7 +208,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; NaN：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    作为一个非专业出身的程序员，一直对算法的学习赶紧断断续续，终于下定决心对算法做一次详细总结。30天时间把程序员常用算法逐一突破。这次计划更是对自己的一次挑战，希望自己能坚持到最后！&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; 学习计划-30天突破算法：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;作为一个非专业出身的程序员，一直对算法的学习赶紧断断续续，终于下定决心对算法做一次详细总结。30天时间把程序员常用算法逐一突破。这次计划更是对自己的一次挑战，希望自己能坚持到最后！&lt;br&gt;
     
     </summary>
     
