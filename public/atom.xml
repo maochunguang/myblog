@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-10-21T01:45:44.000Z</updated>
+  <updated>2017-10-22T16:20:01.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -16,24 +16,72 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>突破算法第二天-插入排序</title>
-    <link href="http://geeksblog.cc/suanfa-2.html"/>
-    <id>http://geeksblog.cc/suanfa-2.html</id>
-    <published>2017-10-21T01:41:27.000Z</published>
-    <updated>2017-10-21T01:45:44.000Z</updated>
+    <title>突破算法第三天-希尔排序</title>
+    <link href="http://geeksblog.cc/suanfa-3.html"/>
+    <id>http://geeksblog.cc/suanfa-3.html</id>
+    <published>2017-10-22T13:51:03.000Z</published>
+    <updated>2017-10-22T16:20:01.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> ：</strong> <Excerpt in index | 首页摘要></p>
-<a id="more"></a>
+    <content type="html"><![CDATA[<p><strong> ：</strong> <Excerpt in index | 首页摘要><br>    希尔排序平常用的比较少，主要是基于插入排序的改进。但是希尔排序的性能很高，数组越大，性能优势越明显。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h2 id="插入排序的原理"><a href="#插入排序的原理" class="headerlink" title="插入排序的原理"></a>插入排序的原理</h2><h2 id="插入排序java实现"><a href="#插入排序java实现" class="headerlink" title="插入排序java实现"></a>插入排序java实现</h2><h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><h2 id="改进方案"><a href="#改进方案" class="headerlink" title="改进方案"></a>改进方案</h2><h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><blockquote>
+<h2 id="希尔排序的基本原理"><a href="#希尔排序的基本原理" class="headerlink" title="希尔排序的基本原理"></a>希尔排序的基本原理</h2><p>基本思想：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。<br>操作方法：</p>
+<ol>
+<li>选择一个增量序列t1，t2，…，tk，其中ti&gt;tj，tk=1； </li>
+<li>按增量序列个数k，对序列进行k 趟排序； </li>
+<li>每趟排序，根据对应的增量ti，将待排序列分割成若干长度为m 的子序列，分别对各子表进行直接插入排序。仅增量因子为1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。</li>
+</ol>
+<p><img src="http://o7kalf5h3.bkt.clouddn.com/shellSort.jpg" alt="希尔排序原理图"></p>
+<h2 id="希尔排序java实现"><a href="#希尔排序java实现" class="headerlink" title="希尔排序java实现"></a>希尔排序java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">shellSort</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> n = a.length;</div><div class="line">    <span class="keyword">int</span> h = <span class="number">1</span>;</div><div class="line">    <span class="keyword">while</span> (h &lt; n/<span class="number">3</span>) h = <span class="number">3</span>*h + <span class="number">1</span>;</div><div class="line">    <span class="keyword">while</span> (h &gt;= <span class="number">1</span>) &#123;</div><div class="line">        <span class="comment">// h-sort the array</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = h; i &lt; n; i++) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &gt;= h &amp;&amp; (a[j]&lt; a[j-h]); j -= h) &#123;</div><div class="line">                swap(a, j, j-h);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        h /= <span class="number">3</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> swap = a[i];</div><div class="line">    a[i] = a[j];</div><div class="line">    a[j] = swap;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><p>希尔排序时效分析很难，关键码的比较次数与记录移动次数依赖于增量因子序列d的选取，是一个不稳定排序算法</p>
+<h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt; ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    希尔排序平常用的比较少，主要是基于插入排序的改进。但是希尔排序的性能很高，数组越大，性能优势越明显。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
+    
+    
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>突破算法第二天-插入排序</title>
+    <link href="http://geeksblog.cc/suanfa-2.html"/>
+    <id>http://geeksblog.cc/suanfa-2.html</id>
+    <published>2017-10-21T01:41:27.000Z</published>
+    <updated>2017-10-22T16:15:31.081Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> ：</strong> <Excerpt in index | 首页摘要><br>    今天是突破算法第二天，插入排序，比较简单。效率比较低，但是思想很广泛，应用很广，是很多高级排序算法的一个子过程。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="插入排序的原理"><a href="#插入排序的原理" class="headerlink" title="插入排序的原理"></a>插入排序的原理</h2><p> 将一个记录插入到已排序好的有序表中，从而得到一个新，记录数增1的有序表。即：先将序列的第1个记录<br> 看成是一个有序的子序列，然后从第2个记录逐个进行插入，直至整个序列有序为止。<br> 要点：设立哨兵，作为临时存储和判断数组边界之用</p>
+<p><img src="http://o7kalf5h3.bkt.clouddn.com/insert.jpg" alt="插入排序原理"></p>
+<h2 id="插入排序java实现"><a href="#插入排序java实现" class="headerlink" title="插入排序java实现"></a>插入排序java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insertSort</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</div><div class="line">           <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &gt; <span class="number">0</span> &amp;&amp; (a[j]&lt;a[j-<span class="number">1</span>]); j--) &#123;</div><div class="line">               swap(a, j, j-<span class="number">1</span>);</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</div><div class="line">       <span class="keyword">int</span> swap = a[i];</div><div class="line">       a[i] = a[j];</div><div class="line">       a[j] = swap;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><p>插入排序的复杂度为O（n^2）</p>
+<h2 id="改进方法"><a href="#改进方法" class="headerlink" title="改进方法"></a>改进方法</h2><p>希尔排序，其他的插入排序有二分插入排序，2-路插入排序。</p>
+<h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><p>插入排序比较适合部分有序的数组（以下四种数组）</p>
+<ul>
+<li>数组中每个元素距离它的最终位置都不远</li>
+<li>一个有序的大数组接一个小数组</li>
+<li>数组中只有几个位置不正确</li>
+<li>数组比较小</li>
+</ul>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    今天是突破算法第二天，插入排序，比较简单。效率比较低，但是思想很广泛，应用很广，是很多高级排序算法的一个子过程。&lt;br&gt;
     
     </summary>
     
@@ -49,9 +97,9 @@
     <link href="http://geeksblog.cc/suanfa-1.html"/>
     <id>http://geeksblog.cc/suanfa-1.html</id>
     <published>2017-10-20T15:46:59.000Z</published>
-    <updated>2017-10-21T16:07:23.645Z</updated>
+    <updated>2017-10-21T16:12:08.000Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> ：</strong> <Excerpt in index | 首页摘要><br>30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p><strong> ：</strong> <Excerpt in index | 首页摘要><br>    30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h2 id="30天突破算法"><a href="#30天突破算法" class="headerlink" title="30天突破算法"></a>30天突破算法</h2><p>算法种类不计其数，说30天突破只是给自己定的学习计划。目的是通过30天的记录熟悉常见的算法，提高自己的算法能力。对以后的工作来说也是打下夯实的基础。</p>
@@ -81,7 +129,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。&lt;br&gt;
+      &lt;p&gt;&lt;strong&gt; ：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;    30天突破算法是我给自己定的一个学习计划，希望在这30天，每天都能完成计划。第一天学习最重要的快速排序。&lt;br&gt;
     
     </summary>
     
@@ -1004,68 +1052,6 @@
     
     
       <category term="学习笔记" scheme="http://geeksblog.cc/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个完整项目的得失</title>
-    <link href="http://geeksblog.cc/fullprj-desc.html"/>
-    <id>http://geeksblog.cc/fullprj-desc.html</id>
-    <published>2017-04-11T02:18:22.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 一个完整项目的得失：</strong> <Excerpt in index | 首页摘要><br>想做一个完美的cms太难，架构本身就是要有取舍，只有最合适的架构，没有最好的架构。<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>今年从2月份到4月份做了一个完整到项目，后台cms系统，包括前台应用。写打造一个完美到系统，确实需要考虑太多因素，<br>自己收获颇多，特此总结一下。</p>
-<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><p>cms后台主要使用java的spring，mybits，shiro框架，前台就是jquery，jsp，bootstrap，<br>数据库方面是mysql，缓存没有使用</p>
-<h2 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h2><p>使用mysql设计数据库，对业务的不深入很多时候会导致设置的表满足不了需求</p>
-<ol>
-<li>提前预留几个def空字段，这样不需要频繁的修改表结构</li>
-<li>索引要建好，数据量增长起来后，没有索引搜索肯定慢的很，对常见的搜索条件建索引</li>
-<li>对并发有个大致的数</li>
-</ol>
-<h2 id="nginx配置"><a href="#nginx配置" class="headerlink" title="nginx配置"></a>nginx配置</h2><ol>
-<li>反向代理配置，代理80端口，代理域名访问</li>
-<li>静态资源缓存，压缩</li>
-<li>websocket配置，https配置</li>
-<li>集群的负载均衡配置</li>
-</ol>
-<h2 id="tomcat配置"><a href="#tomcat配置" class="headerlink" title="tomcat配置"></a>tomcat配置</h2><ol>
-<li>jvm参数设置</li>
-<li>项目路径设置</li>
-<li>日志，重启配置</li>
-</ol>
-<h2 id="安全问题"><a href="#安全问题" class="headerlink" title="安全问题"></a>安全问题</h2><ol>
-<li>防止</li>
-</ol>
-<h2 id="选购服务器和域名"><a href="#选购服务器和域名" class="headerlink" title="选购服务器和域名"></a>选购服务器和域名</h2><ol>
-<li>估算并发量，预留一定的并发量</li>
-<li>根据并发量计算带宽和cpu还有内存</li>
-<li>根据网络情况选择不同区域的服务器</li>
-<li>根据需求选择域名</li>
-</ol>
-<h2 id="突发状况的处理机制"><a href="#突发状况的处理机制" class="headerlink" title="突发状况的处理机制"></a>突发状况的处理机制</h2><ol>
-<li>选购的第三方接口挂了</li>
-<li>数据库挂了</li>
-<li>服务器挂了</li>
-<li>网络异常</li>
-</ol>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 一个完整项目的得失：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;想做一个完美的cms太难，架构本身就是要有取舍，只有最合适的架构，没有最好的架构。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="java" scheme="http://geeksblog.cc/tags/java/"/>
     
   </entry>
   

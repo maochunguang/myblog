@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/suanfa-1.html</loc>
-    <lastmod>2017-10-21T16:07:23.645Z</lastmod>
+    <loc>http://geeksblog.cc/suanfa-3.html</loc>
+    <lastmod>2017-10-22T16:20:01.000Z</lastmod>
     <data>
         <display>
-        <title>突破算法第一天-快速排序</title>
-        <pubTime>2017-10-20T15:46:59.000Z</pubTime>
+        <title>突破算法第三天-希尔排序</title>
+        <pubTime>2017-10-22T13:51:03.000Z</pubTime>
         
         <tag>算法</tag>
          
@@ -25,11 +25,31 @@
     
   <url>
     <loc>http://geeksblog.cc/suanfa-2.html</loc>
-    <lastmod>2017-10-21T01:45:44.000Z</lastmod>
+    <lastmod>2017-10-22T16:15:31.081Z</lastmod>
     <data>
         <display>
         <title>突破算法第二天-插入排序</title>
         <pubTime>2017-10-21T01:41:27.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="algorithm" url="http://geeksblog.cc/categories/algorithm/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://geeksblog.cc/suanfa-1.html</loc>
+    <lastmod>2017-10-21T16:12:08.000Z</lastmod>
+    <data>
+        <display>
+        <title>突破算法第一天-快速排序</title>
+        <pubTime>2017-10-20T15:46:59.000Z</pubTime>
         
         <tag>算法</tag>
          
@@ -345,26 +365,6 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/wechat-dev.html</loc>
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    <data>
-        <display>
-        <title>微信公众号开发</title>
-        <pubTime>2017-04-28T04:55:33.000Z</pubTime>
-        
-        <tag>编程语言</tag>
-         
-         
-           
-             
-              <breadCrumb title="javacript" url="http://geeksblog.cc/categories/javacript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://geeksblog.cc/digital-info.html</loc>
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     <data>
@@ -545,26 +545,6 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/node-notes.html</loc>
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    <data>
-        <display>
-        <title>深入浅出Nodejs笔记</title>
-        <pubTime>2016-11-11T11:52:23.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程语言" url="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://geeksblog.cc/node-develop.html</loc>
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     <data>
@@ -591,6 +571,26 @@
         <display>
         <title>Node学习</title>
         <pubTime>2015-12-19T10:58:56.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程语言" url="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://geeksblog.cc/node-notes.html</loc>
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>深入浅出Nodejs笔记</title>
+        <pubTime>2016-11-11T11:52:23.000Z</pubTime>
         
         <tag>node</tag>
          
@@ -665,26 +665,6 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/git-config-study.html</loc>
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    <data>
-        <display>
-        <title>Git学习笔记</title>
-        <pubTime>2016-05-01T00:24:45.000Z</pubTime>
-        
-        <tag>others</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习笔记" url="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://geeksblog.cc/redis-study.html</loc>
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     <data>
@@ -705,19 +685,19 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/git-svn.html</loc>
+    <loc>http://geeksblog.cc/git-config-study.html</loc>
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     <data>
         <display>
-        <title>Git比svn的优势</title>
-        <pubTime>2016-05-22T03:13:00.000Z</pubTime>
+        <title>Git学习笔记</title>
+        <pubTime>2016-05-01T00:24:45.000Z</pubTime>
         
         <tag>others</tag>
          
          
            
              
-              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+              <breadCrumb title="学习笔记" url="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
           
         </display>
     </data>
@@ -725,19 +705,19 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/spider-koa2.html</loc>
+    <loc>http://geeksblog.cc/hexo-config.html</loc>
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     <data>
         <display>
-        <title>用koa2.x写下载漫画的爬虫</title>
-        <pubTime>2017-05-13T23:15:38.000Z</pubTime>
+        <title>Hexo配置和优化记录</title>
+        <pubTime>2016-11-28T15:07:12.000Z</pubTime>
         
-        <tag>nodejs</tag>
+        <tag>hexo</tag>
          
          
            
              
-              <breadCrumb title="学习笔记" url="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+              <breadCrumb title="开发工具" url="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
@@ -765,14 +745,34 @@
 
     
   <url>
-    <loc>http://geeksblog.cc/hexo-config.html</loc>
+    <loc>http://geeksblog.cc/spider-koa2.html</loc>
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     <data>
         <display>
-        <title>Hexo配置和优化记录</title>
-        <pubTime>2016-11-28T15:07:12.000Z</pubTime>
+        <title>用koa2.x写下载漫画的爬虫</title>
+        <pubTime>2017-05-13T23:15:38.000Z</pubTime>
         
-        <tag>hexo</tag>
+        <tag>nodejs</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://geeksblog.cc/git-svn.html</loc>
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>Git比svn的优势</title>
+        <pubTime>2016-05-22T03:13:00.000Z</pubTime>
+        
+        <tag>others</tag>
          
          
            
@@ -838,6 +838,26 @@
            
              
               <breadCrumb title="编程语言" url="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://geeksblog.cc/wechat-dev.html</loc>
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>微信公众号开发</title>
+        <pubTime>2017-04-28T04:55:33.000Z</pubTime>
+        
+        <tag>编程语言</tag>
+         
+         
+           
+             
+              <breadCrumb title="javacript" url="http://geeksblog.cc/categories/javacript/"/>
           
         </display>
     </data>
