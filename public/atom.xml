@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-10-22T16:24:45.847Z</updated>
+  <updated>2017-10-24T15:52:18.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,106 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>突破算法第六天-冒泡排序</title>
+    <link href="http://geeksblog.cc/suanfa-6.html"/>
+    <id>http://geeksblog.cc/suanfa-6.html</id>
+    <published>2017-10-25T14:06:06.000Z</published>
+    <updated>2017-10-24T15:52:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第六天-冒泡排序：</strong> <Excerpt in index | 首页摘要></p>
+<a id="more"></a>
+<The rest of contents | 余下全文>
+
+<h2 id="冒泡排序的原理"><a href="#冒泡排序的原理" class="headerlink" title="冒泡排序的原理"></a>冒泡排序的原理</h2><p>在要排序的一组数中，对当前还未排好序的范围内的全部数，自上而下对相邻的两个数依次进行比较和调整，让较大的数往下沉，较小的往上冒。即：每当两相邻的数比较后发现它们的排序与排序要求相反时，就将它们互换。</p>
+<p><img src="http://o7kalf5h3.bkt.clouddn.com/bubbleSort.jpg" alt="冒泡排序图"></p>
+<h2 id="冒泡排序的java实现"><a href="#冒泡排序的java实现" class="headerlink" title="冒泡排序的java实现"></a>冒泡排序的java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bubbleSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; ++i) &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n - i - <span class="number">1</span>; ++j) &#123;</div><div class="line">            <span class="keyword">if</span> (a[j] &gt; a[j + <span class="number">1</span>]) &#123;</div><div class="line">                <span class="keyword">int</span> tmp = a[j];</div><div class="line">                a[j] = a[j + <span class="number">1</span>];</div><div class="line">                a[j + <span class="number">1</span>] = tmp;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><p>冒泡排序的复杂度为O(n^2)</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第六天-冒泡排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>突破算法第五天-选择排序</title>
+    <link href="http://geeksblog.cc/suanfa-5.html"/>
+    <id>http://geeksblog.cc/suanfa-5.html</id>
+    <published>2017-10-24T13:46:33.000Z</published>
+    <updated>2017-10-24T15:51:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第五天-选择排序：</strong> <Excerpt in index | 首页摘要><br>选择排序很简单，属于交换排序算法。通过比较找到最大值或最小值，然后进行交换。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="选择排序的原理"><a href="#选择排序的原理" class="headerlink" title="选择排序的原理"></a>选择排序的原理</h2><p>首先找到数组中最小的元素，与数组第一个元素交换，然后在剩下的元素中选择最小的，与第二个元素交换，以此类推，直到排序完成。<br><img src="http://o7kalf5h3.bkt.clouddn.com/selectSort.jpg" alt="选择排序图"></p>
+<h2 id="选择排序的java实现"><a href="#选择排序的java实现" class="headerlink" title="选择排序的java实现"></a>选择排序的java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> len = a.length;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; len; i++) &#123;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &gt; <span class="number">0</span> &amp;&amp; (a[j] &lt; a[j - <span class="number">1</span>]); j--) &#123;</div><div class="line">            swap(a, j, j - <span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> swap = a[i];</div><div class="line">    a[i] = a[j];</div><div class="line">    a[j] = swap;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><p>选择排序的算法复杂度是O(n^2)</p>
+<h2 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h2><ol>
+<li>每次选择的时候把最大值和最小值都比较出来，双向进行交换排序</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第五天-选择排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;选择排序很简单，属于交换排序算法。通过比较找到最大值或最小值，然后进行交换。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
+    
+    
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>突破算法第一天-归并排序</title>
+    <link href="http://geeksblog.cc/suanfa-4.html"/>
+    <id>http://geeksblog.cc/suanfa-4.html</id>
+    <published>2017-10-23T15:56:27.000Z</published>
+    <updated>2017-10-24T15:29:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第一天-归并排序：</strong> <Excerpt in index | 首页摘要><br>归并排序是利用分治思想进行排序的典型应用，特别是对几个基本有序的子序列合并时，效率最高。在实际应用中，分布式应用，分布式查询排序会比较多应用到归并排序。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="归并排序的原理"><a href="#归并排序的原理" class="headerlink" title="归并排序的原理"></a>归并排序的原理</h2><p>归并（Merge）排序法是将两个（或两个以上）有序表合并成一个新的有序表，即把待排序序列分为若干个子序列，每个子序列是有序的。然后再把有序子序列合并为整体有序序列。<br>归并排序分为两种种，第一种是自底向上的归并。</p>
+<p>第二种是自顶向下的归并。</p>
+<h2 id="自底向上的归并排序java实现"><a href="#自底向上的归并排序java实现" class="headerlink" title="自底向上的归并排序java实现"></a>自底向上的归并排序java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MergeSortBU</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span>[] aux, <span class="keyword">int</span> lo, <span class="keyword">int</span> mid, <span class="keyword">int</span> hi)</span> </span>&#123;</div><div class="line">        <span class="comment">// 复制到aux[]</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = lo; k &lt;= hi; k++) &#123;</div><div class="line">            aux[k] = a[k];</div><div class="line">        &#125;</div><div class="line">        <span class="comment">// 合并回 a[]</span></div><div class="line">        <span class="keyword">int</span> i = lo, j = mid + <span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = lo; k &lt;= hi; k++) &#123;</div><div class="line">            <span class="keyword">if</span> (i &gt; mid) a[k] = aux[j++];</div><div class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (j &gt; hi) a[k] = aux[i++];</div><div class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (aux[j] &lt; aux[i]) a[k] = aux[j++];</div><div class="line">            <span class="keyword">else</span> a[k] = aux[i++];</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">mergeSort</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> n = a.length;</div><div class="line">        <span class="keyword">int</span>[] aux = <span class="keyword">new</span> <span class="keyword">int</span>[n];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> len = <span class="number">1</span>; len &lt; n; len *= <span class="number">2</span>) &#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> lo = <span class="number">0</span>; lo &lt; n - len; lo += len + len) &#123;</div><div class="line">                <span class="keyword">int</span> mid = lo + len - <span class="number">1</span>;</div><div class="line">                <span class="keyword">int</span> hi = Math.min(lo + len + len - <span class="number">1</span>, n - <span class="number">1</span>);</div><div class="line">                merge(a, aux, lo, mid, hi);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span>[] arr = &#123;<span class="number">49</span>, <span class="number">38</span>, <span class="number">65</span>, <span class="number">97</span>, <span class="number">76</span>, <span class="number">13</span>, <span class="number">27</span>, <span class="number">4</span>, <span class="number">78</span>, <span class="number">34</span>, <span class="number">12</span>, <span class="number">64</span>, <span class="number">1</span>, <span class="number">8</span>&#125;;</div><div class="line">        mergeSort(arr);</div><div class="line">        System.out.println(<span class="string">"排序之后："</span>);</div><div class="line">        System.out.println(Arrays.toString(arr));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="自顶向下的归并排序java实现"><a href="#自顶向下的归并排序java实现" class="headerlink" title="自顶向下的归并排序java实现"></a>自顶向下的归并排序java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (high &lt;= low) <span class="keyword">return</span>;</div><div class="line">        <span class="keyword">int</span> mid = low + (high - low) / <span class="number">2</span>;</div><div class="line">        sort(a, low, mid);</div><div class="line">        sort(a, mid + <span class="number">1</span>, high);</div><div class="line">        merge(a, low, mid, high);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> lo, <span class="keyword">int</span> mid, <span class="keyword">int</span> hi)</span> </span>&#123;</div><div class="line">        <span class="comment">// 复制到aux[]</span></div><div class="line">        <span class="keyword">int</span>[] aux = <span class="keyword">new</span> <span class="keyword">int</span>[a.length];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = lo; k &lt;= hi; k++) &#123;</div><div class="line">            aux[k] = a[k];</div><div class="line">        &#125;</div><div class="line">        <span class="comment">// 合并回 a[]</span></div><div class="line">        <span class="keyword">int</span> i = lo, j = mid + <span class="number">1</span>;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = lo; k &lt;= hi; k++) &#123;</div><div class="line">            <span class="keyword">if</span> (i &gt; mid) a[k] = aux[j++];</div><div class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (j &gt; hi) a[k] = aux[i++];</div><div class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (aux[j] &lt; aux[i]) a[k] = aux[j++];</div><div class="line">            <span class="keyword">else</span> a[k] = aux[i++];</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><p>归并排序的算法复杂度是nlgn</p>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><ol>
+<li>几个基本有序的数组进行排序</li>
+<li>部分有序的数组</li>
+</ol>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第一天-归并排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;归并排序是利用分治思想进行排序的典型应用，特别是对几个基本有序的子序列合并时，效率最高。在实际应用中，分布式应用，分布式查询排序会比较多应用到归并排序。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
+    
+    
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>突破算法第三天-希尔排序</title>
@@ -145,12 +245,17 @@
     <link href="http://geeksblog.cc/study-plan.html"/>
     <id>http://geeksblog.cc/study-plan.html</id>
     <published>2017-10-18T11:47:55.000Z</published>
-    <updated>2017-10-22T16:25:27.000Z</updated>
+    <updated>2017-10-24T15:33:15.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 学习计划-30天突破算法：</strong> <Excerpt in index | 首页摘要><br>作为一个非专业出身的程序员，一直对算法的学习赶紧断断续续，终于下定决心对算法做一次详细总结。30天时间把程序员常用算法逐一突破。这次计划更是对自己的一次挑战，希望自己能坚持到最后！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h2 id="30天突破算法"><a href="#30天突破算法" class="headerlink" title="30天突破算法"></a>30天突破算法</h2><h3 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h3><ol>
+<h2 id="学习排序算法的意义"><a href="#学习排序算法的意义" class="headerlink" title="学习排序算法的意义"></a>学习排序算法的意义</h2><ol>
+<li>学会比较算法的性能的方法</li>
+<li>相关的排序能解决类似的问题</li>
+<li>排序算法很多时候是解决问题的第一步</li>
+</ol>
+<h3 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h3><ol>
 <li>快速排序</li>
 <li>插入排序</li>
 <li>希尔排序</li>
@@ -877,181 +982,6 @@
     
     
       <category term="nodejs" scheme="http://geeksblog.cc/tags/nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信公众号开发</title>
-    <link href="http://geeksblog.cc/wechat-dev.html"/>
-    <id>http://geeksblog.cc/wechat-dev.html</id>
-    <published>2017-04-28T04:55:33.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 微信公众号开发：</strong> <Excerpt in index | 首页摘要><br>微信公众号开发的一些注意事项<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="开发环境搭建"><a href="#开发环境搭建" class="headerlink" title="开发环境搭建"></a>开发环境搭建</h2><ol>
-<li>微信公众号开发者配置，url，token，</li>
-<li>本地调试，使用内网穿透工具，花生壳，或者netapp，买一个可以自定义域名的，内网映射到制定端口，</li>
-<li>项目搭建，express或koa搭建项目，npm有微信的现成包，直接配置</li>
-</ol>
-<h2 id="回复"><a href="#回复" class="headerlink" title="回复"></a>回复</h2><ol>
-<li>回复和发消息并没有什么特别注意的地方，这里不多说</li>
-</ol>
-<h2 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2><ol>
-<li>微信菜单有自定义菜单，有个性化菜单，但是个性化菜单优先级高于个性化菜单</li>
-<li>个性化菜单可以根据用户的tag，sex，group等属性进行区分菜单</li>
-<li>注意，我在使用时发现<strong>个性化菜单经常会失效</strong>，不起作用，偶尔会起作用，如果线上打算使用个性化菜单，请慎重并仔细测试</li>
-</ol>
-<h2 id="授权"><a href="#授权" class="headerlink" title="授权"></a>授权</h2><p>授权有网页授权，js sdk授权，<br>网页授权也有两种，一个上静默授权，一个是点击授权，贴一下js sdk调用前认证的代码，要使用sha1加密<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">async</span> getSignConfig(originUrl) &#123;</div><div class="line">      <span class="keyword">let</span> data = &#123;&#125;</div><div class="line">      <span class="keyword">const</span> sha1 = crypto.createHash(<span class="string">'sha1'</span>)</div><div class="line">      <span class="keyword">const</span> appId = <span class="keyword">this</span>.app.config.weixin.appID</div><div class="line">      <span class="keyword">const</span> jsapi_ticket = <span class="keyword">await</span> <span class="keyword">this</span>.ctx.service.token.getJSApiTicket()</div><div class="line">      <span class="keyword">const</span> noncestr = <span class="keyword">this</span>.app.config.jsapi.noncestr</div><div class="line">      <span class="keyword">const</span> url = <span class="keyword">this</span>.app.config.domain + originUrl</div><div class="line">      <span class="keyword">const</span> timestamp = <span class="built_in">parseInt</span>(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime() / <span class="number">1000</span>)</div><div class="line">      <span class="comment">// sha1加密</span></div><div class="line">      <span class="keyword">const</span> str = <span class="string">`jsapi_ticket=<span class="subst">$&#123;jsapi_ticket&#125;</span>&amp;noncestr=<span class="subst">$&#123;noncestr&#125;</span>&amp;timestamp=<span class="subst">$&#123;timestamp&#125;</span>&amp;url=<span class="subst">$&#123;url&#125;</span>`</span></div><div class="line">      sha1.update(str)</div><div class="line">      <span class="keyword">const</span> signature = sha1.digest(<span class="string">'hex'</span>)</div><div class="line">      data = &#123; jsapi_ticket, noncestr, timestamp, url, signature, appId &#125;</div><div class="line">      <span class="keyword">return</span> data</div><div class="line">    &#125;</div></pre></td></tr></table></figure></p>
-<p>调用js sdk页面上代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">wx.config(&#123;</div><div class="line">    debug: <span class="literal">false</span>, <span class="comment">// 开启调试模式,</span></div><div class="line">    appId: appId, <span class="comment">// 必填，公众号的唯一标识</span></div><div class="line">    timestamp: timestamp, <span class="comment">// 必填，生成签名的时间戳</span></div><div class="line">    nonceStr: nonceStr, <span class="comment">// 必填，生成签名的随机串</span></div><div class="line">    signature:  signature,<span class="comment">// 必填，签名，见附录1</span></div><div class="line">    jsApiList: [<span class="string">'closeWindow'</span>] <span class="comment">// 必填，需要使用的JS接口列表，所有JS接口列表见附录2</span></div><div class="line">&#125;);</div><div class="line">wx.ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">      wx.closeWindow();</div><div class="line">    &#125;,<span class="number">2000</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h2 id="实用的常识"><a href="#实用的常识" class="headerlink" title="实用的常识"></a>实用的常识</h2><ol>
-<li>tag不能重复创建，但是给用户可以重复打同一个tag</li>
-<li>更改菜单一般五分钟生效，或者重新关注公众号，立马能看到</li>
-<li>如果调用js sdk，务必使用https，防止因为安全问题，导致ios下js下载失败。如果你的服务是https，而引用了https的微信js，在ios下肯定会下载失败，这是ios的安全机制导致的。</li>
-<li>微信关闭窗口的js接口，不管jsconfig验证是否通过，窗口都可以关闭</li>
-<li>微信的token过期时间上2h，但是很多时候30分钟不到可能已经失效，建议<strong>把token过期时间设置为10分钟之内</strong></li>
-</ol>
-<h2 id="常见报错"><a href="#常见报错" class="headerlink" title="常见报错"></a>常见报错</h2><ol>
-<li>创建菜单的时候，菜单长度不合法，仔细检查自己传的json菜单，一般都是<strong>json格式问题</strong>，而不是长度</li>
-<li>redirect_uri不合法，是创建授权菜单的redirect_uri和<strong>网页授权域名</strong>配置不一样</li>
-<li>关注公众号，服务端设置的欢迎消息发不过去，如果自己代码无异常，一般是因为<strong>token过期</strong></li>
-</ol>
-<h2 id="以后遇到其他问题继续补充"><a href="#以后遇到其他问题继续补充" class="headerlink" title="以后遇到其他问题继续补充"></a>以后遇到其他问题继续补充</h2><blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 微信公众号开发：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;微信公众号开发的一些注意事项&lt;br&gt;
-    
-    </summary>
-    
-      <category term="javacript" scheme="http://geeksblog.cc/categories/javacript/"/>
-    
-    
-      <category term="编程语言" scheme="http://geeksblog.cc/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mac最实用快捷键</title>
-    <link href="http://geeksblog.cc/mac-shortcut.html"/>
-    <id>http://geeksblog.cc/mac-shortcut.html</id>
-    <published>2017-04-21T02:53:08.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> Mac最实用快捷键：</strong> <Excerpt in index | 首页摘要><br>mac系统最常用的一些快捷键，吐血推荐<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><ul>
-<li>打开文件／文件夹    cmd + o</li>
-<li>选择文件／文件夹    文件夹名称（英文）</li>
-<li>删除文件／文件夹    cmd + del</li>
-<li>新建文件夹         cmd + shift + n</li>
-<li>新建文件</li>
-<li>预览文件           space</li>
-<li>重命名             enter</li>
-<li>文件目录前进后退        cmd + [ 或者 cmd + ]</li>
-<li>文件上层目录，下层目录   cmd + ⬆️  cmd + ⬇️</li>
-</ul>
-<h2 id="搜索操作"><a href="#搜索操作" class="headerlink" title="搜索操作"></a>搜索操作</h2><p>全局搜索  ctrl + space<br>文本搜索  cmd + f</p>
-<h2 id="mac-fn快捷键"><a href="#mac-fn快捷键" class="headerlink" title="mac fn快捷键"></a>mac fn快捷键</h2><p>屏幕亮度 f1 f2<br>任务视图 f3<br>应用程序 f4<br>键盘背光 f5 f6<br>音乐播放 f7 f8 f9<br>音量 f10 f11 f12</p>
-<h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2><blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; Mac最实用快捷键：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;mac系统最常用的一些快捷键，吐血推荐&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://geeksblog.cc/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="mac" scheme="http://geeksblog.cc/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>那些年读的书</title>
-    <link href="http://geeksblog.cc/mybooks.html"/>
-    <id>http://geeksblog.cc/mybooks.html</id>
-    <published>2017-04-15T06:49:46.000Z</published>
-    <updated>2017-06-14T02:56:12.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 那些年读的书：</strong> <Excerpt in index | 首页摘要><br>人生漫漫，不知不觉读了好多书，此贴只记录自己读过哪些书，不做多余的分析和总结。<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="读过哪些种类的"><a href="#读过哪些种类的" class="headerlink" title="读过哪些种类的"></a>读过哪些种类的</h2><ul>
-<li>编程专业类</li>
-<li>小说类</li>
-<li>励志类</li>
-</ul>
-<h2 id="小说"><a href="#小说" class="headerlink" title="小说"></a>小说</h2><ul>
-<li>平凡的世界</li>
-<li>白鹿原</li>
-<li>穆斯林的葬礼</li>
-<li>金庸武侠系列</li>
-<li>古龙武侠小说</li>
-<li>梁羽生武侠小说</li>
-<li>余华作品集</li>
-<li><p>雷米小说全集（侦探类）</p>
-</li>
-<li><p>网络小说：</p>
-<ul>
-<li>诛仙，</li>
-<li>盗墓笔记，</li>
-<li>泡沫之夏，</li>
-<li>芈月传，</li>
-</ul>
-</li>
-</ul>
-<h2 id="编程类"><a href="#编程类" class="headerlink" title="编程类"></a>编程类</h2><ul>
-<li>java编程思想</li>
-<li>effective java</li>
-<li>java并发编程的艺术</li>
-<li>代码整洁之道</li>
-<li><p>黑客与画家</p>
-</li>
-<li><p>深入浅出nodejs</p>
-</li>
-<li>nodejs实战</li>
-<li>js高级程序设计</li>
-<li>survivejs</li>
-<li>redux和react中文手册</li>
-<li>你不知道的javascript</li>
-<li><p>算法javascript实现</p>
-</li>
-<li><p>mysql权威指南</p>
-</li>
-<li>mongodb权威指南</li>
-<li>mongodb实战第二版</li>
-<li>redis入门</li>
-</ul>
-<h2 id="经管励志"><a href="#经管励志" class="headerlink" title="经管励志"></a>经管励志</h2><ul>
-<li>时间管理</li>
-<li>一分钟系列</li>
-<li>番茄工作法图解</li>
-</ul>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 那些年读的书：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;人生漫漫，不知不觉读了好多书，此贴只记录自己读过哪些书，不做多余的分析和总结。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="book" scheme="http://geeksblog.cc/categories/book/"/>
-    
-    
-      <category term="学习笔记" scheme="http://geeksblog.cc/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
