@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-10-24T15:52:18.000Z</updated>
+  <updated>2017-10-27T00:35:45.000Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -16,14 +16,76 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>突破算法第八天-桶排序</title>
+    <link href="http://geeksblog.cc/suanfa-8.html"/>
+    <id>http://geeksblog.cc/suanfa-8.html</id>
+    <published>2017-10-26T14:51:06.000Z</published>
+    <updated>2017-10-27T00:35:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第八天-桶排序：</strong> <Excerpt in index | 首页摘要><br>桶排序是个神奇的排序，在某些情况下可以达到O(N)的复杂度，快的离谱。但是桶排序是利用空间换时间，在空间充足的情况下，可以用桶排序进行高效的排序。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="桶排序的基本原理"><a href="#桶排序的基本原理" class="headerlink" title="桶排序的基本原理"></a>桶排序的基本原理</h2><h2 id="桶排序的java实现"><a href="#桶排序的java实现" class="headerlink" title="桶排序的java实现"></a>桶排序的java实现</h2><h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第八天-桶排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;桶排序是个神奇的排序，在某些情况下可以达到O(N)的复杂度，快的离谱。但是桶排序是利用空间换时间，在空间充足的情况下，可以用桶排序进行高效的排序。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="算法" scheme="http://geeksblog.cc/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>突破算法第七天-堆排序</title>
+    <link href="http://geeksblog.cc/suanfa-7.html"/>
+    <id>http://geeksblog.cc/suanfa-7.html</id>
+    <published>2017-10-26T14:50:57.000Z</published>
+    <updated>2017-10-27T00:12:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第七天-堆排序：</strong> <Excerpt in index | 首页摘要><br>堆排序是利用二叉树的原理实现的一种排序，难点在于要构建堆,构建堆一般可以采用下沉或者上浮的算法进行。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="堆排序的基本原理"><a href="#堆排序的基本原理" class="headerlink" title="堆排序的基本原理"></a>堆排序的基本原理</h2><p>初始时把要排序的n个数的序列看作是一棵顺序存储的二叉树（一维数组存储二叉树），调整它们的存储序，使之成为一个堆，将堆顶元素输出，得到n 个元素中最小(或最大)的元素，这时堆的根节点的数最小（或者最大）。然后对前面(n-1)个元素重新调整使之成为堆，输出堆顶元素，得到n 个元素中次小(或次大)的元素。依此类推，直到只有两个节点的堆，并对它们作交换，最后得到有n个节点的有序序列。称这个过程为堆排序。<br>因此，实现堆排序需解决两个问题：</p>
+<ol>
+<li>如何将n 个待排序的数建成堆；</li>
+<li>输出堆顶元素后，怎样调整剩余n-1 个元素，使其成为一个新堆。</li>
+</ol>
+<h2 id="堆排序java实现"><a href="#堆排序java实现" class="headerlink" title="堆排序java实现"></a>堆排序java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span> n = a.length;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = n / <span class="number">2</span>; k &gt;= <span class="number">1</span>; k--)</div><div class="line">            sink(a, k, n);</div><div class="line">        <span class="keyword">while</span> (n &gt; <span class="number">1</span>) &#123;</div><div class="line">            swap(a, <span class="number">1</span>, n--);</div><div class="line">            sink(a, <span class="number">1</span>, n);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sink</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> k, <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">    <span class="keyword">while</span> (<span class="number">2</span> * k &lt;= n) &#123;</div><div class="line">        <span class="keyword">int</span> j = <span class="number">2</span> * k;</div><div class="line">        <span class="keyword">if</span> (j &lt; n &amp;&amp; a[j - <span class="number">1</span>] &lt; a[j + <span class="number">1</span> - <span class="number">1</span>]) j++;</div><div class="line">        <span class="keyword">if</span> (a[k - <span class="number">1</span>] &gt;= a[j - <span class="number">1</span>]) <span class="keyword">break</span>;</div><div class="line">        swap(a, k, j);</div><div class="line">        k = j;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> swap = a[i - <span class="number">1</span>];</div><div class="line">    a[i - <span class="number">1</span>] = a[j - <span class="number">1</span>];</div><div class="line">    a[j - <span class="number">1</span>] = swap;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span>[] arr = &#123;<span class="number">49</span>, <span class="number">38</span>, <span class="number">65</span>, <span class="number">97</span>, <span class="number">76</span>, <span class="number">13</span>, <span class="number">27</span>, <span class="number">4</span>, <span class="number">78</span>, <span class="number">34</span>, <span class="number">12</span>, <span class="number">64</span>, <span class="number">1</span>, <span class="number">8</span>&#125;;</div><div class="line">    sort(arr);</div><div class="line">    System.out.println(<span class="string">"排序之后："</span>);</div><div class="line">    System.out.println(Arrays.toString(arr));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><p>堆排序的平均时间复杂度为Ο(nlogn)</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第七天-堆排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;堆排序是利用二叉树的原理实现的一种排序，难点在于要构建堆,构建堆一般可以采用下沉或者上浮的算法进行。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="算法" scheme="http://geeksblog.cc/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>突破算法第六天-冒泡排序</title>
     <link href="http://geeksblog.cc/suanfa-6.html"/>
     <id>http://geeksblog.cc/suanfa-6.html</id>
     <published>2017-10-25T14:06:06.000Z</published>
-    <updated>2017-10-24T15:52:18.000Z</updated>
+    <updated>2017-10-26T14:52:02.886Z</updated>
     
-    <content type="html"><![CDATA[<p><strong> 突破算法第六天-冒泡排序：</strong> <Excerpt in index | 首页摘要></p>
-<a id="more"></a>
+    <content type="html"><![CDATA[<p><strong> 突破算法第六天-冒泡排序：</strong> <Excerpt in index | 首页摘要><br>冒泡排序也非常简单，效率比较低。了解即可。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
 <h2 id="冒泡排序的原理"><a href="#冒泡排序的原理" class="headerlink" title="冒泡排序的原理"></a>冒泡排序的原理</h2><p>在要排序的一组数中，对当前还未排好序的范围内的全部数，自上而下对相邻的两个数依次进行比较和调整，让较大的数往下沉，较小的往上冒。即：每当两相邻的数比较后发现它们的排序与排序要求相反时，就将它们互换。</p>
@@ -37,10 +99,14 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt; 突破算法第六天-冒泡排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt; 突破算法第六天-冒泡排序：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;冒泡排序也非常简单，效率比较低。了解即可。&lt;br&gt;
     
     </summary>
     
+      <category term="算法" scheme="http://geeksblog.cc/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/tags/algorithm/"/>
     
   </entry>
   
@@ -906,82 +972,6 @@
     
     
       <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis后台启动详细配置</title>
-    <link href="http://geeksblog.cc/redis-config.html"/>
-    <id>http://geeksblog.cc/redis-config.html</id>
-    <published>2017-05-15T14:58:07.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> Redis后台启动详细配置：</strong> <Excerpt in index | 首页摘要><br>  redis启动的时候有多种模式，后台启动，集群启动等等。<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>在开发中一般都是在命令行中直接运行<code>redis-server</code>,但是这样命令行关闭，服务就停止了。<br>如果要在后台运行redis服务，需要制定配置文件。这里以<strong>ubuntu14</strong>为例子</p>
-<h2 id="准备配置文件"><a href="#准备配置文件" class="headerlink" title="准备配置文件"></a>准备配置文件</h2><p>查看‘/etc/redis/redis.conf’,没有可以创建一个，或者下载一个，配置文件位置没有要求</p>
-<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>把daemonize设置为yes，<br>然后<code>redis-server /etc/redis/redis.conf</code>启动服务，</p>
-<h2 id="查看服务"><a href="#查看服务" class="headerlink" title="查看服务"></a>查看服务</h2><p><code>ps -ef|grep redis-server</code>查看是否有redis进程存在</p>
-<h2 id="更多配置，在conf文件有说明"><a href="#更多配置，在conf文件有说明" class="headerlink" title="更多配置，在conf文件有说明"></a>更多配置，在conf文件有说明</h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"># 是否以后台daemon方式运行，默认是 no，一般我们会改为 yes</div><div class="line">daemonize no</div><div class="line">pidfile /var/run/redis.pid</div><div class="line"># 只允许本机访问</div><div class="line">bind <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></div><div class="line"># 端口设置</div><div class="line">port <span class="number">6379</span></div><div class="line">tcp-backlog <span class="number">511</span></div><div class="line">timeout <span class="number">0</span></div><div class="line">tcp-keepalive <span class="number">0</span></div><div class="line">loglevel notice</div><div class="line"># 日志文件</div><div class="line">logfile <span class="string">""</span></div><div class="line"># 开启数据库的数量，Redis 是有数据库概念的，默认是 <span class="number">16</span> 个，数字从 <span class="number">0</span> ~ <span class="number">15</span></div><div class="line">databases <span class="number">16</span></div><div class="line">save <span class="number">900</span> <span class="number">1</span></div><div class="line">save <span class="number">300</span> <span class="number">10</span></div><div class="line">save <span class="number">60</span> <span class="number">10000</span></div><div class="line">stop-writes-on-bgsave-error yes</div><div class="line">rdbcompression yes</div><div class="line">rdbchecksum yes</div><div class="line">dbfilename dump.rdb</div><div class="line">dir ./</div><div class="line">slave-serve-stale-data yes</div><div class="line">slave-read-only yes</div><div class="line">repl-diskless-sync no</div><div class="line">repl-diskless-sync-delay <span class="number">5</span></div><div class="line">repl-disable-tcp-nodelay no</div><div class="line"># 密码设置，需要设置密码打开</div><div class="line">requirepass <span class="number">123455</span></div><div class="line">slave-priority <span class="number">100</span></div><div class="line">appendonly no</div><div class="line">appendfilename <span class="string">"appendonly.aof"</span></div><div class="line">appendfsync everysec</div><div class="line">no-appendfsync-on-rewrite no</div><div class="line">auto-aof-rewrite-percentage <span class="number">100</span></div><div class="line">auto-aof-rewrite-min-size <span class="number">64</span>mb</div><div class="line">aof-load-truncated yes</div><div class="line">lua-time-limit <span class="number">5000</span></div><div class="line">slowlog-log-slower-than <span class="number">10000</span></div><div class="line">slowlog-max-len <span class="number">128</span></div><div class="line">latency-monitor-threshold <span class="number">0</span></div><div class="line">notify-keyspace-events <span class="string">""</span></div><div class="line">hash-max-ziplist-entries <span class="number">512</span></div><div class="line">hash-max-ziplist-value <span class="number">64</span></div><div class="line"><span class="type">list</span>-max-ziplist-entries <span class="number">512</span></div><div class="line"><span class="type">list</span>-max-ziplist-value <span class="number">64</span></div><div class="line">set-max-intset-entries <span class="number">512</span></div><div class="line">zset-max-ziplist-entries <span class="number">128</span></div><div class="line">zset-max-ziplist-value <span class="number">64</span></div><div class="line">hll-sparse-max-bytes <span class="number">3000</span></div><div class="line">activerehashing yes</div><div class="line">client-output-buffer-limit normal <span class="number">0</span> <span class="number">0</span> <span class="number">0</span></div><div class="line">client-output-buffer-limit slave <span class="number">256</span>mb <span class="number">64</span>mb <span class="number">60</span></div><div class="line">client-output-buffer-limit pubsub <span class="number">32</span>mb <span class="number">8</span>mb <span class="number">60</span></div><div class="line">hz <span class="number">10</span></div><div class="line">aof-rewrite-incremental-fsync yes</div></pre></td></tr></table></figure>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; Redis后台启动详细配置：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;  redis启动的时候有多种模式，后台启动，集群启动等等。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="数据库" scheme="http://geeksblog.cc/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="redis" scheme="http://geeksblog.cc/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用koa2.x写下载漫画的爬虫</title>
-    <link href="http://geeksblog.cc/spider-koa2.html"/>
-    <id>http://geeksblog.cc/spider-koa2.html</id>
-    <published>2017-05-13T23:15:38.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 用koa2.x写下载漫画的爬虫：</strong> <Excerpt in index | 首页摘要><br>使用koa2.x的async ，await解决异步问题，写一个下载漫画的爬虫，代码里有惊喜和福利哦！<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h2><ol>
-<li>安装nodejs&gt;7.6,安装koa-generator</li>
-<li>直接<code>koa2 spider</code>,生成项目</li>
-<li>安装request,request-promise,cheerio,mkdirp</li>
-<li>npm install安装依赖</li>
-</ol>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>图片或者漫画爬虫的思路很简单，首先观察url的规律，把url按规律加入到下载任务，其实就是请求获得html内容，然后对html进行解析，找到下载的图片url（一般都是img标签的src属性值），把url放到数组保存，使用async await控制所有的任务，直到把所有的图片下载完。</p>
-<h2 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h2><p>但是nodejs本身上异步的，如果你直接在for循环里去下载，肯定是不行的，必须控制好异步的执行上关键。<br>爬虫简单，处理好异步难。这里我使用的es7中async，await配合promise解决异步问题，还可以使用async模块，eventproxy，等等异步控制模块来解决。</p>
-<h2 id="核心代码-spider-js"><a href="#核心代码-spider-js" class="headerlink" title="核心代码,spider.js"></a>核心代码,spider.js</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</div><div class="line"><span class="keyword">const</span> request = <span class="built_in">require</span>(<span class="string">"request-promise"</span>);</div><div class="line"><span class="keyword">const</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>);</div><div class="line"><span class="keyword">const</span> mkdirp = <span class="built_in">require</span>(<span class="string">'mkdirp'</span>);</div><div class="line"><span class="keyword">const</span> config = <span class="built_in">require</span>(<span class="string">'../config'</span>);</div><div class="line">exports.download = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span>(<span class="params">ctx, next</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> dir = <span class="string">'images'</span>;</div><div class="line">    <span class="comment">// 图片链接地址</span></div><div class="line">    <span class="keyword">let</span> links = [];</div><div class="line">    <span class="comment">// 创建目录</span></div><div class="line">    mkdirp(dir);</div><div class="line">    <span class="keyword">var</span> urls = [];</div><div class="line">    <span class="keyword">let</span> tasks = [];</div><div class="line">    <span class="keyword">let</span> downloadTask = [];</div><div class="line">    <span class="keyword">let</span> url = config.url;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= config.size; i++) &#123;</div><div class="line">        <span class="keyword">let</span> link = url + <span class="string">'_'</span> + i + <span class="string">'.html'</span>;</div><div class="line">        <span class="keyword">if</span> (i == <span class="number">1</span>) &#123;</div><div class="line">            link = url + <span class="string">'.html'</span>;</div><div class="line">        &#125;</div><div class="line">        tasks.push(getResLink(i, link))</div><div class="line">    &#125;</div><div class="line">    links = <span class="keyword">await</span> <span class="built_in">Promise</span>.all(tasks)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'links=========='</span>, links.length);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; links.length; i++) &#123;</div><div class="line">        <span class="keyword">let</span> item = links[i];</div><div class="line">        <span class="keyword">let</span> index = item.split(<span class="string">'___'</span>)[<span class="number">0</span>];</div><div class="line">        <span class="keyword">let</span> src = item.split(<span class="string">'___'</span>)[<span class="number">1</span>];</div><div class="line">        downloadTask.push(downloadImg(src, dir, index + links[i].substr(<span class="number">-4</span>, <span class="number">4</span>)));</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">await</span> <span class="built_in">Promise</span>.all(downloadTask);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">downloadImg</span>(<span class="params">url, dir, filename</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'download begin---'</span>, url);</div><div class="line">    request.get(url).pipe(fs.createWriteStream(dir + <span class="string">"/"</span> + filename)).on(<span class="string">'close'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'download success'</span>, url);</div><div class="line">    &#125;);</div><div class="line">&#125;</div><div class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getResLink</span>(<span class="params">index, url</span>) </span>&#123;</div><div class="line">    <span class="keyword">const</span> body = <span class="keyword">await</span> request(url);</div><div class="line">    <span class="keyword">let</span> urls = [];</div><div class="line">    <span class="keyword">var</span> $ = cheerio.load(body);</div><div class="line">    $(config.rule).each(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> src = $(<span class="keyword">this</span>).attr(<span class="string">'src'</span>);</div><div class="line">        urls.push(src);</div><div class="line">    &#125;);</div><div class="line">    <span class="keyword">return</span> index + <span class="string">'___'</span> + urls[<span class="number">0</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><p>由于爬虫的复杂性基于不同的网站，不同的任务很不一样，这里只是把几个常用的变量抽取到了config.js。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">    <span class="comment">//初始url</span></div><div class="line">    url: <span class="string">'http://www.xieet.com/meinv/230'</span>,</div><div class="line">    size: <span class="number">10</span>,</div><div class="line">    <span class="comment">// 选中图片img标签的选择器</span></div><div class="line">    rule: <span class="string">'.imgbox a img'</span></div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-<h2 id="运行代码"><a href="#运行代码" class="headerlink" title="运行代码"></a>运行代码</h2><ol>
-<li>下载我上传的代码<a href="https://github.com/maochunguang/koa-spider">koa-spider</a></li>
-<li>npm install,npm start即可运行</li>
-</ol>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>其实无论是写爬虫还是些其他程序，使用nodejs很大一部分都是要处理异步，要学好nodejs必须学好异步处理。</p>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 用koa2.x写下载漫画的爬虫：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;使用koa2.x的async ，await解决异步问题，写一个下载漫画的爬虫，代码里有惊喜和福利哦！&lt;br&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://geeksblog.cc/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="nodejs" scheme="http://geeksblog.cc/tags/nodejs/"/>
     
   </entry>
   
