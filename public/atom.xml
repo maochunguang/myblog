@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-10-27T00:35:45.000Z</updated>
+  <updated>2017-10-29T13:02:02.596Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -16,16 +16,58 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>突破算法第九天-排序算法比较</title>
+    <link href="http://geeksblog.cc/suanfa-9.html"/>
+    <id>http://geeksblog.cc/suanfa-9.html</id>
+    <published>2017-10-28T15:10:58.000Z</published>
+    <updated>2017-10-29T13:02:02.596Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第九天-排序算法比较：</strong> <Excerpt in index | 首页摘要><br>排序算法个有千秋，有的性能高，有的性能很低。这就要求我们对常用的排序算法要全面了解，不要用错了算法，导致性能问题。<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+<h2 id="排序算法性能比较·"><a href="#排序算法性能比较·" class="headerlink" title="排序算法性能比较·"></a>排序算法性能比较·</h2><p>借一张网路上的比较图。特别直观。<br><img src="http://o7kalf5h3.bkt.clouddn.com/sortcom.jpg" alt="算法比较"></p>
+<h2 id="排序算法总结"><a href="#排序算法总结" class="headerlink" title="排序算法总结"></a>排序算法总结</h2><p>个人看法：</p>
+<ul>
+<li>一般的情况还是以快速排序为主，</li>
+<li>对于多个有序的数组合并的情况使用归并排序</li>
+<li>性能要求快，空间足够，待排序的元素都要在一定的范围内使用桶排序</li>
+</ul>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第九天-排序算法比较：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;排序算法个有千秋，有的性能高，有的性能很低。这就要求我们对常用的排序算法要全面了解，不要用错了算法，导致性能问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
+    
+    
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>突破算法第八天-桶排序</title>
     <link href="http://geeksblog.cc/suanfa-8.html"/>
     <id>http://geeksblog.cc/suanfa-8.html</id>
-    <published>2017-10-26T14:51:06.000Z</published>
-    <updated>2017-10-27T00:35:45.000Z</updated>
+    <published>2017-10-27T14:51:06.000Z</published>
+    <updated>2017-10-28T15:10:30.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 突破算法第八天-桶排序：</strong> <Excerpt in index | 首页摘要><br>桶排序是个神奇的排序，在某些情况下可以达到O(N)的复杂度，快的离谱。但是桶排序是利用空间换时间，在空间充足的情况下，可以用桶排序进行高效的排序。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
 
-<h2 id="桶排序的基本原理"><a href="#桶排序的基本原理" class="headerlink" title="桶排序的基本原理"></a>桶排序的基本原理</h2><h2 id="桶排序的java实现"><a href="#桶排序的java实现" class="headerlink" title="桶排序的java实现"></a>桶排序的java实现</h2><h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><blockquote>
+<h2 id="桶排序的基本原理"><a href="#桶排序的基本原理" class="headerlink" title="桶排序的基本原理"></a>桶排序的基本原理</h2><p>将阵列分到有限数量的桶子里。每个桶子再个别排序（有可能再使用别的排序算法或是以递回方式继续使用桶排序进行排序）。当要被排序的阵列内的数值是均匀分配的时候，桶排序使用线性时间（Θ（n））。但桶排序并不是 比较排序，他不受到 O(nlogn) 下限的影响， 简单来说，就是把数据分组，放在一个个的桶中，然后对每个桶里面的在进行排序</p>
+<h2 id="桶排序的java实现"><a href="#桶排序的java实现" class="headerlink" title="桶排序的java实现"></a>桶排序的java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bucketSort1</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</div><div class="line">        <span class="comment">//分桶，这里采用映射函数f(x)=x/10。</span></div><div class="line">        <span class="keyword">int</span> bucketCount =<span class="number">10</span>;</div><div class="line">        Integer[][] bucket = <span class="keyword">new</span> Integer[bucketCount][arr.length];</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;arr.length; i++)&#123;</div><div class="line">            <span class="keyword">int</span> quotient = arr[i]/<span class="number">10</span>;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;arr.length; j++)&#123;</div><div class="line">                <span class="keyword">if</span> (bucket[quotient][j]==<span class="keyword">null</span>)&#123;</div><div class="line">                    bucket[quotient][j]=arr[i];</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//小桶排序</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;bucket.length; i++)&#123;</div><div class="line">            <span class="comment">//insertion sort</span></div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;bucket[i].length; ++j)&#123;</div><div class="line">                <span class="keyword">if</span>(bucket[i][j]==<span class="keyword">null</span>)&#123;</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">int</span> value = bucket[i][j];</div><div class="line">                <span class="keyword">int</span> position=j;</div><div class="line">                <span class="keyword">while</span> (position&gt;<span class="number">0</span> &amp;&amp; bucket[i][position-<span class="number">1</span>]&gt;value)&#123;</div><div class="line">                    bucket[i][position] = bucket[i][position-<span class="number">1</span>];</div><div class="line">                    position--;</div><div class="line">                &#125;</div><div class="line">                bucket[i][position] = value;</div><div class="line">            &#125;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">        <span class="comment">//输出</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>, index=<span class="number">0</span>; i&lt;bucket.length; i++)&#123;</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;bucket[i].length; j++)&#123;</div><div class="line">                <span class="keyword">if</span> (bucket[i][j]!=<span class="keyword">null</span>)&#123;</div><div class="line">                    arr[index] = bucket[i][j];</div><div class="line">                    index++;</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">else</span>&#123;</div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h2 id="算法复杂度"><a href="#算法复杂度" class="headerlink" title="算法复杂度"></a>算法复杂度</h2><p>前面说的几大排序算法 ，大部分时间复杂度都是O（n2），也有部分排序算法时间复杂度是O(nlogn)。而桶式排序却能实现O（n）的时间复杂度。<br>但桶排序的缺点是：</p>
+<ol>
+<li>首先是空间复杂度比较高，需要的额外开销大。排序有两个数组的空间开销，一个存放待排序数组，一个就是所谓的桶，比如待排序值是从0到m-1，那就需要m个桶，这个桶数组就要至少m个空间。</li>
+<li>其次待排序的元素都要在一定的范围内，限制较多。</li>
+</ol>
+<blockquote>
 <p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
 </blockquote>
 ]]></content>
@@ -36,10 +78,10 @@
     
     </summary>
     
-      <category term="算法" scheme="http://geeksblog.cc/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
     
     
-      <category term="algorithm" scheme="http://geeksblog.cc/tags/algorithm/"/>
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -48,7 +90,7 @@
     <link href="http://geeksblog.cc/suanfa-7.html"/>
     <id>http://geeksblog.cc/suanfa-7.html</id>
     <published>2017-10-26T14:50:57.000Z</published>
-    <updated>2017-10-27T00:12:55.000Z</updated>
+    <updated>2017-10-27T00:38:41.817Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 突破算法第七天-堆排序：</strong> <Excerpt in index | 首页摘要><br>堆排序是利用二叉树的原理实现的一种排序，难点在于要构建堆,构建堆一般可以采用下沉或者上浮的算法进行。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -71,10 +113,10 @@
     
     </summary>
     
-      <category term="算法" scheme="http://geeksblog.cc/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
     
     
-      <category term="algorithm" scheme="http://geeksblog.cc/tags/algorithm/"/>
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -83,7 +125,7 @@
     <link href="http://geeksblog.cc/suanfa-6.html"/>
     <id>http://geeksblog.cc/suanfa-6.html</id>
     <published>2017-10-25T14:06:06.000Z</published>
-    <updated>2017-10-26T14:52:02.886Z</updated>
+    <updated>2017-10-27T00:38:35.615Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 突破算法第六天-冒泡排序：</strong> <Excerpt in index | 首页摘要><br>冒泡排序也非常简单，效率比较低。了解即可。<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -103,10 +145,10 @@
     
     </summary>
     
-      <category term="算法" scheme="http://geeksblog.cc/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
     
     
-      <category term="algorithm" scheme="http://geeksblog.cc/tags/algorithm/"/>
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -311,7 +353,7 @@
     <link href="http://geeksblog.cc/study-plan.html"/>
     <id>http://geeksblog.cc/study-plan.html</id>
     <published>2017-10-18T11:47:55.000Z</published>
-    <updated>2017-10-24T15:33:15.000Z</updated>
+    <updated>2017-10-29T12:12:04.142Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 学习计划-30天突破算法：</strong> <Excerpt in index | 首页摘要><br>作为一个非专业出身的程序员，一直对算法的学习赶紧断断续续，终于下定决心对算法做一次详细总结。30天时间把程序员常用算法逐一突破。这次计划更是对自己的一次挑战，希望自己能坚持到最后！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -926,52 +968,6 @@
     
     
       <category term="node" scheme="http://geeksblog.cc/tags/node/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何写一篇好博客？</title>
-    <link href="http://geeksblog.cc/bestblog.html"/>
-    <id>http://geeksblog.cc/bestblog.html</id>
-    <published>2017-05-15T15:04:48.000Z</published>
-    <updated>2017-05-15T15:27:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 提高自己博客的质量：</strong> <Excerpt in index | 首页摘要><br>写博客陆陆续续也有一年了，但是一直没有多少访问量，仔细看了很多大神的博客，总结了几点，分享一下。<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="好博客，好文章是什么样的？"><a href="#好博客，好文章是什么样的？" class="headerlink" title="好博客，好文章是什么样的？"></a>好博客，好文章是什么样的？</h2><ol>
-<li>文章名称鲜明，一看名称就知道关于什么的内容</li>
-<li>整体结构清晰，把事件或者原理的始末按照‘什么样（what？）’，‘为什么（why）’，‘怎么做（how）’说明</li>
-<li>简明扼要。太啰嗦，没人看。</li>
-<li>难易适中，太高深也没人看</li>
-<li>图文搭配，有句话说的好，<strong>一图胜千文</strong>，好的图片胜过千言万语</li>
-</ol>
-<h2 id="怎么写出好博客？"><a href="#怎么写出好博客？" class="headerlink" title="怎么写出好博客？"></a>怎么写出好博客？</h2><ol>
-<li>定主题和文章名称。如果想写一个关于redis后台启动的文章，名称要准确，就叫redis后台启动，不要起啰嗦的名字，比如redis如何后台启动</li>
-<li>准备资料阶段，熟悉redis配置相关资料，做好功课</li>
-<li>定文章的结构和提纲。还拿这个redis后台启动为例，你得说明什么是后台启动？为什么要后台启动？如何做到后台启动？</li>
-<li>语言表单，简单直白，不用凑字数</li>
-<li>深入主题，比如挖掘更多redis的配置，把参数简要说明</li>
-<li>找一个好图片，如果找不到，自己制作一个最契合自己主题的图片</li>
-<li>把文章发给好友阅读，提出宝贵的意见</li>
-<li>改进博客</li>
-<li>坚持写博客</li>
-</ol>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 提高自己博客的质量：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;写博客陆陆续续也有一年了，但是一直没有多少访问量，仔细看了很多大神的博客，总结了几点，分享一下。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="个人随笔" scheme="http://geeksblog.cc/categories/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="others" scheme="http://geeksblog.cc/tags/others/"/>
     
   </entry>
   

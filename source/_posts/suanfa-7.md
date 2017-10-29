@@ -1,7 +1,7 @@
 title: 突破算法第七天-堆排序
 date: 2017-10-26 22:50:57
-tags: algorithm
-categories: 算法
+tags: 算法
+categories: algorithm
 ---
 ** {{ title }}：** <Excerpt in index | 首页摘要>
 堆排序是利用二叉树的原理实现的一种排序，难点在于要构建堆,构建堆一般可以采用下沉或者上浮的算法进行。

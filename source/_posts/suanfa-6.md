@@ -1,7 +1,7 @@
 title: 突破算法第六天-冒泡排序
 date: 2017-10-25 22:06:06
-tags: algorithm
-categories: 算法
+tags: 算法
+categories: algorithm
 ---
 ** {{ title }}：** <Excerpt in index | 首页摘要>
 冒泡排序也非常简单，效率比较低。了解即可。
