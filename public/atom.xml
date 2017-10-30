@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
-  <updated>2017-10-29T13:02:02.596Z</updated>
+  <updated>2017-10-30T14:40:29.130Z</updated>
   <id>http://geeksblog.cc/</id>
   
   <author>
@@ -14,6 +14,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>突破算法第11天-红黑树</title>
+    <link href="http://geeksblog.cc/suanfa-11.html"/>
+    <id>http://geeksblog.cc/suanfa-11.html</id>
+    <published>2017-10-30T14:35:37.000Z</published>
+    <updated>2017-10-30T14:40:29.130Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第11天-红黑树：</strong> <Excerpt in index | 首页摘要><br>红黑树<br><a id="more"></a></p>
+<The rest of contents | 余下全文>
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第11天-红黑树：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;红黑树&lt;br&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
+    
+    
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>突破算法第10天-二叉树</title>
+    <link href="http://geeksblog.cc/suanfa-10.html"/>
+    <id>http://geeksblog.cc/suanfa-10.html</id>
+    <published>2017-10-29T13:17:09.000Z</published>
+    <updated>2017-10-30T14:36:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong> 突破算法第10天-二叉树：</strong> <Excerpt in index | 首页摘要><br>用java实现算法求出二叉树的高度<br><a id="more"></a></p>
+<p><The rest of contents | 余下全文></p>
+<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><ul>
+<li>先序遍历：先访问根结点，然后左节点，最后右节点</li>
+<li>中序遍历：先访问左结点，然后根节点，最后右节点</li>
+<li>后续遍历：先访问左结点，然后右节点，最后根节点</li>
+</ul>
+<h2 id="java实现"><a href="#java实现" class="headerlink" title="java实现"></a>java实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TreeNode</span> </span>&#123;</div><div class="line">    TreeNode left;</div><div class="line">    TreeNode right;</div><div class="line">    <span class="keyword">int</span> val;</div><div class="line"></div><div class="line">    TreeNode(<span class="keyword">int</span> val) &#123;</div><div class="line">        <span class="keyword">this</span>.val = val;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        TreeNode root = <span class="keyword">new</span> TreeNode(<span class="number">1</span>);</div><div class="line">        TreeNode left1 = <span class="keyword">new</span> TreeNode(<span class="number">2</span>);</div><div class="line">        TreeNode left2 = <span class="keyword">new</span> TreeNode(<span class="number">3</span>);</div><div class="line">        TreeNode right1 = <span class="keyword">new</span> TreeNode(<span class="number">4</span>);</div><div class="line">        <span class="comment">//创建一棵树</span></div><div class="line">        root.left = left1;</div><div class="line">        left1.right = left2;</div><div class="line">        root.right = right1;</div><div class="line">        scanNodes(root);</div><div class="line">        System.out.println(<span class="string">"树的深度是："</span> + getDepth(root));</div><div class="line">        System.out.println(<span class="string">"非递归深度："</span> + findDeep2(root));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">// 递归返回二叉树的深度</span></div><div class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getDepth</span><span class="params">(TreeNode root)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (root == <span class="keyword">null</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">int</span> left = getDepth(root.left);</div><div class="line">        <span class="keyword">int</span> right = getDepth(root.right);</div><div class="line">        <span class="keyword">return</span> left &gt; right ? left + <span class="number">1</span> : right + <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">scanNodes</span><span class="params">(TreeNode root)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (root == <span class="keyword">null</span>) &#123;</div><div class="line">            <span class="keyword">return</span>;</div><div class="line">        &#125;</div><div class="line"><span class="comment">//        System.out.println(root.val); //先序遍历</span></div><div class="line">        scanNodes(root.left);</div><div class="line"><span class="comment">//        System.out.println(root.val); //中序遍历</span></div><div class="line">        scanNodes(root.right);</div><div class="line">        System.out.println(root.val); <span class="comment">// 后序遍历</span></div><div class="line">    &#125;</div><div class="line">    <span class="comment">// 非递归求深度</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">findDeep2</span><span class="params">(TreeNode root)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (root == <span class="keyword">null</span>)</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">        TreeNode current = <span class="keyword">null</span>;</div><div class="line">        LinkedList&lt;TreeNode&gt; queue = <span class="keyword">new</span> LinkedList&lt;&gt;();</div><div class="line">        queue.offer(root);</div><div class="line">        <span class="keyword">int</span> cur, next;</div><div class="line">        <span class="keyword">int</span> level = <span class="number">0</span>;</div><div class="line">        <span class="keyword">while</span> (!queue.isEmpty()) &#123;</div><div class="line">            cur = <span class="number">0</span>;</div><div class="line">            <span class="comment">//当遍历完当前层以后，队列里元素全是下一层的元素，队列的长度是这一层的节点的个数</span></div><div class="line">            next = queue.size();</div><div class="line">            <span class="keyword">while</span> (cur &lt; next) &#123;</div><div class="line">                current = queue.poll();</div><div class="line">                cur++;</div><div class="line">                <span class="comment">//把当前节点的左右节点入队（如果存在的话）  </span></div><div class="line">                <span class="keyword">if</span> (current.left != <span class="keyword">null</span>) &#123;</div><div class="line">                    queue.offer(current.left);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">if</span> (current.right != <span class="keyword">null</span>) &#123;</div><div class="line">                    queue.offer(current.right);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            level++;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> level;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="树的变种"><a href="#树的变种" class="headerlink" title="树的变种"></a>树的变种</h2><p>二叉查找树，平衡二叉查找树，红黑树，b树<br>红黑树和平衡二叉树（AVL树）类似，都是在进行插入和删除操作时通过特定操作保持二叉查找树的平衡，从而获得较高的查找性能。红黑树和AVL树的区别在于它使用颜色来标识结点的高度，它所追求的是局部平衡而不是AVL树中的非常严格的平衡。<br>由于二叉树的效率和深度息息相关，于是出现了多路的B树，B+树等等。b树是叶子为n的平衡树。</p>
+<blockquote>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt; 突破算法第10天-二叉树：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;用java实现算法求出二叉树的高度&lt;br&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="http://geeksblog.cc/categories/algorithm/"/>
+    
+    
+      <category term="算法" scheme="http://geeksblog.cc/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>突破算法第九天-排序算法比较</title>
@@ -353,7 +425,7 @@
     <link href="http://geeksblog.cc/study-plan.html"/>
     <id>http://geeksblog.cc/study-plan.html</id>
     <published>2017-10-18T11:47:55.000Z</published>
-    <updated>2017-10-29T12:12:04.142Z</updated>
+    <updated>2017-10-30T13:47:46.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong> 学习计划-30天突破算法：</strong> <Excerpt in index | 首页摘要><br>作为一个非专业出身的程序员，一直对算法的学习赶紧断断续续，终于下定决心对算法做一次详细总结。30天时间把程序员常用算法逐一突破。这次计划更是对自己的一次挑战，希望自己能坚持到最后！<br><a id="more"></a></p>
 <The rest of contents | 余下全文>
@@ -375,9 +447,9 @@
 <li>排序算法比较</li>
 </ol>
 <h3 id="树"><a href="#树" class="headerlink" title="树"></a>树</h3><ol>
-<li>二叉树高度和深度</li>
-<li>二叉树的遍历</li>
-<li>红黑树的平衡</li>
+<li>二叉树高度和二叉树的遍历</li>
+<li>红黑树</li>
+<li>b树</li>
 </ol>
 <h3 id="查找算法"><a href="#查找算法" class="headerlink" title="查找算法"></a>查找算法</h3><ol>
 <li>二分查找</li>
@@ -881,93 +953,6 @@
     
     
       <category term="hexo" scheme="http://geeksblog.cc/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数码产品选购</title>
-    <link href="http://geeksblog.cc/digital-info.html"/>
-    <id>http://geeksblog.cc/digital-info.html</id>
-    <published>2017-05-18T02:35:22.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> 数码产品选购：</strong> <Excerpt in index | 首页摘要><br>作为一个数码产品控，一出新的的电子产品，我都欣喜若狂。看参数，看评价，感觉合适，就会买。<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="我喜欢的电子产品"><a href="#我喜欢的电子产品" class="headerlink" title="我喜欢的电子产品"></a>我喜欢的电子产品</h2><ul>
-<li>电脑（笔记本，台式机，游戏主机，工作站）</li>
-<li>手机（苹果，安卓，其它智能手机）</li>
-<li>平板（安卓平板，ios平板）</li>
-<li>电子书阅读器</li>
-<li>电子手表</li>
-</ul>
-<h2 id="选购的原则"><a href="#选购的原则" class="headerlink" title="选购的原则"></a>选购的原则</h2><ol>
-<li>产品生态，买电子产品虽然不是随大流，但是用户群体一定程度决定了生态。用的人多，相应的资源会比较丰富，遇到问题很快找到解决方案。</li>
-<li>产品价格，性价比在中国，乃至全世界都是很具有吸引力的。物美价廉的都不买的要么是脑残，要么是钱多没地方花。</li>
-<li>产品硬件参数，买电子产品不看参数，肯定是买不到物美价廉的产品。</li>
-<li>产品外观，现在是看脸的时代，新时代的数码产品对外观要求更高，更时尚。</li>
-<li>功能，买电子产品，首要的就是功能，如果功能都不齐全，再漂亮，再便宜都没用。</li>
-<li>买电子产品的目的，没有任何需求就是瞎买。</li>
-</ol>
-<h2 id="电子产品的使用"><a href="#电子产品的使用" class="headerlink" title="电子产品的使用"></a>电子产品的使用</h2><p>我见过很多人买电子产品，比如买电子书阅读器，买一个kobo电子书折腾来折腾去，今天刷这个系统，明天改那个设置，<br>书还没读几本，系统刷了几十次，天天刷固件。这真的是得不偿失，捡了芝麻丢了西瓜。<br>第一，买电子产品是为了用的，买回来之后配置好之后，就不要来回折腾系统和配置了，把时间放到核心功能上。<br>第二，买电子产品不要攀比，就跟买苹果手机一样，如果只是为了装B买，真没必要，结果自己还用不习惯。<br>第三，了解自己的需求，需要什么买什么，</p>
-<blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; 数码产品选购：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;作为一个数码产品控，一出新的的电子产品，我都欣喜若狂。看参数，看评价，感觉合适，就会买。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="digital" scheme="http://geeksblog.cc/categories/digital/"/>
-    
-    
-      <category term="数码产品" scheme="http://geeksblog.cc/tags/%E6%95%B0%E7%A0%81%E4%BA%A7%E5%93%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>egg.js实战技巧</title>
-    <link href="http://geeksblog.cc/eggjs-action.html"/>
-    <id>http://geeksblog.cc/eggjs-action.html</id>
-    <published>2017-05-15T19:07:27.000Z</published>
-    <updated>2017-05-26T06:12:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong> egg.js实战技巧：</strong> <Excerpt in index | 首页摘要><br>用eggjs一个多月，踩了不少坑，把踩坑过程分享出来，希望大家少走弯路。<br><a id="more"></a></p>
-<The rest of contents | 余下全文>
-
-<h2 id="egg-js介绍"><a href="#egg-js介绍" class="headerlink" title="egg.js介绍"></a>egg.js介绍</h2><p>请去官网看介绍 <a href="https://eggjs.org/zh-cn/">egg.js</a></p>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>本文所有示例基于async function，node版本node&gt;=7.6.</p>
-<h2 id="controller和service的两种写法：基于类和普通方法"><a href="#controller和service的两种写法：基于类和普通方法" class="headerlink" title="controller和service的两种写法：基于类和普通方法"></a>controller和service的两种写法：基于类和普通方法</h2><p>这两种写法在获取全局变量有些地方不一样，这里列举最常见的几个全局变量的异同。</p>
-<ol>
-<li><p>基于类的controller</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = app =&gt; &#123;</div><div class="line">  <span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">extends</span> <span class="title">app</span>.<span class="title">Controller</span> </span>&#123;</div><div class="line">    <span class="keyword">async</span> queryUser() &#123;</div><div class="line">      <span class="comment">// logger获取，request对象获取</span></div><div class="line">      app.logger.info(<span class="keyword">this</span>.ctx.request.body)</div><div class="line">      <span class="comment">// 全局配置文件获取</span></div><div class="line">      <span class="keyword">const</span> domain = app.config.domain</div><div class="line">      <span class="keyword">let</span> users = []</div><div class="line">      <span class="keyword">try</span> &#123;</div><div class="line">        <span class="comment">// 全局插件获取</span></div><div class="line">        users = <span class="keyword">await</span> app.model.user.find(&#123;&#125;)</div><div class="line">        <span class="comment">// service获取</span></div><div class="line">        <span class="keyword">await</span> <span class="keyword">this</span>.ctx.service.user.find(&#123;&#125;)</div><div class="line">      &#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">        app.logger.error(e)</div><div class="line">      &#125;</div><div class="line">      <span class="comment">// 获取body</span></div><div class="line">      <span class="keyword">this</span>.ctx.body = &#123;</div><div class="line">        users,</div><div class="line">      &#125;</div><div class="line">      <span class="comment">// 重定向写法</span></div><div class="line">      <span class="keyword">this</span>.ctx.redirect(<span class="string">'http://www.baidu.com'</span>)</div><div class="line">      <span class="comment">// render 模版引擎，</span></div><div class="line">      <span class="keyword">this</span>.ctx.body = app.nunjucks.render(<span class="string">'register.nj'</span>)</div><div class="line">    &#125;</div><div class="line">  <span class="keyword">return</span> User</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>基于普通方法(exports)</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">exports.register = <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">register</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// logger获取，request对象获取</span></div><div class="line">  <span class="keyword">this</span>.logger.info(<span class="keyword">this</span>.request.body)</div><div class="line">  <span class="keyword">try</span> &#123;</div><div class="line">    <span class="comment">// 全局配置文件获取</span></div><div class="line">    <span class="keyword">const</span> domain = <span class="keyword">this</span>.app.config.domain</div><div class="line">    <span class="comment">// service获取</span></div><div class="line">    <span class="keyword">await</span> <span class="keyword">this</span>.service.register.register(<span class="keyword">this</span>.token, <span class="keyword">this</span>.request.body)</div><div class="line">    <span class="comment">// 全局插件获取</span></div><div class="line">    <span class="keyword">const</span> users = <span class="keyword">await</span> <span class="keyword">this</span>.app.model.user.find(&#123;&#125;)</div><div class="line">    <span class="keyword">this</span>.service.message.send()</div><div class="line">  &#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">    <span class="keyword">this</span>.logger.error(e)</div><div class="line">  &#125;</div><div class="line">  <span class="comment">// 获取body</span></div><div class="line">  <span class="keyword">this</span>.body = &#123; <span class="string">'success'</span> &#125;</div><div class="line">  <span class="comment">// 重定向写法</span></div><div class="line">  <span class="keyword">this</span>.redirect(<span class="string">'http://www.baidu.com'</span>)</div><div class="line">  <span class="comment">// render 模版引擎，</span></div><div class="line">  <span class="keyword">this</span>.body = <span class="keyword">this</span>.app.nunjucks.render(<span class="string">'success.nj'</span>, data)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="自定义配置文件"><a href="#自定义配置文件" class="headerlink" title="自定义配置文件"></a>自定义配置文件</h2><p>egg.js的配置文件非常人性化，有config.default.js,config.default.prod.js,config.test.js等等。<br>运行时根据环境变量加载不同的配置文件。默认时config.default.js,指定环境变量后会把config.env.js(对应环境)的配置文件和config.default.js合并。</p>
-<h2 id="调试代码"><a href="#调试代码" class="headerlink" title="调试代码"></a>调试代码</h2><p>由于使用了async await，调试起来有些麻烦，建议使用webstorm或者chrome进行调试，eggjs自带egg-bin，支持在chrome里进行调试，对async，await有良好的支持。<br>使用chrome调试，配置如下：<br>在package.json中添加script,使用<code>npm run debug</code>启动，复制链接在chrome中打开，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="string">"scripts"</span>: &#123;</div><div class="line">  <span class="string">"start"</span>: <span class="string">"node index.js"</span>,</div><div class="line">  <span class="string">"debug"</span>: <span class="string">"egg-bin debug"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><img src="http://o7kalf5h3.bkt.clouddn.com/debug-egg.png" alt="命令行显示"></p>
-<p><img src="http://o7kalf5h3.bkt.clouddn.com/debug-egg-point.png" alt="断点调试"></p>
-<h2 id="此文章持续更新-欢迎收藏关注"><a href="#此文章持续更新-欢迎收藏关注" class="headerlink" title="此文章持续更新,欢迎收藏关注"></a>此文章持续更新,欢迎收藏关注</h2><blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc">我的博客</a></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt; egg.js实战技巧：&lt;/strong&gt; &lt;Excerpt in index | 首页摘要&gt;&lt;br&gt;用eggjs一个多月，踩了不少坑，把踩坑过程分享出来，希望大家少走弯路。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="编程语言" scheme="http://geeksblog.cc/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-    
-      <category term="node" scheme="http://geeksblog.cc/tags/node/"/>
     
   </entry>
   
