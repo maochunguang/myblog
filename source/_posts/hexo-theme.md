@@ -122,6 +122,21 @@ baidu_analytics: xxcxcxcsdsf
 
 ```
 ## 自定义配置（对前端技术有了解即可）
+### 显示更多和折叠文章
+你的md文件格式需要按下面的来：
+```
+title: 突破算法第11天-红黑树
+date: 2017-10-30 22:35:37
+tags: 算法
+categories: algorithm
+---
+** {{ title }}：** <Excerpt in index | 首页摘要>
+红黑树
+<!-- more -->
+<The rest of contents | 余下全文>
+正文……
+```
+
 ### 头像配置
 在themes/black-blue/source/img/avatar.png,替换此头像即可实现自定义头像
 
