@@ -198,14 +198,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/node-notes.html</loc>
+    <loc>http://geeksblog.cc/ajax-study.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -219,7 +212,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/fullprj-desc.html</loc>
+    <loc>http://geeksblog.cc/node-notes.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/ghost-blog.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -282,7 +282,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/ajax-study.html</loc>
+    <loc>http://geeksblog.cc/ajax-jsonp.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -317,14 +317,14 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
+    <loc>http://geeksblog.cc/mac-shortcut.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/mac-shortcut.html</loc>
+    <loc>http://geeksblog.cc/mac-mysql-unicode.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -345,14 +345,7 @@
   </url>
   
   <url>
-    <loc>http://geeksblog.cc/free-books.html</loc>
-    
-    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://geeksblog.cc/ghost-blog.html</loc>
+    <loc>http://geeksblog.cc/fullprj-desc.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
@@ -360,6 +353,13 @@
   
   <url>
     <loc>http://geeksblog.cc/mysql-study.html</loc>
+    
+    <lastmod>2017-05-26T06:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://geeksblog.cc/free-books.html</loc>
     
     <lastmod>2017-05-26T06:12:27.000Z</lastmod>
     
