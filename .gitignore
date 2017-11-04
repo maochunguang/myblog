@@ -6,3 +6,4 @@ public/
 .deploy*/
 .idea/
 CNAME
+themes/*
