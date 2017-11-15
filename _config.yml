@@ -3,14 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 山不转水转
-subtitle: 不想成为架构师的程序员不是一个好程序员！
+title: 业余文艺架构师之路
+subtitle: 愿我的只言片语，为你的成长带来帮助！
 description: 分享web开发，全栈开发，自我提高，数据产品选购的原创文章
-author: 山不转水转
+author: 业余文艺架构师
 language: zh-Hans
 timezone:
 
-# URL
+# URL·
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://geeksblog.cc
 root: /

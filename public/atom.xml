@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>山不转水转</title>
-  <subtitle>不想成为架构师的程序员不是一个好程序员！</subtitle>
+  <title>业余文艺架构师之路</title>
+  <subtitle>愿我的只言片语，为你的成长带来帮助！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://geeksblog.cc/"/>
@@ -9,7 +9,7 @@
   <id>http://geeksblog.cc/</id>
   
   <author>
-    <name>山不转水转</name>
+    <name>业余文艺架构师</name>
     
   </author>
   
