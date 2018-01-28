@@ -55,6 +55,7 @@ category_map:
   - 设计模式
   - 网络协议
   - 资源分享
+  - 架构
   - digital
   - cognition
 tag_map:
@@ -63,7 +64,7 @@ tag_map:
   - linux
   - mongodb
   - mysql
-  - javacript·
+  - javacript
   - redis
   - others
   - http
@@ -73,6 +74,8 @@ tag_map:
   - 数码产品
   - 认知提升
   - 算法
+  - 性能优化
+  - 架构
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
