@@ -10,8 +10,7 @@ categories: algorithm
 
 ## 单向链表的定义
 单向链表，主要有数据存储，下一个节点的引用这两个元素组成。
-
-```java
+```
 public class Node {
     int value;
     Node next;
@@ -27,7 +26,7 @@ public class Node {
 然后两个指针同时往前移动。循环直到先行的指针指为NULL时，另一个指针所指的位置就是所要找的位置
 算法复杂度为o（n）
 
-```java
+```
 public Node findDescEle(Node head, int k) {
     if (k < 1 || head == null) {
         return null;

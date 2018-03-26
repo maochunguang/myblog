@@ -55,7 +55,8 @@ category_map:
   - 设计模式
   - 网络协议
   - 资源分享
-  - 架构
+  - 分布式架构
+  - 大数据
   - digital
   - cognition
 tag_map:
@@ -66,12 +67,15 @@ tag_map:
   - mysql
   - javacript
   - redis
+  - zookeeper
+  - kafka
+  - dubbo
   - others
   - http
   - mac
   - hexo
   - book
-  - 数码产品
+  - protocol
   - 认知提升
   - 算法
   - 性能优化
