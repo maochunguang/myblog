@@ -12,7 +12,7 @@ timezone:
 
 # URL·
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://geeksblog.cc
+url: https://geeksblog.cc
 root: /
 permalink: :title.html
 permalink_defaults:
@@ -119,7 +119,7 @@ theme: black-blue
 
 
 baidu_url_submit:
-  count: 50 ## 比如3，代表提交最新的三个链接
+  count: 100 ## 比如3，代表提交最新的三个链接
   host: geeksblog.cc ## 在百度站长平台中注册的域名
   token: QzqP7EBEWGz0Rc9d ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
   path: urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
