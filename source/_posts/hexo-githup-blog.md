@@ -84,4 +84,4 @@ deploy:
 
   [1]: https://hexo.io/zh-cn/
   [2]: https://hexo.io/docs/
-  [3]: http://geeksblog.cc
+  [3]: https://www.duduhuahua.cn

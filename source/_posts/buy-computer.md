@@ -48,6 +48,6 @@ categories: digital
 推荐配置1：至强处理器，32g内存，512ssd+1Thdd  
 推荐配置2：i7处理器，32g内存，512ssd+1Thdd
 
-> 如果文章对你有帮助,请去我的博客留个言吧! [我的博客][1]
+> 博客搬家，请访问新博客地址吧! [我的博客][1]
 
-[1]: http://geeksblog.cc
+[1]: https://www.duduhuahua.cn

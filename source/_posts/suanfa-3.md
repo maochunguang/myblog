@@ -50,6 +50,6 @@ categories: algorithm
 
 
 
-> 如果文章对你有帮助,请去我的博客留个言吧! [我的博客][1]
+> 博客搬家，请访问新博客地址吧! [我的博客][1]
 
-[1]: http://geeksblog.cc
+[1]: https://www.duduhuahua.cn

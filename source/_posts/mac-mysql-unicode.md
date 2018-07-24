@@ -52,6 +52,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$MYSQL"
 | character_set_system     | utf8                                                    |
 | character_sets_dir       | /usr/local/mysql-5.6.30-osx10.11-x86_64/share/charsets/
 ```
-> 如果文章对你有帮助,请去我的博客留个言吧! [我的博客][1]
+> 博客搬家，请访问新博客地址吧! [我的博客][1]
 
-[1]: http://geeksblog.cc
+[1]: https://www.duduhuahua.cn

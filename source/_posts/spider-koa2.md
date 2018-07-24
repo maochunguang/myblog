@@ -94,6 +94,6 @@ module.exports = {
 其实无论是写爬虫还是些其他程序，使用nodejs很大一部分都是要处理异步，要学好nodejs必须学好异步处理。
 
 
-> 如果文章对你有帮助,请去我的博客留个言吧! [我的博客][1]
+> 博客搬家，请访问新博客地址吧! [我的博客][1]
 
-[1]: http://geeksblog.cc
+[1]: https://www.duduhuahua.cn
